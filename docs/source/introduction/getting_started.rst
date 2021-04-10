@@ -39,7 +39,7 @@ lernst du Schritt für Schritt, wenn du deine ersten Programme schreibst.
    Source: HOMEWORK
 
 Leitfaden für diese Anleitung
-=============================
+===============================
 
 Die Abschnitte dieses Tutorials führen dich durch das Programmieren mit dem micro:bit, die Grundlagen der Programmierung und die Funktionen des micro:bit. Das Ziel ist es, dich mit dem Programmieren vertraut zu machen 
 Programmierung zu bringen, so dass du ein eigenes kleines Projekt erstellen kannst, das du uns in der ersten Woche zeigen wirst, um dich mit der Programmierung von #circular_definition vertraut zu machen. 

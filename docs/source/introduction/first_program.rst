@@ -1,6 +1,6 @@
-****************
+******************
 Das erste Programm
-****************
+******************
 
 Im Allgemeinen besteht der Prozess des Code-Entwurfs aus diesen 4 Schritten. Du kannst davon ausgehen, dass du die Schleife ein paar Mal durchlaufen musst, bevor dein Code funktioniert.
 
@@ -10,7 +10,7 @@ Im Allgemeinen besteht der Prozess des Code-Entwurfs aus diesen 4 Schritten. Du 
 
 
 Den Code entwerfen
-----------------
+------------------
 
 Als erstes wirst du ein Programm schreiben, das die Nachricht "Hallo Welt!" gefolgt von einem Bild auf dem Display deines micro:bit anzeigt und "Hallo du" auf der Mu Konsole ausgibt. 
 Es ist ratsam, darüber nachzudenken, was du mit deinem Code erreichen willst und wie du es erreichen willst, bevor du mit dem Schreiben beginnst. Es gibt hier nicht viel an Planung und Entwurf zu leisten,
@@ -65,7 +65,7 @@ Klicke nun auf die Flash-Taste in Mu und schau was passiert.
    :scale: 70%
    :align: center 
 
-   Das Ergebnis auf dem micro:bit sollte in etwa so aussehen:
+Das Ergebnis auf dem micro:bit sollte in etwa so aussehen:
 
 .. image:: assets/example_program.gif
    :scale: 40% 
@@ -88,6 +88,6 @@ Was passiert, wenn du ``scroll`` durch ``show`` ersetzst?
 
 Nun hast du dein erstes Programm geschrieben. In den nächsten Abschnitten erfährst du mehr über das Schreiben komplexerer Programme und über weitere Einsatzmöglichkeiten des micro:bit.
 
-.. seealso:: Schau dir die auch komplette micro:bit Dokumentation_ für MicroPython an.
+.. seealso:: Schau dir auch die komplette `micro:bit Dokumentation`_ für MicroPython an.
 
-.. _Dokumentation: https://microbit-micropython.readthedocs.io/en/latest/tutorials/introduction.html 
+.. _`micro:bit Dokumentation`: https://microbit-micropython.readthedocs.io/en/latest/tutorials/introduction.html 
