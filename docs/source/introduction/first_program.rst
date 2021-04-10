@@ -43,7 +43,7 @@ Der Rest des Programms ist ganz einfach::
 	while True:
     	display.show('Hallo Welt!')
       display.show(Image.HEART)
-	   print('Hello du!')    
+	   print('Hallo du!')    
     	sleep(2000)
       
 Es wird ``Hallo Welt!`` und dann das Herz auf dem LED Display angezeigt. 
