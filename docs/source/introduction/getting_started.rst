@@ -58,8 +58,8 @@ die micro:bit runtime_ erkunden, die dir mehr Flexibilität bei der Verwendung d
 
 .. _runtime: https://lancaster-university.github.io/microbit-docs/
 
-.. Anmerkung:: Wenn du dich beim Lesen der Tutorials verwirrt fühlst oder das Gefühl hast, dass du mehr Anleitung brauchst, um mit dem Programmieren zu beginnen, lass dich nicht entmutigen! Es gibt eine Reihe von 
-kostenlose Online-Kurse, die dir die Grundlagen der Programmierung mit Python näher bringen, wie zum Beispiel dieser_. Versuche, die ersten paar Lektionen durchzugehen, und alles sollte 
-mehr Sinn machen.
+.. Anmerkung:: Wenn du dich beim Lesen der Tutorials verwirrt fühlst oder das Gefühl hast, dass du mehr Anleitung brauchst, um mit dem Programmieren zu beginnen, 
+   lass dich nicht entmutigen! Es gibt eine Reihe von kostenlosen Online-Kurse, die dir die Grundlagen der Programmierung mit Python näher bringen, wie zum Beispiel 
+   dieser_. Versuche, die ersten paar Lektionen durchzugehen, und alles sollte mehr Sinn machen.
 
 .. _dieser: https://www.python-lernen.de/ 
