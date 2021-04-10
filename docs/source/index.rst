@@ -32,7 +32,6 @@ Wenn du zu dieser Sammlung beitragen möchtest, nur zu! Installiere git und erst
    :maxdepth: 1
    :caption: Getting Started 
 
-   introduction/letter.rst 
    introduction/getting_started.rst 
    introduction/environment.rst
    introduction/first_program.rst
