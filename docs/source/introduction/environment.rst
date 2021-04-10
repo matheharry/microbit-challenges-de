@@ -19,7 +19,7 @@ Bevor du mit dem Programmieren beginnst, benötigst du einen Quellcode-Editor, u
 .. _Website: https://codewith.mu/en/
 
 Du kannst verschiedene Optionen wählen, um Mu zu installieren. Die, die du höchstwahrscheinlich benutzen wirst, ist ein Installer für dein Gerät (Mac/Windows), oder die Installation durch ein
-Python-Paket (pip) über das :ref:`command line interface`, wenn du Python auf deinem Computer installiert hast.
+Python-Paket (pip) über die :ref:`Kommandozeile`, wenn du Python auf deinem Computer installiert hast.
 
 .. note:: Für diejenigen, die vorher mit Python gearbeitet haben, MicroPython unterstützt keine regulären externen Python-Bibliotheken, 
     da viele zu groß für ein Embedded Gerät sind. Allerdings wurde ein Subset speziell für die `MicroPython-Umgebung`_ neu erstellt. 
