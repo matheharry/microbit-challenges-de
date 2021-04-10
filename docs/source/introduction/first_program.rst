@@ -1,93 +1,93 @@
 ****************
-First Program
+Das erste Programm
 ****************
 
-In general, the process of designing code is composed of these 4 steps. You can expect to go around the loop  quite a few times before you get your code working.
+Im Allgemeinen besteht der Prozess des Code-Entwurfs aus diesen 4 Schritten. Du kannst davon ausgehen, dass du die Schleife ein paar Mal durchlaufen musst, bevor dein Code funktioniert.
 
 .. image:: assets/microbit_lifecycle.jpg
    :scale: 70%   
    :align: center
 
 
-Design the Code
+Den Code entwerfen
 ----------------
 
-First of all you are going to write a program to display the message “Hello UCL!” followed by an image on the display of your micro:bit and print "Hi there" to Mu console. 
-It's a good practice to think about what you want your code to do and how you're going to do it before you start writing. There's not much planning and design to do here,
-but just so that you understand what a plan might look like::
+Als erstes wirst du ein Programm schreiben, das die Nachricht "Hallo Welt!" gefolgt von einem Bild auf dem Display deines micro:bit anzeigt und "Hallo du" auf der Mu Konsole ausgibt. 
+Es ist ratsam, darüber nachzudenken, was du mit deinem Code erreichen willst und wie du es erreichen willst, bevor du mit dem Schreiben beginnst. Es gibt hier nicht viel an Planung und Entwurf zu leisten,
+aber nur, damit du verstehst, wie so ein Plan aussehen könnte::
 
-    Repeat forever:
-        Scroll "Hello UCL!" across the LED display
-        Display a heart icon 
-        Print "Hello World!" on a console
-        Delay for 2 seconds
+    Für immer wiederholen:
+      Scrolle "Hallo Welt!" über das LED Display
+      Ein Herzsymbol anzeigen 
+      Gib "Hallo Du!" auf der Konsole aus
+      Für zwei Sekunden warten
 
-There are two ways to display the output of your code: you either use outputs available on the micro:bit (eg. the LEDs) or the REPL (Read Print Evaluate Loop) 
-console available in the editor using the ``print`` statement. The console is especially useful for finding bugs (errors) in your code or trying out
-new concepts or ideas.  
+Es gibt zwei Möglichkeiten, die Ausgabe deines Codes anzuzeigen: Entweder du nutzt die auf dem micro:bit verfügbaren Ausgaben (z.B. die LEDs) oder die REPL (Read Print Evaluate Loop) 
+Konsole, die im Editor mit der ``print`` Anweisung verfügbar ist. Die Konsole ist besonders nützlich, um Bugs (Fehler) in deinem Code zu finden oder
+neue Konzepte oder Ideen auszuprobieren.  
 
-Let's go through this line-by-line::
+Gehen wir das Zeile für Zeile durch::
 
     from microbit import *
 
-Importing packages (like microbit) in Python makes us able to use functions or objects which are not defined in pure Python. In this case it's for example ``display`` or ``show``. ::     
+Der Import von Paketen (wie microbit) in Python ermöglicht es uns, Funktionen oder Objekte zu verwenden, die in reinem Python nicht definiert sind. In diesem Fall ist es zum Beispiel ``display`` oder ``show``. ::     
 
 	while True: 
 
-This means do something (whatever follows this statement and is indented) while the condition following ``while`` is true. In this case, the condition is the keyword ``True``, 
-means that this loop will go on forever - it's the same as writing (5 > 1), which evaluates to ``True`` in the end anyway.  
-The rest of the program is straightforward::
+In diesem Fall soll etwas (was auch immer dieser Anweisung folgt und eingerückt ist) ausgeführt werden, während die Bedingung, die auf ``While`` folgt, wahr ist. In diesem Fall ist die Bedingung das Schlüsselwort ``True``, 
+was bedeutet, dass diese Schleife ewig weiterläuft - es ist dasselbe, als wenn du (5 > 1) schreibst, was am Ende natürlich immer zu ``True``, also Wahr, ausgewertet wird.  
+Der Rest des Programms ist ganz einfach::
 
 	from microbit import *
 
 	while True:
-    	    display.show('Hello UCL!')
-            display.show(Image.HEART)
-	        print('Hello World!')    
+    	    display.show('Hallo Welt!')
+          display.show(Image.HEART)
+	       print('Hello du!')    
     	    sleep(2000)
       
-This displays ``Hello UCL!`` on the LED display and then shows the heart. 
-The statement ``print('Hi There!!')``, will print the message in the REPL. Press the REPL button in the menu now to show the REPL window:
+Es wird ``Hallo Welt!`` und dann das Herz auf dem LED Display angezeigt. 
+Die Anweisung ``print('Hallo du!!')``, gibt die Nachricht in der REPL aus. Drücke nun die REPL Taste im Menü, um das REPL Fenster anzuzeigen:
 
 .. image:: assets/mu_repl_bar.png
    :scale: 70%
    :align: center
 
-The REPL window shows us messages from the micro:bit and also allows us to send commands directly to the micro:bit. For now, we'll just be using the REPL 
-to see messages that we print and error messages. 
+Das REPL-Fenster zeigt uns Nachrichten vom micro:bit an und erlaubt uns auch, Befehle direkt an den micro:bit zu senden. Für den Moment werden wir die REPL nur benutzen 
+um Nachrichten und Fehlermeldungen zu sehen, die wir mit dem ``print``-Befehl ausgeben. 
 
-Upload your program
+Programm hochladen
 --------------------
 
-Now click on the Flash button in Mu and see what happens.
+Klicke nun auf die Flash-Taste in Mu und schau was passiert.
 
 .. image:: assets/first_program.gif
    :scale: 70%
    :align: center 
 
-The result on the micro:bit should look something like this:
+   Das Ergebnis auf dem micro:bit sollte in etwa so aussehen:
 
 .. image:: assets/example_program.gif
    :scale: 40% 
    :align: center
 
-Now try to open the REPL console:
+Versuche nun, die REPL-Konsole zu öffnen:
 
 .. image:: assets/first_program_console.png 
 
-Make a change 
+Etwas ändern 
 -------------
 
-The best way to learn what something is for is to try and change your code (and read the documentation, obviously).
+Der beste Weg, um zu lernen, wie etwas funktioniert, ist zu versuchen, deinen Code zu verändern (und die Dokumentation zu lesen, natürlich).
 
                                     <\|°_°\|>
 
-Are you wondering what the delay is for? Is it necessary? Try deleting it.
-What happens if you replace ``True`` by ``False``?
-What happens when you replace ``scroll`` by ``show``?
+Fragst du dich, wozu die Verzögerung gut ist? Ist sie notwendig? Versuche sie zu entfernen.
+Was passiert, wenn du ``True`` durch ``False`` ersetzt?
+Was passiert, wenn du ``scroll`` durch ``show`` ersetzst?
 
-Now you have written your first program. Next sections will tell you more about writing more complex programms and about further uses of micro:bit.
+Nun hast du dein erstes Programm geschrieben. In den nächsten Abschnitten erfährst du mehr über das Schreiben komplexerer Programme und über weitere Einsatzmöglichkeiten des micro:bit.
 
-.. seealso:: See the full micro:bit documentation_ for MicroPython.
+.. seealso:: Schau dir die auch komplette micro:bit Dokumentation_ für MicroPython an.
 
-.. _documentation: https://microbit-micropython.readthedocs.io/en/latest/tutorials/introduction.html 
+.. _Dokumentation: https://microbit-micropython.readthedocs.io/en/latest/tutorials/introduction.html 
