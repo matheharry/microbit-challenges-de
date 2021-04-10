@@ -1,79 +1,79 @@
 ************
-Functions I
+Functionen I
 ************
 
-Functions and methods refer to useful snippets of code that serve a specific purpose and are usually used many times in your program. 
-You have likely already used both functions and methods without necessarily realising it. 
-In this section we will not discuss methods further, but we will explain how to use and write functions. 
+Funktionen und Methoden beziehen sich auf nützliche Codeschnipsel, die einem bestimmten Zweck dienen und normalerweise viele Male in deinem Programm verwendet werden. 
+Wahrscheinlich hast du sowohl Funktionen als auch Methoden schon benutzt, ohne es unbedingt zu merken. 
+In diesem Abschnitt werden wir nicht weiter auf Methoden eingehen, aber wir werden erklären, wie man Funktionen benutzt und schreibt. 
 
 Using Functions
 ================
 
-A great thing about functions is that they can be used in more than one program and avoid code repetition. In the same way you can use functions that other people have 
-written. 
-In python, useful functions can be assembled into modules (although you don't have to do this) - the ``random`` module is a good example. 
-To use functions in the random module you must first `import` the module. Once you've done that, you can use any of the functions in that module. Here are two examples 
-of functions from 'random'.
+Eine großartige Sache an Funktionen ist, dass sie in mehr als einem Programm verwendet werden können und Code-Wiederholungen vermeiden. Auf die gleiche Weise kannst du Funktionen verwenden, die andere Leute 
+geschrieben haben. 
+In Python können nützliche Funktionen zu Modulen zusammengestellt werden (obwohl du das nicht tun musst) - das ``random`` Modul ist ein gutes Beispiel. 
+Um die Funktionen des Random-Moduls zu nutzen, musst du das Modul zuerst `importieren`. Sobald du das getan hast, kannst du alle Funktionen des Moduls benutzen. Hier sind zwei Beispiele 
+von Funktionen aus 'random'.
 
-The ``random.randint()`` function will allow us to generate a random integer in a given range::
+Die Funktion ``random.randint()`` erlaubt es uns, eine zufällige Ganzzahl (Integer) aus einem bestimmten Bereich zu erzeugen::
 
 	from microbit import *
 	import random
 	
 	display.show(str(random.randint(1, 6)))
 
-In the code above, a random number between 1 and 5 will be generated - the upper bound, 6 in this case, is never included.
+	Im obigen Code wird eine Zufallszahl zwischen 1 und 5 generiert - die obere Grenze, in diesem Fall 6, wird nie einbezogen.
 	
-In this code snippet, the function ``random.choice`` will check how many elements are in the names list, generate a random integer in the range 0 to the list length 
-and return a list element at the index of the generated integer::
+	In diesem Codeschnipsel prüft die Funktion ``random.choice`` wie viele Elemente in der Namensliste sind, erzeugt eine zufällige Ganzzahl im Bereich von 0 bis zur Listenlänge 
+	und gibt ein Listenelement mit dem Index der erzeugten Ganzzahl zurück::
 
 	from microbit import *
 	import random
 	
-	names = ["Mary", "Yolanda", "Damien", "Alia", "Kushal", "Mei Xiu", "Zoltan" ]
+	namen = ["Maria", "Jolanda", "Damien", "Alia", "Kushal", "Mei Xiu", "Zoltan" ]
 	
-	display.scroll(random.choice(names))
+	display.scroll(random.choice(namen))
 
 
-Writing your own Functions
+Eigene Funktionen erstellen
 ============================
 
-Functions can help you organise your code and keep it neat and tidy. Here is an example of a simple function that prints out a message::
+Funktionen können dir helfen, deinen Code zu organisieren und ihn ordentlich zu halten. Hier ist ein Beispiel für eine einfache Funktion, die eine Nachricht ausgibt::
 
 
-	def showGreeting():
-		print("Hello Friend!")
+	def zeigeBegruessung():
+		print("Hallo alle miteinander!")
 
-To use the function, it has to be *called* : ::
+		Um die Funktion zu nutzen, muss sie *aufgerufen* werden: ::
 
-	showGreeting()
+	zeigeBegruessung()
 
-That's not a very interesting function, is it? You can make functions more powerful by using `parameters` and `return values`. If you think of a function like a black box 
-then a parameter is an input value and a return value is what you will get at the other end. Let's say we wanted to write a small program that will greet some 
-friends with a message containing their name and age: ::
+	Das ist keine sehr interessante Funktion, oder? Du kannst Funktionen mächtiger machen, indem du `Parameter` und `Rückgabewerte` benutzt. Wenn du dir eine Funktion wie eine Black Box vorstellst 
+	dann ist ein Parameter ein Eingabewert und ein Rückgabewert ist das, was du am anderen Ende bekommst. Nehmen wir an, wir wollen ein kleines Programm schreiben, das einige 
+	Freunde mit einer Nachricht begrüßt, die ihren Namen und ihr Alter enthält: ::
 
 	from microbit import *
 
 	def printBirthdayGreeting(name, age):
-	    return "Happy Birthday " + name + ", you are " + str(age) + " years old"   
+	    return "Happy Birthday " + name + ", du bist " + str(age) + " Jahre alt"   
 
 
- 	display.scroll(printBirthdayGreeting("Tabitha", 8))
- 	display.scroll(printBirthdayGreeting("Henry", 9))
+ 	display.scroll(printBirthdayGreeting("Toni", 8))
+ 	display.scroll(printBirthdayGreeting("Sonja", 9))
  	display.scroll(printBirthdayGreeting("Maria", 11))
 		
-The function ``printBirthdayGreeting`` composes the birthday message for us and returns a string. ``str()`` is used to turn ``age``, 
-which is a number, into a string.  You don't have to use functions or return values in your functions unless you want/need to.	
+Die Funktion ``printBirthdayGreeting`` stellt die Geburtstagsnachricht für uns zusammen und gibt einen String zurück. ``str()`` wird benutzt, um das ``Alter``, 
+welches eine Zahl ist, in einen String zu verwandeln.  Du musst keine Funktionen oder Rückgabewerte in deinen Funktionen verwenden, es sei denn, du willst/brauchst sie.	
 
-Practice Questions
+Übungsfragen
 ===================
 
-1. Write a function ``blink(x, y)``, that will blink a LED at coordinates specified by parameters x and y once.
+1. Schreibe eine Funktion ``blink(x, y)``, die eine LED an den Koordinaten, die durch die Parameter x und y angegeben werden, einmal blinken lässt.
 
-2. Use the ``blink(x, y)`` function to blink all LEDs one after another.
+2. Benutze die Funktion ``blink(x, y)`` um alle LEDs nacheinander blinken zu lassen.
 
-3. Write a function button_count() that will return a tuple containing the number of times button A and button B were pressed. (fix)
+3. Schreibe eine Funktion button_count() die ein Tupel zurückgibt, das die Anzahl der Betätigungen von Taste A und Taste B enthält. (fix)
 
-4. Combine the two functions into a program that will allow user to set coordinates of blinking LED by pressing buttons.
+4. Kombiniere die beiden Funktionen in einem Programm, das es dem Benutzer ermöglicht, die Koordinaten der blinkenden LED durch Drücken der Tasten einzustellen.
 
-5. Look at the scripts you wrote previously and check whether you could (or not) improve your code by using functions.
+5. Schau dir die Skripte an, die du zuvor geschrieben hast und prüfe, ob du deinen Code durch die Verwendung von Funktionen verbessern könntest (oder nicht).
