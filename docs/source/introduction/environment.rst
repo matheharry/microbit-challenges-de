@@ -1,34 +1,34 @@
-****************************
-Setting Up Your Environment
-****************************
+********************************
+Deine Arbeitsumgebung einrichten
+********************************
 
-Before you start coding, you will need a source code editor to be able to write, load and run programs on your micro:bit.
-\There are four main options: 
+Bevor du mit dem Programmieren beginnst, benötigst du einen Quellcode-Editor, um Programme auf deinem micro:bit schreiben, laden und ausführen zu können.
+\Es gibt im Wesentlichen vier Optionen: 
 
-    - In-browser `micro:bit editor`_ 
-    - Beginner friendly `Mu editor`_ 
-    - `MicroPython application`_ if you're on a ChromeBook  
-    - Your regular Python editor with a suite of CLI commands (advanced)  
+    - Im Web-Browser: `micro:bit Editor`_ 
+    - Für Anfänger am PC: `Mu Editor`_ 
+    - `MicroPython App`_ wenn du ein Chromebook benutzt  
+    - Dein normaler Python-Editor mit einer Reihe von CLI-Befehlen (fortgeschritten)  
 
-For the purposes of this tutorial we will be using the Mu editor, but feel free to use whatever suits you better.
-To download Mu, go to Mu website.
+    Für dieses Tutorial werden wir den Mu-Editor verwenden, aber du kannst natürlich auch einen anderen Editor verwenden, der dir besser gefällt.
+    Um Mu herunterzuladen, gehe auf die Mu Website.
 
-.. _`micro:bit editor`: https://python.microbit.org
-.. _`Mu editor`: https://codewith.mu/
-.. _`MicroPython application` : https://chrome.google.com/webstore/detail/micropython/lhdjeebhcalhgnbigbngiaglmladclbo?hl=en-GB
+.. _`micro:bit Editor`: https://python.microbit.org
+.. _`Mu Editor`: https://codewith.mu/
+.. _`MicroPython App` : https://chrome.google.com/webstore/detail/micropython/lhdjeebhcalhgnbigbngiaglmladclbo?hl=de-GE
 .. _website: https://codewith.mu/en/
 
-You can choose different options to install Mu. The ones you'll most likely use is an installer for your device (Mac/Windows), or installation through
-Python package (pip) using :ref:`command line interface` if you've installed Python on your computer.
+Du kannst verschiedene Optionen wählen, um Mu zu installieren. Die, die du höchstwahrscheinlich benutzen wirst, ist ein Installer für dein Gerät (Mac/Windows), oder die Installation durch ein
+Python-Paket (pip) mit :ref:`command line interface`, wenn du Python auf deinem Computer installiert hast.
 
-.. note:: For those that had worked with Python previously, MicroPython does not support regular Python external libraries, since many are too large for an embedded 
-    device. However, a subset was recreated specifically for the `MicroPython ecosystem`_. 
+.. Anmerkung:: Für diejenigen, die vorher mit Python gearbeitet haben, MicroPython unterstützt keine regulären externen Python-Bibliotheken, 
+    da viele zu groß für ein Embedded Gerät sind. Allerdings wurde ein Subset speziell für die `MicroPython-Umgebung`_ neu erstellt. 
 
-.. _`MicroPython ecosystem`: https://docs.micropython.org/en/latest/library/index.html
+.. _`MicroPython-Umgebung`: https://docs.micropython.org/en/latest/library/index.html
 
 .. figure:: assets/installation_options.PNG
    :align: center
    :scale: 70% 
    :target: https://codewith.mu/en/download
 
-Once the editor is installed, run it and plug micro:bit into your computer.
+   Sobald der Editor installiert ist, starte ihn und schließe den micro:bit an deinen Computer an.
