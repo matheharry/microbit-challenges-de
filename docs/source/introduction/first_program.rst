@@ -19,7 +19,7 @@ aber nur, damit du verstehst, wie so ein Plan aussehen könnte::
     Für immer wiederholen:
       Scrolle "Hallo Welt!" über das LED Display
       Ein Herzsymbol anzeigen 
-      Gib "Hallo Du!" auf der Konsole aus
+      Gib "Hallo du!" auf der Konsole aus
       Für zwei Sekunden warten
 
 Es gibt zwei Möglichkeiten, die Ausgabe deines Codes anzuzeigen: Entweder du nutzt die auf dem micro:bit verfügbaren Ausgaben (z.B. die LEDs) oder die REPL (Read Print Evaluate Loop) 
@@ -47,7 +47,7 @@ Der Rest des Programms ist ganz einfach::
     	sleep(2000)
       
 Es wird ``Hallo Welt!`` und dann das Herz auf dem LED Display angezeigt. 
-Die Anweisung ``print('Hallo du!!')``, gibt die Nachricht in der REPL aus. Drücke nun die REPL Taste im Menü, um das REPL Fenster anzuzeigen:
+Die Anweisung ``print('Hallo du!')``, gibt die Nachricht in der REPL aus. Drücke nun die REPL Taste im Menü, um das REPL Fenster anzuzeigen:
 
 .. image:: assets/mu_repl_bar.png
    :scale: 70%
