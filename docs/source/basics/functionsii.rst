@@ -1,118 +1,118 @@
 **************
-Functions II
+Funktionen II
 **************
 
-Now that you know how to use functions in practice, there are several more concepts that will help you understand behaviour of functions not only in Python,
-but other languages as well.  
+Jetzt, wo du weißt, wie man Funktionen in der Praxis einsetzt, gibt es einige weitere Konzepte, die dir helfen werden, das Verhalten von Funktionen nicht nur in Python zu verstehen,
+sondern auch in anderen Sprachen.  
 
-Scope
-======
+Geltungsbereich
+===============
 
-Global and Local Variables
----------------------------
+Globale und lokale Variablen
+----------------------------
 
-Imagine you want to use the slightly modified ``printBirthdayGreeting()`` function from before and you want to increment age every time the function is called: ::
+Stell dir vor, du möchtest eine leicht abgeänderte Funktion ``printBirthdayGreeting()`` von vorher verwenden und du möchtest das Alter bei jedem Aufruf der Funktion erhöhen: ::
 
 	name = "Johann"
-	age = 32
+	alter = 32
 
 	def printBirthdayGreeting():
-		age += 1
-	    return "Happy Birthday " + name + ", you are " + str(age) + " years old" 
+		alter += 1
+	    return "Happy Birthday " + name + ", du bist " + str(alter) + " Jahre alt!" 
 
 	printBirthdayGreeting()	
 
-Can you spot what is wrong? If you try to run it, you'll probably get this message: `` UnboundLocalError: local variable 'age' referenced before assignment``.
+Kannst du erkennen, was falsch ist? Wenn du versuchst, den Code auszuführen, wirst du wahrscheinlich diese Meldung erhalten: UnboundLocalError: local variable 'alter' referenced before assignment``.
 
-To understand this, we have to talk about scope. Scope is an 'area' in which a variable is defined, can be accessed and written to. From this point of view we know two 
-types of variables: global and local. By default, all variables defined within a function are local - you cannot access them outside of the function. And since the scope
-within the function is different from the global one, it's possible to use the same name for two different variables.
+Um dies zu verstehen, müssen wir über den Geltungsbereich (Scope) sprechen. Scope ist eine 'Umgebung', in der eine Variable definiert ist, und auf die dort zugegriffen und in die geschrieben werden kann. Unter diesem Gesichtspunkt kennen wir zwei 
+Typen von Variablen: globale und lokale. Standardmäßig sind alle Variablen, die innerhalb einer Funktion definiert sind, lokal - du kannst nicht auf sie außerhalb der Funktion zugreifen. Und da der Geltungsbereich
+innerhalb der Funktion anders ist als der globale, ist es möglich, den gleichen Namen für zwei verschiedene Variablen zu verwenden.
 
-Can you explain what happened in the code snippet above now?
+Kannst du jetzt erklären, was im obigen Codeschnipsel passiert ist?
 
-``age`` outside of ``printBirthdayGreeting()`` function is a global variable. However, when we want to access it inside the function, Python considers it to be a new
-local variable. How do we solve this? We can declare the variable ``age`` as ``global``: ::
+``alter`` außerhalb der ``printBirthdayGreeting()`` Funktion ist eine globale Variable. Wenn wir jedoch innerhalb der Funktion darauf zugreifen wollen, betrachtet Python es als eine neue
+lokale Variable. Wie lösen wir das Problem? Wir können die Variable ``alter`` als ``global`` deklarieren: ::
 
 	name = "Johann"
-	age = 32
+	alter = 32
 
 	def printBirthdayGreeting():
-		global age
-		age += 1
-		return "Happy Birthday " + name + ", you are " + str(age) + " years old"
+		global alter
+		alter += 1
+		return "Happy Birthday " + name + ", du bist " + str(alter) + " Jahre alt!"
 
 
-This will let Python now, that the age variable we mean is the one in global namespace.
+Dadurch weiß Python, dass die age-Variable, die wir meinen, im globalen "Namespace" (wortwörtlich *Namensbereich*) liegt.
 
-.. warning:: Using global variables is generally a bad practice and you should avoid it, since it makes the purpose of your functions less obvious and you can end up with 
-			'spaghetti' code. A better way to do this is to pass variable age as one of the arguments of the function (example below).
+.. warning:: Globale Variablen zu verwenden ist generell eine schlechte Praxis und du solltest es vermeiden, da es den Zweck deiner Funktionen weniger offensichtlich macht und du am Ende mit 
+			'Spaghetti' Code kämpfen musst. Ein besserer Weg ist es, die Variable ``age`` als eines der Argumente der Funktion zu übergeben (Beispiel unten).
 
-Here is an example for a function that passes variables as arguments::
+Hier ist ein Beispiel für eine Funktion, die Variablen als Argumente übergibt::
 
-	def printBirthdayGreeting(name, age):
-		age += 1
-		return "Happy Birthday " + name + ", you are " + str(age) + " years old"
+	def printBirthdayGreeting(name, alter):
+		alter += 1
+		return "Happy Birthday " + name + ", du bist " + str(alter) + " Jahre alt!"
 
 
-.. tip:: You will be hearing about 'best practices' a lot. How do you determine what is a best practice and what is not? In general, best practice is what makes your
-	code more readable to others. You can look at style guides_ for a language you're coding in, but in the end it's always about good judgment, since no rule applies
-	to all cases. 
+.. tip:: Du wirst oft von "Best Practices" hören. Wie bestimmst du, was eine Best Practice ist und was nicht? Im Allgemeinen ist eine Best Practice das, was deinen
+		Code für andere besser lesbar macht. Du kannst dir Styleguides_ für eine Sprache ansehen, in der du programmierst, aber am Ende geht es immer um gutes Urteilsvermögen, da keine Regel 
+		in allen Fällen passt. 
 
-.. _guides: https://www.python.org/dev/peps/pep-0008/
+.. _Styleguides: https://www.python.org/dev/peps/pep-0008/
 
 .. figure:: assets/code_quality.png
 	:align: center
 
-	Source: xkcd https://xkcd.com/1513/
+	Quelle: xkcd https://xkcd.com/1513/
 
 
-Nonlocal variables
--------------------
+Nicht-lokale Variablen
+----------------------
 
-A curious case arises with the use of nested functions. So let's say you want to change a local variable of the ``justAnExample()`` function using the nested
-function: ::
+Ein kurioser Fall tritt bei der Verwendung von verschachtelten Funktionen auf. Sagen wir, du willst eine lokale Variable der Funktion ``nurEinBeispiel()`` ändern, indem du die verschachtelte
+Funktion: ::
 
-	def justAnExample():
-		def continuingExample():
-			variable = "Inner function that changes everything!"
+	def nurEinBeispiel():
+		def weiteresBeispiel():
+			variable = "Innere Funktion, die alles verändert!"
 
-		variable = "Outer function"
-		continuingExample()
+		variable = "Äußere Funktion"
+		weiteresBeispiel()
 
 		print(variable)
 
-	justAnExample() 
+	nurEinBeispiel() 
 
-You already know why this does not work. But how do you fix it? You cannot declare the variable global, because it's within a function - it's local and there 
-is another local scope within the ``continuingExample()`` function. To resolve this situation, you can declare a variable to be ``nonlocal``: ::
+	Du weißt bereits, warum das nicht funktioniert. Aber wie kannst du das Problem umgehen? Du kannst die Variable nicht global deklarieren, weil sie innerhalb einer Funktion ist - sie ist lokal und es gibt 
+	einen weiteren lokalen Bereich innerhalb der Funktion ``weiteresBeispiel()``. Um diese Situation zu lösen, kannst du eine Variable als ``nonlocal`` deklarieren: ::
 
-	def justAnExample():
-		def continuingExample():
+	def nurEinBeispiel():
+		def weiteresBeispiel():
 			nonlocal variable
-			variable = "Inner function that changes everything!"
+			variable = "Innere Funktion, die alles verändert!"
 
-		variable = "Outer function"
-		continuingExample()
+		variable = "Äußere Funktion"
+		weiteresBeispiel()
 
 		print(variable)
 
-	justAnExample() 
+	nurEinBeispiel() 
 
-Now the code should print ``"Inner function that changes everything!"`` exactly the way we wanted.
+	Jetzt sollte der Code ``"Innere Funktion, die alles verändert!"`` genau so ausgeben, wie wir es wollten.
 
-.. note:: To learn more about namespace and scope in Python, look at the documentation_.
+.. note:: Um mehr über Namespace und Scope in Python zu erfahren, schau dir die Dokumentation_ an.
 
-.. _documentation: https://docs.python.org/3/tutorial/classes.html
+.. _Dokumentation: https://docs.python.org/3/tutorial/classes.html
 
-Passing parameters
+Parameter übergeben
 ===================
 
-An important concept that will have a visible impact on the working of your functions is passing parameters. This describes the way a variable is treated as it's passed
-in a function - in a pass-by-value scenario, the argument is treated as a new local variable and has no influence on the original variable (if a variable was passed as
-an argument). In the case of pass-by-reference, the variable passed as an argument can be affected within a function. In Python, the method of parameter passing is 
-a specific combination of the two - parameter are passed by `value of object reference`_.
+Ein wichtiges Konzept, das einen sichtbaren Einfluss auf die Funktionsweise deiner Funktionen haben wird, ist die Übergabe von Parametern. Dies beschreibt die Art und Weise, wie eine Variable verarbeitet wird, wenn man sie an 
+eine Funktion übergibt - in einem *Pass-by-Value* Szenario wird das Argument als neue lokale Variable behandelt und hat keinen Einfluss auf die ursprüngliche Variable (falls eine Variable als 
+Argument übergeben wurde). Im Falle von *Pass-by-Reference* kann die als Argument übergebene Variable innerhalb einer Funktion beeinflusst werden. In Python ist die Methode der Parameterübergabe 
+eine spezielle Kombination aus beidem - Parameter werden per `Wert der Objektreferenz`_ übergeben.
 
-For a good explanation of passing parameters and the difference between different techniques, I would recommend you to read this `blogpost by Robert Heaton`_.
+Für eine gute Erklärung der Parameterübergabe und den Unterschied zwischen den verschiedenen Techniken, empfehle ich dir diesen `Blogpost von Robert Heaton`_ zu lesen.
 
-.. _value of object reference: https://docs.python.org/3/tutorial/controlflow.html#defining-functions
-.. _blogpost by Robert Heaton: https://robertheaton.com/2014/02/09/pythons-pass-by-object-reference-as-explained-by-philip-k-dick/
+.. _Wert der Objektreferenz: https://docs.python.org/3/tutorial/controlflow.html#defining-functions
+.. _Blogpost von Robert Heaton: https://robertheaton.com/2014/02/09/pythons-pass-by-object-reference-as-explained-by-philip-k-dick/
