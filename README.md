@@ -1,12 +1,9 @@
-These tutorial sheets are aimed at incoming computer science students with little programming experience to give them an incentive to start programming using micro:bit. The sheets provide fundamental information about micro:bit's features and programming along with optional practical examples, but students are encouraged to use these materials to design projects of their own. 
-Tutorials can be accessed on <https://microbit-challenges.readthedocs.io/>.
+Diese Übungsblätter richten sich an Schüler mit wenig Programmiererfahrung, um ihnen einen Anreiz zu geben, mit dem Programmieren mit dem micro:bit zu beginnen. Die Blätter bieten grundlegende Informationen über die Funktionen und die Programmierung des micro:bit zusammen mit praktischen Beispielen. Die Schüler werden ermutigt, diese Materialien zu nutzen, um eigene Projekte zu entwerfen. 
+Die Tutorials können auf <https://microbit-challenges-de.readthedocs.io/> abgerufen werden.
 
-The design of the micro:bit was strongly influenced by the Engduino and some of this material is taken directly from the Engduino tutorial sheets. Likewise, in some places, the content is an abridged version of the BBC micro:bit MicroPython documentation at <http://microbit-micropython.readthedocs.io>.
-Some of the challenges were adapted from the exercises by M. Atkinson on the website Multiwingspan <http://multiwingspan.co.uk/micro.php>. 
+Der Inhalt dieser Übungsblätter ist an einigen Stellen eine gekürzte Version der BBC micro:bit MicroPython Dokumentation unter <http://microbit-micropython.readthedocs.io>.
+Einige der Challenges wurden von den Übungen von M. Atkinson auf der Website Multiwingspan <http://multiwingspan.co.uk/micro.php> adaptiert. 
 
-To download this documentation in pdf, epub or html format, click on the link at the bottom of the sidebar on the left:
+Um diese Dokumentation im pdf, epub oder html Format herunterzuladen, klicke auf den Link unten in der linken Seitenleiste:
 
-![Downloading documentation](sidebar.jpg)
-
-If you would like to contribute, go ahead! The documentation is built with sphinx-docs, http://www.sphinx-doc.org/. You only need to install sphinx-docs 
-if you want to generate a copy of the documentation locally. Follow instructions on the sphinx-docs website for information about how to install sphinx-docs. To generate pdf documents locally you must also install latex. 
+![Downloading documentation](sidebar.jpg) 

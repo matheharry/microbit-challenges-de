@@ -1,9 +1,9 @@
 **********
-Variables
+Variablen
 **********
 
-A variable is a name you use to refer to a memory location where a value is stored. In a more abstract manner it can be thought of as a box that stores a value. 
-All variables are made up of three parts: a name, a data type and a value. In the figure below there are three variables of different types:
+Eine Variable ist ein Name, den du verwendest, um auf einen Speicherplatz zu verweisen, an dem ein Wert gespeichert ist. Einfacher ausgedrückt kann man sie sich als eine Box vorstellen, die einen Wert speichert. 
+Alle Variablen bestehen aus drei Teilen: einem Namen, einem Datentyp und einem Wert. In der Abbildung unten gibt es drei Variablen mit unterschiedlichen Datentypen:
 
 .. figure:: assets/variable.jpg
    :scale: 50 %
@@ -11,10 +11,10 @@ All variables are made up of three parts: a name, a data type and a value. In th
 
    Source: <https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables>
 
-The variable ``name`` contains the string ``Bob``, the variable ``winner`` contains the value ``True`` and the variable ``score`` contains the value ``35``.
+Die Variable ``Name`` enthält die Zeichenkette ``Bob``, die Variable ``Gewinner`` enthält den Wert ``True`` und die Variable ``Score`` enthält den Wert ``35``.
 
-In Python a variable is created when it's assigned to for the first time. Once done, variable value can be manipulated (unless it's immutable - you'll learn more about 
-this in the :ref:`Data Structures` section). ::
+In Python wird eine Variable erstellt, wenn sie zum ersten Mal zugewiesen wird. Sobald dies geschehen ist, kann der Wert der Variable verändert werden (es sei denn, sie ist unveränderlich - mehr darüber erfährst du 
+im Abschnitt :ref:`Datenstrukturen`). ::
 
 	from microbit import *
 
@@ -26,4 +26,4 @@ this in the :ref:`Data Structures` section). ::
 	   sleep(2000)
 	   print("Number of presses: " + str(myCount))
 
-Here we have used the variable ``myCount`` to count the number of button presses for button ``A``.  Can you tell what else this snippet of code does?
+Hier haben wir die Variable ``myCount`` benutzt, um die Anzahl der Tastebetätigungen für Button ``A`` zu zählen.  Kannst du sagen, was dieser Codeschnipsel sonst noch macht?

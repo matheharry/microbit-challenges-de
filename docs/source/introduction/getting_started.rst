@@ -1,17 +1,17 @@
-****************************
-Micro:bit - Getting Started 
-****************************
+**************************
+Micro:bit - Erste Schritte 
+**************************
 
-The BBC micro:bit is a programmable micro-computer - microcontroller - that can be used to create all kinds of projects from robots to musical instruments – 
-the possibilities are endless. Let's take a look at the features that you can use in your designs:
+Der BBC micro:bit ist ein programmierbarer Mikrocomputer bzw. Mikrocontroller - mit dem man alle möglichen Projekte erstellen kann, von Robotern bis hin zu Musikinstrumenten - 
+die Möglichkeiten sind endlos. Lass uns einen Blick auf die Funktionen werfen, die du in deinen Programmen verwenden kannst:
 
- * 25 red LED lights that can flash messages.
- * Two programmable buttons (A and B) that can be used to tell the micro:bit when to start and stop things.
- * A thermistor to measure the temperature.
- * A light sensor to measure the change in light.
- * An accelerometer to detect motion.
- * A magnetometer to tell you which direction you’re heading in.
- * A radio and a Bluetooth Low Energy connection to interact with other devices.
+ * 25 rote LED-Lichter, die Nachrichten und Bilder anzeigen können.
+ * Zwei programmierbare Tasten (A und B), mit denen du dem micro:bit sagen kannst, wann er etwas starten und stoppen soll.
+ * Ein Thermistor, um die Temperatur zu messen.
+ * Ein Lichtsensor, um die Veränderung des Lichts zu messen.
+ * Ein Beschleunigungssensor, um Bewegungen zu erkennen.
+ * Ein Magnetometer, um dir zu sagen, in welche Richtung du gehst.
+ * Eine Funk- und eine Bluetooth-Verbindung, um mit anderen Geräten zu interagieren.
 
 .. figure:: assets/microbit-hardware-access.jpg
    :scale: 35%
@@ -19,46 +19,47 @@ the possibilities are endless. Let's take a look at the features that you can us
    
    Source: https://microbit.org/guide/features/
 
-You can program micro:bit using several languages: MicroPython, C++ or JavaScript. This tutorial will focus on programming micro:bit using
-MicroPython, but if you already are familiar with Python, or you're looking for extra challenge, look at the section for :ref:`Programming Micro:bit Using Other laguages`. 
-C/C++ might be useful in particular, as it's the main language used to program embedded devices.
+   Du kannst den micro:bit mit verschiedenen Sprachen programmieren: MicroPython, C++ oder JavaScript. Dieses Tutorial konzentriert sich auf das Programmieren von micro:bit mit
+   MicroPython, aber wenn du bereits mit Python vertraut bist oder eine zusätzliche Herausforderung suchst, schau dir den Abschnitt :ref:`Programmierung des micro:bit mit anderen Sprachen` an. 
+   C/C++ könnte besonders nützlich sein, da es die Hauptsprache ist, die für die Programmierung von Embedded-Geräten verwendet wird.
 
-.. _languages: https://microbit.org/code/
+.. _Sprachen: https://microbit.org/code/
 
-MicroPython is a version of Python_ , that's designed to run on microcontrollers like micro:bit. Since their functionality is virtually the same (look here_ for difference 
-in behaviour), we refer to the language used as Python in these tutorials. Programming in Python consists of
-writing a series of steps to be executed (it's an *imperative* language), as you will see later when writing your first program.  
+MicroPython ist eine Version von Python_, die auf Mikrocontrollern wie dem micro:bit laufen kann. Da die Funktionalität der beiden nahezu identisch ist (siehe hier_ für den Unterschied 
+im Verhalten), beziehen wir uns in diesen Tutorials auf die verwendete Sprache als Python. Programmieren in Python besteht aus
+dem Beschreiben einer Reihe von Schritten, die ausgeführt werden sollen. An welche genau einzuhaltende Regeln (ähnlich wie der Grammatik beim Sprachenlernen) du dich dabei halten musst,
+lernst du Schritt für Schritt, wenn du deine ersten Programme schreibst.  
 
 .. _Python: https://www.python.org/
-.. _here: https://docs.micropython.org/en/latest/genrst/index.html
+.. _hier: https://docs.micropython.org/en/latest/genrst/index.html
 .. figure:: assets/programming.jpg
    :align: center 
    :scale: 30 %
 
    Source: HOMEWORK
 
-Guide to the guide
-===================
+Leitfaden für diese Anleitung
+=============================
 
-Sections in this tutorial will walk you through coding using micro:bit, basics of programming and micro:bit's features. The objective is to get you started with 
-programming so that you can create a small project of your own that you will show us during your first week to get you started with programming #circular_definition. 
+Die Abschnitte dieses Tutorials führen dich durch das Programmieren mit dem micro:bit, die Grundlagen der Programmierung und die Funktionen des micro:bit. Das Ziel ist es, dich mit dem Programmieren vertraut zu machen 
+Programmierung zu bringen, so dass du ein eigenes kleines Projekt erstellen kannst, das du uns in der ersten Woche zeigen wirst, um dich mit der Programmierung von #circular_definition vertraut zu machen. 
 
-You don't have to meticulously go through all the 
-theory covered in Basics of programming, especially if you're a beginner. Start writing simple programs using the micro:bit and read about further programming concepts 
-as you go. Feel free to skip the parts you are confident in and choose the parts that are relevant. As you learn more about programming, you'll naturally keep finding 
-better and more efficient ways to do your projects of the past, but right now you should focus on getting yourself started.
+Du brauchst dich nicht unbedingt akribisch durch die ganze 
+Theorie, die in Grundlagen der Programmierung behandelt wird, durcharbeiten, besonders wenn du ein Anfänger bist. Fange an, einfache Programme mit dem micro:bit zu schreiben und lese über weitere Programmierkonzepte 
+nach und nach. Fühle dich frei, die Teile zu überspringen, in denen du dich sicher fühlst und wähle die Teile, die wichtig sind. Während du mehr über das Programmieren lernst, wirst du natürlich immer 
+bessere und effizientere Wege finden, um deine Projekte der Vergangenheit zu erledigen, aber im Moment solltest du dich darauf konzentrieren, den Einstieg zu finden.
 
-Topics covered here are generally only touched upon and many things are not explained on purpose. Some of the important skills
-you will need during the course of your studies and work later on will be independent exploration of materials and capability to read official documentation, hence we 
-encourage you to explore other resources than those found here.  
+Die hier behandelten Themen werden in der Regel nur gestreift und viele Dinge werden absichtlich nicht erklärt. Einige der wichtigen Fähigkeiten
+die du im Laufe der Schule und deiner späteren Arbeit brauchen wirst, sind das selbstständige Erforschen von Materialien und die Fähigkeit, offizielle Dokumente zu lesen. 
+Daher ermutigen wir dich, andere Unterlagen zu lesen, als die, die du hier findest.  
 
-If your skills are intermediate/advanced, you might not find this documentation very interesting. However, micro:bit is a highly configurable device and you might like 
-to explore micro:bit runtime_, which gives you more flexibility with what it can be used for.  
+Wenn deine Fähigkeiten mittel bis fortgeschritten sind, wirst du diese Dokumentation vielleicht nicht sehr interessant finden. Wie auch immer, der micro:bit ist ein äußerst flexibles Gerät und du könntest dann vielleicht 
+die micro:bit runtime_ erkunden, die dir mehr Flexibilität bei der Verwendung des Geräts bietet.  
 
 .. _runtime: https://lancaster-university.github.io/microbit-docs/
 
-.. note:: If you feel confused while reading through tutorials or if you feel like you need more guidance to start programming, don't be discouraged! There is a number of 
-    free online courses that are great at going through basics of programming with Python, like this one_. Try to go through the first few lessons, and everything should 
-    make more sense.
+.. Anmerkung:: Wenn du dich beim Lesen der Tutorials verwirrt fühlst oder das Gefühl hast, dass du mehr Anleitung brauchst, um mit dem Programmieren zu beginnen, lass dich nicht entmutigen! Es gibt eine Reihe von 
+kostenlose Online-Kurse, die dir die Grundlagen der Programmierung mit Python näher bringen, wie zum Beispiel dieser_. Versuche, die ersten paar Lektionen durchzugehen, und alles sollte 
+mehr Sinn machen.
 
-.. _one: https://www.edx.org/course/introduction-to-computer-science-and-programming-using-python-2 
+.. _dieser: https://www.python-lernen.de/ 
