@@ -13,72 +13,72 @@ den Punktestand eines Spielers speichern. Wir könnten eine Liste wie die oben a
      
 	 Eine Liste.
 
-To create a list, you specify its contents enclosed within brackets and delimited by commas: :: 
+Um eine Liste zu erstellen, gibst du ihren Inhalt in eckigen Klammern an und trennst die einzelnen Elemente durch Kommas: :: 
 
 	from microbit import *
 
-	high_scores = [25, 20, 10, 15, 30]       # Create a list and store some values in it.
-	print(high_scores[0])			# Print 25
-	print(high_scores[3])			# Print 15
+	high_scores = [25, 20, 10, 15, 30]       # Erstelle eine Liste und speichere einige Werte in ihr.
+	print(high_scores[0])			# Gibt 25 aus
+	print(high_scores[3])			# Gibt 15 aus
 
 
-Finding the value of one of the elements in a list is straightforward as long as you keep in mind that Python counts the elements from '0'. In the ``high_scores`` list 
-above, ``high_scores[0]`` is 25 and ``high_scores[3]`` is 15.
+Den Wert eines der Elemente in einer Liste zu finden ist einfach, solange du im Hinterkopf behältst, dass Python die Elemente ab '0' zählt. In der ``high_scores`` Liste 
+oben, ist ``high_scores[0]`` 25 und ``high_scores[3]`` ist 15.
 
-Here you can also see that particular elements in a list can be accessed by their index. Furthermore, it is possible to slice lists to get only a part of a list depending
-on the index. If you only want the first three, you can write ``high_scores[0:3]``, or, since we are starting at 0, we can shorten it to ``high_scores[:3]``. Mind that
-the right endpoint is alway excluded, so the 'slice' above refers to the mathematical interval ``[0,2]``.
+Hier kannst du auch sehen, dass auf bestimmte Elemente in einer Liste über ihren Index zugegriffen werden kann. Außerdem ist es möglich, Listen zu zerschneiden, um nur einen Teil der Liste 
+abhängig vom Index zu erhalten. Wenn du nur die ersten drei willst, kannst du ``high_scores[0:3]`` schreiben, oder, da wir bei 0 anfangen, können wir es zu ``high_scores[:3]`` abkürzen. Beachte, dass
+der rechte Endpunkt immer ausgeschlossen ist, also bezieht sich der obige "Ausschnitt" auf das mathematische Intervall ``[0,2]``.
 
-Not surprisingly, Python has features for working with lists. The code snippet below calculates the sum of all elements and then calculates the average high score. ::		
+Natürlich besitzt Python schon Funktionen für die Arbeit mit Listen. Der folgende Codeschnipsel berechnet die Summe aller Elemente und berechnet dann den durchschnittlichen Punktestand. ::		
 
-	total_score = 0
+	punkte_gesamt = 0
 	
-	for score in high_scores: 		# For each element ...
-		total_score = total_score + score
+	for punkte in high_scores: 		# Für jedes Element ...
+		punkte_gesamt = punkte_gesamt + punkte
 
-	average = total_score / len(high_scores)  # Use the len() function here to find the length of the array 
+	durchschnitt = punkte_gesamt / len(high_scores)  # Benutze hier die Funktion len() um die "Länge" der Liste zu ermitteln 
 
-The same can be done in one line using the ``sum`` function::
+Das Gleiche kann sogar in einer Zeile mit der Funktion ``sum`` gemacht werden::
 
-	average_quick = sum(high_score) / len(high_score)	 
+	durchschnitt_kurzfassung = sum(high_score) / len(high_score)	 
 
 
-Since you don't necessarily know what values in the list are going to be, or how large the list will be, it's useful to know the ``append`` function. 
-For example, you can use it to fill a list with temperature readings or accelerometer values:: 
+Da du nicht unbedingt weißt, welche Werte in der Liste sein werden, oder wie groß die Liste sein wird, ist es nützlich, die ``append`` Funktion zu kennen. 
+Du kannst sie zum Beispiel benutzen, um eine Liste mit Temperaturmesswerten oder Beschleunigungsmessungen zu füllen:: 
 
 	from microbit import *
 
-	recorded_temperature = [] 		# Create an empty list
-	for i in range(100):			# Add 100 temperature values
-		recorded_temperature.append(temperature())
+	temperaturaufzeichnungen = [] 		# Erstelle eine leere Liste
+	for i in range(100):			# 100 Temperaturwerte hinzufügen
+		temperaturaufzeichnungen.append(temperature())
 		sleep(1000)			 
 
-The ``for`` loop is executed 100 times and ``i`` will have values from 0 to 99. This will measure the temperature every second for 100 seconds and append the value 
-to the end of the list. 
+Die ``for`` Schleife wird 100 mal ausgeführt und ``i`` hat Werte von 0 bis 99. Dadurch wird die Temperatur jede Sekunde für 100 Sekunden gemessen und der Wert 
+an das Ende der Liste angefügt. 
 
 
-Deleting items from a list is just as straightforward::
+Das Löschen von Elementen aus einer Liste ist genauso einfach::
 
 	high_scores.delete(24)
 
-This will delete the first element with the value 24.
-Alternatively, you might want to delete an element at a specific position, if you know it:: 
+Dadurch wird das erste Element mit dem Wert 24 gelöscht.
+Alternativ kannst du auch ein Element an einer bestimmten Position löschen, wenn du es kennst:: 
  
 	high_scores.pop(3)
 
-This will delete or 'pop' the element at the given position in the list. Note that::
+Dies löscht oder 'poppt' das Element an der angegebenen Position in der Liste. Beachte, dass::
 
 	high_scores.pop() 
 
-will delete the last element in the list.
+das letzte Element in der Liste löscht.
 
 
-.. tip:: You can look here_ to see more useful methods on lists.
+.. tip:: Du kannst hier_ nachschauen, um weitere nützliche Methoden für Listen zu sehen.
 
-.. _here: https://docs.python.org/2/tutorial/datastructures.html#tuples-and-sequences
+.. _hier: https://docs.python.org/2/tutorial/datastructures.html#tuples-and-sequences
 
-.. note:: You might be wondering whether strings can be considered to be a list. Even though string is an array of characters and we can even do similar operations on 
-	them (like slicing), they are both different types of objects with different methods (try to type ``dir(str)`` and ``dir(list)`` in your console). 
+.. note:: Du fragst dich vielleicht, ob Strings als Liste betrachtet werden können. Auch wenn string ein Array von Zeichen ist und wir sogar ähnliche Operationen mit ihnen durchführen können (wie z.B. 
+(wie z.B. Slicing), sind sie beide unterschiedliche Objekttypen mit unterschiedlichen Methoden (versuche ``dir(str)`` und ``dir(list)`` in deiner Konsole einzugeben). 
 
 Sorting
 ^^^^^^^
