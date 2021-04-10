@@ -178,11 +178,11 @@ einen Pfeil anzeigen, der seine Richtung entsprechend der Beschleunigung ändert
 
 	1. Gib an, ob der Rückgabewert True oder False ist. Wenn False, erkläre warum. 
 
-		a) "hello" == 'hello'
-		b) 10 == 10.0
-		c) 5/2 == 5//2
-		d) 5 in [x for x in range(0,5)]
-		e) 0 == False
-		f) 1 == true
-		g) 0.1 + 0.2 == 0.3
+		a) ``"hello" == 'hello'``
+		b) ``10 == 10.0``
+		c) ``5/2 == 5//2``
+		d) ``5 in [x for x in range(0,5)]``
+		e) ``0 == False``
+		f) ``1 == true``
+		g) ``0.1 + 0.2 == 0.3``
 		
