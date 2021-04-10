@@ -98,7 +98,7 @@ Funktion: ::
 
 	nurEinBeispiel() 
 
-	Jetzt sollte der Code ``"Innere Funktion, die alles verändert!"`` genau so ausgeben, wie wir es wollten.
+Jetzt sollte der Code ``"Innere Funktion, die alles verändert!"`` genau so ausgeben, wie wir es wollten.
 
 .. note:: Um mehr über Namespace und Scope in Python zu erfahren, schau dir die Dokumentation_ an.
 
