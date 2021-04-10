@@ -11,7 +11,7 @@ Alle Variablen bestehen aus drei Teilen: einem Namen, einem Datentyp und einem W
 
    Source: <https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables>
 
-Die Variable ``Name`` enthält die Zeichenkette ``Bob``, die Variable ``Gewinner`` enthält den Wert ``True`` und die Variable ``Score`` enthält den Wert ``35``.
+Die Variable ``name`` enthält die Zeichenkette ``Bob``, die Variable ``winner`` enthält den Wert ``True`` und die Variable ``score`` enthält den Wert ``35``.
 
 In Python wird eine Variable erstellt, wenn sie zum ersten Mal zugewiesen wird. Sobald dies geschehen ist, kann der Wert der Variable verändert werden (es sei denn, sie ist unveränderlich - mehr darüber erfährst du 
 im Abschnitt :ref:`Datenstrukturen`). ::
