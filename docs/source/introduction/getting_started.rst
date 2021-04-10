@@ -45,13 +45,13 @@ Die Abschnitte dieses Tutorials führen dich durch das Programmieren mit dem mic
 Programmierung zu bringen, so dass du ein eigenes kleines Projekt erstellen kannst, das du uns in der ersten Woche zeigen wirst, um dich mit der Programmierung von #circular_definition vertraut zu machen. 
 
 Du brauchst dich nicht unbedingt akribisch durch die ganze 
-Theorie, die in Grundlagen der Programmierung behandelt wird, durcharbeiten, besonders wenn du ein Anfänger bist. Fange an, einfache Programme mit dem micro:bit zu schreiben und lese über weitere Programmierkonzepte 
-nach und nach. Fühle dich frei, die Teile zu überspringen, in denen du dich sicher fühlst und wähle die Teile, die wichtig sind. Während du mehr über das Programmieren lernst, wirst du natürlich immer 
+Theorie, die in Grundlagen der Programmierung behandelt wird, durcharbeiten, besonders wenn du ein Anfänger bist. Fange an, einfache Programme mit dem micro:bit zu schreiben und lerne nach und nach  
+weitere Programmierkonzepte kennen indem du weiterliest. Fühle dich frei, die Teile zu überspringen, in denen du dich sicher fühlst und wähle die Teile, die wichtig sind. Während du mehr über das Programmieren lernst, wirst du natürlich immer 
 bessere und effizientere Wege finden, um deine Projekte der Vergangenheit zu erledigen, aber im Moment solltest du dich darauf konzentrieren, den Einstieg zu finden.
 
 Die hier behandelten Themen werden in der Regel nur gestreift und viele Dinge werden absichtlich nicht erklärt. Einige der wichtigen Fähigkeiten
 die du im Laufe der Schule und deiner späteren Arbeit brauchen wirst, sind das selbstständige Erforschen von Materialien und die Fähigkeit, offizielle Dokumente zu lesen. 
-Daher ermutigen wir dich, andere Unterlagen zu lesen, als die, die du hier findest.  
+Daher solltest du ruhig auch andere Unterlagen lesen, als die, die du hier findest.  
 
 Wenn deine Fähigkeiten mittel bis fortgeschritten sind, wirst du diese Dokumentation vielleicht nicht sehr interessant finden. Wie auch immer, der micro:bit ist ein äußerst flexibles Gerät und du könntest dann vielleicht 
 die micro:bit runtime_ erkunden, die dir mehr Flexibilität bei der Verwendung des Geräts bietet.  
