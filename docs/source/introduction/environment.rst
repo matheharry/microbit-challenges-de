@@ -11,17 +11,17 @@ Bevor du mit dem Programmieren beginnst, benötigst du einen Quellcode-Editor, u
     - Dein normaler Python-Editor mit einer Reihe von CLI-Befehlen (fortgeschritten)  
 
     Für dieses Tutorial werden wir den Mu-Editor verwenden, aber du kannst natürlich auch einen anderen Editor verwenden, der dir besser gefällt.
-    Um Mu herunterzuladen, gehe auf die Mu Website.
+    Um Mu herunterzuladen, gehe auf die Mu Website_.
 
 .. _`micro:bit Editor`: https://python.microbit.org
 .. _`Mu Editor`: https://codewith.mu/
 .. _`MicroPython App` : https://chrome.google.com/webstore/detail/micropython/lhdjeebhcalhgnbigbngiaglmladclbo?hl=de-GE
-.. _website: https://codewith.mu/en/
+.. _Website: https://codewith.mu/en/
 
 Du kannst verschiedene Optionen wählen, um Mu zu installieren. Die, die du höchstwahrscheinlich benutzen wirst, ist ein Installer für dein Gerät (Mac/Windows), oder die Installation durch ein
 Python-Paket (pip) über das :ref:`command line interface`, wenn du Python auf deinem Computer installiert hast.
 
-.. Anmerkung:: Für diejenigen, die vorher mit Python gearbeitet haben, MicroPython unterstützt keine regulären externen Python-Bibliotheken, 
+.. note:: Für diejenigen, die vorher mit Python gearbeitet haben, MicroPython unterstützt keine regulären externen Python-Bibliotheken, 
     da viele zu groß für ein Embedded Gerät sind. Allerdings wurde ein Subset speziell für die `MicroPython-Umgebung`_ neu erstellt. 
 
 .. _`MicroPython-Umgebung`: https://docs.micropython.org/en/latest/library/index.html
