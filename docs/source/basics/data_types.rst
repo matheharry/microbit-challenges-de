@@ -33,14 +33,14 @@ Operationen
 
 Zahlen
 --------
-Grundlegende arithmetische Operatoren: ``+,-,*,/`` werden auf die gleiche Art und Weise verwendet, wie du es mit einem Taschenrechner tun würdest. 
+Grundlegende arithmetische Operatoren: ``+,-,*,/`` werden auf die gleiche Art und Weise wie bei einem Taschenrechner verwendet, . 
 Schauen wir uns ein Beispiel an, bei dem mit den arithmetischen Operatoren die vom micro:bit gelesene Temperatur von Celsius in Fahrenheit umgerechnet wird::
 
 	celsiusTemp = temperature()
 	fahrenheitTemp = celsiusTemp * 9 / 5 + 32  
 
 .. warning:: Python kennt zwei Divisionsoperatoren: ``/`` und ``//``. Der erste gibt das Ergebnis aus, das du erwarten würdest, aber der zweite macht eine ganzzahlige Division: der 
-Rückgabewert ist das Ergebnis ohne Rest. Das bedeutet, dass der Rückgabewert immer nach unten gerundet wird.
+	Rückgabewert ist das Ergebnis ohne Rest. Das bedeutet, dass der Rückgabewert immer nach unten gerundet wird.
 
 Der Operator ``%``, genannt ``mod`` wird benutzt, um den Rest zu berechnen, wenn ein Wert durch einen anderen geteilt wird. Zum Beispiel: wenn du wissen willst, ob eine Zahl ungerade oder 
 gerade ist, könntest du versuchen, sie durch 2 zu dividieren. Wenn sie gerade ist, dann gibt es keinen Rest::
@@ -73,14 +73,14 @@ Um Zahlen und Strings miteinander zu verbinden, musst du zuerst die Zahl mit der
 	   display.scroll("Kalt" + str(temperature))
 
 .. note:: Python stellt von Haus aus eine Menge Methoden_ zur Verfügung, was den Umgang mit Strings sehr vereinfacht und viel Zeit spart (auch wenn die eigene Implementierung anfangs 
-eine gute Programmierübung sein kann). 
+	eine gute Programmierübung sein kann). 
 
 .. _Methoden: https://www.programiz.com/python-programming/methods/string
 
 Booleans
 ---------
 Ein boolescher Wert (boolean bzw. ``bool``) ist ein Wert, der entweder ``True`` oder ``False`` ist, auch dargestellt durch `1` und `0`. In Python gibt es eine Reihe von Operationen, die 
-die es dir erlauben, boolesche Ausdrücke zu erzeugen.  
+es dir erlauben, boolesche Ausdrücke zu erzeugen.  
 
 Vergleiche
 ^^^^^^^^^^^^
@@ -91,14 +91,14 @@ Vergleiche
 
    Source: <http://www.bbc.co.uk/education/guides/zy9thyc/revision>
 
-   Vergleichsoperationen sind nützlich, um Variablenwerte in bedingten Anweisungen oder Schleifen zu testen. Hier sind einige Beispiele für 
-   Vergleiche, wie sie im Deutschen geschrieben werden::
+Vergleichsoperationen sind nützlich, um Variablenwerte in bedingten Anweisungen oder Schleifen zu testen. Hier sind einige Beispiele für 
+Vergleiche, wie sie im Deutschen geschrieben werden::
 
     der Punktestand ist größer als 100
 	der Name ist gleich "Hugo"
  	die Geschwindigkeit ist ungleich 0
 
-Python has a set of comparison operators that allow us to write comparisons easily:
+	 Python hat eine Reihe von Vergleichsoperatoren, die es uns erlauben, Vergleiche einfach zu schreiben:
 
 .. tabularcolumns:: |L|l|
 
@@ -125,7 +125,7 @@ Logische Operationen
 
 Logische Operatoren testen den Wahrheitswert ihrer Operanden.
 
-+--------------+---------------------------------+--------------------+
++--------------+----------------------------------+--------------------+
 | **Operator** |  **Gibt ``True`` zurück, wenn**  | **Example**       |
 +==============+==================================+===================+
 | and          |  beide Operanden Wahr sind       | ``True and True`` |
@@ -160,7 +160,7 @@ einen Pfeil anzeigen, der seine Richtung entsprechend der Beschleunigung ändert
 	while True:
 	    x_richtung = accelerometer.get_x()
 
-	    if (x_richtung <= 100) and (x_acceleration >= 50):
+	    if (x_richtung <= 100) and (x_richtung >= 50):
 		display.show(Image.ARROW_N)
 
 	    elif x_richtung > 100:
