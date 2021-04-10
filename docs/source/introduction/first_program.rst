@@ -41,10 +41,10 @@ Der Rest des Programms ist ganz einfach::
 	from microbit import *
 
 	while True:
-      display.show('Hallo Welt!')
-         display.show(Image.HEART)
+         display.show('Hallo Welt!')
+      display.show(Image.HEART)
 	   print('Hallo du!')    
-    	   sleep(2000)
+    	sleep(2000)
       
 Es wird ``Hallo Welt!`` und dann das Herz auf dem LED Display angezeigt. 
 Die Anweisung ``print('Hallo du!')``, gibt die Nachricht in der REPL aus. Drücke nun die REPL Taste im Menü, um das REPL Fenster anzuzeigen:
