@@ -94,11 +94,11 @@ Vergleiche
 Vergleichsoperationen sind nützlich, um Variablenwerte in bedingten Anweisungen oder Schleifen zu testen. Hier sind einige Beispiele für 
 Vergleiche, wie sie im Deutschen geschrieben werden::
 
-    der Punktestand ist größer als 100
-	der Name ist gleich "Hugo"
- 	die Geschwindigkeit ist ungleich 0
+    		der Punktestand ist größer als 100
+			der Name ist gleich "Hugo"
+ 			die Geschwindigkeit ist ungleich 0
 
-	 Python hat eine Reihe von Vergleichsoperatoren, die es uns erlauben, Vergleiche einfach zu schreiben:
+Python hat eine Reihe von Vergleichsoperatoren, die es uns erlauben, Vergleiche einfach zu schreiben:
 
 .. tabularcolumns:: |L|l|
 
