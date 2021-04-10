@@ -18,12 +18,12 @@ im Abschnitt :ref:`Datenstrukturen`). ::
 
 	from microbit import *
 
-	myCount = 0
+	meineAnzahl = 0
 
 	while True:
     	   if button_a.was_pressed(): 
-	   myCount = myCount + 1
+	   meineAnzahl = meineAnzahl + 1
 	   sleep(2000)
-	   print("Number of presses: " + str(myCount))
+	   print("Anzahl an Tastendrücken: " + str(meineAnzahl))
 
-Hier haben wir die Variable ``myCount`` benutzt, um die Anzahl der Tastebetätigungen für Button ``A`` zu zählen.  Kannst du sagen, was dieser Codeschnipsel sonst noch macht?
+Hier haben wir die Variable ``meineAnzahl`` benutzt, um die Anzahl der Tastebetätigungen für Button ``A`` zu zählen.  Kannst du sagen, was dieser Codeschnipsel sonst noch macht?
