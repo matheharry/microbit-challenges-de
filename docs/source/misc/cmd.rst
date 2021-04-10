@@ -1,20 +1,20 @@
 ***********************
-Command Line Interface
+Kommandozeile
 ***********************
 
-In the same way you use a graphical user interface (GUI) to interact with your computer using an arrow by clicking, it's possible to do the same using a command line 
-interface (CLI) by issuing commands. You will be required to work using CLI from the beginning of your course, hence, it might be useful for you to become familiar with
-it in advance. 
+Genauso wie du eine grafische Benutzeroberfläche (GUI) benutzt, um mit deinem Computer zu interagieren, indem du einen Pfeil anklickst, ist es möglich, das Gleiche mit einer Kommandozeile zu tun 
+(Command Line Interface - CLI) zu tun, indem du Befehle eingibst. Du wirst von Beginn deines Kurses an mit der CLI arbeiten müssen, daher ist es sinnvoll, dass du dich im Vorfeld mit ihr 
+vertraut machst. 
 
 .. figure:: assets/cmd_help.gif
    :align: center 
         
-   Typing 'help' into Windows Command Prompt shows all the commands and what they do.
+   Die Eingabe von 'help' in der Windows-Eingabeaufforderung zeigt alle Befehle und was sie tun.
 
-CLI used to be the usual way of interacting with programs and OS in the past, as it has much fewer system requirements. Now the majority of users use the GUI, while CLI 
-has become a tool of the advanced users. Although it may look daunting and mysterious at the beginning, it's a very efficient tool for carrying out configuration and 
-other tasks, since its functionality goes beyond that of a GUI.
+CLI war in der Vergangenheit der übliche Weg, um mit Programmen und dem Betriebssystem zu interagieren, da es viel weniger Systemanforderungen hat. Jetzt benutzt die Mehrheit der Benutzer die GUI, während CLI 
+zu einem Werkzeug der fortgeschrittenen Benutzer geworden ist. Obwohl es am Anfang abschreckend und mysteriös aussehen mag, ist es ein sehr effizientes Werkzeug für die Durchführung von Konfigurations- und 
+anderen Aufgaben, da seine Funktionalität über die einer GUI hinausgeht.
 
-The way you would use your OS CLI depends on your system, so it won't be covered in this tutorial. However, we encourage you to go and explore the basics (or advanced
-concepts) on your own.
+Die Art und Weise, wie du die Kommandozeile deines Betriebssystems verwendest, hängt von deinem System ab und wird daher nicht in diesem Tutorial behandelt. Wir ermutigen dich jedoch, die Grundlagen (oder fortgeschrittene Konzepte) 
+auf eigene Faust zu erkunden.
 
