@@ -197,7 +197,7 @@ Zum Beispiel kannst du die Highscores aller Spieler speichern: ::
 	game_register.get('dent')		
 
 
-Übungsfragen
+Übungsaufgaben
 ===================
 
 1. Verwende die micro:bit Liste ``Image.ALL_CLOCKS`` und durchlaufe alle Elemente in der Liste mit einer for Schleife und zeige sie auf dem LED Bildschirm an.

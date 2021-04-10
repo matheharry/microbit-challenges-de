@@ -65,7 +65,7 @@ Freunde mit einer Nachricht begrüßt, die ihren Namen und ihr Alter enthält: :
 Die Funktion ``printBirthdayGreeting`` stellt die Geburtstagsnachricht für uns zusammen und gibt einen String zurück. ``str()`` wird benutzt, um das ``Alter``, 
 welches eine Zahl ist, in einen String zu verwandeln.  Du musst keine Funktionen oder Rückgabewerte in deinen Funktionen verwenden, es sei denn, du willst/brauchst sie.	
 
-Übungsfragen
+Übungsaufgaben
 ===================
 
 1. Schreibe eine Funktion ``blink(x, y)``, die eine LED an den Koordinaten, die durch die Parameter x und y angegeben werden, einmal blinken lässt.

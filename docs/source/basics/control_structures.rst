@@ -105,7 +105,7 @@ wenn die Temperatur auf dem micro:bit unter einen bestimmten Wert fällt, also m
 
 	display.show(Image.HAPPY)
 
-Übungsfragen
+Übungsaufgaben
 ===================
 
 1. Zeige ein anderes Bild an, je nachdem in welche Seite der microbit gekippt ist.

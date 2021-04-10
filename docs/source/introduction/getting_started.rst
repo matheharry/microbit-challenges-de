@@ -19,8 +19,9 @@ die Möglichkeiten sind endlos. Lass uns einen Blick auf die Funktionen werfen, 
    
    Source: https://microbit.org/guide/features/
 
-Du kannst den micro:bit mit verschiedenen Sprachen programmieren: MicroPython, C++ oder JavaScript. Dieses Tutorial konzentriert sich auf das Programmieren von micro:bit mit
-MicroPython, aber wenn du bereits mit Python vertraut bist oder eine zusätzliche Herausforderung suchst, schau dir den Abschnitt :ref:`Programmierung des micro:bit mit anderen Sprachen` an. 
+Du kannst den micro:bit mit verschiedenen Sprachen programmieren:
+MicroPython, C++ oder JavaScript. Dieses Tutorial konzentriert sich auf das Programmieren von micro:bit mit
+MicroPython, aber wenn du bereits mit Python vertraut bist oder eine zusätzliche Herausforderung suchst, schau dir den Abschnitt :ref:`Programmierung des micro:bit mit anderen Sprachen`_ an. 
 C/C++ könnte besonders nützlich sein, da es die Hauptsprache ist, die für die Programmierung von Embedded-Geräten verwendet wird.
 
 .. _Sprachen: https://microbit.org/code/
