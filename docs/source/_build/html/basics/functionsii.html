@@ -1,0 +1,355 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Functions II &mdash; UCL BBC micro:bit tutorial</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Classes and Objects" href="classes_objects.html" />
+    <link rel="prev" title="Functions I" href="functions.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UCL Tutorial: BBC micro:bit MicroPython
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/getting_started.html">Micro:bit - Erste Schritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/environment.html">Setting Up Your Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/first_program.html">First Program</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Micro:bit Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/display.html">LED Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/buttons.html">Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/accelerometer.html">Accelerometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/compass.html">Compass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/thermometer.html">Thermometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/music.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/edge.html">Edge Connector</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basics of programming</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="data_types.html">Data Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variablen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="control_structures.html">Control Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_structures.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Functions I</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Functions II</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#scope">Scope</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#global-and-local-variables">Global and Local Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nonlocal-variables">Nonlocal variables</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#passing-parameters">Passing parameters</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="classes_objects.html">Classes and Objects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Challenges</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/morse.html">Morse Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/caesar.html">Caesar Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/substitution.html">Substitution Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/vigenere.html">Vigenère Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/bop-it.html">Bop-it</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/consonant-or-vowel.html">Consonant or Vowel?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/egg-basket.html">Catch the Eggs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/spirit_level.html">Sprit Level</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/theremin.html">Theremin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/radio.html">Send a Message</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../misc/other_languages.html">Programming Micro:bit Using Other Languages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/cmd.html">Command Line Interface</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UCL Tutorial: BBC micro:bit MicroPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Functions II</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/basics/functionsii.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="functions-ii">
+<h1>Functions II<a class="headerlink" href="#functions-ii" title="Permalink to this headline">¶</a></h1>
+<p>Now that you know how to use functions in practice, there are several more concepts that will help you understand behaviour of functions not only in Python,
+but other languages as well.</p>
+<div class="section" id="scope">
+<h2>Scope<a class="headerlink" href="#scope" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="global-and-local-variables">
+<h3>Global and Local Variables<a class="headerlink" href="#global-and-local-variables" title="Permalink to this headline">¶</a></h3>
+<p>Imagine you want to use the slightly modified <code class="docutils literal notranslate"><span class="pre">printBirthdayGreeting()</span></code> function from before and you want to increment age every time the function is called:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Johann&quot;</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">32</span>
+
+<span class="k">def</span> <span class="nf">printBirthdayGreeting</span><span class="p">():</span>
+        <span class="n">age</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="s2">&quot;Happy Birthday &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;, you are &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; years old&quot;</span>
+
+<span class="n">printBirthdayGreeting</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Can you spot what is wrong? If you try to run it, you’ll probably get this message: `` UnboundLocalError: local variable ‘age’ referenced before assignment``.</p>
+<p>To understand this, we have to talk about scope. Scope is an ‘area’ in which a variable is defined, can be accessed and written to. From this point of view we know two
+types of variables: global and local. By default, all variables defined within a function are local - you cannot access them outside of the function. And since the scope
+within the function is different from the global one, it’s possible to use the same name for two different variables.</p>
+<p>Can you explain what happened in the code snippet above now?</p>
+<p><code class="docutils literal notranslate"><span class="pre">age</span></code> outside of <code class="docutils literal notranslate"><span class="pre">printBirthdayGreeting()</span></code> function is a global variable. However, when we want to access it inside the function, Python considers it to be a new
+local variable. How do we solve this? We can declare the variable <code class="docutils literal notranslate"><span class="pre">age</span></code> as <code class="docutils literal notranslate"><span class="pre">global</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Johann&quot;</span>
+<span class="n">age</span> <span class="o">=</span> <span class="mi">32</span>
+
+<span class="k">def</span> <span class="nf">printBirthdayGreeting</span><span class="p">():</span>
+        <span class="k">global</span> <span class="n">age</span>
+        <span class="n">age</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="s2">&quot;Happy Birthday &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;, you are &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; years old&quot;</span>
+</pre></div>
+</div>
+<p>This will let Python now, that the age variable we mean is the one in global namespace.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Using global variables is generally a bad practice and you should avoid it, since it makes the purpose of your functions less obvious and you can end up with
+‘spaghetti’ code. A better way to do this is to pass variable age as one of the arguments of the function (example below).</p>
+</div>
+<p>Here is an example for a function that passes variables as arguments:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">printBirthdayGreeting</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+        <span class="n">age</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">return</span> <span class="s2">&quot;Happy Birthday &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;, you are &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">age</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot; years old&quot;</span>
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You will be hearing about ‘best practices’ a lot. How do you determine what is a best practice and what is not? In general, best practice is what makes your
+code more readable to others. You can look at style <a class="reference external" href="https://www.python.org/dev/peps/pep-0008/">guides</a> for a language you’re coding in, but in the end it’s always about good judgment, since no rule applies
+to all cases.</p>
+</div>
+<div class="figure align-center" id="id1">
+<img alt="../_images/code_quality.png" src="../_images/code_quality.png" />
+<p class="caption"><span class="caption-text">Source: xkcd <a class="reference external" href="https://xkcd.com/1513/">https://xkcd.com/1513/</a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="nonlocal-variables">
+<h3>Nonlocal variables<a class="headerlink" href="#nonlocal-variables" title="Permalink to this headline">¶</a></h3>
+<p>A curious case arises with the use of nested functions. So let’s say you want to change a local variable of the <code class="docutils literal notranslate"><span class="pre">justAnExample()</span></code> function using the nested
+function:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">justAnExample</span><span class="p">():</span>
+        <span class="k">def</span> <span class="nf">continuingExample</span><span class="p">():</span>
+                <span class="n">variable</span> <span class="o">=</span> <span class="s2">&quot;Inner function that changes everything!&quot;</span>
+
+        <span class="n">variable</span> <span class="o">=</span> <span class="s2">&quot;Outer function&quot;</span>
+        <span class="n">continuingExample</span><span class="p">()</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="n">variable</span><span class="p">)</span>
+
+<span class="n">justAnExample</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>You already know why this does not work. But how do you fix it? You cannot declare the variable global, because it’s within a function - it’s local and there
+is another local scope within the <code class="docutils literal notranslate"><span class="pre">continuingExample()</span></code> function. To resolve this situation, you can declare a variable to be <code class="docutils literal notranslate"><span class="pre">nonlocal</span></code>:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">justAnExample</span><span class="p">():</span>
+        <span class="k">def</span> <span class="nf">continuingExample</span><span class="p">():</span>
+                <span class="k">nonlocal</span> <span class="n">variable</span>
+                <span class="n">variable</span> <span class="o">=</span> <span class="s2">&quot;Inner function that changes everything!&quot;</span>
+
+        <span class="n">variable</span> <span class="o">=</span> <span class="s2">&quot;Outer function&quot;</span>
+        <span class="n">continuingExample</span><span class="p">()</span>
+
+        <span class="nb">print</span><span class="p">(</span><span class="n">variable</span><span class="p">)</span>
+
+<span class="n">justAnExample</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Now the code should print <code class="docutils literal notranslate"><span class="pre">&quot;Inner</span> <span class="pre">function</span> <span class="pre">that</span> <span class="pre">changes</span> <span class="pre">everything!&quot;</span></code> exactly the way we wanted.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To learn more about namespace and scope in Python, look at the <a class="reference external" href="https://docs.python.org/3/tutorial/classes.html">documentation</a>.</p>
+</div>
+</div>
+</div>
+<div class="section" id="passing-parameters">
+<h2>Passing parameters<a class="headerlink" href="#passing-parameters" title="Permalink to this headline">¶</a></h2>
+<p>An important concept that will have a visible impact on the working of your functions is passing parameters. This describes the way a variable is treated as it’s passed
+in a function - in a pass-by-value scenario, the argument is treated as a new local variable and has no influence on the original variable (if a variable was passed as
+an argument). In the case of pass-by-reference, the variable passed as an argument can be affected within a function. In Python, the method of parameter passing is
+a specific combination of the two - parameter are passed by <a class="reference external" href="https://docs.python.org/3/tutorial/controlflow.html#defining-functions">value of object reference</a>.</p>
+<p>For a good explanation of passing parameters and the difference between different techniques, I would recommend you to read this <a class="reference external" href="https://robertheaton.com/2014/02/09/pythons-pass-by-object-reference-as-explained-by-philip-k-dick/">blogpost by Robert Heaton</a>.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="classes_objects.html" class="btn btn-neutral float-right" title="Classes and Objects" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="functions.html" class="btn btn-neutral float-left" title="Functions I" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2016
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

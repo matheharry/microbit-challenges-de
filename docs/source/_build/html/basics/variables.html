@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Variablen &mdash; UCL BBC micro:bit tutorial</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Control Structures" href="control_structures.html" />
+    <link rel="prev" title="Data Types" href="data_types.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UCL Tutorial: BBC micro:bit MicroPython
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/getting_started.html">Micro:bit - Erste Schritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/environment.html">Setting Up Your Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/first_program.html">First Program</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Micro:bit Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/display.html">LED Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/buttons.html">Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/accelerometer.html">Accelerometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/compass.html">Compass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/thermometer.html">Thermometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/music.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/edge.html">Edge Connector</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basics of programming</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="data_types.html">Data Types</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Variablen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="control_structures.html">Control Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_structures.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Functions I</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functionsii.html">Functions II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes_objects.html">Classes and Objects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Challenges</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/morse.html">Morse Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/caesar.html">Caesar Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/substitution.html">Substitution Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/vigenere.html">Vigenère Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/bop-it.html">Bop-it</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/consonant-or-vowel.html">Consonant or Vowel?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/egg-basket.html">Catch the Eggs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/spirit_level.html">Sprit Level</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/theremin.html">Theremin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/radio.html">Send a Message</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../misc/other_languages.html">Programming Micro:bit Using Other Languages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/cmd.html">Command Line Interface</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UCL Tutorial: BBC micro:bit MicroPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Variablen</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/basics/variables.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="variablen">
+<h1>Variablen<a class="headerlink" href="#variablen" title="Permalink to this headline">¶</a></h1>
+<p>Eine Variable ist ein Name, den du verwendest, um auf einen Speicherplatz zu verweisen, an dem ein Wert gespeichert ist. Einfacher ausgedrückt kann man sie sich als eine Box vorstellen, die einen Wert speichert.
+Alle Variablen bestehen aus drei Teilen: einem Namen, einem Datentyp und einem Wert. In der Abbildung unten gibt es drei Variablen mit unterschiedlichen Datentypen:</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/variable.jpg"><img alt="../_images/variable.jpg" src="../_images/variable.jpg" style="width: 464.5px; height: 240.0px;" /></a>
+<p class="caption"><span class="caption-text">Source: &lt;<a class="reference external" href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables">https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables</a>&gt;</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>Die Variable <code class="docutils literal notranslate"><span class="pre">name</span></code> enthält die Zeichenkette <code class="docutils literal notranslate"><span class="pre">Bob</span></code>, die Variable <code class="docutils literal notranslate"><span class="pre">winner</span></code> enthält den Wert <code class="docutils literal notranslate"><span class="pre">True</span></code> und die Variable <code class="docutils literal notranslate"><span class="pre">score</span></code> enthält den Wert <code class="docutils literal notranslate"><span class="pre">35</span></code>.</p>
+<p>In Python wird eine Variable erstellt, wenn sie zum ersten Mal zugewiesen wird. Sobald dies geschehen ist, kann der Wert der Variable verändert werden (es sei denn, sie ist unveränderlich - mehr darüber erfährst du
+im Abschnitt <span class="xref std std-ref">Datenstrukturen</span>).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="n">myCount</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+   <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+   <span class="n">myCount</span> <span class="o">=</span> <span class="n">myCount</span> <span class="o">+</span> <span class="mi">1</span>
+   <span class="n">sleep</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Number of presses: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">myCount</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>Hier haben wir die Variable <code class="docutils literal notranslate"><span class="pre">myCount</span></code> benutzt, um die Anzahl der Tastebetätigungen für Button <code class="docutils literal notranslate"><span class="pre">A</span></code> zu zählen.  Kannst du sagen, was dieser Codeschnipsel sonst noch macht?</p>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="control_structures.html" class="btn btn-neutral float-right" title="Control Structures" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="data_types.html" class="btn btn-neutral float-left" title="Data Types" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2016
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

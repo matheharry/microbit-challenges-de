@@ -1,0 +1,317 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>First Program &mdash; UCL BBC micro:bit tutorial</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="LED Display" href="../tutorials/display.html" />
+    <link rel="prev" title="Setting Up Your Environment" href="environment.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UCL Tutorial: BBC micro:bit MicroPython
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Micro:bit - Erste Schritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="environment.html">Setting Up Your Environment</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">First Program</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#design-the-code">Design the Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#upload-your-program">Upload your program</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#make-a-change">Make a change</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Micro:bit Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/display.html">LED Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/buttons.html">Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/accelerometer.html">Accelerometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/compass.html">Compass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/thermometer.html">Thermometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/music.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/edge.html">Edge Connector</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basics of programming</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../basics/data_types.html">Data Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/variables.html">Variablen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/control_structures.html">Control Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/data_structures.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/functions.html">Functions I</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/functionsii.html">Functions II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/classes_objects.html">Classes and Objects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Challenges</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/morse.html">Morse Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/caesar.html">Caesar Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/substitution.html">Substitution Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/vigenere.html">Vigenère Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/bop-it.html">Bop-it</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/consonant-or-vowel.html">Consonant or Vowel?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/egg-basket.html">Catch the Eggs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/spirit_level.html">Sprit Level</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/theremin.html">Theremin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/radio.html">Send a Message</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../misc/other_languages.html">Programming Micro:bit Using Other Languages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/cmd.html">Command Line Interface</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UCL Tutorial: BBC micro:bit MicroPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>First Program</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/introduction/first_program.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="first-program">
+<h1>First Program<a class="headerlink" href="#first-program" title="Permalink to this headline">¶</a></h1>
+<p>In general, the process of designing code is composed of these 4 steps. You can expect to go around the loop  quite a few times before you get your code working.</p>
+<a class="reference internal image-reference" href="../_images/microbit_lifecycle.jpg"><img alt="../_images/microbit_lifecycle.jpg" class="align-center" src="../_images/microbit_lifecycle.jpg" style="width: 672.0px; height: 503.99999999999994px;" /></a>
+<div class="section" id="design-the-code">
+<h2>Design the Code<a class="headerlink" href="#design-the-code" title="Permalink to this headline">¶</a></h2>
+<p>First of all you are going to write a program to display the message “Hello UCL!” followed by an image on the display of your micro:bit and print “Hi there” to Mu console.
+It’s a good practice to think about what you want your code to do and how you’re going to do it before you start writing. There’s not much planning and design to do here,
+but just so that you understand what a plan might look like:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Repeat</span> <span class="n">forever</span><span class="p">:</span>
+    <span class="n">Scroll</span> <span class="s2">&quot;Hello UCL!&quot;</span> <span class="n">across</span> <span class="n">the</span> <span class="n">LED</span> <span class="n">display</span>
+    <span class="n">Display</span> <span class="n">a</span> <span class="n">heart</span> <span class="n">icon</span>
+    <span class="n">Print</span> <span class="s2">&quot;Hello World!&quot;</span> <span class="n">on</span> <span class="n">a</span> <span class="n">console</span>
+    <span class="n">Delay</span> <span class="k">for</span> <span class="mi">2</span> <span class="n">seconds</span>
+</pre></div>
+</div>
+<p>There are two ways to display the output of your code: you either use outputs available on the micro:bit (eg. the LEDs) or the REPL (Read Print Evaluate Loop)
+console available in the editor using the <code class="docutils literal notranslate"><span class="pre">print</span></code> statement. The console is especially useful for finding bugs (errors) in your code or trying out
+new concepts or ideas.</p>
+<p>Let’s go through this line-by-line:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>Importing packages (like microbit) in Python makes us able to use functions or objects which are not defined in pure Python. In this case it’s for example <code class="docutils literal notranslate"><span class="pre">display</span></code> or <code class="docutils literal notranslate"><span class="pre">show</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</pre></div>
+</div>
+<p>This means do something (whatever follows this statement and is indented) while the condition following <code class="docutils literal notranslate"><span class="pre">while</span></code> is true. In this case, the condition is the keyword <code class="docutils literal notranslate"><span class="pre">True</span></code>,
+means that this loop will go on forever - it’s the same as writing (5 &gt; 1), which evaluates to <code class="docutils literal notranslate"><span class="pre">True</span></code> in the end anyway.
+The rest of the program is straightforward:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="s1">&#39;Hello UCL!&#39;</span><span class="p">)</span>
+    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HEART</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello World!&#39;</span><span class="p">)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">2000</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This displays <code class="docutils literal notranslate"><span class="pre">Hello</span> <span class="pre">UCL!</span></code> on the LED display and then shows the heart.
+The statement <code class="docutils literal notranslate"><span class="pre">print('Hi</span> <span class="pre">There!!')</span></code>, will print the message in the REPL. Press the REPL button in the menu now to show the REPL window:</p>
+<a class="reference internal image-reference" href="../_images/mu_repl_bar.png"><img alt="../_images/mu_repl_bar.png" class="align-center" src="../_images/mu_repl_bar.png" style="width: 725.1999999999999px; height: 109.89999999999999px;" /></a>
+<p>The REPL window shows us messages from the micro:bit and also allows us to send commands directly to the micro:bit. For now, we’ll just be using the REPL
+to see messages that we print and error messages.</p>
+</div>
+<div class="section" id="upload-your-program">
+<h2>Upload your program<a class="headerlink" href="#upload-your-program" title="Permalink to this headline">¶</a></h2>
+<p>Now click on the Flash button in Mu and see what happens.</p>
+<a class="reference internal image-reference" href="../_images/first_program.gif"><img alt="../_images/first_program.gif" class="align-center" src="../_images/first_program.gif" style="width: 723.8px; height: 463.4px;" /></a>
+<p>The result on the micro:bit should look something like this:</p>
+<a class="reference internal image-reference" href="../_images/example_program.gif"><img alt="../_images/example_program.gif" class="align-center" src="../_images/example_program.gif" style="width: 315.6px; height: 260.40000000000003px;" /></a>
+<p>Now try to open the REPL console:</p>
+<img alt="../_images/first_program_console.png" src="../_images/first_program_console.png" />
+</div>
+<div class="section" id="make-a-change">
+<h2>Make a change<a class="headerlink" href="#make-a-change" title="Permalink to this headline">¶</a></h2>
+<p>The best way to learn what something is for is to try and change your code (and read the documentation, obviously).</p>
+<blockquote>
+<div><p>&lt;|°_°|&gt;</p>
+</div></blockquote>
+<p>Are you wondering what the delay is for? Is it necessary? Try deleting it.
+What happens if you replace <code class="docutils literal notranslate"><span class="pre">True</span></code> by <code class="docutils literal notranslate"><span class="pre">False</span></code>?
+What happens when you replace <code class="docutils literal notranslate"><span class="pre">scroll</span></code> by <code class="docutils literal notranslate"><span class="pre">show</span></code>?</p>
+<p>Now you have written your first program. Next sections will tell you more about writing more complex programms and about further uses of micro:bit.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>See the full micro:bit <a class="reference external" href="https://microbit-micropython.readthedocs.io/en/latest/tutorials/introduction.html">documentation</a> for MicroPython.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../tutorials/display.html" class="btn btn-neutral float-right" title="LED Display" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="environment.html" class="btn btn-neutral float-left" title="Setting Up Your Environment" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2016
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

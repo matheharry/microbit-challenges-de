@@ -1,0 +1,279 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Vigenère Cipher &mdash; UCL BBC micro:bit tutorial</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Bop-it" href="../games/bop-it.html" />
+    <link rel="prev" title="Substitution Cipher" href="substitution.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> UCL Tutorial: BBC micro:bit MicroPython
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/getting_started.html">Micro:bit - Erste Schritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/environment.html">Setting Up Your Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/first_program.html">First Program</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Micro:bit Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/display.html">LED Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/buttons.html">Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/accelerometer.html">Accelerometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/compass.html">Compass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/thermometer.html">Thermometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/music.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/edge.html">Edge Connector</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basics of programming</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/data_types.html">Data Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/variables.html">Variablen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/control_structures.html">Control Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/data_structures.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/functions.html">Functions I</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/functionsii.html">Functions II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/classes_objects.html">Classes and Objects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Challenges</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="morse.html">Morse Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="caesar.html">Caesar Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="substitution.html">Substitution Cipher</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Vigenère Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../games/bop-it.html">Bop-it</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../games/consonant-or-vowel.html">Consonant or Vowel?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../games/egg-basket.html">Catch the Eggs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sensors/spirit_level.html">Sprit Level</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sensors/theremin.html">Theremin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sensors/radio.html">Send a Message</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/other_languages.html">Programming Micro:bit Using Other Languages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/cmd.html">Command Line Interface</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">UCL Tutorial: BBC micro:bit MicroPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Vigenère Cipher</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/challenges/crypto/vigenere.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="vigenere-cipher">
+<h1>Vigenère Cipher<a class="headerlink" href="#vigenere-cipher" title="Permalink to this headline">¶</a></h1>
+<p>This cipher, also called ‘le chiffre indéchiffrable’, was first described by Giovan Battista Belazzo. Although the concept is easy to understand, the cipher resisted
+breaking for three centuries until Friedrich Kasiski introduced a first succesful general attack.</p>
+<div class="figure align-center" id="id1">
+<img alt="../../_images/vigenere_table.jpg" src="../../_images/vigenere_table.jpg" />
+<p class="caption"><span class="caption-text">Vigenère table (Source: <a class="reference external" href="https://tinyurl.com/yxmbt48f">https://tinyurl.com/yxmbt48f</a>)</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>It works similarly to Caesar substitution cipher, since it’s also based on shifting aplhabet positions. This time instead of shifting all letters
+by the same value, we choose a keyword which determines a different value for each letter in the plaintext.</p>
+<p>As an example, suppose that this is our plaintext:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ATTACKATDAWN</span>
+</pre></div>
+</div>
+<p>Then you choose a keyword (such as snake) and repeat it for each row of plaintext:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">SNAKESNAKESN</span>
+</pre></div>
+</div>
+<p>Then you use each letter of the key to determine the shift of every letter of the plaintext:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Plaintext</span><span class="p">:</span>  <span class="n">ATTACKATDAWN</span>
+<span class="n">Key</span><span class="p">:</span>        <span class="n">SNAKESNAKESN</span>
+<span class="n">Ciphertext</span><span class="p">:</span> <span class="n">SGTKGCNTNEOA</span>
+</pre></div>
+</div>
+<p>You can try to encipher and decipher your own messages. If you’re up for a challenge, try to find the key and decrypt this ciphertext enciphered using Vigenère cipher (hint:
+it’s not easy):</p>
+<blockquote>
+<div><p>Wckl’g jwym avr Tlvfqydnxkwn Vyehqgxat oof im lhm nqmna oyrmavz. Vi  qtfg gwym  hzpdfhs  wf  p  ahschgjxzg  idjtawyt  jbxivs  dhyars  zr  avr  ucktsaiympca  dd  lbungq
+tur  naqh  ucgtq  bag  vcrhewpprbuu  rudxjh  bc  axyhnxl  vhfodl-­‐uhgrs  jbms  sdpfz.</p>
+<p>Hut  Fbaquwgdlf’f  Vsbks  Gd Ral Unayqf  oyhm  flbgxmgz  oyrmavz.  Vi  qtfg  gwym  avr  qcla  rexld  pb  rmglasarc  bz  hut  ntu  unayvawp  vyknzr  qjtzhrg.  Gm
+zolh  rahh  gwc  xmtrrr  hm  o  cpl  zhznrrbj  ungeel  pypqmlf  vh  jbrs  uptbuu  ldsk  ifnxll  zanhfxk  chi  zr  h  gyxax  vt  ytkhu  kepnilr  edsgk  o  yppzl
+ubab  uywpz.  Ral  uhxbx  hzfd  rxszf  nmn  vb  jwgvo  dyplxag  gwc  ulgg  eyg  noypampq  tppzss  oaylaseh  ykl  avmcw,  ocj  bsvo  mbj  atu  skecva  hb  eyr  mce
+dlx  hbq  lfta  jbasgaoen  mknoaxxtawbcq  xewfi  rh  osye  whb  frwyupzviyml  osickdoesq.</p>
+<p>Mos  Uxrvovvzck’z  Uhxbx  Ac  Gwc  Zhznmw  llzyh  ptavrg  zxahrg  rahb  gwc  Xuqlrjhwsqxy  Zhznrrbjo.</p>
+<p class="attribution">—Smnnznh Ywhaf, Wgmjvuxixy’g Txswl Hb Ifx Noypvr</p>
+</div></blockquote>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../games/bop-it.html" class="btn btn-neutral float-right" title="Bop-it" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="substitution.html" class="btn btn-neutral float-left" title="Substitution Cipher" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2016
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,356 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Control Structures &mdash; UCL BBC micro:bit tutorial</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Data Structures" href="data_structures.html" />
+    <link rel="prev" title="Variablen" href="variables.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UCL Tutorial: BBC micro:bit MicroPython
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/getting_started.html">Micro:bit - Erste Schritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/environment.html">Setting Up Your Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/first_program.html">First Program</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Micro:bit Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/display.html">LED Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/buttons.html">Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/accelerometer.html">Accelerometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/compass.html">Compass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/thermometer.html">Thermometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/music.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/edge.html">Edge Connector</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basics of programming</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="data_types.html">Data Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variablen</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Control Structures</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#conditional-statements">Conditional statements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#loops">Loops</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#for-loops">For loops</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#while-loops">While loops</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#practice-questions">Practice Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="data_structures.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Functions I</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functionsii.html">Functions II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes_objects.html">Classes and Objects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Challenges</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/morse.html">Morse Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/caesar.html">Caesar Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/substitution.html">Substitution Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/vigenere.html">Vigenère Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/bop-it.html">Bop-it</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/consonant-or-vowel.html">Consonant or Vowel?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/egg-basket.html">Catch the Eggs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/spirit_level.html">Sprit Level</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/theremin.html">Theremin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/radio.html">Send a Message</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../misc/other_languages.html">Programming Micro:bit Using Other Languages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/cmd.html">Command Line Interface</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UCL Tutorial: BBC micro:bit MicroPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Control Structures</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/basics/control_structures.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="control-structures">
+<h1>Control Structures<a class="headerlink" href="#control-structures" title="Permalink to this headline">¶</a></h1>
+<p>The first program in Getting Started section consisted of sequential execution of tasks. However, the vast majority of times you will need a more complex structure
+for your code - whether it is control over which statements get executed or how many times they get executed. This is when control structures introduced in this section
+- such as loops or conditional statements - come in handy.</p>
+<a class="reference internal image-reference" href="../_images/control_structures_diagram.png"><img alt="../_images/control_structures_diagram.png" class="align-center" src="../_images/control_structures_diagram.png" style="width: 699.2px; height: 496.0px;" /></a>
+<div class="section" id="conditional-statements">
+<h2>Conditional statements<a class="headerlink" href="#conditional-statements" title="Permalink to this headline">¶</a></h2>
+<p>First example of a use case of control structures arises when you want to execute a part of your code only if a certain condition is satisfied.
+For example, if you want to trigger an event only if a button is pressed:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">love</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
+                <span class="n">love</span><span class="o">.</span><span class="n">badaboom</span><span class="p">()</span>
+
+        <span class="k">elif</span> <span class="n">button_b</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
+                <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HAPPY</span><span class="p">)</span>
+
+        <span class="k">else</span><span class="p">:</span>
+                <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">GHOST</span><span class="p">)</span>
+
+<span class="n">sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In case you want to execute a different task under several different conditions, use <code class="docutils literal notranslate"><span class="pre">elif</span></code> (short for <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code>) statement. <code class="docutils literal notranslate"><span class="pre">else</span></code> statement comes in useful if you want to do something
+in the rest of the cases, where no condition is defined. The latter two statements are only usable if you had used an <code class="docutils literal notranslate"><span class="pre">if</span></code> statement previously, but neither is mandatory.</p>
+</div>
+<div class="section" id="loops">
+<h2>Loops<a class="headerlink" href="#loops" title="Permalink to this headline">¶</a></h2>
+<p>Loops are a very useful structure in case you want to repeat a certain block of code several times over.
+There are two types of loops: <code class="docutils literal notranslate"><span class="pre">for</span></code> loops, that keep count of the number of times a block of code is executed, and <code class="docutils literal notranslate"><span class="pre">while</span></code> loops which
+perform an action until a condition you’ve specified is no longer true.</p>
+<div class="section" id="for-loops">
+<h3>For loops<a class="headerlink" href="#for-loops" title="Permalink to this headline">¶</a></h3>
+<p>There are times when you want to do an action a specific number of times, or you need to keep track of how many times it was performed. For example you’d like
+to turn on the LEDs on the uppermost horizontal and rightmost vertical side. You can use a <code class="docutils literal notranslate"><span class="pre">for</span></code> loop to change which LED lights up like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span> <span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+   <span class="c1"># set the pixel in column 0, row i to 9</span>
+   <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+
+   <span class="c1"># set the pixel in column 4, row i to 9</span>
+   <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here is another example.  You could use a <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">loop</span></code> to turn on all the LEDs in sequence, one at a time:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
+    <span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">):</span>
+        <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">for</span> <span class="pre">loop</span></code> lets you execute a loop a specific number of times using a counter. The outer loop:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">):</span>
+</pre></div>
+</div>
+<p>will execute the loop five times substituting <code class="docutils literal notranslate"><span class="pre">x</span></code> for consecutive values in the range <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">4</span></code> each time (in Python and most programming languages,
+we always start counting from <code class="docutils literal notranslate"><span class="pre">0</span></code>). The loop will stop before it reaches 5, the final value in the range.</p>
+<p>The inner loop:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">5</span><span class="p">):</span>
+</pre></div>
+</div>
+<p>will execute the loop five times substituting <code class="docutils literal notranslate"><span class="pre">y</span></code> for consecutive values in the range <code class="docutils literal notranslate"><span class="pre">0</span></code> to <code class="docutils literal notranslate"><span class="pre">4</span></code> each time. Again, the loop will stop before it reaches the final value in the range.</p>
+</div>
+<div class="section" id="while-loops">
+<h3>While loops<a class="headerlink" href="#while-loops" title="Permalink to this headline">¶</a></h3>
+<p>One of the most common things you might want to do with a <code class="docutils literal notranslate"><span class="pre">while</span></code> loop is to do something forever, that is until the micro:bit
+is turned off or reset. Maybe you have programmed your micro:bit with a game or perhaps it is collecting
+temperature data. Here is an example of some code to repeat forever:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s2">&quot;Hello UCL)</span>
+</pre></div>
+</div>
+<p>This code will repeatedly display the message <code class="docutils literal notranslate"><span class="pre">Hello</span> <span class="pre">UCL</span></code>. You will likely have at least one <code class="docutils literal notranslate"><span class="pre">while</span> <span class="pre">True:</span></code> loop in your program
+to keep the micro:bit going.</p>
+<p>But what if you want to do an action only whilst something is happening? Perhaps you would like to display an image
+if the temperature on the micro:bit goes below a certain value so you’ll need to test the temperature:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="n">temperature</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">18</span><span class="p">):</span>
+    <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">SAD</span><span class="p">)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+
+<span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HAPPY</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="practice-questions">
+<h2>Practice Questions<a class="headerlink" href="#practice-questions" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Display a different image depending on which side microbit is tilted in.</p></li>
+<li><p>Program an LED ‘sprite’ that moves in the direction micro:bit is tilted in.</p></li>
+<li><p>Program an LED sprite to run in a circle. Try to extend it to a snake by adding a tail of LEDs to the original sprite.</p></li>
+<li><p>Do the same as in previous question, but this time make the sprite stop when a button is being pressed and restart if it’s pressed again.</p></li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="data_structures.html" class="btn btn-neutral float-right" title="Data Structures" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="variables.html" class="btn btn-neutral float-left" title="Variablen" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2016
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

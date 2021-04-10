@@ -1,0 +1,443 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Data Structures &mdash; UCL BBC micro:bit tutorial</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Functions I" href="functions.html" />
+    <link rel="prev" title="Control Structures" href="control_structures.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UCL Tutorial: BBC micro:bit MicroPython
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/getting_started.html">Micro:bit - Erste Schritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/environment.html">Setting Up Your Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/first_program.html">First Program</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Micro:bit Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/display.html">LED Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/buttons.html">Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/accelerometer.html">Accelerometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/compass.html">Compass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/thermometer.html">Thermometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/music.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/edge.html">Edge Connector</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basics of programming</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="data_types.html">Data Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variablen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="control_structures.html">Control Structures</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data Structures</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#lists">Lists</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sorting">Sorting</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tuples">Tuples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sets">Sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dictionaries">Dictionaries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#practice-questions">Practice Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Functions I</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functionsii.html">Functions II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes_objects.html">Classes and Objects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Challenges</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/morse.html">Morse Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/caesar.html">Caesar Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/substitution.html">Substitution Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/vigenere.html">Vigenère Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/bop-it.html">Bop-it</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/consonant-or-vowel.html">Consonant or Vowel?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/egg-basket.html">Catch the Eggs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/spirit_level.html">Sprit Level</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/theremin.html">Theremin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/radio.html">Send a Message</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../misc/other_languages.html">Programming Micro:bit Using Other Languages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/cmd.html">Command Line Interface</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UCL Tutorial: BBC micro:bit MicroPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Data Structures</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/basics/data_structures.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="data-structures">
+<h1>Data Structures<a class="headerlink" href="#data-structures" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="lists">
+<h2>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h2>
+<p>List is a data structure used to store any data type (or structure) in an ordered manner. It’s a data structure that you’ll probably use most often. Let’s say we want to
+store a player’s scores. We could use a list like the  one pictured above. The list has one “box” for each value. The pieces of data stored in a list are called <cite>elements</cite>.</p>
+<div class="figure align-center" id="id1">
+<img alt="../_images/list_arrow.png" src="../_images/list_arrow.png" />
+<p class="caption"><span class="caption-text">A list.</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>To create a list, you specify its contents enclosed within brackets and delimited by commas:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="n">high_scores</span> <span class="o">=</span> <span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">30</span><span class="p">]</span>       <span class="c1"># Create a list and store some values in it.</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">high_scores</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>                   <span class="c1"># Print 25</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">high_scores</span><span class="p">[</span><span class="mi">3</span><span class="p">])</span>                   <span class="c1"># Print 15</span>
+</pre></div>
+</div>
+<p>Finding the value of one of the elements in a list is straightforward as long as you keep in mind that Python counts the elements from ‘0’. In the <code class="docutils literal notranslate"><span class="pre">high_scores</span></code> list
+above, <code class="docutils literal notranslate"><span class="pre">high_scores[0]</span></code> is 25 and <code class="docutils literal notranslate"><span class="pre">high_scores[3]</span></code> is 15.</p>
+<p>Here you can also see that particular elements in a list can be accessed by their index. Furthermore, it is possible to slice lists to get only a part of a list depending
+on the index. If you only want the first three, you can write <code class="docutils literal notranslate"><span class="pre">high_scores[0:3]</span></code>, or, since we are starting at 0, we can shorten it to <code class="docutils literal notranslate"><span class="pre">high_scores[:3]</span></code>. Mind that
+the right endpoint is alway excluded, so the ‘slice’ above refers to the mathematical interval <code class="docutils literal notranslate"><span class="pre">[0,2]</span></code>.</p>
+<p>Not surprisingly, Python has features for working with lists. The code snippet below calculates the sum of all elements and then calculates the average high score.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">total_score</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">score</span> <span class="ow">in</span> <span class="n">high_scores</span><span class="p">:</span>               <span class="c1"># For each element ...</span>
+        <span class="n">total_score</span> <span class="o">=</span> <span class="n">total_score</span> <span class="o">+</span> <span class="n">score</span>
+
+<span class="n">average</span> <span class="o">=</span> <span class="n">total_score</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">high_scores</span><span class="p">)</span>  <span class="c1"># Use the len() function here to find the length of the array</span>
+</pre></div>
+</div>
+<p>The same can be done in one line using the <code class="docutils literal notranslate"><span class="pre">sum</span></code> function:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">average_quick</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">high_score</span><span class="p">)</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">high_score</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Since you don’t necessarily know what values in the list are going to be, or how large the list will be, it’s useful to know the <code class="docutils literal notranslate"><span class="pre">append</span></code> function.
+For example, you can use it to fill a list with temperature readings or accelerometer values:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="n">recorded_temperature</span> <span class="o">=</span> <span class="p">[]</span>               <span class="c1"># Create an empty list</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>                    <span class="c1"># Add 100 temperature values</span>
+        <span class="n">recorded_temperature</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">temperature</span><span class="p">())</span>
+        <span class="n">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">for</span></code> loop is executed 100 times and <code class="docutils literal notranslate"><span class="pre">i</span></code> will have values from 0 to 99. This will measure the temperature every second for 100 seconds and append the value
+to the end of the list.</p>
+<p>Deleting items from a list is just as straightforward:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">high_scores</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">24</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This will delete the first element with the value 24.
+Alternatively, you might want to delete an element at a specific position, if you know it:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">high_scores</span><span class="o">.</span><span class="n">pop</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This will delete or ‘pop’ the element at the given position in the list. Note that:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">high_scores</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>will delete the last element in the list.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can look <a class="reference external" href="https://docs.python.org/2/tutorial/datastructures.html#tuples-and-sequences">here</a> to see more useful methods on lists.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You might be wondering whether strings can be considered to be a list. Even though string is an array of characters and we can even do similar operations on
+them (like slicing), they are both different types of objects with different methods (try to type <code class="docutils literal notranslate"><span class="pre">dir(str)</span></code> and <code class="docutils literal notranslate"><span class="pre">dir(list)</span></code> in your console).</p>
+</div>
+<div class="section" id="sorting">
+<h3>Sorting<a class="headerlink" href="#sorting" title="Permalink to this headline">¶</a></h3>
+<p>Often you’ll find the need to have data in your list sorted, for example when implementing search algorithms. In Python, sorting lists is easy using the
+<code class="docutils literal notranslate"><span class="pre">sort(key=,</span> <span class="pre">reverse=)</span></code> method:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">high_scores</span> <span class="o">=</span> <span class="p">[</span><span class="mi">25</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">30</span><span class="p">]</span>
+<span class="n">high_scores</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>You don’t only have to sort numbers - its optional key parameter allows you to specify your own function for comparing elements in your list (for example, while
+sorting a list of strings according to length, you can pass the len() function as the parameter). Passing false to reverse parameter allows you to sort in a descending
+order.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;longest&#39;</span><span class="p">,</span> <span class="s1">&#39;short&#39;</span><span class="p">,</span> <span class="s1">&#39;longer&#39;</span><span class="p">]</span>
+
+<span class="c1"># Sort list in ascending order of string length</span>
+<span class="nb">list</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="nb">len</span><span class="p">)</span>
+<span class="c1"># Sort list in descending order of string length</span>
+<span class="nb">list</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="nb">len</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="tuples">
+<h2>Tuples<a class="headerlink" href="#tuples" title="Permalink to this headline">¶</a></h2>
+<p>Tuples are similar to lists in that they are used to store an ordered sequence of items, usually of varying datatype.:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">high_scores_immutable</span> <span class="o">=</span> <span class="p">(</span><span class="mi">25</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>You can retrieve values in the same way as with lists, but the most important difference is that tuples are <cite>immutable</cite>. This means, that in the <code class="docutils literal notranslate"><span class="pre">high_scores</span></code>
+list above, you can change the value of individual elements:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">high_scores</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">42</span>
+</pre></div>
+</div>
+<p>However, trying to change a value inside <code class="docutils literal notranslate"><span class="pre">high_scores_immutable</span></code> will return a <code class="docutils literal notranslate"><span class="pre">TypeError:</span> <span class="pre">Object</span> <span class="pre">tuple</span> <span class="pre">does</span> <span class="pre">not</span> <span class="pre">support</span> <span class="pre">item</span> <span class="pre">assignment</span></code>. Once you assign values
+inside a tuple, they cannot be changed.</p>
+<p>Mutability is another difference between strings and lists - while lists are mutable, string are not.</p>
+</div>
+<div class="section" id="sets">
+<h2>Sets<a class="headerlink" href="#sets" title="Permalink to this headline">¶</a></h2>
+<p>Unlike lists and tuples, sets hold an <strong>unordered</strong> collection of elements with no duplicates. This makes them suitable for testing membership or removing
+duplicate elements.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="o">=</span> <span class="p">{</span><span class="mi">8</span><span class="p">,</span> <span class="mi">12</span><span class="p">,</span> <span class="mi">22</span><span class="p">}</span>
+
+<span class="c1"># Add a single element to set</span>
+<span class="nb">set</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="c1"># Add several elements to set</span>
+<span class="nb">set</span><span class="o">.</span><span class="n">update</span><span class="p">([</span><span class="mi">16</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">64</span><span class="p">])</span>
+
+<span class="c1"># Remove an element from set - throws an error if element not in set</span>
+<span class="nb">set</span><span class="o">.</span><span class="n">remove</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+
+<span class="c1"># Remove an element if present in set</span>
+<span class="nb">set</span><span class="o">.</span><span class="n">discard</span><span class="p">(</span><span class="mi">42</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Since a set is an unordered collection of elements, indexing is not possible. Python supports typical set operation methods:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">set_a</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">}</span>
+<span class="n">set_b</span> <span class="o">=</span> <span class="p">{</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">7</span><span class="p">}</span>
+<span class="n">set_c</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">}</span>
+
+<span class="c1"># Check for membership</span>
+<span class="mi">2</span> <span class="ow">in</span> <span class="n">set_a</span>
+
+<span class="c1"># Return elements in the intersection of set_a and set_b</span>
+<span class="n">set_a</span><span class="o">.</span><span class="n">intersection</span><span class="p">(</span><span class="n">set_b</span><span class="p">)</span>
+<span class="c1"># Return true if set_a contains all the elements of set_c</span>
+<span class="n">set_a</span><span class="o">.</span><span class="n">issuperset</span><span class="p">(</span><span class="n">set_c</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>An empty set is created using a <code class="docutils literal notranslate"><span class="pre">set()</span></code> method, as using braces creates an empty dictionary (see below).</p>
+<p>For more methods, visit Python <a class="reference external" href="https://docs.python.org/2/library/stdtypes.html#set">documentation</a>.</p>
+<div class="figure align-center" id="id2">
+<img alt="../_images/sets_i.png" src="../_images/sets_i.png" />
+<p class="caption"><span class="caption-text">All elements within a set are unique</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+</div>
+<div class="section" id="dictionaries">
+<h2>Dictionaries<a class="headerlink" href="#dictionaries" title="Permalink to this headline">¶</a></h2>
+<p>Dictionary is an unordered set of <code class="docutils literal notranslate"><span class="pre">key</span> <span class="pre">:</span> <span class="pre">value</span></code> pairs. It’s a rule that all keys are unique and have no duplicates. Unlike lists or tuples, which are indexed by numbers,
+you can retrieve a value from a dictionary by using the key as an index.</p>
+<p>For example, you can store the highscores of all the players:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">game_register</span> <span class="o">=</span> <span class="p">{</span> <span class="s1">&#39;googolplex&#39;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+                  <span class="s1">&#39;terminat0r&#39;</span><span class="p">:</span> <span class="mi">27</span><span class="p">,</span>
+                  <span class="s1">&#39;r00t&#39;</span><span class="p">:</span> <span class="mi">150</span><span class="p">,</span>
+                  <span class="s1">&#39;dent&#39;</span><span class="p">:</span> <span class="mi">42</span><span class="p">,</span>
+                  <span class="s1">&#39;teapot418&#39;</span> <span class="p">:</span> <span class="mi">0</span> <span class="p">}</span>
+
+<span class="c1"># Access elements</span>
+<span class="n">game_register</span><span class="p">[</span><span class="s1">&#39;dent&#39;</span><span class="p">]</span>
+
+<span class="c1"># Add or update and existing entry</span>
+<span class="n">game_register</span><span class="p">[</span><span class="s1">&#39;pepper&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">50</span>
+
+<span class="c1"># Delete an entry</span>
+<span class="k">del</span> <span class="n">game_register</span><span class="p">[</span><span class="s1">&#39;pepper&#39;</span><span class="p">]</span>
+
+<span class="c1"># Delete all entries</span>
+<span class="n">game_register</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+
+<span class="c1"># Delete the dictionary</span>
+<span class="k">del</span> <span class="n">game_register</span>
+
+<span class="c1"># Retrieve a value for the key or default if not in dicionary</span>
+<span class="n">game_register</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;dent&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="practice-questions">
+<h2>Practice Questions<a class="headerlink" href="#practice-questions" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li><p>Use micro:bit list Image.ALL_CLOCKS and iterate over all items in the list with a for loop, showing them on the LED screen.</p></li>
+<li><p>Using the same item list, show only items with an index divisible by 3.</p></li>
+<li><p>Sort an integer list (for example <code class="docutils literal notranslate"><span class="pre">list</span> <span class="pre">=</span> <span class="pre">[20,</span> <span class="pre">112,</span> <span class="pre">45,</span> <span class="pre">80,</span> <span class="pre">23]</span></code>) using the last digit of each item and keep their relative positions in case the digit is the same
+(the result in this case would be <code class="docutils literal notranslate"><span class="pre">[20,</span> <span class="pre">80,</span> <span class="pre">112,</span> <span class="pre">23,</span> <span class="pre">45]</span></code>).</p></li>
+<li><p>Create an animation of your own using a tuple and play it on the micro:bit LED screen.</p></li>
+<li><p>Program microbit to take a compass reading upon press of a button and store the results in a tuple.</p></li>
+<li><p>Write a program to keep record of gestures recognizable by microbit and the number of times they’ve been detected using a dictionary.</p></li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="functions.html" class="btn btn-neutral float-right" title="Functions I" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="control_structures.html" class="btn btn-neutral float-left" title="Control Structures" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2016
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,367 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Classes and Objects &mdash; UCL BBC micro:bit tutorial</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Morse Code" href="../challenges/crypto/morse.html" />
+    <link rel="prev" title="Functions II" href="functionsii.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UCL Tutorial: BBC micro:bit MicroPython
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/getting_started.html">Micro:bit - Erste Schritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/environment.html">Setting Up Your Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/first_program.html">First Program</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Micro:bit Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/display.html">LED Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/buttons.html">Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/accelerometer.html">Accelerometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/compass.html">Compass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/thermometer.html">Thermometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/music.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/edge.html">Edge Connector</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basics of programming</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="data_types.html">Data Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variablen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="control_structures.html">Control Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_structures.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Functions I</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functionsii.html">Functions II</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Classes and Objects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Challenges</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/morse.html">Morse Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/caesar.html">Caesar Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/substitution.html">Substitution Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/vigenere.html">Vigenère Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/bop-it.html">Bop-it</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/consonant-or-vowel.html">Consonant or Vowel?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/egg-basket.html">Catch the Eggs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/spirit_level.html">Sprit Level</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/theremin.html">Theremin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/radio.html">Send a Message</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../misc/other_languages.html">Programming Micro:bit Using Other Languages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/cmd.html">Command Line Interface</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UCL Tutorial: BBC micro:bit MicroPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Classes and Objects</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/basics/classes_objects.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="classes-and-objects">
+<h1>Classes and Objects<a class="headerlink" href="#classes-and-objects" title="Permalink to this headline">¶</a></h1>
+<p>Python is an object-oriented language - it’s based on the concept of “objects” that contain some fields (variables) and methods (functions). It’s procedures can modify
+it’s attributes (fields). Everything in Python is an object - whether it’s an integer or a string.</p>
+<p><code class="docutils literal notranslate"><span class="pre">Object</span></code> is a handy concept to make a representation of something abstract - for example a useful way of storing data in an ordered manner. Reminds you of something?
+Yes, a list.
+How would you describe a list object? What attributes does it have? When/How is it useful?</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Do you remember the <code class="docutils literal notranslate"><span class="pre">dir(ClassName)</span></code> command? It lists all the attributes and methods of a required class, such as <code class="docutils literal notranslate"><span class="pre">dir(str)</span></code>.</p>
+</div>
+<p>If you find you need an object that Python does not have, you can create your own. To create an instance of an object, you first need to construct a
+“template”, that will define what the object will look like and what it’s capable of. The prototype
+is called a class:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Player</span><span class="p">():</span>
+</pre></div>
+</div>
+<p>This example shows a template of a Player object, which is empy and not very useful right now. To make it more useful, we can add attributes to it - <code class="docutils literal notranslate"><span class="pre">total_count</span></code> is class
+attribute, that keeps count of all the instances of objects of class Player by incrementing a value every time a new Player() object is instantiated.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Player</span><span class="p">():</span>
+    <span class="n">total_count</span> <span class="o">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<p>A class attribute is the same for any instance of class Player, and so you can find out the total number of players through any of them.
+Other attributes that could be useful would be instance attributes (different for every instance of an object) name and score.
+How will they be defined? And how can we know when a new object is created to increment the <code class="docutils literal notranslate"><span class="pre">total_count</span></code>?</p>
+<p>It is possible to define an <code class="docutils literal notranslate"><span class="pre">__init__()</span></code> method for your class, which will be used during an instantiation of a new object and which can take in other arguments and
+specify an initial state of an object. In this way, when the object <code class="docutils literal notranslate"><span class="pre">player_1</span></code> below is instantiated, the player’s initial score will be zero, the name will be as
+specified in the argument and <code class="docutils literal notranslate"><span class="pre">total_count</span></code> will increment by one.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Player</span><span class="p">():</span>
+    <span class="n">total_count</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">total_count</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>Furthermore, we can define methods specifically for our class of objects. For example, class methods <code class="docutils literal notranslate"><span class="pre">update_score()</span></code> and <code class="docutils literal notranslate"><span class="pre">change_name</span></code> to update values of <code class="docutils literal notranslate"><span class="pre">name</span></code>
+and <code class="docutils literal notranslate"><span class="pre">score</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Player</span><span class="p">():</span>
+    <span class="n">total_count</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">score</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="vm">__class__</span><span class="o">.</span><span class="n">total_count</span> <span class="o">+=</span> <span class="mi">1</span>
+
+    <span class="k">def</span> <span class="nf">update_score</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">score</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">score</span> <span class="o">=</span> <span class="n">score</span>
+
+    <span class="k">def</span> <span class="nf">change_name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</pre></div>
+</div>
+<p>Instantiating objects and using methods is rather straightforward:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create an instance of an object of class Player</span>
+<span class="n">player_1</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="s2">&quot;teapot418&quot;</span><span class="p">)</span>
+<span class="n">player_2</span> <span class="o">=</span> <span class="n">Player</span><span class="p">(</span><span class="s2">&quot;r00t&quot;</span><span class="p">)</span>
+
+<span class="c1"># Change value of score of player_1</span>
+<span class="n">player_1</span><span class="o">.</span><span class="n">update_score</span><span class="p">(</span><span class="mi">40</span><span class="p">)</span>
+<span class="c1"># Change value of name of player_1</span>
+<span class="n">player_2</span><span class="o">.</span><span class="n">change_name</span><span class="p">(</span><span class="s2">&quot;bott0m&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Now you might wonder, why does calling methods on <code class="docutils literal notranslate"><span class="pre">player_1</span></code> or <code class="docutils literal notranslate"><span class="pre">player_2</span></code> work with one argument only, while the method definitions have two arguments?
+Surely Python raises an error in this case. As you may have guessed, the instance object - <code class="docutils literal notranslate"><span class="pre">player_1</span></code> - is passed as the first argument, and is actually equivalent to
+saying <code class="docutils literal notranslate"><span class="pre">Player.update_score(player_1,</span> <span class="pre">40)</span></code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The keyword <code class="docutils literal notranslate"><span class="pre">self</span></code>  has no special meaning in Python, it is just a convention. You should use it if only for the reason of making your code more</p>
+</div>
+<p>readable to others or yourself when you come back to it after some time (you can read more on discussion of <code class="docutils literal notranslate"><span class="pre">self</span></code> in this <a class="reference external" href="http://neopythonic.blogspot.com/2008/10/why-explicit-self-has-to-stay.html">blogpost</a> by Guido van Rossum - the
+father of Python).</p>
+<p>Accessing attributes is the same for all objects again: <code class="docutils literal notranslate"><span class="pre">obj.attribute_name</span></code>. For example, to print the name of a Player object you write:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">player_1</span><span class="o">.</span><span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>To create an attribute for a class, you don’t have to declare it in the class definition - they are like local variables in that they spring into existence when they’re
+assigned to. In this way, we can create a <code class="docutils literal notranslate"><span class="pre">counter</span></code> attribute for our <code class="docutils literal notranslate"><span class="pre">player_1</span></code> object. What does the following program output then?</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">player_1</span><span class="o">.</span><span class="n">counter</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">while</span> <span class="p">(</span><span class="n">player_1</span><span class="o">.</span><span class="n">counter</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">):</span>
+    <span class="n">player_1</span><span class="o">.</span><span class="n">counter</span> <span class="o">+=</span> <span class="mi">1</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">player_1</span><span class="o">.</span><span class="n">counter</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>There are many more nuances and useful characteristics of classes that we don’t talk about in this tutorial. If you do want to learn more, look at Python <a class="reference external" href="https://docs.python.org/3/tutorial/classes.html#a-word-about-names-and-objects">documentation</a>.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/snake_nokia.png"><img alt="../_images/snake_nokia.png" src="../_images/snake_nokia.png" style="width: 536.9px; height: 301.7px;" /></a>
+</div>
+<p>To give you another example of using classes, here is a Snake class that could be used for a micro:bit version of the Snake game (you’ll know if you ever had a Nokia).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Snake</span><span class="p">:</span>
+
+        <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">x_position</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">y_position</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">direction</span> <span class="o">=</span> <span class="s2">&quot;w&quot;</span>
+
+        <span class="k">def</span> <span class="nf">move_snake</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x_position</span><span class="p">,</span> <span class="n">y_position</span><span class="p">,</span> <span class="n">direction</span><span class="p">):</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">x_position</span> <span class="o">=</span> <span class="n">x_position</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">y_position</span> <span class="o">=</span> <span class="n">y_position</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">direction</span> <span class="o">=</span> <span class="n">direction</span>
+
+        <span class="k">def</span> <span class="nf">show_snake</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+            <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x_position</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">y_position</span><span class="p">,</span> <span class="mi">9</span><span class="p">)</span>
+            <span class="n">sleep</span><span class="p">(</span><span class="mi">600</span><span class="p">)</span>
+            <span class="n">display</span><span class="o">.</span><span class="n">set_pixel</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">x_position</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">y_position</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Create an instance of a Snake object</span>
+<span class="n">python</span> <span class="o">=</span> <span class="n">Snake</span><span class="p">()</span>
+
+<span class="c1"># Access its position on x axis and print</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">python</span><span class="o">.</span><span class="n">x_position</span><span class="p">)</span>
+
+<span class="c1"># Move python to the right</span>
+<span class="n">python</span><span class="o">.</span><span class="n">move_snake</span><span class="p">(</span><span class="n">python</span><span class="o">.</span><span class="n">x_position</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="n">python</span><span class="o">.</span><span class="n">y_position</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="figure align-center">
+<img alt="../_images/snake.png" src="../_images/snake.png" />
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../challenges/crypto/morse.html" class="btn btn-neutral float-right" title="Morse Code" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="functionsii.html" class="btn btn-neutral float-left" title="Functions II" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2016
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

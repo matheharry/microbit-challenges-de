@@ -1,0 +1,343 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Buttons &mdash; UCL BBC micro:bit tutorial</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Accelerometer" href="accelerometer.html" />
+    <link rel="prev" title="LED Display" href="display.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UCL Tutorial: BBC micro:bit MicroPython
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/getting_started.html">Micro:bit - Erste Schritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/environment.html">Setting Up Your Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/first_program.html">First Program</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Micro:bit Features</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="display.html">LED Display</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Buttons</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#basic-functions">Basic Functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#checking-whether-a-button-is-pressed">Checking whether a button is pressed</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#counting-the-number-of-presses">Counting the number of presses</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-functions">Advanced Functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#checking-for-both-buttons">Checking for both buttons</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#practice-questions">Practice questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="accelerometer.html">Accelerometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="compass.html">Compass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="thermometer.html">Thermometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="music.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edge.html">Edge Connector</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basics of programming</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../basics/data_types.html">Data Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/variables.html">Variablen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/control_structures.html">Control Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/data_structures.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/functions.html">Functions I</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/functionsii.html">Functions II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/classes_objects.html">Classes and Objects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Challenges</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/morse.html">Morse Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/caesar.html">Caesar Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/substitution.html">Substitution Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/vigenere.html">Vigenère Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/bop-it.html">Bop-it</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/consonant-or-vowel.html">Consonant or Vowel?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/egg-basket.html">Catch the Eggs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/spirit_level.html">Sprit Level</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/theremin.html">Theremin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/radio.html">Send a Message</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../misc/other_languages.html">Programming Micro:bit Using Other Languages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/cmd.html">Command Line Interface</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UCL Tutorial: BBC micro:bit MicroPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Buttons</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/tutorials/buttons.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-microbit.button">
+<span id="buttons"></span><h1>Buttons<a class="headerlink" href="#module-microbit.button" title="Permalink to this headline">¶</a></h1>
+<p>The micro:bit has two buttons: <code class="docutils literal notranslate"><span class="pre">A</span></code> and <code class="docutils literal notranslate"><span class="pre">B</span></code>.</p>
+<a class="reference internal image-reference" href="../_images/buttons.png"><img alt="../_images/buttons.png" class="align-center" src="../_images/buttons.png" style="width: 320.0px; height: 234.4px;" /></a>
+<p>You can use the buttons to get input from the user. Perhaps you’d like to start or stop your program with a button press
+or maybe you’d like to know how many times each button has been pressed.</p>
+<div class="section" id="basic-functions">
+<h2>Basic Functions<a class="headerlink" href="#basic-functions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="checking-whether-a-button-is-pressed">
+<h3>Checking whether a button is pressed<a class="headerlink" href="#checking-whether-a-button-is-pressed" title="Permalink to this headline">¶</a></h3>
+<p>Sometimes we just want a program to wait until something happens, for example: we could ask the micro:bit to wait until, say, button
+<code class="docutils literal notranslate"><span class="pre">A</span></code> is pressed and then print a message. We could do that like this:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
+                <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+                <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ASLEEP</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>This means, if button <code class="docutils literal notranslate"><span class="pre">A</span></code> is pressed then display an <code class="docutils literal notranslate"><span class="pre">A</span></code> on the LED screen, otherwise, display <code class="docutils literal notranslate"><span class="pre">Image.ASLEEP</span></code>.</p>
+<p>The problem with using <code class="docutils literal notranslate"><span class="pre">is_pressed()</span></code> is that unless you are pressing the button at that precise moment then you won’t
+detect whether the button was ever pressed or not. It might be the case that the user pushes the button while the code is doing the something else, and the press is missed.
+The <code class="docutils literal notranslate"><span class="pre">was_pressed()</span></code> function is useful is you want to write code that occasionally checks whether the button has been pushed but then goes on to do something else.
+In this way you need never miss a button press again:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">was_pressed</span><span class="p">():</span>
+        <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ASLEEP</span><span class="p">)</span>
+
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>What you’ll see is that the display will show an <code class="docutils literal notranslate"><span class="pre">A</span></code> for a second if you press the button, and then <code class="docutils literal notranslate"><span class="pre">Image.ASLEEP</span></code> is displayed. If you press the button while the
+program is delaying, then the <code class="docutils literal notranslate"><span class="pre">A</span></code> won’t show up immediately, but it will show up once the if statement test condition is executed. It becomes more apparent as you
+increase the delay.</p>
+<p>Now try using <code class="docutils literal notranslate"><span class="pre">button_a.isPressed()</span></code> instead of <code class="docutils literal notranslate"><span class="pre">button_a.was_pressed()</span></code>.</p>
+</div>
+<div class="section" id="counting-the-number-of-presses">
+<h3>Counting the number of presses<a class="headerlink" href="#counting-the-number-of-presses" title="Permalink to this headline">¶</a></h3>
+<p>To count the number of times a button was pressed, you can use the
+<code class="docutils literal notranslate"><span class="pre">get_presses()</span></code> method.  Here is an example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+   <span class="n">sleep</span><span class="p">(</span><span class="mi">3000</span><span class="p">)</span>
+   <span class="n">count</span> <span class="o">=</span> <span class="n">button_a</span><span class="o">.</span><span class="n">get_presses</span><span class="p">()</span>
+   <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">count</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>The micro:bit will sleep for 3 seconds and then wake up and check how many times button <code class="docutils literal notranslate"><span class="pre">A</span></code> was pressed. The number of presses is
+stored in <code class="docutils literal notranslate"><span class="pre">count</span></code>.</p>
+<p>Can you define your own <code class="docutils literal notranslate"><span class="pre">get_presses</span></code> function?</p>
+</div>
+</div>
+<div class="section" id="advanced-functions">
+<h2>Advanced Functions<a class="headerlink" href="#advanced-functions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="checking-for-both-buttons">
+<h3>Checking for both buttons<a class="headerlink" href="#checking-for-both-buttons" title="Permalink to this headline">¶</a></h3>
+<p>It is possible to check a series of events by using conditional statements. Say you wanted to check whether button <code class="docutils literal notranslate"><span class="pre">A</span></code> was pressed or button <code class="docutils literal notranslate"><span class="pre">B</span></code> was pressed or
+whether both buttons were pressed at the same time:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">button_a</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">()</span> <span class="ow">and</span> <span class="n">button_b</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
+        <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s2">&quot;AB&quot;</span><span class="p">)</span>
+        <span class="k">break</span>
+    <span class="k">elif</span> <span class="n">button_a</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
+        <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s2">&quot;A&quot;</span><span class="p">)</span>
+    <span class="k">elif</span> <span class="n">button_b</span><span class="o">.</span><span class="n">is_pressed</span><span class="p">():</span>
+        <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s2">&quot;B&quot;</span><span class="p">)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The code above displays the letter corresponding to the button. If both buttons are pressed at the same time it displays <code class="docutils literal notranslate"><span class="pre">AB</span></code>.</p>
+</div>
+</div>
+<div class="section" id="practice-questions">
+<h2>Practice questions<a class="headerlink" href="#practice-questions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Change what is displayed when you press the button.</p></li>
+<li><p>Games that need user input.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="accelerometer.html" class="btn btn-neutral float-right" title="Accelerometer" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="display.html" class="btn btn-neutral float-left" title="LED Display" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2016
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

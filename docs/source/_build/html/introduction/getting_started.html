@@ -1,0 +1,292 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Micro:bit - Erste Schritte &mdash; UCL BBC micro:bit tutorial</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Setting Up Your Environment" href="environment.html" />
+    <link rel="prev" title="Micro:bit Python" href="../index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UCL Tutorial: BBC micro:bit MicroPython
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Micro:bit - Erste Schritte</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#leitfaden-fur-diese-anleitung">Leitfaden für diese Anleitung</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="environment.html">Setting Up Your Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="first_program.html">First Program</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Micro:bit Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/display.html">LED Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/buttons.html">Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/accelerometer.html">Accelerometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/compass.html">Compass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/thermometer.html">Thermometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/music.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/edge.html">Edge Connector</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basics of programming</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../basics/data_types.html">Data Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/variables.html">Variablen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/control_structures.html">Control Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/data_structures.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/functions.html">Functions I</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/functionsii.html">Functions II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/classes_objects.html">Classes and Objects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Challenges</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/morse.html">Morse Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/caesar.html">Caesar Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/substitution.html">Substitution Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/vigenere.html">Vigenère Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/bop-it.html">Bop-it</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/consonant-or-vowel.html">Consonant or Vowel?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/egg-basket.html">Catch the Eggs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/spirit_level.html">Sprit Level</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/theremin.html">Theremin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/radio.html">Send a Message</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../misc/other_languages.html">Programming Micro:bit Using Other Languages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/cmd.html">Command Line Interface</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UCL Tutorial: BBC micro:bit MicroPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Micro:bit - Erste Schritte</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/introduction/getting_started.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="micro-bit-erste-schritte">
+<h1>Micro:bit - Erste Schritte<a class="headerlink" href="#micro-bit-erste-schritte" title="Permalink to this headline">¶</a></h1>
+<p>Der BBC micro:bit ist ein programmierbarer Mikrocomputer bzw. Mikrocontroller - mit dem man alle möglichen Projekte erstellen kann, von Robotern bis hin zu Musikinstrumenten -
+die Möglichkeiten sind endlos. Lass uns einen Blick auf die Funktionen werfen, die du in deinen Programmen verwenden kannst:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>25 rote LED-Lichter, die Nachrichten und Bilder anzeigen können.</p></li>
+<li><p>Zwei programmierbare Tasten (A und B), mit denen du dem micro:bit sagen kannst, wann er etwas starten und stoppen soll.</p></li>
+<li><p>Ein Thermistor, um die Temperatur zu messen.</p></li>
+<li><p>Ein Lichtsensor, um die Veränderung des Lichts zu messen.</p></li>
+<li><p>Ein Beschleunigungssensor, um Bewegungen zu erkennen.</p></li>
+<li><p>Ein Magnetometer, um dir zu sagen, in welche Richtung du gehst.</p></li>
+<li><p>Eine Funk- und eine Bluetooth-Verbindung, um mit anderen Geräten zu interagieren.</p></li>
+</ul>
+</div></blockquote>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/microbit-hardware-access.jpg"><img alt="../_images/microbit-hardware-access.jpg" src="../_images/microbit-hardware-access.jpg" style="width: 716.8px; height: 350.0px;" /></a>
+<p class="caption"><span class="caption-text">Source: <a class="reference external" href="https://microbit.org/guide/features/">https://microbit.org/guide/features/</a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+<div class="legend">
+<p>Du kannst den micro:bit mit verschiedenen Sprachen programmieren: MicroPython, C++ oder JavaScript. Dieses Tutorial konzentriert sich auf das Programmieren von micro:bit mit
+MicroPython, aber wenn du bereits mit Python vertraut bist oder eine zusätzliche Herausforderung suchst, schau dir den Abschnitt <span class="xref std std-ref">Programmierung des micro:bit mit anderen Sprachen</span> an.
+C/C++ könnte besonders nützlich sein, da es die Hauptsprache ist, die für die Programmierung von Embedded-Geräten verwendet wird.</p>
+</div>
+</div>
+<p>MicroPython ist eine Version von <a class="reference external" href="https://www.python.org/">Python</a>, die auf Mikrocontrollern wie dem micro:bit laufen kann. Da die Funktionalität der beiden nahezu identisch ist (siehe <a class="reference external" href="https://docs.micropython.org/en/latest/genrst/index.html">hier</a> für den Unterschied
+im Verhalten), beziehen wir uns in diesen Tutorials auf die verwendete Sprache als Python. Programmieren in Python besteht aus
+dem Beschreiben einer Reihe von Schritten, die ausgeführt werden sollen. An welche genau einzuhaltende Regeln (ähnlich wie der Grammatik beim Sprachenlernen) du dich dabei halten musst,
+lernst du Schritt für Schritt, wenn du deine ersten Programme schreibst.</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/programming.jpg"><img alt="../_images/programming.jpg" src="../_images/programming.jpg" style="width: 480.0px; height: 320.4px;" /></a>
+<p class="caption"><span class="caption-text">Source: HOMEWORK</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="leitfaden-fur-diese-anleitung">
+<h2>Leitfaden für diese Anleitung<a class="headerlink" href="#leitfaden-fur-diese-anleitung" title="Permalink to this headline">¶</a></h2>
+<p>Die Abschnitte dieses Tutorials führen dich durch das Programmieren mit dem micro:bit, die Grundlagen der Programmierung und die Funktionen des micro:bit. Das Ziel ist es, dich mit dem Programmieren vertraut zu machen
+Programmierung zu bringen, so dass du ein eigenes kleines Projekt erstellen kannst, das du uns in der ersten Woche zeigen wirst, um dich mit der Programmierung von #circular_definition vertraut zu machen.</p>
+<p>Du brauchst dich nicht unbedingt akribisch durch die ganze
+Theorie, die in Grundlagen der Programmierung behandelt wird, durcharbeiten, besonders wenn du ein Anfänger bist. Fange an, einfache Programme mit dem micro:bit zu schreiben und lese über weitere Programmierkonzepte
+nach und nach. Fühle dich frei, die Teile zu überspringen, in denen du dich sicher fühlst und wähle die Teile, die wichtig sind. Während du mehr über das Programmieren lernst, wirst du natürlich immer
+bessere und effizientere Wege finden, um deine Projekte der Vergangenheit zu erledigen, aber im Moment solltest du dich darauf konzentrieren, den Einstieg zu finden.</p>
+<p>Die hier behandelten Themen werden in der Regel nur gestreift und viele Dinge werden absichtlich nicht erklärt. Einige der wichtigen Fähigkeiten
+die du im Laufe der Schule und deiner späteren Arbeit brauchen wirst, sind das selbstständige Erforschen von Materialien und die Fähigkeit, offizielle Dokumente zu lesen.
+Daher ermutigen wir dich, andere Unterlagen zu lesen, als die, die du hier findest.</p>
+<p>Wenn deine Fähigkeiten mittel bis fortgeschritten sind, wirst du diese Dokumentation vielleicht nicht sehr interessant finden. Wie auch immer, der micro:bit ist ein äußerst flexibles Gerät und du könntest dann vielleicht
+die micro:bit <a class="reference external" href="https://lancaster-university.github.io/microbit-docs/">runtime</a> erkunden, die dir mehr Flexibilität bei der Verwendung des Geräts bietet.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="environment.html" class="btn btn-neutral float-right" title="Setting Up Your Environment" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../index.html" class="btn btn-neutral float-left" title="Micro:bit Python" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2016
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

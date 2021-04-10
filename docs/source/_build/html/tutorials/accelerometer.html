@@ -1,0 +1,376 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Accelerometer &mdash; UCL BBC micro:bit tutorial</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Compass" href="compass.html" />
+    <link rel="prev" title="Buttons" href="buttons.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UCL Tutorial: BBC micro:bit MicroPython
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/getting_started.html">Micro:bit - Erste Schritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/environment.html">Setting Up Your Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/first_program.html">First Program</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Micro:bit Features</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="display.html">LED Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="buttons.html">Buttons</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Accelerometer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#basic-functions">Basic Functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gestures">Gestures</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#advanced-functions">Advanced Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#practice-questions">Practice questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="compass.html">Compass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="thermometer.html">Thermometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="music.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="edge.html">Edge Connector</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basics of programming</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../basics/data_types.html">Data Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/variables.html">Variablen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/control_structures.html">Control Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/data_structures.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/functions.html">Functions I</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/functionsii.html">Functions II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../basics/classes_objects.html">Classes and Objects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Challenges</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/morse.html">Morse Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/caesar.html">Caesar Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/substitution.html">Substitution Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/vigenere.html">Vigenère Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/bop-it.html">Bop-it</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/consonant-or-vowel.html">Consonant or Vowel?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/egg-basket.html">Catch the Eggs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/spirit_level.html">Sprit Level</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/theremin.html">Theremin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/radio.html">Send a Message</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../misc/other_languages.html">Programming Micro:bit Using Other Languages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/cmd.html">Command Line Interface</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UCL Tutorial: BBC micro:bit MicroPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Accelerometer</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/tutorials/accelerometer.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="accelerometer">
+<h1>Accelerometer<a class="headerlink" href="#accelerometer" title="Permalink to this headline">¶</a></h1>
+<p>As its name suggests, the accelerometer on a BBC micro:bit measures acceleration.
+The accelerometer is set to measure acceleration values in the range +2g to -2g, and cannot be changed with MicroPython so far. These values are registered on a scale
+of values in range 0 .. 1024.</p>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/accelerometer.png"><img alt="../_images/accelerometer.png" src="../_images/accelerometer.png" style="width: 409.20000000000005px; height: 272.8px;" /></a>
+</div>
+<p>The micro:bit measures movement along
+three axes:</p>
+<ul class="simple">
+<li><p>X - tilting from left to right.</p></li>
+<li><p>Y - tilting forwards and backwards.</p></li>
+<li><p>Z - moving up and down.</p></li>
+</ul>
+<div class="figure align-center">
+<img alt="../_images/microbit_axes.png" src="../_images/microbit_axes.png" />
+</div>
+<div class="section" id="basic-functions">
+<h2>Basic Functions<a class="headerlink" href="#basic-functions" title="Permalink to this headline">¶</a></h2>
+<p>The measurement for each axis is a positive or negative number
+indicating a value in milli-g’s. When the reading is 0 you are “level”
+along that particular axis.</p>
+<p>You can access acceleration measurements one at a time or get all three
+values at once and store them in a list.
+You can learn more about lists in the basics of programming section, but for now, just use the following code:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">get_y</span><span class="p">()</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">get_z</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;x, y, z:&quot;</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span><span class="p">)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Upload this and open the serial monitor. Hold the micro:bit flat with the
+LEDs uppermost. You should see that the X and Y accelerations are near
+to zero, and the Z acceleration is close to -1024. This tells you that
+gravity is acting downwards relative to the micro:bit. Flip the board over
+so the LEDs are nearest the floor. The Z value should become positive at
++1024 milli-g. If you shake the micro:bit vigorously enough, you’ll see that the
+accelerations go up to ±2048 milli-g. That’s because this accelerometer is set
+to measure a maximum of ±2048 milli-g: the true number might be higher than that.</p>
+<p>If you’ve ever wondered how a mobile phone knows which way to orient
+its screen, it’s because it uses an accelerometer in exactly the same way as
+the program above. Game controllers also contain accelerometers to enable steering.</p>
+<div class="section" id="gestures">
+<h3>Gestures<a class="headerlink" href="#gestures" title="Permalink to this headline">¶</a></h3>
+<p>The really interesting side-effect of having an accelerometer is gesture
+detection. If you move your BBC micro:bit in a certain way (as a gesture) then
+micro:bit is able to detect this.</p>
+<p>micro:bit is able to recognise the following gestures: <code class="docutils literal notranslate"><span class="pre">up</span></code>, <code class="docutils literal notranslate"><span class="pre">down</span></code>,
+<code class="docutils literal notranslate"><span class="pre">left</span></code>, <code class="docutils literal notranslate"><span class="pre">right</span></code>, <code class="docutils literal notranslate"><span class="pre">face</span> <span class="pre">up</span></code>, <code class="docutils literal notranslate"><span class="pre">face</span> <span class="pre">down</span></code>, <code class="docutils literal notranslate"><span class="pre">freefall</span></code>, <code class="docutils literal notranslate"><span class="pre">3g</span></code>, <code class="docutils literal notranslate"><span class="pre">6g</span></code>,
+<code class="docutils literal notranslate"><span class="pre">8g</span></code>, <code class="docutils literal notranslate"><span class="pre">shake</span></code>. Gestures are always represented as strings. While most of
+the names should be obvious, the <code class="docutils literal notranslate"><span class="pre">3g</span></code>, <code class="docutils literal notranslate"><span class="pre">6g</span></code> and <code class="docutils literal notranslate"><span class="pre">8g</span></code> gestures apply when
+the device encounters these levels of g-force.</p>
+<p>To get the current gesture use the <code class="docutils literal notranslate"><span class="pre">accelerometer.current_gesture</span></code> method.
+Its result is going to be one of the named gestures listed above. For example,
+this program will display a happy emoticon if it’s face up:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">gesture</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">current_gesture</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">gesture</span> <span class="o">==</span> <span class="s2">&quot;face up&quot;</span><span class="p">:</span>
+        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">HAPPY</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ANGRY</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Within the <em>scope</em> of the loop the current gesture is
+read and assigned to <code class="docutils literal notranslate"><span class="pre">gesture</span></code>. The <code class="docutils literal notranslate"><span class="pre">if</span></code> conditional checks if <code class="docutils literal notranslate"><span class="pre">gesture</span></code> is
+equal to <code class="docutils literal notranslate"><span class="pre">&quot;face</span> <span class="pre">up&quot;</span></code> (Python uses <code class="docutils literal notranslate"><span class="pre">==</span></code> to test for equality, a single
+equals sign <code class="docutils literal notranslate"><span class="pre">=</span></code> is used for assignment - just like how we assign the gesture
+reading to the <code class="docutils literal notranslate"><span class="pre">gesture</span></code> object). If the gesture is equal to <code class="docutils literal notranslate"><span class="pre">&quot;face</span> <span class="pre">up&quot;</span></code>
+then use the display to show a happy face. Otherwise, the device is made to
+look angry!</p>
+</div>
+</div>
+<div class="section" id="advanced-functions">
+<h2>Advanced Functions<a class="headerlink" href="#advanced-functions" title="Permalink to this headline">¶</a></h2>
+<p>There aren’t any for the accelerometer, but it’s worth looking at how
+we can use the 3D acceleration to detect different kinds of motion like a
+being shaken. Acceleration is what
+is known as a vector quantity – it has a
+magnitude (size, length) and a direction. To get the overall magnitude,
+irrespective of orientation, with only X and Y axes (i.e. we had a 2D accelerometer) the situation would be:</p>
+<a class="reference internal image-reference" href="../_images/microbitOverallAcceleration.jpg"><img alt="../_images/microbitOverallAcceleration.jpg" class="align-left" src="../_images/microbitOverallAcceleration.jpg" style="width: 240.6px; height: 112.8px;" /></a>
+<p>We can calculate the magnitude (length) of the resultant using Pythagoras’ rule:</p>
+<div class="math notranslate nohighlight">
+\[acceleration = \sqrt{x^2 + y^2}\]</div>
+<p>The same principle holds with a 3D accelerometer. So the overall magnitude of the resultant acceleration vector is:</p>
+<div class="math notranslate nohighlight">
+\[acceleration = \sqrt{x^2 + y^2 + z^2}\]</div>
+<p>Calculating the overall acceleration:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+<span class="kn">import</span> <span class="nn">math</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">get_y</span><span class="p">()</span>
+    <span class="n">z</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">get_z</span><span class="p">()</span>
+    <span class="n">acceleration</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">y</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">z</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;acceleration&quot;</span><span class="p">,</span> <span class="n">acceleration</span><span class="p">)</span>
+    <span class="n">sleep</span><span class="p">(</span><span class="mi">500</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Now if you keep the the accelerometer still (put it on the desk), this
+will give an acceleration of about 1g, irrespective of what orientation
+you have the BBC micro:bit in – and it will be different to that as you
+move it about. Actually, the value will vary slightly even if you
+keep it still, because the accelerometer isn’t a perfect measuring
+device. Dealing with this is a process called calibration and is something
+we have to do when we need to know a quantity accurately.</p>
+</div>
+<div class="section" id="practice-questions">
+<h2>Practice questions<a class="headerlink" href="#practice-questions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Using the BBC micro:bit music library, play a note based on the the reading from the accelerometer. Hint: set the pitch to the value of the accelerometer measurement.</p></li>
+<li><p>Display the characters ‘L’ or ‘R’ depending on whether the BBC micro:bit is tilted to the left or the right.</p></li>
+<li><p>Make the LEDs light up when the magnitude of the acceleration is greater than 1024 milli-gs.</p></li>
+<li><p>Shake the micro:bit to make the LEDs light up.</p></li>
+<li><p>Make a dice, hint: use one of the Python random functions. Type <code class="docutils literal notranslate"><span class="pre">import</span> <span class="pre">random</span></code> at the top of your program and use <code class="docutils literal notranslate"><span class="pre">random.randrange(start,</span> <span class="pre">stop)</span></code>. This will generate a random number between <code class="docutils literal notranslate"><span class="pre">start</span></code> and <code class="docutils literal notranslate"><span class="pre">stop</span></code> - 1.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="compass.html" class="btn btn-neutral float-right" title="Compass" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="buttons.html" class="btn btn-neutral float-left" title="Buttons" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2016
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

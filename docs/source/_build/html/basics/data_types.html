@@ -1,0 +1,506 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Data Types &mdash; UCL BBC micro:bit tutorial</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Variablen" href="variables.html" />
+    <link rel="prev" title="Edge Connector" href="../tutorials/edge.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> UCL Tutorial: BBC micro:bit MicroPython
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/getting_started.html">Micro:bit - Erste Schritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/environment.html">Setting Up Your Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/first_program.html">First Program</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Micro:bit Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/display.html">LED Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/buttons.html">Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/accelerometer.html">Accelerometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/compass.html">Compass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/thermometer.html">Thermometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/music.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tutorials/edge.html">Edge Connector</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basics of programming</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data Types</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#operations">Operations</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#numbers">Numbers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#strings">Strings</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#booleans">Booleans</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#comparison">Comparison</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#logical-operations">Logical operations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#membership-operations">Membership operations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#using-boolean-operations">Using Boolean operations</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#practice-questions">Practice Questions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="variables.html">Variablen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="control_structures.html">Control Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="data_structures.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Functions I</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functionsii.html">Functions II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="classes_objects.html">Classes and Objects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Challenges</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/morse.html">Morse Code</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/caesar.html">Caesar Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/substitution.html">Substitution Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/crypto/vigenere.html">Vigenère Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/bop-it.html">Bop-it</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/consonant-or-vowel.html">Consonant or Vowel?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/games/egg-basket.html">Catch the Eggs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/spirit_level.html">Sprit Level</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/theremin.html">Theremin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../challenges/sensors/radio.html">Send a Message</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../misc/other_languages.html">Programming Micro:bit Using Other Languages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/cmd.html">Command Line Interface</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">UCL Tutorial: BBC micro:bit MicroPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Data Types</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/basics/data_types.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="data-types">
+<h1>Data Types<a class="headerlink" href="#data-types" title="Permalink to this headline">¶</a></h1>
+<p>In order to accurately capture various types of data, programming languages provide us with different data types to allow us to represent them properly.
+Each case, whether it is gathering acceleration values from the accelerometer or counting the number of times a button was pressed, requires a different approach,
+which is why Python and most other programming languages recognise several data types for representing values:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 59%" />
+<col style="width: 22%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Data Type</strong></p></th>
+<th class="head"><p><strong>Description</strong></p></th>
+<th class="head"><p><strong>Example</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Integers</p></td>
+<td><p>Whole numbers</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">42</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Floats</p></td>
+<td><p>Numbers with decimal point, fractions</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">3.1415</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Complex numbers</p></td>
+<td><p>Numbers with both real and an imaginary component</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">1</span> <span class="pre">+</span> <span class="pre">3j</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Strings</p></td>
+<td><p>Sequences of characters delimited by quotation marks</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&quot;Hello</span> <span class="pre">World!&quot;</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Booleans</p></td>
+<td><p>Values representing true and false values</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">False</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<p>In a simple program you might use all of these. Here are the data types you could use in a program storing information about your micro:bit game:</p>
+<div class="figure align-center" id="id1">
+<img alt="../_images/dataTypes.png" src="../_images/dataTypes.png" />
+<p class="caption"><span class="caption-text">Source: &lt;<a class="reference external" href="http://www.bbc.co.uk/education/guides/zwmbgk7/revision/3">http://www.bbc.co.uk/education/guides/zwmbgk7/revision/3</a>&gt;</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<div class="section" id="operations">
+<h2>Operations<a class="headerlink" href="#operations" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="numbers">
+<h3>Numbers<a class="headerlink" href="#numbers" title="Permalink to this headline">¶</a></h3>
+<p>Basic arithmetic operators: <code class="docutils literal notranslate"><span class="pre">+,-,*,/</span></code> are used in the same way as you would with a calculator.
+Let’s look at an example using arithmetic operators the temperature read by the micro:bit in Celsius to Fahrenheit:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">celsiusTemp</span> <span class="o">=</span> <span class="n">temperature</span><span class="p">()</span>
+<span class="n">fahrenheitTemp</span> <span class="o">=</span> <span class="n">celsiusTemp</span> <span class="o">*</span> <span class="mi">9</span> <span class="o">/</span> <span class="mi">5</span> <span class="o">+</span> <span class="mi">32</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Python recognises two division operators: <code class="docutils literal notranslate"><span class="pre">/</span></code> and <code class="docutils literal notranslate"><span class="pre">//</span></code>. First one outputs the result you’d expect, but the second one does integer division: the
+return value is actually the floor of the result. This means that the return value is always rounded down.</p>
+</div>
+<p>Operator <code class="docutils literal notranslate"><span class="pre">%</span></code>, called <code class="docutils literal notranslate"><span class="pre">mod</span></code> is used to calculate the remainder when one value is divided by another. For example: maybe you’d like to know whether a number is odd or
+even, you could try dividing it by 2, if it’s even, then there will be no remainder:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">number</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="k">if</span> <span class="n">number</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The number is odd&quot;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+   <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The number is even&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>If the remainder is equal to <code class="docutils literal notranslate"><span class="pre">1</span></code> then this program will print <code class="docutils literal notranslate"><span class="pre">The</span> <span class="pre">number</span> <span class="pre">is</span> <span class="pre">odd</span></code>, otherwise it will print <code class="docutils literal notranslate"><span class="pre">The</span> <span class="pre">number</span> <span class="pre">is</span> <span class="pre">even</span></code>.
+You might write this program in a different way. People think about problems in different ways and no two programs are likely to be the same.</p>
+</div>
+<div class="section" id="strings">
+<h3>Strings<a class="headerlink" href="#strings" title="Permalink to this headline">¶</a></h3>
+<p>As stated above, strings (<code class="docutils literal notranslate"><span class="pre">str</span></code> type in Python) are sequences of characters, with a length limited only by the memory of your machine. A useful fact to note is
+that they can be concatenated using a <code class="docutils literal notranslate"><span class="pre">+</span></code> symbol:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;Hayley&quot;</span>
+
+<span class="n">message</span> <span class="o">=</span> <span class="s2">&quot;Well done &quot;</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s2">&quot;. You are victorious!&quot;</span>
+</pre></div>
+</div>
+<p>This will concatenate the items on the right hand side of <code class="docutils literal notranslate"><span class="pre">=</span></code> and put the result in the variable called <code class="docutils literal notranslate"><span class="pre">message</span></code>.</p>
+<p>To join numbers and strings together, you must first convert the number to a string using the <code class="docutils literal notranslate"><span class="pre">str()</span></code> function if you want to do that:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">temperature</span>
+<span class="k">if</span> <span class="n">temperature</span> <span class="o">&lt;</span> <span class="mi">6</span><span class="p">:</span>
+   <span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="s2">&quot;Cold&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">temperature</span><span class="p">))</span>
+</pre></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Python natively provides a lot of <a class="reference external" href="https://www.programiz.com/python-programming/methods/string">methods</a>, which makes using strings much easier and saves lot of time (although implementing them on your own initially
+might be a good programming exercise).</p>
+</div>
+</div>
+<div class="section" id="booleans">
+<h3>Booleans<a class="headerlink" href="#booleans" title="Permalink to this headline">¶</a></h3>
+<p>A Boolean value is a value that is either <code class="docutils literal notranslate"><span class="pre">True</span></code> or <code class="docutils literal notranslate"><span class="pre">False</span></code>, also represented by <cite>1</cite> and <cite>0</cite>. In Python, there is a number of operations that
+allow you to manipulate boolean expressions.</p>
+<div class="section" id="comparison">
+<h4>Comparison<a class="headerlink" href="#comparison" title="Permalink to this headline">¶</a></h4>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/booleanLogic.jpg"><img alt="../_images/booleanLogic.jpg" src="../_images/booleanLogic.jpg" style="width: 373.2px; height: 199.79999999999998px;" /></a>
+<p class="caption"><span class="caption-text">Source: &lt;<a class="reference external" href="http://www.bbc.co.uk/education/guides/zy9thyc/revision">http://www.bbc.co.uk/education/guides/zy9thyc/revision</a>&gt;</span><a class="headerlink" href="#id2" title="Permalink to this image">¶</a></p>
+</div>
+<p>Comparison operations are useful to test variable values in conditional statements or loops. Here are some examples of
+comparisons written in English:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">score</span> <span class="ow">is</span> <span class="n">greater</span> <span class="n">than</span> <span class="mi">100</span>
+<span class="n">name</span> <span class="n">equals</span> <span class="s2">&quot;Harry&quot;</span>
+<span class="n">x</span> <span class="n">acceleration</span> <span class="ow">is</span> <span class="ow">not</span> <span class="n">equal</span> <span class="n">to</span> <span class="mi">0</span>
+</pre></div>
+</div>
+<p>Python has a set of comparison operators that allow us to write comparisons easily:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 56%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Comparison Operator</strong></p></th>
+<th class="head"><p><strong>Meaning</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>==</p></td>
+<td><p>Equal to</p></td>
+</tr>
+<tr class="row-odd"><td><p>&lt;, &lt;=</p></td>
+<td><p>Less than, less than or equal to</p></td>
+</tr>
+<tr class="row-even"><td><p>&gt;, &gt;=</p></td>
+<td><p>Greater than, greater than or equal to</p></td>
+</tr>
+<tr class="row-odd"><td><p>!=</p></td>
+<td><p>not equal to</p></td>
+</tr>
+</tbody>
+</table>
+<p>Rewriting the comparisons above in Python would be:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">score</span> <span class="o">&gt;</span> <span class="mi">100</span>
+<span class="n">name</span> <span class="o">==</span>  <span class="s2">&quot;Harry&quot;</span>
+<span class="n">acceleration</span>  <span class="o">!=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="logical-operations">
+<h4>Logical operations<a class="headerlink" href="#logical-operations" title="Permalink to this headline">¶</a></h4>
+<p>Logical operators test the truth value of their operands.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 21%" />
+<col style="width: 50%" />
+<col style="width: 29%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Operator</strong></p></th>
+<th class="head"><p><strong>Evaluates to ``True`` if:</strong></p></th>
+<th class="head"><p><strong>Example</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>and</p></td>
+<td><p>Both operands are true</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span> <span class="pre">and</span> <span class="pre">True</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>or</p></td>
+<td><p>At least one operand is true</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">True</span> <span class="pre">or</span> <span class="pre">False</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>not</p></td>
+<td><p>Operand is false</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">not</span> <span class="pre">False</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="membership-operations">
+<h4>Membership operations<a class="headerlink" href="#membership-operations" title="Permalink to this headline">¶</a></h4>
+<p>Membership operators are useful to determine presence of an element in a sequence.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 14%" />
+<col style="width: 54%" />
+<col style="width: 5%" />
+<col style="width: 27%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p><strong>Operator</strong></p></th>
+<th class="head" colspan="2"><p><strong>Evaluates to ``True`` if:</strong></p></th>
+<th class="head"><p><strong>Example</strong></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>in</p></td>
+<td colspan="2"><p>A variable value is in the specified sequence</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">in</span> <span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4]</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>not in</p></td>
+<td colspan="2"><p>Does not find a variable value in the specified sequence</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">x</span> <span class="pre">not</span> <span class="pre">in</span> <span class="pre">[1,</span> <span class="pre">2,</span> <span class="pre">3,</span> <span class="pre">4]</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="using-boolean-operations">
+<h4>Using Boolean operations<a class="headerlink" href="#using-boolean-operations" title="Permalink to this headline">¶</a></h4>
+<p>You may have already used some examples that do this. In this example, the micro:bit will
+show an arrow changing in direction according to acceleration:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">microbit</span> <span class="k">import</span> <span class="o">*</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">x_bearing</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">get_x</span><span class="p">()</span>
+
+    <span class="k">if</span> <span class="p">(</span><span class="n">x_bearing</span> <span class="o">&lt;=</span> <span class="mi">100</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="n">x_acceleration</span> <span class="o">&gt;=</span> <span class="mi">50</span><span class="p">):</span>
+        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ARROW_N</span><span class="p">)</span>
+
+    <span class="k">elif</span> <span class="n">x_bearing</span> <span class="o">&gt;</span> <span class="mi">100</span><span class="p">:</span>
+        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ARROW_E</span><span class="p">)</span>
+
+    <span class="k">elif</span>  <span class="n">x_bearing</span> <span class="o">&lt;</span> <span class="mi">50</span><span class="p">:</span>
+        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ARROW_W</span><span class="p">)</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">Image</span><span class="o">.</span><span class="n">ARROW_S</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="practice-questions">
+<h2>Practice Questions<a class="headerlink" href="#practice-questions" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Predict whether the return value is True or False. If False, explain why.</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li><p>“hello” == ‘hello’</p></li>
+<li><p>10 == 10.0</p></li>
+<li><p>5/2 == 5//2</p></li>
+<li><p>5 in [x for x in range(0,5)]</p></li>
+<li><p>0 == False</p></li>
+<li><p>1 == true</p></li>
+<li><p>0.1 + 0.2 == 0.3</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="variables.html" class="btn btn-neutral float-right" title="Variablen" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="../tutorials/edge.html" class="btn btn-neutral float-left" title="Edge Connector" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2016
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

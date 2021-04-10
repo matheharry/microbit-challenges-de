@@ -1,0 +1,297 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Caesar Cipher &mdash; UCL BBC micro:bit tutorial</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../../_static/jquery.js"></script>
+        <script type="text/javascript" src="../../_static/underscore.js"></script>
+        <script type="text/javascript" src="../../_static/doctools.js"></script>
+        <script type="text/javascript" src="../../_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Substitution Cipher" href="substitution.html" />
+    <link rel="prev" title="Morse Code" href="morse.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../../index.html" class="icon icon-home"> UCL Tutorial: BBC micro:bit MicroPython
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/getting_started.html">Micro:bit - Erste Schritte</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/environment.html">Setting Up Your Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/first_program.html">First Program</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Micro:bit Features</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/display.html">LED Display</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/buttons.html">Buttons</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/accelerometer.html">Accelerometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/compass.html">Compass</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/thermometer.html">Thermometer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/music.html">Sound</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/radio.html">Radio</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tutorials/edge.html">Edge Connector</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basics of programming</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/data_types.html">Data Types</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/variables.html">Variablen</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/control_structures.html">Control Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/data_structures.html">Data Structures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/functions.html">Functions I</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/functionsii.html">Functions II</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../basics/classes_objects.html">Classes and Objects</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Challenges</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="morse.html">Morse Code</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Caesar Cipher</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#description">Description</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="substitution.html">Substitution Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="vigenere.html">Vigenère Cipher</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../games/bop-it.html">Bop-it</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../games/consonant-or-vowel.html">Consonant or Vowel?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../games/egg-basket.html">Catch the Eggs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sensors/spirit_level.html">Sprit Level</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sensors/theremin.html">Theremin</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../sensors/radio.html">Send a Message</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Miscellaneous</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/other_languages.html">Programming Micro:bit Using Other Languages</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/cmd.html">Command Line Interface</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">UCL Tutorial: BBC micro:bit MicroPython</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../../index.html">Docs</a> &raquo;</li>
+        
+      <li>Caesar Cipher</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../../_sources/challenges/crypto/caesar.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="caesar-cipher">
+<h1>Caesar Cipher<a class="headerlink" href="#caesar-cipher" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Humans have been interested in hiding messages for as long as they have been able to communicate by writing things
+down. One of the earliest ciphers is known as the Caesar cipher, named after Julius Caesar, and was used by the
+Roman emporer to communicate with troops on the battlefield. Using the Caesar cipher you encrypt all the letters in a message by shifting the alphabet a number of places. The figure below shows how to encrypt a message with a shift of 3 letters:</p>
+<div class="figure align-center" id="id1">
+<img alt="../../_images/shift.png" src="../../_images/shift.png" />
+<p class="caption"><span class="caption-text">Source: <a class="reference external" href="https://upload.wikimedia.org/wikipedia/commons/f/fa/Ascii-proper-color.svg">https://upload.wikimedia.org/wikipedia/commons/f/fa/Ascii-proper-color.svg</a></span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
+</div>
+<p>Your goal is to turn your micro:bit into a machine that can <strong>encode</strong> messages using the Caesar cipher. We
+call the message to be encrypted <em>plain text</em> and the encrypted message <em>cipher text</em>.</p>
+<p>There is a trick you can use to encrypt, or shift the message. The trick relies on the fact that your
+micro:bit sees the letters of the alphabet as numbers. You can translate a letter to a number, and back again using the python functions <code class="docutils literal notranslate"><span class="pre">ord()</span></code> and <code class="docutils literal notranslate"><span class="pre">chr()</span></code>.</p>
+<p>Let’s say you want to shift each character by 4 places.  Try using this code to turn the character into a
+number and  add 4:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ascii_char</span> <span class="o">=</span> <span class="nb">ord</span><span class="p">(</span><span class="n">plaintext_char</span><span class="p">)</span> <span class="o">+</span> <span class="mi">4</span>
+</pre></div>
+</div>
+<p>In English this means: translate <code class="docutils literal notranslate"><span class="pre">plaintext_char</span></code> into a number using the <code class="docutils literal notranslate"><span class="pre">ord()</span></code> function and add 4, the number of characters we want to shift.</p>
+<p>This works because characters in Python are encoded as numbers. One of the most popular (and smallest) systems is ASCII (American Standard Code for Information
+Interchange). However, looking at the table below you can see that it only includes latin and some special characters. This is why Python’s (and most languages’) native encoding system is
+UTF-8, which is also backwards compatible with ASCII.</p>
+<div class="figure align-default">
+<img alt="../../_images/ascii_table.png" src="../../_images/ascii_table.png" />
+</div>
+<p>But hold on, there is one more thing that we need to do. Since we will only accept uppercase letters A-Z, we need to make sure we only move within its boundaries (since
+adding 4 to Z would land us on ‘^’ in ASCII).</p>
+<blockquote>
+<div><p>ascii_char = ord(plaintext_char) + 4</p>
+<blockquote>
+<div><p>if ascii_char &gt; ord(‘Z’)
+ascii_char = ascii_char - 26</p>
+<p>encrypted_char = chr(ascii_char)</p>
+</div></blockquote>
+</div></blockquote>
+<p>Now try encrypting and then decrypting some messages of your own.  You can try to decrypt the following text. Can you make your program recognize the correct plaintext
+on its own?</p>
+<blockquote>
+<div><p>S kw k csmu wkx… S kw k gsmuon wkx. Kx exkddbkmdsfo wkx. S drsxu wi vsfob rebdc. Rygofob, S nyx’d uxyg k psq klyed wi csmuxocc, kxn kw xyd cebo grkd sd sc drkd
+rebdc wo. S kw xyd losxq dbokdon kxn xofob rkfo loox, dryeqr S boczomd wonsmsxo kxn nymdybc. Grkd’c wybo, S kw kvcy cezobcsdsyec sx dro ohdbowo; govv, kd vokcd
+oxyeqr dy boczomd wonsmsxo. (S’w ceppsmsoxdvi onemkdon xyd dy lo cezobcdsdsyec, led S kw.) Xy, csb, S bopeco dy lo dbokdon yed yp gsmuonxocc. Xyg, iye gsvv mobdksxvi
+xyd lo cy qyyn kc dy exnobcdkxn drsc. Govv, csb, led S exnobcdkxn sd. S gsvv xyd, yp myebco, lo klvo dy ohzvksx dy iye zbomscovi gry sc qysxq dy ceppob sx drsc mkco
+pbyw wi gsmuonxocc; S uxyg zobpomdvi govv drkd S gsvv sx xy gki “wemu drsxqc ez” pyb dro nymdybc li bocoxdsxq drosb dbokdwoxd; S uxyg loddob drkx kxiyxo drkd li kvv
+drsc S kw rkbwsxq yxvi wicovp kxn xy yxo ovco. Led cdsvv, sp S nyx’d qoddbokdon, sd sc yed yp gsmuonxocc. Wi vsfob rebdc; govv, drox vod sd rebd ofox gybco!</p>
+<blockquote>
+<div><p>– P. Nycdyiofcui, Xydoc Pbyw Exnobqbyexn</p>
+</div></blockquote>
+</div></blockquote>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="substitution.html" class="btn btn-neutral float-right" title="Substitution Cipher" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="morse.html" class="btn btn-neutral float-left" title="Morse Code" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016-2016
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

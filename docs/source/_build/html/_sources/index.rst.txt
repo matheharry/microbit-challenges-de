@@ -30,7 +30,7 @@ Wenn du zu dieser Sammlung beitragen möchtest, nur zu! Installiere git und erst
 
 .. toctree::
    :maxdepth: 1
-   :caption: Erste Schritte 
+   :caption: Getting Started 
 
    introduction/getting_started.rst 
    introduction/environment.rst
@@ -51,7 +51,7 @@ Wenn du zu dieser Sammlung beitragen möchtest, nur zu! Installiere git und erst
 
 .. toctree::
    :maxdepth: 1
-   :caption: Grundlagen der Programmierung
+   :caption: Basics of programming
 
    basics/data_types.rst 
    basics/variables.rst
@@ -80,7 +80,7 @@ Wenn du zu dieser Sammlung beitragen möchtest, nur zu! Installiere git und erst
 
 .. toctree::
    :maxdepth: 1
-   :caption: Verschiedenes
+   :caption: Miscellaneous
 
    misc/other_languages.rst 
    misc/cmd.rst
