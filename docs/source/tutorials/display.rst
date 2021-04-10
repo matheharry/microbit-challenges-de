@@ -2,9 +2,9 @@
 LED Display
 ***********
 
-This is a quick guide to some of the things you can do with the LED display. Try things out – see what happens and see what you can make. There are 25 LEDs numbered from (0,0) in the  
-top left hand corner to (4,4) in the bottom right hand corner and can all be set to a different level of brightness. You can use the LEDs like a screen to display 
-single characters, a strings or a small picture.
+Dies ist eine Kurzanleitung für einige Dinge, die du mit dem LED Display machen kannst. Probiere die Dinge aus - schau, was passiert und sieh, was du machen kannst. Es gibt 25 LEDs, nummeriert von (0,0) in der  
+in der oberen linken Ecke bis (4,4) in der unteren rechten Ecke und können alle auf verschiedene Helligkeitsstufen eingestellt werden. Du kannst die LEDs wie einen Bildschirm benutzen, um 
+einzelne Zeichen, eine Zeichenkette oder ein kleines Bild.
 
 
 .. image:: assets/happy.png
@@ -12,29 +12,29 @@ single characters, a strings or a small picture.
    :scale: 60 %
 
 
-Basic Functions
+Grundfunktionen
 ===============
 
-Display a string or an image
-----------------------------
+Einen String oder ein Bild anzeigen
+-----------------------------------
 
-You can display characters on the LED display using ``show`` method: ::
+Du kannst Zeichen auf dem LED Display mit der Methode ``show`` anzeigen: ::
 
     from microbit import *
 
-    display.show("Hello")
+    display.show("Hallo")
 
-The characters you display must be within a pair of quotes, either " " or ' '. 
+Die Zeichen, die du auf dem Display anzeigst, müssen innerhalb eines Paares von Anführungszeichen stehen, entweder " " oder ' '. 
  
-``microbit`` module comes with many built-in pictures to show on the display.
-For example, to display a smiling face ::
+Das ``microbit`` Modul kommt mit vielen eingebauten Bildern, die auf dem Display angezeigt werden können.
+Um zum Beispiel eine lächelndes Gesicht anzuzeigen ::
 
     from microbit import *
 
     display.show(Image.HAPPY)
 
 
-Here's some of the the other images you can use:
+Hier sind einige der anderen Bilder, die du verwenden kannst:
 
     * ``Image.HEART``, ``Image.HEART_SMALL`` 
     * ``Image.HAPPY``, ``Image.SMILE``, ``Image.SAD``, ``Image.CONFUSED``, ``Image.ANGRY``, ``Image.ASLEEP``, ``Image.SURPRISED``, ``Image.SILLY``, ``Image.FABULOUS``, ``Image.MEH``, ``Image.YES``, ``Image.NO``
