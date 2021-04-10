@@ -1,17 +1,17 @@
 ****************
-Data Structures
+Datenstrukturen
 ****************
 
-Lists
+Listen
 ======
 
-List is a data structure used to store any data type (or structure) in an ordered manner. It's a data structure that you'll probably use most often. Let's say we want to 
-store a player's scores. We could use a list like the  one pictured above. The list has one "box" for each value. The pieces of data stored in a list are called `elements`. 
+Eine Liste ist eine Datenstruktur, die verwendet wird, um einen beliebigen Datentyp (oder eine andere Struktur) in geordneter Weise zu speichern. Eine Liste ist die Datenstruktur, die du wahrscheinlich am häufigsten benutzen wirst. Sagen wir, wir wollen 
+den Punktestand eines Spielers speichern. Wir könnten eine Liste wie die oben abgebildete verwenden. Die Liste hat eine "Box" für jeden Wert. Die Daten, die in einer Liste gespeichert sind, werden "Elemente" genannt. 
 
 .. figure:: assets/list_arrow.png 
 	 :align: center
      
-	 A list.
+	 Eine Liste.
 
 To create a list, you specify its contents enclosed within brackets and delimited by commas: :: 
 

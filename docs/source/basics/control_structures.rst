@@ -108,9 +108,9 @@ wenn die Temperatur auf dem micro:bit unter einen bestimmten Wert fällt, also m
 Übungsfragen
 ===================
 
-1. Zeige ein anderes Bild an, je nachdem in welche Seite das microbit gekippt ist.
+1. Zeige ein anderes Bild an, je nachdem in welche Seite der microbit gekippt ist.
 
-2. Programmiere ein LED 'Symbol', das sich in die Richtung bewegt, in die das micro:bit gekippt ist.
+2. Programmiere ein LED 'Symbol', das sich in die Richtung bewegt, in die der micro:bit gekippt ist.
 
 3. Programmiere ein LED-Symbol, das sich im Kreis bewegt. Versuche es zu einer Schlange zu erweitern, indem du dem ursprünglichen Symbol einen Schwanz aus LEDs hinzufügst.
 
