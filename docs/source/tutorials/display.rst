@@ -2,7 +2,7 @@
 LED Display
 ***********
 
-Dies ist eine Kurzanleitung für einige Dinge, die du mit dem LED Display machen kannst. Probiere die Dinge aus - schau, was passiert und sieh, was du machen kannst. Es gibt 25 LEDs, nummeriert von (0,0) in der  
+Dies ist eine Kurzanleitung für einige Dinge, die du mit dem LED Display machen kannst. Probiere die Dinge aus - schau, was passiert und sieh, was du machen kannst. Es gibt 25 LEDs, nummeriert von (0,0)   
 in der oberen linken Ecke bis (4,4) in der unteren rechten Ecke und können alle auf verschiedene Helligkeitsstufen eingestellt werden. Du kannst die LEDs wie einen Bildschirm benutzen, um 
 einzelne Zeichen, eine Zeichenkette oder ein kleines Bild.
 
@@ -44,38 +44,38 @@ Hier sind einige der anderen Bilder, die du verwenden kannst:
     * ``Image.RABBIT``, ``Image.COW``, ``Image.DUCK``, ``Image.HOUSE``, ``Image.TORTOISE``, ``Image.BUTTERFLY``, ``Image.GIRAFFE``, ``Image.SNAKE``
 
 
-Scroll a string 
----------------
-Use ``scroll`` to scroll a string across the display: ::
+Einen String scrollen 
+---------------------
+Benutze ``scroll``, um einen String über das Display zu scrollen: ::
 
     from microbit import *
 
-    display.scroll("Hello!")
+    display.scroll("Hallo!")
 
 
-Clear the display
------------------
-If you want to clear the LED display, you can do so like this: ::
+Löschen des Displays
+---------------------
+Wenn du das LED Display löschen möchtest, kannst du dies wie folgt tun: ::
 
     from microbit import *
 
     display.clear()
 
 
-Advanced Functions
-==================
+Fortgeschrittene Funktionen
+===========================
 
-Set a pixel
------------
-You can set a pixel brightness on the LED display using the ``set_pixel`` method: ::
+Ein Pixel setzen
+----------------
+Du kannst die Helligkeit eines Pixels auf dem LED Display mit der Methode ``set_pixel`` einstellen: ::
 
     from microbit import *
 
     display.set_pixel(0,4,9)
 
-This sets the LED at column ``0`` and row ``4`` to a brightness of ``9``. The brightness value can be any whole number
-between 0 and 9 with 0 switching the LED off and 9 being the brightest setting. You could use a ``for loop`` 
-to set all the LEDs one at a time: ::
+Das setzt die LED in Spalte ``0`` und Zeile ``4`` auf eine Helligkeit von ``9``. Der Helligkeitswert kann eine ganze Zahl 
+zwischen 0 und 9 sein. 0 schaltet die LED aus und 9 ist die hellste Einstellung. Du könntest eine ``for Schleife``  
+verwenden, um alle LEDs nacheinander einzustellen: ::
 
     from microbit import *
 
@@ -84,68 +84,68 @@ to set all the LEDs one at a time: ::
     	for y in range(0, 5):
     	    display.set_pixel(x,y,9)  
 
-The ``for loop`` lets you execute a loop a specific number of times using a counter. The outer loop::
+Die ``for Schleife`` lässt dich eine Schleife mit Hilfe eines Zählers eine bestimmte Anzahl von Malen ausführen. Die äußere Schleife::
 
 	for x in range(0,5)
 
-will execute the loop five times substituting ``x`` consecutive values in the range ``0`` to ``4`` for ``x`` each time. The loop will stop before it reaches the final value in the range.
+führt die Schleife fünfmal aus und ersetzt ``x`` durch aufeinanderfolgende Werte im Bereich ``0`` bis ``4`` für ``x``. Die Schleife hört auf, bevor sie den letzten Wert im Bereich erreicht.
 
-The inner loop::
+Die innere Schleife::
 
 	for y in range(0,5):
 
-will execute the loop five times substituting ``y`` consecutive values in the range ``0`` to ``4`` for ``y`` each time. The loop will stop before it reaches the final value in the range.
+führt die Schleife fünfmal aus und ersetzt ``y`` jedes Mal durch aufeinanderfolgende Werte aus dem Bereich ``0`` bis ``4``. Die Schleife hört auf, bevor sie den letzten Wert im Bereich erreicht.
 
-DIY images
-----------
-What if you want to make your own image to display on the micro:bit?
+Eigene Bilder
+-------------
+Was ist, wenn du dein eigenes Bild für das Display auf dem micro:bit erstellen möchtest?
 
-As mentioned above, each LED pixel on the physical display can be set to one of ten values from 0 (off) to 9 (fully on). 
-Armed with this piece of information, it's possible to create a new image like this ::
+Wie bereits erwähnt, kann jedes LED-Pixel auf dem Display auf einen von zehn Werten von 0 (aus) bis 9 (voll ein) eingestellt werden. 
+Mit dieser Information ist es möglich, ein neues Bild wie dieses zu erstellen ::
 
         from microbit import *
 
-        boat = Image("05050:"
+        boot = Image("05050:"
                         "05050:"
                         "05050:"
                         "99999:"
                         "09990")
 
-        display.show(boat)
+        display.show(boot)
 
-In fact, you don't need to write this over several lines. If you think you can
-keep track of each line, you can rewrite it like this: ::
+        Eigentlich brauchst du das nicht über mehrere Zeilen zu schreiben. Wenn du 
+        den Überblick über jede der Zeilen behältst, kannst du den Code so umschreiben: ::
 
-    boat = Image("05050:05050:05050:99999:09990")
+    boot = Image("05050:05050:05050:99999:09990")
 
-(When run, the device should display an old-fashioned "Blue Peter" sailing ship
-with the masts dimmer than the boat's hull.)
+(Wenn es funktioniert, sollte das Gerät ein altmodisches "Blue Peter" Segelschiff anzeigen
+wobei die Masten dunkler sind als der Rumpf des Schiffes).
 
-Have you figured out how to draw a picture? Have you noticed that each line of
-the physical display is represented by a line of numbers ending in ``:`` and
-enclosed between ``"`` double quotes? Each number specifies a brightness.
-There are five lines of five numbers so it's possible to specify the individual
-brightness for each of the five pixels on each of the five lines on the
-physical display. 
+Hast du herausgefunden, wie man ein Bild malt? Hast du bemerkt, dass jede Zeile des
+Displays durch eine Zeile aus Zahlen dargestellt wird, die mit ``:`` endet und
+zwischen ``"`` Anführungszeichen eingeschlossen ist? Jede Zahl gibt eine Helligkeit an.
+Es gibt fünf Zeilen mit fünf Zahlen, so dass es möglich ist, die individuelle
+Helligkeit für jedes der fünf Pixel auf jeder der fünf Zeilen auf dem
+Display einzustellen und anzuzeigen. 
 
 
 Animation
 ---------
-To make an animation, just use a list of images.
+Um eine Animation zu machen, benutze einfach eine Liste von Bildern.
 
-We can demonstrate this on built in lists - ``Image.ALL_CLOCKS``
-and ``Image.ALL_ARROWS``: ::
+Wir können das anhand von bereits eingebauten Listen demonstrieren - ``Image.ALL_CLOCKS``
+und ``Image.ALL_ARROWS``: ::
 
     from microbit import *
 
     display.show(Image.ALL_CLOCKS, loop=True, delay=100)
 
-Micro:bit shows each image in the list, one after another. By setting ``loop=True``, program will be keep looping through the list indefinitely. It's also possible to 
-set a delay between the pictures using the ``delay`` attribute to the desired value in milliseconds ``delay=100``.
+Der micro:bit zeigt jedes Bild in der Liste an, eines nach dem anderen. Wenn du ``loop=True`` einstellst, wird das Programm in einer Schleife durch die Liste laufen, ohne Ende. Es ist auch möglich 
+eine Verzögerung zwischen den Bildern einzustellen, indem man das Attribut ``delay`` auf den gewünschten Wert in Millisekunden setzt ``delay=100``.
 
-To create your own animation, you need to create a list of images. 
+Um deine eigene Animation zu erstellen, musst du eine Liste von Bildern erstellen. 
 
-In this example, a boat will sink into the bottom of the display. To do that, we defined a list of 6 boat images: ::
+In diesem Beispiel wird ein Boot im Boden des Displays versinken. Dazu haben wir eine Liste mit 6 Bootsbildern definiert: ::
 
     from microbit import *
 
@@ -188,9 +188,9 @@ In this example, a boat will sink into the bottom of the display. To do that, we
     all_boats = [boat1, boat2, boat3, boat4, boat5, boat6]
     display.show(all_boats, delay=200)    
 
-Practice questions
+Übungsaufgaben
 ===================
-* Try out some of the built-in images to see what they look like. 
-* Animate the ``Image.ALL_ARROWS`` list. How do you avoid looping forever (hint: the opposite of ``True`` is ``False``). Can you change the speed of the animation?
-* Make your own image. Next try to make it fade out and then fade in again?
-* Make a sprite, use a single LED on the display. Can you make it jump when you press a button?
+* Probiere einige der eingebauten Bilder aus, um zu sehen, wie sie aussehen. 
+* Animiere die ``Image.ALL_ARROWS`` Liste. Wie vermeidest du eine ewige Schleife (Hinweis: das Gegenteil von ``True`` ist ``False``). Kannst du die Geschwindigkeit der Animation verändern?
+* Erstelle dein eigenes Bild. Versuche als nächstes, es aus- und wieder einzublenden?
+* Mache ein Sprite, benutze eine einzelne LED auf dem Display. Kannst du es springen lassen, wenn du eine Taste drückst?
