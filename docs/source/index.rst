@@ -38,7 +38,7 @@ Wenn du zu dieser Sammlung beitragen möchtest, nur zu! Installiere git und erst
 
 .. toctree::
    :maxdepth: 1
-   :caption: Micro:bit Features 
+   :caption: Micro:bit Ausstattung 
 
    tutorials/display.rst
    tutorials/buttons.rst
