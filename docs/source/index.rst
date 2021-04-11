@@ -3,8 +3,8 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-MatheHarry - micro:bit MicroPython Tutorial
-===========================================
+micro:bit MicroPython Tutorial
+===============================
 
 Diese Dokumentation kann unter <http://microbit-challenges-de.readthedocs.io/de/latest/index.html> angesehen werden. Sie basiert größtenteils auf 
 der Arbeit von `Rae Harbird`_.
