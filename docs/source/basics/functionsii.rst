@@ -5,8 +5,8 @@ Funktionen II
 Jetzt, wo du weißt, wie man Funktionen in der Praxis einsetzt, gibt es einige weitere Konzepte, die dir helfen werden, das Verhalten von Funktionen nicht nur in Python zu verstehen,
 sondern auch in anderen Sprachen.  
 
-Geltungsbereich
-===============
+Geltungsbereich (Scope)
+=======================
 
 Globale und lokale Variablen
 ----------------------------
@@ -25,7 +25,9 @@ Stell dir vor, du möchtest eine leicht abgeänderte Funktion ``printBirthdayGre
 Kannst du erkennen, was falsch ist? Wenn du versuchst, den Code auszuführen, wirst du wahrscheinlich diese Meldung erhalten: UnboundLocalError: local variable 'alter' referenced before assignment``.
 
 Um dies zu verstehen, müssen wir über den Geltungsbereich (Scope) sprechen. Scope ist eine 'Umgebung', in der eine Variable definiert ist, und auf die dort zugegriffen und in die geschrieben werden kann. Unter diesem Gesichtspunkt kennen wir zwei 
-Typen von Variablen: globale und lokale. Standardmäßig sind alle Variablen, die innerhalb einer Funktion definiert sind, lokal - du kannst nicht auf sie außerhalb der Funktion zugreifen. Und da der Geltungsbereich
+Typen von Variablen: globale und lokale.
+
+Standardmäßig sind alle Variablen, die innerhalb einer Funktion definiert sind, lokal - du kannst nicht auf sie außerhalb der Funktion zugreifen. Und da der Geltungsbereich
 innerhalb der Funktion anders ist als der globale, ist es möglich, den gleichen Namen für zwei verschiedene Variablen zu verwenden.
 
 Kannst du jetzt erklären, was im obigen Codeschnipsel passiert ist?
@@ -83,8 +85,8 @@ Funktion: ::
 
 	nurEinBeispiel() 
 
-	Du weißt bereits, warum das nicht funktioniert. Aber wie kannst du das Problem umgehen? Du kannst die Variable nicht global deklarieren, weil sie innerhalb einer Funktion ist - sie ist lokal und es gibt 
-	einen weiteren lokalen Bereich innerhalb der Funktion ``weiteresBeispiel()``. Um diese Situation zu lösen, kannst du eine Variable als ``nonlocal`` deklarieren: ::
+Du weißt bereits, warum das nicht funktioniert. Aber wie kannst du das Problem umgehen? Du kannst die Variable nicht global deklarieren, weil sie innerhalb einer Funktion ist - sie ist lokal und es gibt 
+einen weiteren lokalen Bereich innerhalb der Funktion ``weiteresBeispiel()``. Um diese Situation zu lösen, kannst du eine Variable als ``nonlocal`` deklarieren: ::
 
 	def nurEinBeispiel():
 		def weiteresBeispiel():
