@@ -8,6 +8,7 @@ der eine große Anwendung entwickeln muss. Die Grundlagen von Python sind leicht
 .. figure:: assets/snake-312561_640.PNG
    :align: center
    :scale: 70%
+   
    Bild von Clker-Free-Vector-Images auf `Pixabay`_
 
 .. _`Pixabay` : https://pixabay.com/de/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=312561
