@@ -28,14 +28,14 @@ Falls du keine Administratorenrechte besitzt und Python auf deinem Gerät nicht 
 Diese muss man einfach in einen Ordner entpacken und hat damit sofort eine anfängerfreundliche Programmierumgebung zur Verfügung, die ohne Installation 
 auf allen Geräten funktioniert.
 
-.. note:: Für diejenigen, die vorher mit Python gearbeitet haben, MicroPython unterstützt keine regulären externen Python-Bibliotheken, 
-    da viele zu groß für ein Embedded Gerät sind. Allerdings wurde ein Subset speziell für die `MicroPython-Umgebung`_ neu erstellt. 
-
-.. _`MicroPython-Umgebung`: https://docs.micropython.org/en/latest/library/index.html
-
 .. figure:: assets/installation_options.PNG
    :align: center
    :scale: 70% 
    :target: https://codewith.mu/en/download
 
 Sobald der Editor installiert ist, starte ihn und schließe den micro:bit an deinen Computer an.
+
+.. note:: Für diejenigen, die vorher mit Python gearbeitet haben, MicroPython unterstützt keine regulären externen Python-Bibliotheken, 
+    da viele zu groß für ein Embedded Gerät sind. Allerdings wurde ein Subset speziell für die `MicroPython-Umgebung`_ neu erstellt. 
+
+.. _`MicroPython-Umgebung`: https://docs.micropython.org/en/latest/library/index.html
