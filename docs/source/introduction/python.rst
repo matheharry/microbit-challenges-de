@@ -36,3 +36,4 @@ Das alles sind Gründe, warum Python zB im `PYPL`_ - Index (PopularitY of Progra
 
 .. figure:: https://pypl.github.io/PYPL/All.png
     :align: center
+    :target: https://pypl.github.io/PYPL.html
