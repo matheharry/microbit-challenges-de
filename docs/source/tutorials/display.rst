@@ -113,8 +113,8 @@ Mit dieser Information ist es möglich, ein neues Bild wie dieses zu erstellen :
 
         display.show(boot)
 
-        Eigentlich brauchst du das nicht über mehrere Zeilen zu schreiben. Wenn du 
-        den Überblick über jede der Zeilen behältst, kannst du den Code so umschreiben: ::
+Eigentlich brauchst du das nicht über mehrere Zeilen zu schreiben. Wenn du 
+den Überblick über jede der Zeilen behältst, kannst du den Code so umschreiben: ::
 
     boot = Image("05050:05050:05050:99999:09990")
 
