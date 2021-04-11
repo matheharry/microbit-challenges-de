@@ -5,7 +5,7 @@ Warum Python?
 Python ist eine sehr gute Wahl, egal ob du ein Anfänger bist, der die Grundlagen des Programmierens lernen möchte, oder ein erfahrener Programmierer, 
 der eine große Anwendung entwickeln muss. Die Grundlagen von Python sind leicht zu erlernen und dennoch sind die Möglichkeiten enorm.
 
-.. figure:: assets/snake-312561_640.PNG
+.. figure:: assets/snake.PNG
    :align: center
    :scale: 70%
 
