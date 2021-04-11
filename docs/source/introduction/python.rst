@@ -33,7 +33,6 @@ selbst schon eine einfach zu lesende Codestruktur.
 Das alles sind Gründe, warum Python zB im `PYPL`_ - Index (PopularitY of Programming Language) an erster Stelle gereiht ist.
 
 .. _`PYPL`: https://pypl.github.io/PYPL.html
-    :align: center
 
 .. figure:: https://pypl.github.io/PYPL/All.png
-
+    :align: center
