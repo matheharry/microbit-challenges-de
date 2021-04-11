@@ -6,7 +6,10 @@
 MatheHarry - micro:bit MicroPython Tutorial
 ===========================================
 
-Diese Dokumentation kann unter <http://microbit-challenges-de.readthedocs.io/de/latest/index.html> angesehen werden.
+Diese Dokumentation kann unter <http://microbit-challenges-de.readthedocs.io/de/latest/index.html> angesehen werden. Sie basiert größtenteils auf 
+der Arbeit von `Rae Harbird`_.
+
+.. _Rae Harbird: https://microbit-challenges.readthedocs.io/
 
 Die Arbeitsblätter sind so gestaltet, dass sie den Schülern eine Einführung in die Funktionen des
 micro:bit vermitteln sollen.  Es werden kurze praktische Beispiele gegeben und die Schüler werden aufgefordert, mit 
