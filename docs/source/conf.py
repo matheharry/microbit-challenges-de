@@ -199,7 +199,7 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
   ('index', 'MicrobitMicropython.tex', u'micro:bit MicroPython Tutorial',
-   u'Rae Harbird, Stephen Hailes, Harry March', 'manual'),
+   u'Harald March, Rae Harbird, Stephen Hailes', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
