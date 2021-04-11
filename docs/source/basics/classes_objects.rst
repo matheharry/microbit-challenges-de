@@ -1,35 +1,33 @@
 ********************
-Classes and Objects
+Klassen und Objekte
 ********************
 
-Python is an object-oriented language - it's based on the concept of "objects" that contain some fields (variables) and methods (functions). It's procedures can modify
-it's attributes (fields). Everything in Python is an object - whether it's an integer or a string. 
+Python ist eine objektorientierte Sprache - sie basiert auf dem Konzept der "Objekte", die verschiedene Felder (Variablen) und Methoden (Funktionen) enthalten. Deren Prozeduren können ihre Attribute (Felder) verändern. Alles in Python ist ein Objekt - egal ob es ein Integer oder ein String ist. 
 
-``Object`` is a handy concept to make a representation of something abstract - for example a useful way of storing data in an ordered manner. Reminds you of something?
-Yes, a list. 
-How would you describe a list object? What attributes does it have? When/How is it useful? 
+Ein Objekt ``object`` ist ein praktisches Konzept, um eine Abbildung von etwas Abstraktem zu erzeugen - zum Beispiel ein nützlicher Weg, um Daten geordnet zu speichern. Erinnert dich das an etwas?
+Ja, eine Liste. 
+Wie würdest du ein Listenobjekt beschreiben? Welche Attribute hat es? Wann/Wie ist es nützlich? 
 
-.. tip:: Do you remember the ``dir(ClassName)`` command? It lists all the attributes and methods of a required class, such as ``dir(str)``. 
+.. tip:: Erinnerst du dich an den Befehl ``dir(ClassName)``? Er listet alle Attribute und Methoden einer benötigten Klasse auf, wie zum Beispiel ``dir(str)``. 
 
-If you find you need an object that Python does not have, you can create your own. To create an instance of an object, you first need to construct a 
-"template", that will define what the object will look like and what it's capable of. The prototype
-is called a class::
+Wenn du feststellst, dass du ein Objekt brauchst, das Python nicht hat, kannst du dein eigenes erstellen. Bevor du ein konkretes Exemplar deines Objekts (eine *Instanz*) verwenden kannst, 
+musst du zuerst eine "Vorlage" definieren, die beschreibt, wie das Objekt aussehen wird und was es kann. Dieser Prototyp wird als *Klasse* bezeichnet::
 
     class Player():                                                 
 
-This example shows a template of a Player object, which is empy and not very useful right now. To make it more useful, we can add attributes to it - ``total_count`` is class
-attribute, that keeps count of all the instances of objects of class Player by incrementing a value every time a new Player() object is instantiated. ::
+Dieses Beispiel zeigt die Vorlage eines Player-Objekts, das im Moment noch leer und nicht sehr nützlich ist. Um es nützlicher zu machen, können wir ihm Attribute hinzufügen - ``total_count`` ist ein 
+Klassenattribut, das alle Instanzen von Objekten der Klasse Player zählt, indem es jedes Mal, wenn ein neues Player()-Objekt erzeugt wird, einen Wert erhöht. ::
 
     class Player():
         total_count = 0
 
-A class attribute is the same for any instance of class Player, and so you can find out the total number of players through any of them.
-Other attributes that could be useful would be instance attributes (different for every instance of an object) name and score. 
-How will they be defined? And how can we know when a new object is created to increment the ``total_count``? 
+Ein Klassenattribut ist für jede Instanz der Klasse Player gleich, und so kannst du die Gesamtzahl der Spieler über jede erzeugte Instanz herausfinden.
+Andere Attribute, die nützlich sein könnten, wären Instanzattribute (unterschiedlich für jede Instanz eines Objekts) wie Name und Punktestand. 
+Wie sollen diese definiert werden? Und wie können wir wissen, wann ein neues Objekt erstellt wird, um die ``total_count`` zu erhöhen? 
 
-It is possible to define an ``__init__()`` method for your class, which will be used during an instantiation of a new object and which can take in other arguments and 
-specify an initial state of an object. In this way, when the object ``player_1`` below is instantiated, the player's initial score will be zero, the name will be as 
-specified in the argument and ``total_count`` will increment by one. ::
+Es ist möglich, eine ``__init__()`` Methode für deine Klasse zu definieren, die bei der Erzeugung eines neuen Objekts verwendet wird und die weitere Argumente aufnehmen und 
+den Anfangszustand eines Objekts festlegen kann. Auf diese Weise wird bei der Erzeugung des untenstehenden Objekts ``player_1`` der anfängliche Punktestand des Spielers Null sein, 
+der Name wird als Argument angegeben und ``total_count`` wird um eins erhöht. ::
 
     class Player():
         total_count = 0
@@ -39,8 +37,8 @@ specified in the argument and ``total_count`` will increment by one. ::
             self.score = 0
             self.__class__.total_count += 1
 
-Furthermore, we can define methods specifically for our class of objects. For example, class methods ``update_score()`` and ``change_name`` to update values of ``name``
-and ``score``.  ::
+Außerdem können wir Methoden speziell für unsere Klasse von Objekten definieren. Zum Beispiel die Klassenmethoden ``update_score()`` und ``change_name`` um die Werte von ``name``
+und dem Punktestand ``score`` zu aktualisieren.  ::
 
     class Player():
         total_count = 0
@@ -56,35 +54,34 @@ and ``score``.  ::
         def change_name(self, name):
             self.name = name    
 
-Instantiating objects and using methods is rather straightforward: ::
+Die Erzeugung von Objekten und die Verwendung von Methoden ist ziemlich einfach: ::
 
-    # Create an instance of an object of class Player
-    player_1 = Player("teapot418")
+    # Erzeuge eine Instanz eines Objekts der Klasse Player
+    player_1 = Player("griever418")
     player_2 = Player("r00t")
 
-    # Change value of score of player_1 
+    # Verändere den Punktestand von player_1 
     player_1.update_score(40)
-    # Change value of name of player_1 
+    # Ändere den Namen von player_1 
     player_2.change_name("bott0m")
 
 
-Now you might wonder, why does calling methods on ``player_1`` or ``player_2`` work with one argument only, while the method definitions have two arguments? 
-Surely Python raises an error in this case. As you may have guessed, the instance object - ``player_1`` - is passed as the first argument, and is actually equivalent to 
-saying ``Player.update_score(player_1, 40)``. 
+Nun könntest du dich fragen, warum der Aufruf von Methoden auf ``player_1`` oder ``player_2`` nur mit einem Argument funktioniert, während die Methodendefinitionen zwei Argumente haben? 
+Sicherlich gibt Python in diesem Fall einen Fehler aus. Wie du vielleicht schon vermutet hast, wird die Instanz des Objekts - ``player_1`` - als erstes Argument übergeben, und ist eigentlich gleichbedeutend mit 
+der Anweisung ``player.update_score(player_1, 40)``. 
 
-.. note:: The keyword ``self``  has no special meaning in Python, it is just a convention. You should use it if only for the reason of making your code more 
-readable to others or yourself when you come back to it after some time (you can read more on discussion of ``self`` in this blogpost_ by Guido van Rossum - the
-father of Python).
+.. note:: Das Schlüsselwort ``self`` hat in Python keine besondere Bedeutung, es ist nur eine Art Gewohnheit. Du solltest es benutzen, wenn auch nur aus dem Grund, um deinen Code besser 
+        lesbarer zu machen, wenn du nach einiger Zeit wieder darauf zurückkommst (du kannst mehr über die Diskussion von ``self`` in diesem Blogpost_ von Guido van Rossum lesen - dem Vater von Python).
 
-.. _blogpost: http://neopythonic.blogspot.com/2008/10/why-explicit-self-has-to-stay.html
+.. _Blogpost: http://neopythonic.blogspot.com/2008/10/why-explicit-self-has-to-stay.html
 
 
-Accessing attributes is the same for all objects again: ``obj.attribute_name``. For example, to print the name of a Player object you write: ::
+Der Zugriff auf Attribute ist für alle Objekte wieder gleich: ``obj.attribute_name``. Um zum Beispiel den Namen eines Player-Objekts auszugeben, schreibst du: ::
 
     print(player_1.name)
 
-To create an attribute for a class, you don't have to declare it in the class definition - they are like local variables in that they spring into existence when they're 
-assigned to. In this way, we can create a ``counter`` attribute for our ``player_1`` object. What does the following program output then? ::
+Um ein Attribut für eine Klasse zu erstellen, musst du es nicht in der Klassendefinition deklarieren - sie sind wie lokale Variablen, da sie entstehen, wenn ihnen ein Wert 
+zugewiesen wird. Auf diese Weise können wir ein ``counter``-Attribut für unser ``player_1`` Objekt erstellen. Was gibt das folgende Programm dann aus? ::
 
     player_1.counter = 0
 
@@ -93,15 +90,15 @@ assigned to. In this way, we can create a ``counter`` attribute for our ``player
 
     print(player_1.counter)    
 
-There are many more nuances and useful characteristics of classes that we don't talk about in this tutorial. If you do want to learn more, look at Python documentation_.
+Es gibt noch viele weitere Besonderheiten und nützliche Eigenschaften von Klassen, auf die wir in diesem Tutorial nicht eingehen. Wenn du mehr erfahren willst, schau in die Python Dokumentation_.
 
-.. _documentation: https://docs.python.org/3/tutorial/classes.html#a-word-about-names-and-objects
+.. _Dokumentation: https://docs.python.org/3/tutorial/classes.html#a-word-about-names-and-objects
 
 .. figure:: assets/snake_nokia.png 
     :scale: 70%
     :align: center
 
-To give you another example of using classes, here is a Snake class that could be used for a micro:bit version of the Snake game (you'll know if you ever had a Nokia). :: 
+Um dir ein weiteres Beispiel für die Verwendung von Klassen zu geben, hier ist eine Snake Klasse, die für eine micro:bit Version des Snake Spiels verwendet werden könnte. :: 
 
     class Snake:
 
@@ -120,13 +117,13 @@ To give you another example of using classes, here is a Snake class that could b
                 sleep(600)
                 display.set_pixel(self.x_position, self.y_position, 0)
 
-    # Create an instance of a Snake object
+    # Erstelle eine Instanz eines Snake Objekts unter der Bezeichnung python
     python = Snake()
 
-    # Access its position on x axis and print
+    # greife auf seine Position auf der X-Achse zu und gib sie aus
     print(python.x_position)
 
-    # Move python to the right
+    # Bewege python nach rechts
     python.move_snake(python.x_position + 1, python.y_position)   
    
 
