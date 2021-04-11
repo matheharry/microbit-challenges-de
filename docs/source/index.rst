@@ -23,7 +23,7 @@ Ebenso ist der Inhalt an einigen Stellen eine gekürzte Version der
 BBC Micro:bit MicroPython `Dokumentation <http://microbit-micropython.readthedocs.io>`_.
 
 Die Challenge-Aufgaben können für Team-Wettbewerbe oder einfach zum Spaß im Klassenzimmer verwendet werden. Einige von ihnen wurden auf Grundlage der 
-gemialen Übungen von M. Atkinson auf der Website `Multiwingspan <http://multiwingspan.co.uk/micro.php>`_ angepasst.
+Übungen von M. Atkinson auf der großartigen Website `Multiwingspan <http://multiwingspan.co.uk/micro.php>`_ angepasst.
 
 Um diese Dokumentation im pdf-, epub- oder html-Format herunterzuladen, klicke auf den Link unten in der Seitenleiste auf der linken Seite:
 
