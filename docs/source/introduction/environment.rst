@@ -2,23 +2,25 @@
 Deine Arbeitsumgebung einrichten
 ********************************
 
-Bevor du mit dem Programmieren beginnst, benötigst du einen Quellcode-Editor, um Programme auf deinem micro:bit schreiben, laden und ausführen zu können.
-\Es gibt im Wesentlichen vier Optionen: 
+Bevor du mit dem Programmieren beginnst, benötigst du einen Quellcode-Editor, um Programme auf deinem micro:bit schreiben, laden und ausführen zu können. 
+Es gibt im Wesentlichen vier Optionen: 
 
-    - Im Web-Browser: `micro:bit Editor`_ 
+    - Im Web-Browser: `micro:bit Editor`_ (momentan empfehle ich allerdings die aktuelle `Beta-Version`_!)
     - Für Anfänger am PC: `Mu Editor`_ 
     - `MicroPython App`_ wenn du ein Chromebook benutzt  
     - Dein normaler Python-Editor mit einer Reihe von CLI-Befehlen (fortgeschritten)  
 
-    Für dieses Tutorial werden wir den Mu-Editor verwenden, aber du kannst natürlich auch einen anderen Editor verwenden, der dir besser gefällt.
-    Um Mu herunterzuladen, gehe auf die Mu Website_.
+Für dieses Tutorial werden wir den Mu-Editor verwenden, aber du kannst natürlich auch einen anderen Editor verwenden, der dir besser gefällt.
+Um Mu herunterzuladen, gehe auf die Mu Website_.
 
 .. _`micro:bit Editor`: https://python.microbit.org
+.. _`Beta-Version`: https://python.microbit.org/v/beta
 .. _`Mu Editor`: https://codewith.mu/
 .. _`MicroPython App` : https://chrome.google.com/webstore/detail/micropython/lhdjeebhcalhgnbigbngiaglmladclbo?hl=de-GE
 .. _Website: https://codewith.mu/en/
 
-Du kannst verschiedene Optionen wählen, um Mu zu installieren. Die, die du höchstwahrscheinlich benutzen wirst, ist ein Installer für dein Gerät (Mac/Windows), oder die Installation durch ein
+Du kannst verschiedene Optionen wählen, um Mu zu installieren. Die, die du höchstwahrscheinlich auf deinem eigenen Gerät benutzen wirst, 
+wenn du Administratorenrechte hast, ist ein Installer für dein Gerät (Mac/Windows), oder die Installation durch ein
 Python-Paket (pip) über die :ref:`Kommandozeile`, wenn du Python auf deinem Computer installiert hast.
 
 .. note:: Für diejenigen, die vorher mit Python gearbeitet haben, MicroPython unterstützt keine regulären externen Python-Bibliotheken, 
@@ -31,4 +33,4 @@ Python-Paket (pip) über die :ref:`Kommandozeile`, wenn du Python auf deinem Com
    :scale: 70% 
    :target: https://codewith.mu/en/download
 
-   Sobald der Editor installiert ist, starte ihn und schließe den micro:bit an deinen Computer an.
+Sobald der Editor installiert ist, starte ihn und schließe den micro:bit an deinen Computer an.
