@@ -98,7 +98,7 @@ Es gibt noch viele weitere Besonderheiten und nützliche Eigenschaften von Klass
     :scale: 70%
     :align: center
 
-Um dir ein weiteres Beispiel für die Verwendung von Klassen zu geben, hier ist eine Snake Klasse, die für eine micro:bit Version des Snake Spiels verwendet werden könnte. :: 
+Um dir ein weiteres Beispiel für die Verwendung von Klassen zu geben, schau dir diese *Snake*-Klasse an, die für eine micro:bit Version des Snake Spiels verwendet werden könnte. :: 
 
     class Snake:
 
