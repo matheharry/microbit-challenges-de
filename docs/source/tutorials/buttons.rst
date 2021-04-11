@@ -1,26 +1,26 @@
 ***********
-Buttons 
+Tasten 
 ***********
 
 .. py:module:: microbit.button
 
-The micro:bit has two buttons: ``A`` and ``B``.
+Der micro:bit hat zwei Tasten: ``A`` und ``B``.
 
 .. image:: assets/buttons.png
    :scale: 40 %
    :align: center
 
-You can use the buttons to get input from the user. Perhaps you'd like to start or stop your program with a button press 
-or maybe you'd like to know how many times each button has been pressed. 
+Du kannst die Tasten verwenden, um Eingaben vom Benutzer zu erhalten. Vielleicht möchtest du dein Programm mit einem Tastendruck starten oder stoppen 
+oder vielleicht möchtest du wissen, wie oft jede Taste gedrückt wurde. 
 
-Basic Functions
+Grundfunktionen
 ================
 
-Checking whether a button is pressed
+Prüfen, ob eine Taste gedrückt ist
 ------------------------------------
 
-Sometimes we just want a program to wait until something happens, for example: we could ask the micro:bit to wait until, say, button 
-``A`` is pressed and then print a message. We could do that like this: ::
+Manchmal wollen wir nur, dass ein Programm wartet, bis etwas passiert, zum Beispiel: wir könnten den micro:bit bitten, zu warten, bis, sagen wir, die Taste 
+``A`` gedrückt wird und dann eine Nachricht ausgeben. Das geht zum Beispiel so: ::
 
 	from microbit import *
 
@@ -30,12 +30,12 @@ Sometimes we just want a program to wait until something happens, for example: w
 		else:
 			display.scroll(Image.ASLEEP)				
 
-This means, if button ``A`` is pressed then display an ``A`` on the LED screen, otherwise, display ``Image.ASLEEP``. 
+Das heißt, wenn die Taste ``A`` gedrückt wird, wird ein ``A`` und ansonsten ``Image.ASLEEP`` auf dem LED Display angezeigt. 
 
-The problem with using ``is_pressed()`` is that unless you are pressing the button at that precise moment then you won't 
-detect whether the button was ever pressed or not. It might be the case that the user pushes the button while the code is doing the something else, and the press is missed. 
-The ``was_pressed()`` function is useful is you want to write code that occasionally checks whether the button has been pushed but then goes on to do something else. 
-In this way you need never miss a button press again: ::
+Das Problem bei der Verwendung von ``is_pressed()`` ist, dass du, wenn du die Taste nicht genau in dem Moment der Abfrage drückst, nicht 
+feststellen kannst, ob die Taste jemals gedrückt wurde oder nicht. Es könnte der Fall sein, dass der Benutzer die Taste drückt, während der Code etwas anderes macht, und der Tastendruck wird übersehen. 
+Die ``was_pressed()`` Funktion ist nützlich, wenn du Code schreiben willst, der gelegentlich prüft, ob die Taste gedrückt wurde, dann aber etwas anderes macht. 
+Auf diese Weise solltest du nie wieder einen Tastendruck verpassen: ::
 
 	from microbit import *
 
@@ -47,16 +47,16 @@ In this way you need never miss a button press again: ::
 
 	    sleep(1000)
 
-What you’ll see is that the display will show an ``A`` for a second if you press the button, and then ``Image.ASLEEP`` is displayed. If you press the button while the 
-program is delaying, then the ``A`` won’t show up immediately, but it will show up once the if statement test condition is executed. It becomes more apparent as you 
-increase the delay.
+Am Display wird ein ``A`` für eine Sekunde angezeigt, wenn du die Taste drückst, und dann wird ``Image.ASLEEP`` angezeigt. Wenn du die Taste drückst, während das 
+Programm gerade die Zeitverzögerung auslöst, dann wird das ``A`` nicht sofort angezeigt, sondern erst, wenn die Testbedingung der if-Anweisung ausgeführt wird. Das wird umso deutlicher, je 
+länger du die Verzögerung einstellst.
 
-Now try using ``button_a.isPressed()`` instead of ``button_a.was_pressed()``.
+Versuche nun ``button_a.isPressed()`` anstelle von ``button_a.was_pressed()`` zu verwenden.
 
-Counting the number of presses
-------------------------------
-To count the number of times a button was pressed, you can use the 
-``get_presses()`` method.  Here is an example::
+Zählen der Anzahl der Tastendrücke
+------------------------------------
+Um zu zählen, wie oft eine Taste gedrückt wurde, kannst du die 
+``get_presses()`` Methode verwenden.  Hier ist ein Beispiel::
 
 	from microbit import *
 
@@ -65,18 +65,18 @@ To count the number of times a button was pressed, you can use the
 	   count = button_a.get_presses()
 	   display.scroll(str(count))	
 
-The micro:bit will sleep for 3 seconds and then wake up and check how many times button ``A`` was pressed. The number of presses is 
-stored in ``count``. 
+Der micro:bit pausiert für 3 Sekunden, wacht dann auf und überprüft, wie oft die Taste ``A`` gedrückt wurde. Die Anzahl der Tastendrücke wird 
+in ``count`` gespeichert. 
 
-Can you define your own ``get_presses`` function? 
+Kannst du deine eigene ``get_presses`` Funktion erstellen? 
 
-Advanced Functions
-===================
+Erweiterte Funktionen
+=====================
 
-Checking for both buttons
--------------------------
-It is possible to check a series of events by using conditional statements. Say you wanted to check whether button ``A`` was pressed or button ``B`` was pressed or 
-whether both buttons were pressed at the same time: ::  
+Überprüfung beider Tasten
+---------------------------
+Es ist möglich, eine Reihe von Ereignissen mit Hilfe von bedingten Anweisungen zu überprüfen. Sagen wir, du möchtest prüfen, ob die Taste ``A`` gedrückt wurde oder die Taste ``B`` gedrückt wurde oder 
+ob beide Tasten zur gleichen Zeit gedrückt wurden: ::  
 
 	from microbit import *
 
@@ -90,10 +90,11 @@ whether both buttons were pressed at the same time: ::
 	        display.scroll("B")
 	    sleep(100)
 
-The code above displays the letter corresponding to the button. If both buttons are pressed at the same time it displays ``AB``.
+Der obige Code zeigt den Buchstaben an, der der Taste entspricht. Wenn beide Tasten gleichzeitig gedrückt werden, wird ``AB`` angezeigt. 
+Was passiert, wenn ``sleep(0)`` gesetzt bzw. ganz weggelassen wird?
 
  
-Practice questions
+Übungsaufgaben
 ===================
-* Change what is displayed when you press the button.
-* Games that need user input.
+* Ändere, was angezeigt wird, wenn du eine Taste drückst.
+* Spiele, die Benutzereingaben benötigen.
