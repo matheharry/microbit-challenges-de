@@ -2,7 +2,8 @@
 Ein Programm schreiben
 **********************
 
-Im Allgemeinen besteht der Prozess des Code-Entwurfs aus diesen 4 Schritten. Du kannst davon ausgehen, dass du die Schleife ein paar Mal durchlaufen musst, bevor dein Code funktioniert.
+Im Allgemeinen besteht der Prozess des Code-Entwurfs aus diesen 4 Schritten. Du kannst davon ausgehen, 
+dass du die Schleife ein paar Mal durchlaufen musst, bevor dein Code funktioniert.
 
 .. image:: assets/microbit_lifecycle.jpg
    :scale: 70%   
@@ -12,8 +13,10 @@ Im Allgemeinen besteht der Prozess des Code-Entwurfs aus diesen 4 Schritten. Du 
 Den Code entwerfen (Design & Edit)
 ----------------------------------
 
-Als erstes wirst du ein Programm schreiben, das die Nachricht "Hallo Welt!" gefolgt von einem Bild auf dem Display deines micro:bit anzeigt und "Hallo du" auf der Mu Konsole ausgibt. 
-Es ist ratsam, darüber nachzudenken, was du mit deinem Code erreichen willst und wie du es erreichen willst, bevor du mit dem Schreiben beginnst. Es gibt hier nicht viel an Planung und Entwurf zu leisten,
+Als erstes wirst du ein Programm schreiben, das die Nachricht "Hallo Welt!" gefolgt von einem Bild auf dem Display 
+deines micro:bit anzeigt und "Hallo du" auf der Mu Konsole ausgibt. 
+Es ist ratsam, darüber nachzudenken, was du mit deinem Code erreichen willst und wie du es erreichen willst, 
+bevor du mit dem Schreiben beginnst. Es gibt hier nicht viel an Planung und Entwurf zu leisten,
 aber nur, damit du verstehst, wie so ein Plan aussehen könnte::
 
     Für immer wiederholen:
@@ -22,8 +25,9 @@ aber nur, damit du verstehst, wie so ein Plan aussehen könnte::
       Gib "Hallo du!" auf der Konsole aus
       Für zwei Sekunden warten
 
-Es gibt zwei Möglichkeiten, die Ausgabe deines Codes anzuzeigen: Entweder du nutzt die auf dem micro:bit verfügbaren Ausgaben (z.B. die LEDs) oder die REPL (Read Print Evaluate Loop) 
-Konsole, die im Editor mit der ``print`` Anweisung verfügbar ist. Die Konsole ist besonders nützlich, um Bugs (Fehler) in deinem Code zu finden oder
+Es gibt zwei Möglichkeiten, die Ausgabe deines Codes anzuzeigen: Entweder du nutzt die auf dem micro:bit verfügbaren 
+Ausgaben (z.B. die LEDs) oder die REPL (Read Print Evaluate Loop) Konsole, die im Editor mit der ``print`` Anweisung 
+verfügbar ist. Die Konsole ist besonders nützlich, um Bugs (Fehler) in deinem Code zu finden oder
 neue Konzepte oder Ideen auszuprobieren.  
 
 Gehen wir das Zeile für Zeile durch::
