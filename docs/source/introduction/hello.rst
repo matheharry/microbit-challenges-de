@@ -32,7 +32,7 @@ Die zweite Zeile::
 
 ...weist MicroPython an, das Display zum Scrollen der Zeichenkette "Hello, World!" zu verwenden. 
 Der ``display`` Teil dieser Zeile ist ein sogenanntes *Objekt* aus dem ``microbit``-Modul, das 
-das LED-Display des Gerätes repräsentiert (wir sagen "Objekt" anstelle von "Ding", "Dingsbums" oder "Zeugs"). 
+das LED-Display des Gerätes repräsentiert (wir sagen "Objekt" anstelle von "Ding", "Dings" oder "Dingsbums"). 
 Wir können dem Display sagen was es tun soll, indem wir einen Punkt ans Ende setzen ``display.``, gefolgt von 
 etwas, das wie ein Befehl aussieht (tatsächlich nennt man das eine *Methode*). In diesem Fall benutzen wir die 
 Methode ``scroll`` die eine Laufschrift erzeugt. Da ``scroll`` wissen muss, welche Zeichen über das Display gescrollt 
