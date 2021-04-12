@@ -85,11 +85,9 @@ Und die *Dokumentation zu lesen*, um zu sehen, was alles möglich, gehört natü
 
 **Fragen, die du dir stellen könntest:**
 
-Wozu ist die Verzögerung (``sleep()``) da? Ist sie notwendig? Versuche sie zu entfernen.
-
-Was passiert, wenn du ``True`` durch ``False`` ersetzt?
-
-Was passiert, wenn du ``scroll()`` durch ``show()`` ersetzst?
+   - Wozu ist die Verzögerung (``sleep()``) da? Ist sie notwendig? Versuche einmal sie zu entfernen.
+   - Was passiert, wenn du ``True`` durch ``False`` ersetzt?
+   - Was passiert, wenn du ``scroll()`` durch ``show()`` ersetzst?
 
 Nun hast du dein erstes Programm geschrieben und damit herumexperimentiert. In den nächsten Abschnitten erfährst du mehr über das Schreiben 
 komplexerer Programme und über weitere Einsatzmöglichkeiten des micro:bit.
