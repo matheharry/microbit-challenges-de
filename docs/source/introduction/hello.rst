@@ -39,7 +39,7 @@ Methode ``scroll`` die eine Laufschrift erzeugt. Da ``scroll`` wissen muss, welc
 werden sollen, übergeben wir diese Zeichen zwischen doppelten Anführungszeichen (``"``) innerhalb von Klammern (``(`` und ``)``). 
 Diese werden die *Argumente* genannt. 
 
-Zum Beispiel bedeutet ``display.scroll("Hello, World!")`` auf Deutsch: "Ich möchte, dass du mit dem Display den Text 
+Zum Beispiel bedeutet ``display.scroll("Hello, World!")`` auf Deutsch: "Ich möchte, dass du den Text 
 'Hello, World!' über den Bildschirm laufen lässt". Wenn eine Methode keine Argumente benötigt, machen wir dies durch 
 leere Klammern wie diese deutlich: ``()`` - die Klammern dürfen also nie weggelassen werden!
 
