@@ -38,6 +38,7 @@ Wenn du zu dieser Sammlung beitragen möchtest, nur zu! Installiere git und erst
    introduction/python.rst 
    introduction/getting_started.rst 
    introduction/environment.rst
+   introduction/hello.rst
    introduction/first_program.rst
 
 .. toctree::
