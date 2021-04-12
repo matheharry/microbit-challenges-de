@@ -9,8 +9,8 @@ Im Allgemeinen besteht der Prozess des Code-Entwurfs aus diesen 4 Schritten. Du 
    :align: center
 
 
-Den Code entwerfen
-------------------
+Den Code entwerfen (Design & Edit)
+----------------------------------
 
 Als erstes wirst du ein Programm schreiben, das die Nachricht "Hallo Welt!" gefolgt von einem Bild auf dem Display deines micro:bit anzeigt und "Hallo du" auf der Mu Konsole ausgibt. 
 Es ist ratsam, darüber nachzudenken, was du mit deinem Code erreichen willst und wie du es erreichen willst, bevor du mit dem Schreiben beginnst. Es gibt hier nicht viel an Planung und Entwurf zu leisten,
@@ -56,8 +56,8 @@ Die Anweisung ``print('Hallo du!')``, gibt die Nachricht in der REPL aus. Drück
 Das REPL-Fenster zeigt uns Nachrichten vom micro:bit an und erlaubt uns auch, Befehle direkt an den micro:bit zu senden. Für den Moment werden wir die REPL nur benutzen 
 um Nachrichten und Fehlermeldungen zu sehen, die wir mit dem ``print``-Befehl ausgeben. 
 
-Programm hochladen
---------------------
+Programm hochladen (Flash)
+--------------------------
 
 Klicke nun auf die Flash-Taste in Mu und schau was passiert.
 
@@ -82,12 +82,16 @@ Der beste Weg, um zu lernen, wie etwas funktioniert, ist zu versuchen, deinen Co
 
                                     <\|°_°\|>
 
-Fragst du dich, wozu die Verzögerung gut ist? Ist sie notwendig? Versuche sie zu entfernen.
+Fragen, die du dir stellen könntest:
+
+Wozu ist die Verzögerung (``sleep()``) da? Ist sie notwendig? Versuche sie zu entfernen.
+
 Was passiert, wenn du ``True`` durch ``False`` ersetzt?
-Was passiert, wenn du ``scroll`` durch ``show`` ersetzst?
+
+Was passiert, wenn du ``scroll()`` durch ``show()`` ersetzst?
 
 Nun hast du dein erstes Programm geschrieben. In den nächsten Abschnitten erfährst du mehr über das Schreiben komplexerer Programme und über weitere Einsatzmöglichkeiten des micro:bit.
 
-.. seealso:: Schau dir auch die komplette `micro:bit Dokumentation`_ für MicroPython an.
+.. seealso:: Schau dir auch die komplette micro:bit Dokumentation_ für MicroPython an.
 
-.. _`micro:bit Dokumentation`: https://microbit-micropython.readthedocs.io/en/latest/tutorials/introduction.html 
+   .. _Dokumentation: https://microbit-micropython.readthedocs.io/en/latest/tutorials/introduction.html 
