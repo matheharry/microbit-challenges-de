@@ -1,19 +1,19 @@
-********************************************
- Programming Micro:bit Using Other Languages
-********************************************
+*************************************************
+Programmierung des micro:bit mit anderen Sprachen
+*************************************************
 
-As mentioned in the introduction, micro:bit can also be programmed using JavaScript and C/C++. 
+Wie in der Einleitung erwähnt, kann dein micro:bit auch mit JavaScript und C/C++ programmiert werden. 
 
 JavaScript
 -----------
 
-Online editor and documentation for JavaScript can be found at micro:bit's page_.
+Online-Editor und Dokumentation für JavaScript findest du auf der Seite_ von micro:bit.
 
-.. _page: https://makecode.microbit.org/#
+.. _Seite: https://makecode.microbit.org/#
 
 C/C++
 ------
 
-Micro:bit is programmable using Mbed online compiler. You can watch their getting started video_ for a basic set up. 
+Der Micro:bit ist mit dem Mbed Online-Compiler programmierbar. Du kannst dir deren Getting Started Video_ für eine grundlegende Einrichtung ansehen. 
 
-.. _video: https://os.mbed.com/platforms/Microbit/#getting-started-video
+.. _Video: https://os.mbed.com/platforms/Microbit/#getting-started-video

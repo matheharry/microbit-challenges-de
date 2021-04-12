@@ -1,5 +1,5 @@
 **************************
-Micro:bit - Erste Schritte 
+Micro:bit - Übersicht 
 **************************
 
 Der BBC micro:bit ist ein programmierbarer Mikrocomputer bzw. Mikrocontroller - mit dem man alle möglichen Projekte erstellen kann, von Robotern bis hin zu Musikinstrumenten - 
