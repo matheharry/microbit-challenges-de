@@ -106,7 +106,7 @@ wenn die Temperatur auf dem micro:bit unter einen bestimmten Wert fällt, also m
 	display.show(Image.HAPPY)
 
 
-Ereignis-Schleifen
+Ereignisschleifen
 ------------------
 
 Oft muss dein Programm einfach nur drauf warten, dass etwas passiert. Um dies zu erreichen, lässt du es einen Code, der 
