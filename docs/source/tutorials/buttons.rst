@@ -4,14 +4,22 @@ Tasten
 
 .. py:module:: microbit.button
 
-Der micro:bit hat zwei Tasten: ``A`` und ``B``.
+Bis jetzt haben wir Code erstellt, der das Gerät dazu bringt, etwas zu machen. Das wird *Output* genannt. 
+Wir wollen aber auch, dass das Gerät auf Ereignisse reagiert. Solche Ereignisse werden *Inputs* genannt.
+
+Es ist leicht zu merken: Output ist das, was das Gerät in die Welt hinausgibt, während Input das ist, was 
+in das Gerät hineingeht, um dann verarbeiten zu werden.
+
+Das augenscheinlichste Eingabegerät auf dem micro:bit sind die beiden Tasten, die mit ``A`` und ``B`` bezeichnet 
+sind. Du kannst die Tasten verwenden, um Eingaben vom Benutzer zu erhalten.
 
 .. image:: assets/buttons.png
    :scale: 40 %
    :align: center
 
-Du kannst die Tasten verwenden, um Eingaben vom Benutzer zu erhalten. Vielleicht möchtest du dein Programm mit einem Tastendruck starten oder stoppen 
-oder vielleicht möchtest du wissen, wie oft jede Taste gedrückt wurde. 
+Irgendwie sollte MicroPython auf das Drücken der Tasten reagieren können. Vielleicht möchtest du dein Programm mit 
+einem Tastendruck starten oder stoppen oder vielleicht möchtest du wissen, wie oft jede Taste gedrückt wurde. All 
+das ist recht einfach umzusetzen.
 
 Grundfunktionen
 ================
@@ -65,8 +73,11 @@ Um zu zählen, wie oft eine Taste gedrückt wurde, kannst du die
 	   count = button_a.get_presses()
 	   display.scroll(str(count))	
 
-Der micro:bit pausiert für 3 Sekunden, wacht dann auf und überprüft, wie oft die Taste ``A`` gedrückt wurde. Die Anzahl der Tastendrücke wird 
-in ``count`` gespeichert. 
+Der micro:bit pausiert für 3 Sekunden, wacht dann auf und überprüft, wie oft die Taste ``A`` gedrückt wurde. 
+Die Anzahl der Tastendrücke wird in ``count`` gespeichert. Um ``count`` am Display auszugeben, muss man beachten, 
+dass es sich dabei um eine Zahl - die Anzahl der Tastendrücke - handelt. ``scroll`` kann aber nur Strings ausgeben, 
+weshalb wir den numerischen Wert in einen String aus Zeichen umwandeln müssen. Das machen wir mit der ``str`` Funktion 
+(kurz für "string" ~ sie wandelt alle möglichen Objekte in Strings um).
 
 Kannst du deine eigene ``get_presses`` Funktion erstellen? 
 
