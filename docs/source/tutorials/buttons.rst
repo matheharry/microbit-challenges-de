@@ -24,6 +24,17 @@ das ist recht einfach umzusetzen.
 Grundfunktionen
 ================
 
+Wenn wir wollen, dass MicroPython auf Tastendruck-Ereignisse reagiert, sollten wir das in eine Endlosschleife setzen 
+und prüfen, ob die Taste zB. gedrückt (``is_pressed``) ist.
+
+Eine Endlosschleife ist einfach::
+
+    while True:
+        # Mach etwas
+
+(Erinnere dich, ``while`` prüft, ob etwas wahr (``True``) ist, um herauszufinden, ob es seinen Codeblock ausführen soll. 
+Da ``True`` offensichtlich immer ``True`` ist, erhältst du eine unendliche Schleife).
+
 Prüfen, ob eine Taste gedrückt ist
 ------------------------------------
 
@@ -60,6 +71,45 @@ Programm gerade die Zeitverzögerung auslöst, dann wird das ``A`` nicht sofort 
 länger du die Verzögerung einstellst.
 
 Versuche nun ``button_a.isPressed()`` anstelle von ``button_a.was_pressed()`` zu verwenden.
+
+Lass uns ein ganz einfaches Cyber-Pet machen. Es ist immer traurig, außer du drückst die Taste ``A``. Wenn du die Taste ``B`` drückst, stirbt es. (Mir ist klar, dass das kein sehr angenehmes 
+Spiel ist, vielleicht fällt dir etwas ein, wie man es verbessern kann)::
+
+	from microbit import *
+
+	while True:
+		if button_a.is_pressed():
+			display.show(Image.HAPPY)
+		elif button_b.is_pressed():
+			break
+		else:
+			display.show(Image.SAD)
+
+	display.clear()
+
+Siehst du, wie wir prüfen, welche Tasten gedrückt werden? Wir benutzen ``if``, ``elif`` (kurz für "else if") 
+und ``else``. Diese werden *Bedingungen* genannt und funktionieren so::
+
+	if something is True:
+		# do one thing
+	elif some other thing is True:
+		# do another thing
+	else:
+		# do yet another thing.
+
+Das ähnelt dem Englischen schon sehr, findest du nicht?
+
+Die Methode ``is_pressed`` liefert nur zwei Ergebnisse: ``True`` oder ``False``.
+Wenn du die Taste drückst, gibt sie ``True`` zurück, ansonsten gibt sie ``False``. 
+Den obigen Code könnte man so ins Deutsche übersetzen: 
+"Für immer und ewig, wenn Taste A gedrückt wird, zeige ein glückliches Gesicht, oder, wenn Taste B gedrückt wird, 
+beende die Schleife. Immer sonst zeige ein trauriges Gesicht." 
+Mit der ``break`` Anweisung "brechen" wir aus der Schleife aus und stoppen das eigentlich für immer und ewig laufende Programm.
+
+Ganz am Ende, wenn das Cyber-Pet tot ist, löschen (``clear``) wir das Display.
+
+	- Fällt dir ein Weg ein, dieses Spiel weniger tragisch zu gestalten? 
+	- Wie würdest du überprüfen, ob *beide* Tasten gedrückt sind? (Tipp: weiter unten wird das behandelt).
 
 Zählen der Anzahl der Tastendrücke
 ------------------------------------
