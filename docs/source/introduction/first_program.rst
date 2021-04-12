@@ -82,7 +82,7 @@ Der beste Weg, um zu lernen, wie etwas funktioniert, ist zu versuchen, deinen Co
 
                                     <\|°_°\|>
 
-Fragen, die du dir stellen könntest:
+**Fragen, die du dir stellen könntest:**
 
 Wozu ist die Verzögerung (``sleep()``) da? Ist sie notwendig? Versuche sie zu entfernen.
 
