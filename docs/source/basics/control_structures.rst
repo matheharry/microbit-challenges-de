@@ -105,6 +105,66 @@ wenn die Temperatur auf dem micro:bit unter einen bestimmten Wert fällt, also m
 
 	display.show(Image.HAPPY)
 
+
+Ereignis-Schleifen
+------------------
+
+Oft muss dein Programm einfach nur drauf warten, dass etwas passiert. Um dies zu erreichen, lässt du es einen Code, der 
+definiert, wie es auf bestimmte erwartete Ereignisse, wie zum Beispiel das Drücken einer Taste, reagieren soll, andauernd wiederholen.
+Der Code durchläuft also eine Schleife und bricht erst ab, wenn das erwartete Ereignis eingetreten ist.
+
+Um Schleifen in Python zu programmieren, benutzt du das ``while`` Schlüsselwort. Der Code prüft, ob eine Bedingung ``True`` ist. 
+Wenn ja, wird ein *Codeblock* ausgeführt, der *Body* der Schleife genannt wird. Wenn nicht, bricht das Programm aus der Schleife 
+aus (ignoriert den Body) und macht direkt nach dem Block weiter.
+
+Python macht es einfach, Codeblöcke zu definieren. Sagen wir, ich habe eine To-Do-Liste auf einen Zettel geschrieben. 
+Sie könnte etwa so aussehen::
+
+    Einkaufen
+    Kaputte Dachrinne reparieren
+    Den Rasen mähen
+
+Wenn ich meine To-Do-Liste noch etwas weiter unterteilen möchte, würde ich vielleicht etwas schreiben wie das hier::
+
+    Einkaufen:
+        Eier
+        Speck
+        Tomaten:
+    Kaputte Dachrinne reparieren:
+        Leiter von nebenan leihen
+        Hammer und Nägel finden
+        Leiter zurückbringen
+    Den Rasen mähen:
+        Rasen um Teich auf Frösche kontrollieren
+        Kraftstoffstand des Rasenmähers prüfen
+
+Es ist offensichtlich, dass die Hauptaufgaben in Unteraufgaben aufgeteilt sind, die *Einrückung* unterhalb der Hauptaufgabe, 
+zu der sie gehören. Also ``Eier``, Speck`` und ``Tomaten`` offensichtlich mit ``Einkaufen`` verwandt sind. Durch das Einrücken 
+von Dingen können wir auf einen Blick erkennen, wie die Aufgaben miteinander zusammenhängen.
+
+Dies wird *Verschachtelung* genannt. Wir benutzen die Verschachtelung, um Codeblöcke wie diesen zu erstellen::
+
+    from microbit import *
+
+    while running_time() < 10000:
+        display.show(Image.ASLEEP)
+
+    display.show(Image.SURPRISED)
+
+Die Funktion ``running_time()`` gibt die Anzahl der Millisekunden zurück, seit das Gerät gestartet wurde.
+
+Die Zeile ``while running_time() < 10000:`` prüft, ob die laufende Zeit weniger als als 10000 Millisekunden 
+(d.h. 10 Sekunden) ist. Wenn ja wird das Display ``Image.ASLEEP`` anzeigen. Beachte wie diese Zeile unter der 
+"While"-Anweisung eingerückt ist, genau wie in unserer To-Do-Liste.
+
+Offensichtlich, wenn die Laufzeit gleich oder größer als 10000 Millisekunden ist dann wird auf dem 
+Display ``Image.SURPRISED`` angezeigt. Warum? Weil die ``while`` Bedingung falsch sein wird (``Laufzeit`` 
+ist nicht mehr ``< 10000``). In diesem Fall ist die Schleife beendet und das Programm fährt nach der ``while`` 
+Schleife mit dem Code-Block fort. Es wird dann so aussehen, als würde dein Gerät für 10 Sekunden schlafen, bevor 
+es mit einem überraschten Blick im Gesicht wieder aufwacht.
+
+Probiere es aus!
+
 Übungsaufgaben
 ===================
 
