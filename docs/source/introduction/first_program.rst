@@ -78,7 +78,8 @@ Versuche nun, die REPL-Konsole zu öffnen:
 Etwas ändern 
 -------------
 
-Der beste Weg, um zu lernen, wie etwas funktioniert, ist zu versuchen, deinen Code zu verändern (und die Dokumentation zu lesen, natürlich).
+Der beste Weg, um zu lernen, wie etwas funktioniert, ist zu versuchen, den Code ein wenig zu verändern, um zu sehen was dann passiert.
+Und die *Dokumentation zu lesen*, um zu sehen, was alles möglich, gehört natürlich auch zum Alltag von Programmierern.
 
                                     <\|°_°\|>
 
@@ -90,7 +91,8 @@ Was passiert, wenn du ``True`` durch ``False`` ersetzt?
 
 Was passiert, wenn du ``scroll()`` durch ``show()`` ersetzst?
 
-Nun hast du dein erstes Programm geschrieben. In den nächsten Abschnitten erfährst du mehr über das Schreiben komplexerer Programme und über weitere Einsatzmöglichkeiten des micro:bit.
+Nun hast du dein erstes Programm geschrieben und damit herumexperimentiert. In den nächsten Abschnitten erfährst du mehr über das Schreiben 
+komplexerer Programme und über weitere Einsatzmöglichkeiten des micro:bit.
 
 .. seealso:: Schau dir auch die komplette micro:bit Dokumentation_ für MicroPython an.
 
