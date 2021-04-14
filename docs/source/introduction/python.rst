@@ -7,7 +7,7 @@ der eine große Anwendung entwickeln muss. Die Grundlagen von Python sind leicht
 
 .. figure:: assets/comic5.png
    :align: center
-   :scale: 40%
+   :scale: 70%
 
 Python wurde in den späten 1980er Jahren entwickelt und ist eine für Anfänger und Einsteiger sehr gut geeignete Programmiersprache, die später auch 
 den Fortgeschrittenen und Profis alles bietet, was man sich beim Programmieren wünscht. 
