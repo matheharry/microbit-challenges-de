@@ -71,17 +71,18 @@ den Output verwenden, dh über ihn werden Töne abgespielt (oder "ausgegeben").
     :alt: Piezo-Summer (Buzzer)
 
 
-Diese kleinen Geräte spielen einen hohen Piepton, wenn sie an einen Stromkreis angeschlossen werden. Um einen 
-an deinen micro:bit anzuschließen, solltest du Krokodilklemmen an Pin 0 und GND befestigen (wie unten gezeigt).
+Diese kleinen Geräte spielen einen hohen Piepton, wenn sie an einen Stromkreis angeschlossen werden. Um so einen 
+Summer an deinen micro:bit anzuschließen, musst du Krokodilklemmen an Pin 0 und GND befestigen, wie das unten 
+gezeigt wird.
 
 .. image:: https://microbit-micropython.readthedocs.io/en/v2-docs/_images/pin0-gnd.png
     :width: 250px
     :align: center
     :alt: Piezo-Summer verbunden mit Pin0 und GND
 
-Das Kabel von Pin 0 sollte an den positiven Anschluss des Summers angeschlossen werden.
+Das Kabel von Pin 0 sollte an den längeren positiven Anschluss des Summers angeschlossen werden.
 
-Das folgende Programm lässt den Summer (Buzzer) einen Ton von sich geben::
+Das folgende Programm erzeugt am Summer (Buzzer) einen Ton::
 
     from microbit import *
 
