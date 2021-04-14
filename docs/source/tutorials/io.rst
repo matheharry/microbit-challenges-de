@@ -1,31 +1,36 @@
 Input/Output
 ------------
 
-There are strips of metal along the bottom edge of the BBC micro:bit that make
-it look as if the device has teeth. These are the input/output pins (or I/O pins
-for short).
+An der Unterkante des BBC micro:bit befinden sich Metallstreifen, die den Eindruck erwecken, 
+dass das Gerät Zähne hat. Das sind die Input/Output Pins (oder kurz I/O Pins).
 
 .. image:: https://microbit-micropython.readthedocs.io/en/v2-docs/_images/blue-microbit.png
+    :width: 300px
+    :align: center
+    :alt: micro:bit mit beschrifteten Pins
 
-Some of the pins are bigger than others so it's possible to attach crocodile
-clips to them. These are the ones labelled 0, 1, 2, 3V and GND (computers
-always start counting from zero). If you attach an edge connector board to the
-device it's possible to plug in wires connected to the other (smaller) pins.
+Einige der Stifte sind größer als andere, so dass es möglich ist, Krokodilklemmen an ihnen zu 
+befestigen. Das sind die mit 0, 1, 2, 3V und GND bezeichneten Pins (Computer beginnen immer bei 
+Null zu zählen). Wenn du ein sogenanntes Edge-Connector- oder BreakOut-Board am Gerät anschließt, 
+kannst du auch ganz leicht Kabel an die anderen (kleineren) Pins anschließen.
 
-Each pin on the BBC micro:bit is represented by an *object* called ``pinN``
-where ``N`` is the pin number. So, for example, to do things with the pin
-labelled with a 0 (zero), use the object called ``pin0``.
+Auf dem neuesten micro:bit **V2** kann auch das micro:bit Logo als Touch-Eingang verwendet werden.
 
-Simple!
+Jeder Pin auf dem BBC micro:bit wird durch ein *Objekt* namens ``pinN`` repräsentiert wobei ``N`` 
+die Nummer des Pins ist. Um also zum Beispiel mit dem Pin etwas zu tun der mit einer 0 (Null) beschriftet 
+ist, musst du in deinem Skript das Objekt namens ``pin0`` benutzen. Der Logo-Pin des **V2** 
+verwendet ``pin_logo``.
 
-These objects have various *methods* associated with them depending upon what
-the specific pin is capable of.
+Einfach!
 
-Ticklish Python
-+++++++++++++++
+Diese Objekte haben verschiedene *Methoden*, die mit ihnen verbunden sind, je nachdem, was der spezifische 
+Pin kann.
 
-The simplest example of input via the pins is a check to see if they are
-touched. So, you can tickle your device to make it laugh like this::
+Kitzeliges Python
++++++++++++++++++
+
+Das einfachste Beispiel für eine Eingabe über die Pins ist eine Überprüfung, ob sie berührt werden. Du kannst also dein 
+Gerät kitzeln, um es so zum Lachen zu bringen::
 
     from microbit import *
 
