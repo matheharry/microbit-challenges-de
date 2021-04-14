@@ -13,7 +13,7 @@ Mit MicroPython ist das ganz einfach::
     display.scroll("Hello, World!")
 
 Erklärungen und Grundbegriffe
-=============================
+==============================
 
 Jede Zeile führt etwas Bestimmtes aus. Die erste Zeile::
 
@@ -47,7 +47,7 @@ Kopiere den "Hello, World!"-Code in deinen Editor und flashe ihn auf das Gerät.
 
     - Kannst du herausfinden, wie du die Nachricht ändern kannst? 
     - Kannst du den micro:bit dazu bringen, dass er "Hallo" zu dir sagt? Er könnte zum Beispiel "Hallo, Nikolaus!" sagen. 
-    Kleiner Tipp: du musst das Argument der Scroll-Methode ändern.
+        Kleiner Tipp: du musst das Argument der Scroll-Methode ändern.
 
 .. warning::
 
@@ -59,11 +59,11 @@ Kopiere den "Hello, World!"-Code in deinen Editor und flashe ihn auf das Gerät.
     gefunden werden kann.
 
     Python erwartet, dass du **EXAKT** das Richtige tippst. Also, zum Beispiel,
-    ``Microbit``, ``microbit`` und ``microBit`` sind alle unterschiedliche Dinge für
-    Python. Wenn MicroPython sich über einen ``NameError`` beschwert, ist es wahrscheinlich
-    weil du etwas ungenau getippt hast. Es ist wie der Unterschied
-    zwischen "Nicholas" und "Nicolas". Es sind zwei verschiedene Personen
-    aber ihre Namen sehen sich sehr ähnlich.
+    ``Microbit``, ``microbit`` und ``microBit`` sind alles unterschiedliche Begriffe für
+    Python. Wenn MicroPython sich über einen ``NameError`` beschwert, passiert das wahrscheinlich
+    deshalb, weil du etwas ungenau getippt hast. Es ist wie der Unterschied
+    zwischen "Marc" und "Mark". Es sind zwei völlig verschiedene Personen,
+    obwohl sich ihre Namen sehr ähnlich sehen.
 
     Wenn MicroPython sich über einen ``SyntaxError`` beschwert, hast du den Code einfach
     auf eine Weise eingegeben, die MicroPython nicht verstehen kann. Überprüfe, ob du nicht irgendwelche
