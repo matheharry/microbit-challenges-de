@@ -7,7 +7,7 @@ micro:bit MicroPython Tutorial
 ===============================
 
 Diese Dokumentation kann unter <http://microbit-challenges-de.readthedocs.io/de/latest/index.html> angesehen werden. Sie basiert größtenteils auf 
-der Arbeit von `Rae Harbird`_.
+der englischen MicroPython `Dokumentation <http://microbit-micropython.readthedocs.io>`_ und der Arbeit von `Rae Harbird`_.
 
 .. _Rae Harbird: https://microbit-challenges.readthedocs.io/
 
@@ -19,8 +19,6 @@ Hilfe der vorgestellten Grundbausteine Lösungen für Aufgaben.
 Schülern das Programmieren mit einem Mikroprozessor mit eingebetteten Sensoren auf dem Board beizubringen
 ermöglicht es den Lernenden, sofortiges Feedback zu ihrem Code zu erhalten, ohne dass sie vorher etwas über Elektronik lernen müssen.  Dieser Ansatz zum Erlernen von Coding wurde von Prof. Stephen Hailes, UCL, entworfen. Sein Team entwickelte den `Engduino <http://www.engduino.org>`_ ausdrücklich für diesen Zweck.  Das Design des micro:bit wurde stark durch den
 Engduino und ein Teil dieses Materials ist direkt aus den Engduino-Tutorialblättern übernommen.
-Ebenso ist der Inhalt an einigen Stellen eine gekürzte Version der
-BBC Micro:bit MicroPython `Dokumentation <http://microbit-micropython.readthedocs.io>`_.
 
 Die Challenge-Aufgaben können für Team-Wettbewerbe oder einfach zum Spaß im Klassenzimmer verwendet werden. Einige von ihnen wurden auf Grundlage der 
 Übungen von M. Atkinson auf der großartigen Website `Multiwingspan <http://multiwingspan.co.uk/micro.php>`_ angepasst.
