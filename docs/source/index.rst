@@ -13,7 +13,7 @@ der englischen MicroPython `Dokumentation <http://microbit-micropython.readthedo
 
 Die Arbeitsblätter sind so gestaltet, dass sie den Schülern eine Einführung in die Funktionen des
 micro:bit vermitteln sollen.  Es werden kurze praktische Beispiele gegeben und die Schüler werden aufgefordert, mit 
-Hilfe der vorgestellten Grundbausteine Lösungen für Aufgaben.
+Hilfe der vorgestellten Grundbausteine Lösungen für weiterführende Aufgaben zu programmieren.
 
 
 Schülern das Programmieren mit einem Mikroprozessor mit eingebetteten Sensoren auf dem Board beizubringen
@@ -45,6 +45,7 @@ Wenn du zu dieser Sammlung beitragen möchtest, nur zu! Installiere git und erst
 
    tutorials/display.rst
    tutorials/buttons.rst
+   tutorials/io.rst
    tutorials/accelerometer.rst
    tutorials/compass.rst
    tutorials/thermometer.rst
