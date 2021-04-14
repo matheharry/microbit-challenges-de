@@ -29,8 +29,8 @@ Pin kann.
 Kitzeliges Python
 +++++++++++++++++
 
-Das einfachste Beispiel für eine Eingabe über die Pins ist eine Überprüfung, ob sie berührt werden. Du kannst also dein 
-Gerät kitzeln, um es so zum Lachen zu bringen::
+Das einfachste Beispiel für eine Eingabe über die Pins ist eine Überprüfung, ob sie berührt werden. Du kannst also 
+deinen micro:bit kitzeln, um ihn zum Lachen zu bringen! Und das geht so: ::
 
     from microbit import *
 
@@ -40,12 +40,23 @@ Gerät kitzeln, um es so zum Lachen zu bringen::
         else:
             display.show(Image.SAD)
 
-With one hand, hold your device by the GND pin. Then, with your other hand,
-touch (or tickle) the 0 (zero) pin. You should see the display change from
-grumpy to happy!
+Halte deinen micro:bit mit einer Hand am GND-Pin. Dann berührst (oder kitzelst) du mit deiner anderen Hand den 0 (Null) 
+Pin. Du solltest sehen, wie sich das Display von grantig zu glücklich verändert!
 
-This is a form of very basic input measurement. However, the fun really starts
-when you plug in circuits and other devices via the pins.
+Wenn du den neuesten micro:bit **V2** verwendest, kannst du auch das Standardverhalten des Pins ändern, so dass du GND 
+gar nicht mehr berühren musst.::
+
+    from microbit import *
+    pin0.set_touch_mode(pin0.CAPACITIVE)
+    while True:
+        if pin0.is_touched():
+            display.show(Image.HAPPY)
+        else:
+            display.show(Image.SAD)
+
+
+Dabei handelt es sich um eine sehr einfache Messung eines Eingangs. Der Spaß fängt aber erst richtig an, 
+wenn du Schaltungen und andere Geräte über die Pins ansteckst.
 
 Bleeps and Bloops
 +++++++++++++++++
