@@ -88,7 +88,7 @@ Das folgende Programm lässt den Summer (Buzzer) einen Ton von sich geben::
     pin0.write_digital(1)
 
 Das macht etwa 5 Sekunden lang Spaß und dann willst du nur noch, dass das schreckliche 
-Quietschen aufhört. Verbessern wir unser Beispiel und lassen das Gerät piepsen::
+Quietschen aufhört. Verbessern wir unser Beispiel und lassen das Gerät sinnvoller piepsen::
 
     from microbit import *
 
@@ -98,16 +98,16 @@ Quietschen aufhört. Verbessern wir unser Beispiel und lassen das Gerät piepsen
         pin0.write_digital(0)
         sleep(480)
 
-Can you work out how this script works? Remember that ``1`` is "on" and ``0``
-is "off" in the digital world.
+Kommst du drauf, wie dieses Skript funktioniert? Denke daran, dass ``1`` in der digitalen 
+Welt "an" und ``0`` "aus" bedeutet.
 
-The device is put into an infinite loop and immediately switches pin 0 on. This
-causes the buzzer to emit a beep. While the buzzer is beeping, the device
-sleeps for twenty milliseconds and then switches pin 0 off. This gives the
-effect of a short bleep. Finally, the device sleeps for 480 milliseconds before
-looping back and starting all over again. This means you'll get two bleeps per
-second (one every 500 milliseconds).
+Das Gerät wird in eine Endlosschleife versetzt und schaltet sofort den Pin 0 ein. Das bewirkt, 
+dass der Buzzer einen Piepton abgibt. Während der Buzzer piepst, macht das Gerät für 20 Millisekunden 
+Pause (es "schläft") und schaltet dann Pin 0 aus. Das ergibt den Effekt eines kurzen Piepsens. 
+Danach macht das Gerät eine 480 Millisekunden Pause, bevor an den Beginn der Schleife zurückgesprungen
+wird und alles wieder von vorne anfängt. Das bedeutet, dass du zwei Pieptöne pro Sekunde (einer alle 
+500 Millisekunden) hörst.
 
-We've made a very simple metronome!
+Wir haben ein sehr einfaches Metronom gebaut!
 
-.. footer:: The image of the pizeo buzzer is CC BY-NC-SA 3.0 from https://www.flickr.com/photos/tronixstuff/4821350094
+.. footer:: Das Bild des Pizeo Buzzers ist CC BY-NC-SA 3.0 von https://www.flickr.com/photos/tronixstuff/4821350094
