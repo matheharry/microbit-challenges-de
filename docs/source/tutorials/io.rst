@@ -2,7 +2,8 @@ Input/Output
 ------------
 
 An der Unterkante des BBC micro:bit befinden sich Metallstreifen, die den Eindruck erwecken, 
-dass das Gerät Zähne hat. Das sind die Input/Output Pins (oder kurz I/O Pins).
+dass das Gerät Zähne hat. Das sind die Input/Output Pins (oder kurz I/O Pins). Man könnte auch
+Eingabe- und Ausgabe-Pins dazu sagen.
 
 .. image:: https://microbit-micropython.readthedocs.io/en/v2-docs/_images/blue-microbit.png
     :width: 300px
@@ -58,31 +59,36 @@ gar nicht mehr berühren musst.::
 Dabei handelt es sich um eine sehr einfache Messung eines Eingangs. Der Spaß fängt aber erst richtig an, 
 wenn du Schaltungen und andere Geräte über die Pins ansteckst.
 
-Bleeps and Bloops
-+++++++++++++++++
+Piepsen und Blubbern
+++++++++++++++++++++
 
-The simplest thing we can attach to the device is a Piezo buzzer. We're going
-to use it for output.
+Das Einfachste, was wir am Gerät anbringen können, ist ein Piezo-Summer. Wir werden ihn für den Output verwenden,
+dh über ihn werden Töne abgespielt (oder "ausgegeben").
 
 .. image:: https://microbit-micropython.readthedocs.io/en/v2-docs/_images/piezo_buzzer.jpg
+    :width: 250px
+    :align: center
+    :alt: Piezo-Summer (Buzzer)
 
-These small devices play a high-pitched bleep when connected to a circuit. To
-attach one to your BBC micro:bit you should attach crocodile clips to pin 0 and
-GND (as shown below).
+
+Diese kleinen Geräte spielen einen hohen Piepton, wenn sie an einen Stromkreis angeschlossen werden. Um einen 
+an deinen micro:bit anzuschließen, solltest du Krokodilklemmen an Pin 0 und GND befestigen (wie unten gezeigt).
 
 .. image:: https://microbit-micropython.readthedocs.io/en/v2-docs/_images/pin0-gnd.png
+    :width: 250px
+    :align: center
+    :alt: Piezo-Summer verbunden mit Pin0 und GND
 
-The wire from pin 0 should be attached to the positive connector on the buzzer
-and the wire from GND to the negative connector.
+Das Kabel von Pin 0 sollte an den positiven Anschluss des Summers angeschlossen werden.
 
-The following program will cause the buzzer to make a sound::
+Das folgende Programm lässt den Summer (Buzzer) einen Ton von sich geben::
 
     from microbit import *
 
     pin0.write_digital(1)
 
-This is fun for about 5 seconds and then you'll want to make the horrible
-squeaking stop. Let's improve our example and make the device bleep::
+Das macht etwa 5 Sekunden lang Spaß und dann willst du nur noch, dass das schreckliche 
+Quietschen aufhört. Verbessern wir unser Beispiel und lassen das Gerät piepsen::
 
     from microbit import *
 
