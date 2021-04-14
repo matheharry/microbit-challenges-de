@@ -59,11 +59,11 @@ gar nicht mehr berühren musst.::
 Dabei handelt es sich um eine sehr einfache Messung eines Eingangs. Der Spaß fängt aber erst richtig an, 
 wenn du Schaltungen und andere Geräte über die Pins ansteckst.
 
-Piepsen und Blubbern
-++++++++++++++++++++
+Piepsen und Quietschen
+++++++++++++++++++++++
 
-Das Einfachste, was wir am Gerät anbringen können, ist ein Piezo-Summer. Wir werden ihn für den Output verwenden,
-dh über ihn werden Töne abgespielt (oder "ausgegeben").
+Das Einfachste, das wir an unserem micro:bit anschließen können, ist ein Piezo-Summer. Wir werden ihn für 
+den Output verwenden, dh über ihn werden Töne abgespielt (oder "ausgegeben").
 
 .. image:: https://microbit-micropython.readthedocs.io/en/v2-docs/_images/piezo_buzzer.jpg
     :width: 250px
