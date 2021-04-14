@@ -80,7 +80,7 @@ gezeigt wird.
     :align: center
     :alt: Piezo-Summer verbunden mit Pin0 und GND
 
-Das Kabel von Pin 0 sollte an den längeren positiven Anschluss des Summers angeschlossen werden.
+Das Kabel von Pin 0 sollte an den (meist längeren) positiven Anschluss des Summers angeschlossen werden.
 
 Das folgende Programm erzeugt am Summer (Buzzer) einen Ton::
 
@@ -99,7 +99,7 @@ Quietschen aufhört. Verbessern wir unser Beispiel und lassen das Gerät sinnvol
         pin0.write_digital(0)
         sleep(480)
 
-Kommst du drauf, wie dieses Skript funktioniert? Denke daran, dass ``1`` in der digitalen 
+Kommst du drauf, was dieses Skript macht? Denke daran, dass ``1`` in der digitalen 
 Welt "an" und ``0`` "aus" bedeutet.
 
 Das Gerät wird in eine Endlosschleife versetzt und schaltet sofort den Pin 0 ein. Das bewirkt, 
