@@ -58,7 +58,7 @@ Menü
 
 .. figure:: assets/header.png
    :align: center
-   :scale: 70% 
+   :scale: 50% 
 
 Das Hauptmenü des Editors enthält verschiedene Buttons, mit denen du mit dem Editor und dem micro:bit arbeiten kannst. 
 Wenn du zusätzliche Funktionen im Editor aktiviert hast, wie z.B. WebUSB, kannst du zusätzliche Buttons in diesem Menü 
@@ -66,7 +66,7 @@ sehen.
 
 .. figure:: assets/webeditor_download.png
    :align: left
-   :scale: 70% 
+   :scale: 50% 
 
 Klicke auf den Download Button, um eine spezielle "hex"-Datei auf dem Computer zu speichern.
 
@@ -77,8 +77,8 @@ Geräts sehen). Weiter unten erfährst du, wie du den Code aus einer Hex-Datei z
 Der Download- wird zum Flash-Button, wenn der micro:bit über WebUSB verbunden ist. 
 
 .. figure:: assets/webeditor_flash.png
-   :align: left
-   :scale: 70% 
+   :align: right
+   :scale: 50% 
 
 Schreibe dein Skript im Editorfenster und klicke auf den "Flash" Button, um es direkt auf den micro:bit 
 zu übertragen. Wenn das nicht funktioniert, stelle sicher, dass dein micro:bit als USB-Speichergerät in 
@@ -86,7 +86,7 @@ deinem Dateisystem-Explorer aufscheint.
 
 .. figure:: assets/webeditor_connect.png
    :align: left
-   :scale: 70% 
+   :scale: 50% 
 
 Der Connect-Button ermöglicht es dir, deinen micro:bit mit deinem Browser zu verbinden, indem du ein Tool 
 namens WebUSB benutzt. Wenn du eine Verbindung herstellst, öffnet sich ein Fenster in deinem Browser, in dem 
@@ -95,23 +95,23 @@ die micro:bit Firmware aktualisieren.
 
 .. figure:: assets/webeditor_loadsave.png
    :align: left
-   :scale: 70% 
+   :scale: 50% 
 
 Du kannst nicht nur eine Hex-Datei oder ein Py-Skript per Drag&Drop in den Editor ziehen, um sie zu laden, sondern 
 auch den Load/Save Button drücken, um ein Dateifenster zu öffnen, in dem du die Dateien auf dem micro:bit überprüfen 
 kannst. Du kannst Dateien per Drag&Drop in die graue "Drop"-Fläche ziehen oder mit dem Dateipicker nach einer Datei 
 auf deinem Computer suchen. Du kannst auch deine .hex oder .py Dateien von hier aus herunterladen.
 
-.. figure:: assets/file_system.png
+.. figure:: assets/file-system.png
    :align: center
-   :scale: 60% 
+   :scale: 30% 
 
 Das Dateisystem fügt Funktionen hinzu, um Python-Module, Datenlogs und andere Dateitypen auf dem micro:bit hinzuzufügen 
 oder zu entfernen.
 
 .. figure:: assets/webeditor_serial.png
-   :align: left
-   :scale: 70% 
+   :align: center
+   :scale: 50% 
 
 Der Open/Close Serial Button erlaubt es dir, dynamisch mit MicroPython auf dem micro:bit zu arbeiten, indem du die 
 REPL-Befehlszeile benutzt.
@@ -125,14 +125,14 @@ Read, Evaluate, Print Loop (REPL)
     4. Gehe in der Schleife zurück zu Schritt 1
 
 .. figure:: assets/webeditor_repl.png
-   :align: left
+   :align: center
    :scale: 70% 
 
 Text-Editor
 +++++++++++
 
 .. figure:: assets/webeditor_text.png
-   :align: left
+   :align: center
    :scale: 70% 
 
 Im Texteditor schreiben und bearbeiten wir unsere Skripte. Der Texteditor versucht zu helfen, indem er 
