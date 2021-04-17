@@ -2,12 +2,19 @@
 Datentypen
 ***********
 
-Um verschiedene Arten von Daten korrekt zu erfassen, stellen uns Programmiersprachen verschiedene Datentypen zur Verfügung, damit wir diese richtig darstellen können.
-Jeder Fall, sei es das Sammeln von Beschleunigungswerten vom Beschleunigungsmesser oder das Zählen der Anzahl, wie oft eine Taste gedrückt wurde, erfordert einen anderen Ansatz, 
-weshalb Python und die meisten anderen Programmiersprachen mehrere Datentypen zur Darstellung von Werten kennen:
+Um verschiedene Arten von Daten korrekt zu erfassen, stellen uns Programmiersprachen verschiedene 
+Datentypen zur Verfügung, damit wir diese richtig darstellen können. Jeder Fall, sei es das Sammeln 
+von Beschleunigungswerten vom Beschleunigungsmesser, das Zählen der Anzahl, wie oft eine Taste 
+gedrückt wurde, oder das Speichern eines Namens, muss auf jeweils ganz spezielle Art und Weise behandelt
+werden. Deshalb stellt Python so wie die meisten anderen Programmiersprachen mehrere Datentypen zur 
+Darstellung von Werten zur Verfügung.
+
+Die Wichtigsten sind:
 
 .. figure:: assets/stringsintegersfloats.png 
 	 :align: center
+
+Eine kleine Übersicht mit Beispielen:
 
 +-----------------+------------------------------------------------------+--------------------+
 | **Datentyp**    | **Beschreibung**                                     | **Beispiel**       |
