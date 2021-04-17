@@ -244,6 +244,7 @@ einen Pfeil anzeigen, der seine Richtung entsprechend der Beschleunigung ändert
 ===================
 
 	1. Gib an, ob der Rückgabewert True oder False ist. Wenn False, erkläre warum. 
+		Überprüfe danach deine Vermutung auf der REPL-Konsole.
 
 		a) ``"hello" == 'hello'``
 		b) ``10 == 10.0``
