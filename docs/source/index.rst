@@ -16,19 +16,21 @@ Die Arbeitsblätter sind so gestaltet, dass sie den Schülern eine Einführung i
 micro:bit vermitteln sollen.  Es werden kurze praktische Beispiele gegeben und die Schüler werden aufgefordert, mit 
 Hilfe der vorgestellten Grundbausteine Lösungen für weiterführende Aufgaben zu programmieren.
 
-Schülern das Programmieren mit einem Mikroprozessor wie dem micro:bit, der noch dazu mit Sensoren ausgestattet ist, beizubringen,
-ermöglicht es den Lernenden, sofortiges Feedback zu ihrem Code zu erhalten, ohne dass sie vorher etwas über 
-Elektronik wissen müssen.
+Schülern das Programmieren mit einem Mikroprozessor wie dem micro:bit, der noch dazu mit Sensoren 
+ausgestattet ist, beizubringen, ermöglicht es den Lernenden, sofortiges Feedback zu ihrem Code zu erhalten, 
+ohne dass sie vorher etwas über Elektronik wissen müssen.
 
 Die Challenge-Aufgaben können für Team-Wettbewerbe oder einfach zum Spaß im Klassenzimmer verwendet werden. Einige von 
 ihnen basieren auf Übungen von M. Atkinson auf der großartigen Website `Multiwingspan <http://multiwingspan.co.uk/micro.php>`_ 
 und wurden teilweise ein wenig angepasst.
 
-Um diese Dokumentation im pdf-, epub- oder html-Format herunterzuladen, klicke auf den Link unten in der Seitenleiste auf der linken Seite:
+Um diese Dokumentation im pdf-, epub- oder html-Format herunterzuladen, klicke auf den Link unten in der 
+Seitenleiste auf der linken Seite:
 
 .. image:: sidebar.jpg
 
-Wenn du zu dieser Sammlung beitragen möchtest, nur zu! Installiere git und erstelle einen Branch. Es wäre toll, mehr Challenges und weitere Projekte zu haben.
+Wenn du zu dieser Sammlung beitragen möchtest, nur zu! Installiere git und erstelle einen Branch. Es wäre 
+toll, mehr Challenges und weitere Projekte zu haben.
 
 .. toctree::
    :maxdepth: 1
