@@ -20,7 +20,8 @@ weshalb Python und die meisten anderen Programmiersprachen mehrere Datentypen zu
 | Booleans        | Werte, die Wahr oder Falsch sein können              | ``False``          |
 +-----------------+------------------------------------------------------+--------------------+
 
-In einem einfachen Programm wirst du vielleicht alle diese Typen verwenden. Hier sind die Datentypen, die du in einem Programm verwenden könntest, das Informationen über dein micro:bit Spiel speichert:
+In einem einfachen Programm wirst du vielleicht alle diese Typen verwenden. Hier sind die Datentypen, die du 
+in einem Programm verwenden könntest, das Informationen über dein micro:bit Spiel speichert:
 
 .. figure:: assets/dataTypes.png 
 	 :align: center
@@ -34,7 +35,8 @@ Operationen
 Zahlen
 --------
 Grundlegende arithmetische Operatoren: ``+``,  ``-``, ``*`` und ``/`` werden auf die gleiche Art und Weise wie bei einem Taschenrechner 
-verwendet. Wenn du zur REPL-Konsole wechselst, könntest du beispielsweise folgende Rechnungen eintippen und berechnen lassen: ::
+verwendet. Wenn du zur REPL-Konsole wechselst, könntest du beispielsweise folgende Rechnungen nach der Eingabeaufforderung ``>>>`` 
+oder, wenn du mehrere Zeilen verwendest, nach  ``...`` eintippen und berechnen lassen: ::
 
 
 	>>> 2 + 2
