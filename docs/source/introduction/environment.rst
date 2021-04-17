@@ -108,7 +108,7 @@ auf deinem Computer suchen. Du kannst auch deine .hex oder .py Dateien von hier 
    :align: center
    :scale: 30% 
 
-Das Dateisystem fügt Funktionen hinzu, um Python-Module, Datenlogs und andere Dateitypen auf dem micro:bit hinzuzufügen 
+Das Dateisystem fügt Funktionen hinzu, um Python-Module, Datenlogs und andere Dateitypen auf dem micro:bit abzuspeichern 
 oder zu entfernen.
 
 .. figure:: assets/webeditor_serial.png
