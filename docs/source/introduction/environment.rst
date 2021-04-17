@@ -144,17 +144,8 @@ aktuelle Zeile hervorgehoben ist.
 
 **Autovervollständigung (Autocomplete)**
 
-.. raw:: html
-
-    <video controls src="assets/autocomplete-1.mp4"></video>
-
 Die Autovervollständigung gibt dir während der Eingabe Vorschläge für deinen Python-Code, damit du besser 
 verstehst, welche Funktionen dir zur Verfügung stehen. Das ist eine große Hilfe um Tippfehler zu vermeiden und 
 funktionierende Programme zu erstellen.
 
 Drücke die TAB-Taste auf deiner Tastatur, um die aktuelle Eingabe automatisch zu vervollständigen.
-
-
-.. raw:: html
-
-    <video controls src="assets/autocomplete-2.mp4"></video>
