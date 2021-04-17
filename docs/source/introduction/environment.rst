@@ -115,11 +115,11 @@ oder zu entfernen.
    :align: left
    :scale: 50% 
 
-Der Open/Close Serial Button erlaubt es dir, dynamisch mit MicroPython auf dem micro:bit zu arbeiten, indem du die 
-REPL-Befehlszeile benutzt.
-
 Read, Evaluate, Print Loop (REPL)
 +++++++++++++++++++++++++++++++++
+
+Der Open/Close Serial Button erlaubt es dir, dynamisch mit MicroPython auf dem micro:bit zu arbeiten, indem du die 
+REPL-Befehlszeile benutzt.
 
     1. Lies die Benutzereingabe
     2. Überprüfe den Code
