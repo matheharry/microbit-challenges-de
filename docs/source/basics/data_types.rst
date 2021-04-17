@@ -105,7 +105,7 @@ es ``Die Zahl ist gerade`` ausgeben. Du könntest dieses Programm auf eine ander
 Strings
 --------
 Wie bereits erwähnt, sind Strings (``str`` Typ in Python) Zeichenketten, deren Länge nur durch den Speicher 
-deines Rechners begrenzt ist. Ein nützlicher Hinweis ist dass sie mit einem ``+`` Symbol verkettet werden können! ::
+deines Rechners begrenzt ist. Ein nützlicher Hinweis ist, dass sie mit dem ``+`` Symbol verkettet werden können! ::
 
 	name = "Hugo"
 	nachricht = "Gut gemacht " + name + ". Du hast gewonnen!"
@@ -115,6 +115,7 @@ In der letzten Zeile werden die Elemente auf der rechten Seite von ``=`` miteina
 Variable namens ``nachricht`` geschrieben. Wenn du diese Zeilen auf der REPL-Konsole eingibst, sollte das so
 aussehen: ::
 
+	>>> name = "Hugo"
 	>>> nachricht= "Gut gemacht " + name + ". Du hast gewonnen!"
 	>>> print(nachricht)
 	Gut gemacht Hugo. Du hast gewonnen!
@@ -160,7 +161,7 @@ Vergleiche
 Vergleichsoperationen sind nützlich, um Variablenwerte in bedingten Anweisungen oder Schleifen zu testen. Hier sind 
 einige Beispiele für Vergleiche, wie sie im Deutschen geschrieben werden: ::
 
-    der Punktestand ist größer als 100
+    	der Punktestand ist größer als 100
 	der Name ist gleich "Hugo"
  	die Geschwindigkeit ist ungleich 0
 
