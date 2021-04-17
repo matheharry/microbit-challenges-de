@@ -33,8 +33,24 @@ Operationen
 
 Zahlen
 --------
-Grundlegende arithmetische Operatoren: ``+,-,*,/`` werden auf die gleiche Art und Weise wie bei einem Taschenrechner verwendet, . 
-Schauen wir uns ein Beispiel an, bei dem mit den arithmetischen Operatoren die vom micro:bit gelesene Temperatur von Celsius in Fahrenheit umgerechnet wird::
+Grundlegende arithmetische Operatoren: ``+``,  ``-``, ``*`` und ``/`` werden auf die gleiche Art und Weise wie bei einem Taschenrechner 
+verwendet. Wenn du zur REPL-Konsole wechselst, könntest du beispielsweise folgende Rechnungen eintippen und berechnen lassen: ::
+
+
+	>>> 2 + 2
+	4
+	>>> # Dies ist ein Kommentar
+	... 2 + 2
+	4
+	>>> 2 + 2  # und dies ist ein Kommentar in derselben Zeile wie Code
+	4
+	>>> (50 - 5 * 6) / 4
+	5.0
+	>>> 8 / 5 # Brüche gehen nicht verloren, wenn man Ganzzahlen teilt
+	1.6
+
+Schauen wir uns ein Beispiel an, bei dem mit den arithmetischen Operatoren die vom micro:bit gelesene Temperatur von Celsius in 
+Fahrenheit umgerechnet wird::
 
 	celsiusTemp = temperature()
 	fahrenheitTemp = celsiusTemp * 9 / 5 + 32  

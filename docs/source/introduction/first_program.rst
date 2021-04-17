@@ -40,7 +40,7 @@ Der Import von Paketen (wie microbit) in Python ermöglicht es uns, Funktionen o
 
 In diesem Fall soll etwas (was auch immer dieser Anweisung folgt und eingerückt ist) ausgeführt werden, während die Bedingung, die auf ``While`` folgt, wahr ist. In diesem Fall ist die Bedingung das Schlüsselwort ``True``, 
 was bedeutet, dass diese Schleife ewig weiterläuft - es ist dasselbe, als wenn du (5 > 1) schreibst, was am Ende natürlich immer zu ``True``, also Wahr, ausgewertet wird.  
-Der Rest des Programms ist ganz einfach::
+Der Rest des Programms ist ganz einfach ::
 
 	from microbit import *
 
