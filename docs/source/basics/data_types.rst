@@ -55,14 +55,24 @@ Fahrenheit umgerechnet wird::
 	celsiusTemp = temperature()
 	fahrenheitTemp = celsiusTemp * 9 / 5 + 32  
 
-.. warning:: Python kennt zwei Divisionsoperatoren: ``/`` und ``//``. Der erste gibt das Ergebnis aus, das du erwarten würdest, aber der zweite macht eine ganzzahlige Division: der 
-	Rückgabewert ist das Ergebnis ohne Rest. Das bedeutet, dass der Rückgabewert immer nach unten gerundet wird.
+.. warning:: Python kennt zwei Divisionsoperatoren: ``/`` und ``//``. Der erste gibt das Ergebnis aus, das du erwarten 
+	würdest, aber der zweite macht eine ganzzahlige Division: der Rückgabewert ist das Ergebnis ohne Rest. Das bedeutet, 
+	dass der Rückgabewert immer nach unten gerundet wird.
+
+Um eine Ganzzahldivision auszuführen, die ein ganzzahliges Ergebnis liefert und den Bruchteil des Ergebnisses vernachlässigt, 
+müsstest du also den Operator ``//`` anstatt ``/`` verwenden ::
+
+    >>> # Ganzzahldivision gibt ein abgerundetes Ergebnis zurück:
+    ... 7 // 3
+    2
+    >>> 7 // -3
+    -3
 
 Der Operator ``%``, genannt ``mod`` wird benutzt, um den Rest zu berechnen, wenn ein Wert durch einen anderen geteilt wird. Zum Beispiel: wenn du wissen willst, ob eine Zahl ungerade oder 
 gerade ist, könntest du versuchen, sie durch 2 zu dividieren. Wenn sie gerade ist, dann gibt es keinen Rest::
 
 	zahl = 3
-	if zahl % 2 == 1:
+	if zahl % 2 == 0:
 	   print("Die Zahl ist gerade")
 	else:
 	   print("Die Zahl ist ungerade")

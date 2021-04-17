@@ -34,11 +34,9 @@ die Entwicklung von kompakten und lesbaren Programmen.
 Programme, die in Python geschrieben sind, sind aus mehreren Gründen viel kürzer als vergleichbare Programme in zB. 
 C, C++ oder Java:
 
-* Die abstrakten Datentypen erlauben es, komplexe Operationen in einer einzigen
-  Anweisung auszudrücken;
+* Die Datentypen erlauben es, komplexe Operationen in einer einzigen Anweisung auszudrücken;
   
-* Anweisungen werden durch Einrückungen und nicht durch öffnende und schließende
-  Klammern gruppiert;
+* Anweisungen werden durch Einrückungen und nicht durch öffnende und schließende Klammern gruppiert;
   
 * Variablen- oder Argumentdeklarationen sind nicht nötig.
 
