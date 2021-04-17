@@ -77,7 +77,7 @@ Geräts sehen). Weiter unten erfährst du, wie du den Code aus einer Hex-Datei z
 Der Download- wird zum Flash-Button, wenn der micro:bit über WebUSB verbunden ist. 
 
 .. figure:: assets/webeditor_flash.png
-   :align: right
+   :align: left
    :scale: 50% 
 
 Schreibe dein Skript im Editorfenster und klicke auf den "Flash" Button, um es direkt auf den micro:bit 
@@ -110,7 +110,7 @@ Das Dateisystem fügt Funktionen hinzu, um Python-Module, Datenlogs und andere D
 oder zu entfernen.
 
 .. figure:: assets/webeditor_serial.png
-   :align: center
+   :align: left
    :scale: 50% 
 
 Der Open/Close Serial Button erlaubt es dir, dynamisch mit MicroPython auf dem micro:bit zu arbeiten, indem du die 
