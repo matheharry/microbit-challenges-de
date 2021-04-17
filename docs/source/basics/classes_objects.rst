@@ -7,9 +7,12 @@ Python ist eine objektorientierte Sprache - sie basiert auf dem Konzept der "Obj
 zu verändern. Alles in Python ist ein Objekt - egal ob es ein Integer oder ein String ist. 
 
 Ein Objekt ``object`` ist ein praktisches Konzept, um eine Abbildung von etwas Abstraktem zu erzeugen - zum 
-Beispiel ein nützlicher Weg, um Daten geordnet zu speichern. Erinnert dich das an etwas?
-Ja, eine Liste. 
-Wie würdest du ein Listenobjekt beschreiben? Welche Attribute hat es? Wann/Wie ist es nützlich? 
+Beispiel ein nützlicher Weg, um Daten geordnet zu speichern. 
+
+Erinnert dich das an etwas, das wir schon behandelt haben? 
+
+Eine Liste ist ein schönes Beispiel dafür, dass in einem Objekt Daten geordnet gespeichert werden. Wie würdest 
+du ein Listenobjekt beschreiben? Welche Attribute hat es? Wann und wie wird es verwendet? 
 
 .. tip:: Erinnerst du dich an den Befehl ``dir(ClassName)``? Er listet alle Attribute und Methoden einer benötigten 
     Klasse auf, wie zum Beispiel ``dir(str)``. 
