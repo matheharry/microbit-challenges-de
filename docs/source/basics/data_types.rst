@@ -30,8 +30,9 @@ Eine kleine Übersicht mit Beispielen:
 | Booleans        | Werte, die Wahr oder Falsch sein können              | ``False``          |
 +-----------------+------------------------------------------------------+--------------------+
 
-In einem einfachen Programm wirst du vielleicht alle diese Typen verwenden. Hier sind die Datentypen, die du 
-in einem Programm verwenden könntest, das Informationen über dein micro:bit Spiel speichert:
+Auch in einem einfachen Programm wirst du die meisten dieser Datentypen verwenden. Hier sind zB. 
+die Datentypen, die du in einem deiner Programme verwenden könntest, um Informationen über eines 
+deiner micro:bit Spiele zu speichern:
 
 .. figure:: assets/dataTypes.png 
 	 :align: center

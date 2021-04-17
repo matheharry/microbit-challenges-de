@@ -167,10 +167,17 @@ Für weitere Methoden, siehe Python Dokumentation_.
 Dictionaries
 =============
 
-Ein Dictionary ist ein ungeordnetes Set von ``Schlüssel : Wert`` Paaren. Es ist eine Regel, dass alle Schlüssel eindeutig sind und keine Duplikate haben. Anders als Listen oder Tupel, die durch Zahlen indiziert sind, 
-kannst du einen Wert aus einem Dictionary abrufen, indem du den Schlüssel als Index verwendest.
+Ein Dictionary ist ein ungeordnetes Set von ``Schlüssel : Wert`` Paaren. Es ist eine Regel, dass 
+alle Schlüssel eindeutig sind und keine Duplikate haben. Anders als Listen oder Tupel, die durch Zahlen 
+indiziert werden, kannst du einen Wert aus einem Dictionary abrufen, indem du den Schlüssel als Index verwendest.
 
-Zum Beispiel kannst du die Highscores aller Spieler speichern: ::
+Hier ein Vergleich zwischen ``List`` und ``Dictionary``:
+
+.. figure::assets/DictsList.png
+	:align: center
+	:scale: 70%
+
+Zum Beispiel kannst du die Highscores aller Spieler auf diese Weise speichern: ::
 
 	game_register = { 'googolplex': 100,
 			  'terminat0r': 27,
