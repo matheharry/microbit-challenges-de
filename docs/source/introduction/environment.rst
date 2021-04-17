@@ -81,7 +81,9 @@ Der Download- wird zum Flash-Button, wenn der micro:bit über WebUSB verbunden i
    :scale: 50% 
 
 Schreibe dein Skript im Editorfenster und klicke auf den "Flash" Button, um es direkt auf den micro:bit 
-zu übertragen. Wenn das nicht funktioniert, stelle sicher, dass dein micro:bit als USB-Speichergerät in 
+zu übertragen. 
+
+Wenn das nicht funktioniert, stelle sicher, dass dein micro:bit als USB-Speichergerät in 
 deinem Dateisystem-Explorer aufscheint.
 
 .. figure:: assets/webeditor_connect.png
