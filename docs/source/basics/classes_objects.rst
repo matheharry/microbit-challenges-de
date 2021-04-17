@@ -3,8 +3,8 @@ Klassen und Objekte
 ********************
 
 Python ist eine objektorientierte Sprache - sie basiert auf dem Konzept der "Objekte", die verschiedene Felder 
-(Variablen) und Methoden (Funktionen) enthalten. Objekte verwenden Prozeduren um ihre Attribute (Felder) 
-zu verändern. Alles in Python ist ein Objekt - egal ob es ein Integer oder ein String ist. 
+(Variablen) und Methoden (Funktionen, die diese Variablen verändern) enthalten. Alles in Python ist ein Objekt - 
+egal ob es ein Integer oder ein String ist. 
 
 Ein Objekt ``object`` ist ein praktisches Konzept, um eine Abbildung von etwas Abstraktem zu erzeugen - zum 
 Beispiel ein nützlicher Weg, um Daten geordnet zu speichern. 
@@ -18,9 +18,8 @@ du ein Listenobjekt beschreiben? Welche Attribute hat es? Wann und wie wird es v
     Klasse auf, wie zum Beispiel ``dir(str)``. 
 
 Wenn du feststellst, dass du ein Objekt brauchst, das Python nicht hat, kannst du dein eigenes erstellen. Bevor du 
-ein konkretes Exemplar deines Objekts (eine *Instanz*) verwenden kannst, 
-musst du zuerst eine "Vorlage" definieren, die beschreibt, wie das Objekt aussehen wird und was es kann. Dieser 
-Prototyp wird als *Klasse* bezeichnet::
+ein konkretes Exemplar deines Objekts (eine *Instanz*) verwenden kannst, musst du zuerst eine "Vorlage" definieren, 
+die beschreibt, wie das Objekt aussehen wird und was es kann. Dieser Prototyp wird als *Klasse* bezeichnet::
 
     class Player():                                                 
 
@@ -89,9 +88,9 @@ des Objekts - ``player_1`` - als erstes Argument übergeben, und ist eigentlich 
 der Anweisung ``player.update_score(player_1, 40)``. 
 
 .. note:: Das Schlüsselwort ``self`` hat in Python keine besondere Bedeutung, es ist nur eine Art Gewohnheit. Du 
-    solltest es benutzen, wenn auch nur aus dem Grund, um deinen Code besser 
-        lesbarer zu machen, wenn du nach einiger Zeit wieder darauf zurückkommst (du kannst mehr über die Diskussion 
-        von ``self`` in diesem Blogpost_ von Guido van Rossum lesen - dem Vater von Python).
+    solltest es benutzen, wenn auch nur aus dem Grund, um deinen Code besser lesbarer zu machen, wenn du nach 
+    einiger Zeit wieder darauf zurückkommst (du kannst mehr über die Diskussion von ``self`` in diesem Blogpost_ 
+    von Guido van Rossum lesen - dem Vater von Python).
 
 .. _Blogpost: http://neopythonic.blogspot.com/2008/10/why-explicit-self-has-to-stay.html
 
