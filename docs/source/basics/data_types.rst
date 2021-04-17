@@ -6,6 +6,9 @@ Um verschiedene Arten von Daten korrekt zu erfassen, stellen uns Programmierspra
 Jeder Fall, sei es das Sammeln von Beschleunigungswerten vom Beschleunigungsmesser oder das Zählen der Anzahl, wie oft eine Taste gedrückt wurde, erfordert einen anderen Ansatz, 
 weshalb Python und die meisten anderen Programmiersprachen mehrere Datentypen zur Darstellung von Werten kennen:
 
+.. figure:: assets/stringsintegersfloats.png 
+	 :align: center
+
 +-----------------+------------------------------------------------------+--------------------+
 | **Datentyp**    | **Beschreibung**                                     | **Beispiel**       |
 +=================+======================================================+====================+
