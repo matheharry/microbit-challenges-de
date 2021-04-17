@@ -175,7 +175,7 @@ Hier ein Vergleich zwischen ``List`` und ``Dictionary``:
 
 .. figure:: assets/DictsList.png
 	:align: center
-	:scale: 70%
+	:scale: 40%
 
 Zum Beispiel kannst du die Highscores aller Spieler auf diese Weise speichern: ::
 
