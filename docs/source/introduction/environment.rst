@@ -153,3 +153,8 @@ verstehst, welche Funktionen dir zur Verfügung stehen. Das ist eine große Hilf
 funktionierende Programme zu erstellen.
 
 Drücke die TAB-Taste auf deiner Tastatur, um die aktuelle Eingabe automatisch zu vervollständigen.
+
+
+.. raw:: html
+
+    <video controls src="assets/autocomplete-2.mp4"></video>
