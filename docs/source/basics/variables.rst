@@ -2,8 +2,10 @@
 Variablen
 **********
 
-Eine Variable ist ein Name, den du verwendest, um auf einen Speicherplatz zu verweisen, an dem ein Wert gespeichert ist. Einfacher ausgedrückt kann man sie sich als eine Box vorstellen, die einen Wert speichert. 
-Alle Variablen bestehen aus drei Teilen: einem Namen, einem Datentyp und einem Wert. In der Abbildung unten gibt es drei Variablen mit unterschiedlichen Datentypen:
+Eine Variable ist ein Name, den du verwendest, um auf einen Speicherplatz zu verweisen, an dem 
+ein Wert gespeichert ist. Einfacher ausgedrückt kann man sie sich als eine Box vorstellen, die 
+einen Wert speichert. Alle Variablen bestehen aus drei Teilen: einem Namen, einem Datentyp und 
+einem Wert. In der Abbildung unten gibt es drei Variablen mit unterschiedlichen Datentypen:
 
 .. figure:: assets/variable.jpg
    :scale: 50 %
@@ -11,10 +13,21 @@ Alle Variablen bestehen aus drei Teilen: einem Namen, einem Datentyp und einem W
 
    Source: <https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Variables>
 
-Die Variable ``name`` enthält die Zeichenkette ``Bob``, die Variable ``winner`` enthält den Wert ``True`` und die Variable ``score`` enthält den Wert ``35``.
+Die Variable ``name`` enthält die Zeichenkette ``Bob``, die Variable ``winner`` enthält den Wert ``True`` 
+und die Variable ``score`` enthält den Wert ``35``.
 
-In Python wird eine Variable erstellt, wenn sie zum ersten Mal zugewiesen wird. Sobald dies geschehen ist, kann der Wert der Variable verändert werden (es sei denn, sie ist unveränderlich - mehr darüber erfährst du 
-im Abschnitt :ref:`Datenstrukturen`). ::
+In Python wird eine Variable erstellt, wenn ihr zum ersten Mal ein Wert zugewiesen wird. Wenn du eine 
+Variable ``n`` im Code verwendest, der du vorher keinen Wert zugewiesen hast, kommt es zu folgender 
+Fehlermeldung: ::
+
+	>>> # Versuche eine undefinierte Variable abzurufen
+	... n
+	Traceback (most recent call last):
+	File "<stdin>", line 1, in <module>
+	NameError: name 'n' is not defined
+
+Sobald einer Variablen ein Wert zugewiesen wurde, kann sie verwendet und dieser Wert auch verändert werden 
+(es sei denn, sie ist unveränderlich - mehr darüber erfährst du im Abschnitt :ref:`Datenstrukturen`). ::
 
 	from microbit import *
 
@@ -26,4 +39,5 @@ im Abschnitt :ref:`Datenstrukturen`). ::
 	   sleep(2000)
 	   print("Anzahl an Tastendrücken: " + str(meineAnzahl))
 
-Hier haben wir die Variable ``meineAnzahl`` benutzt, um die Anzahl der Tastebetätigungen für Button ``A`` zu zählen.  Kannst du sagen, was dieser Codeschnipsel sonst noch macht?
+Hier haben wir die Variable ``meineAnzahl`` benutzt, um die Anzahl der Tastebetätigungen für Button ``A`` zu zählen.  
+Kannst du sagen, was dieser Codeschnipsel sonst noch macht?
