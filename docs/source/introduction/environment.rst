@@ -10,14 +10,18 @@ Es gibt im Wesentlichen vier Optionen:
     - `MicroPython App`_ wenn du ein Chromebook benutzt  
     - Dein normaler Python-Editor mit einer Reihe von CLI-Befehlen (fortgeschritten)  
 
-Für dieses Tutorial werden wir den Mu-Editor verwenden, aber du kannst natürlich auch einen anderen Editor verwenden, der dir besser gefällt.
-Um Mu herunterzuladen, gehe auf die Mu Website_. Hier steht eine `Schritt-für-Schritt-Anleitung`_ zur Verfügung.
-
 .. _`micro:bit Editor`: https://python.microbit.org
 .. _`Beta-Version`: https://python.microbit.org/v/beta
 .. _`Mu Editor`: https://codewith.mu/
-.. _`Schritt-für-Schritt-Anleitung`: https://docs.google.com/document/d/1U-UTHD-6ji6kDecHd4lGKwDZGI4WQ8nTN7-ju4AIrtI/preview
 .. _`MicroPython App` : https://chrome.google.com/webstore/detail/micropython/lhdjeebhcalhgnbigbngiaglmladclbo?hl=de-GE
+
+Mu Editor
+=========
+
+Für dieses Tutorial werden wir den Mu-Editor verwenden, aber du kannst natürlich auch einen anderen Editor verwenden, der dir besser gefällt.
+Um Mu herunterzuladen, gehe auf die Mu Website_. Hier steht eine `Schritt-für-Schritt-Anleitung`_ zur Verfügung.
+
+.. _`Schritt-für-Schritt-Anleitung`: https://docs.google.com/document/d/1U-UTHD-6ji6kDecHd4lGKwDZGI4WQ8nTN7-ju4AIrtI/preview
 .. _Website: https://codewith.mu/en/
 
 Du kannst verschiedene Optionen wählen, um Mu zu installieren. Die, die du höchstwahrscheinlich auf deinem eigenen Gerät benutzen wirst, 
@@ -35,7 +39,115 @@ auf allen Geräten funktioniert.
 
 Sobald der Editor installiert ist, starte ihn und schließe den micro:bit an deinen Computer an.
 
-.. note:: Für diejenigen, die vorher mit Python gearbeitet haben, MicroPython unterstützt keine regulären externen Python-Bibliotheken, 
-    da viele zu groß für ein Embedded Gerät sind. Allerdings wurde ein Subset speziell für die `MicroPython-Umgebung`_ neu erstellt. 
+.. note:: Für diejenigen, die vorher mit Python gearbeitet haben, MicroPython unterstützt keine 
+    regulären externen Python-Bibliotheken, da viele zu groß für ein Embedded Gerät sind. Allerdings 
+    wurde ein Subset speziell für die `MicroPython-Umgebung`_ neu erstellt. 
 
 .. _`MicroPython-Umgebung`: https://docs.micropython.org/en/latest/library/index.html
+
+Web Editor
+==========
+
+Ein einfacher browserbasierter Code-Editor, der Lehrern und Lernenden hilft, die textbasierte Programmierung 
+auf dem micro:bit optimal zu nutzen. Der Python-Editor ist perfekt für alle, die ihre Coding-Fähigkeiten weiter 
+ausbauen wollen. Eine Auswahl an Snippets und eine Reihe von vorgefertigten Bildern, Sounds und Musik unterstützen 
+dich bei der Programmierung.
+
+Menü
+----
+
+.. figure:: assets/header.PNG
+   :align: center
+   :scale: 70% 
+
+Das Hauptmenü des Editors enthält verschiedene Buttons, mit denen du mit dem Editor und dem micro:bit arbeiten kannst. 
+Wenn du zusätzliche Funktionen im Editor aktiviert hast, wie z.B. WebUSB, kannst du zusätzliche Buttons in diesem Menü 
+sehen.
+
+.. figure:: assets/webeditor_download.PNG
+   :align: left
+   :scale: 70% 
+
+Klicke auf den Download Button, um eine spezielle "hex"-Datei auf dem Computer zu speichern.
+
+Schließe den BBC micro:bit an (er wird als USB-Speicher angezeigt) und ziehe die neu gespeicherte 
+Datei auf das Gerät. Der Code wird ausgeführt (oder du wirst eine Fehlermeldung auf dem Display des 
+Geräts sehen). Weiter unten erfährst du, wie du den Code aus einer Hex-Datei zurück in den Editor bekommst.
+
+Der Download- wird zum Flash-Button, wenn der micro:bit über WebUSB verbunden ist. 
+
+.. figure:: assets/webeditor_flash.PNG
+   :align: left
+   :scale: 70% 
+
+Schreibe dein Skript im Editorfenster und klicke auf den "Flash" Button, um es direkt auf den micro:bit 
+zu übertragen. Wenn das nicht funktioniert, stelle sicher, dass dein micro:bit als USB-Speichergerät in 
+deinem Dateisystem-Explorer aufscheint.
+
+.. figure:: assets/webeditor_connect.PNG
+   :align: left
+   :scale: 70% 
+
+Der Connect-Button ermöglicht es dir, deinen micro:bit mit deinem Browser zu verbinden, indem du ein Tool 
+namens WebUSB benutzt. Wenn du eine Verbindung herstellst, öffnet sich ein Fenster in deinem Browser, in dem 
+du den micro:bit auswählen kannst. Wenn du die Meldung "no compatible devices found" siehst, musst du möglicherweise 
+die micro:bit Firmware aktualisieren.
+
+.. figure:: assets/webeditor_loadsave.PNG
+   :align: left
+   :scale: 70% 
+
+Du kannst nicht nur eine Hex-Datei oder ein Py-Skript per Drag&Drop in den Editor ziehen, um sie zu laden, sondern 
+auch den Load/Save Button drücken, um ein Dateifenster zu öffnen, in dem du die Dateien auf dem micro:bit überprüfen 
+kannst. Du kannst Dateien per Drag&Drop in die graue "Drop"-Fläche ziehen oder mit dem Dateipicker nach einer Datei 
+auf deinem Computer suchen. Du kannst auch deine .hex oder .py Dateien von hier aus herunterladen.
+
+.. figure:: assets/file_system.PNG
+   :align: center
+   :scale: 60% 
+
+Das Dateisystem fügt Funktionen hinzu, um Python-Module, Datenlogs und andere Dateitypen auf dem micro:bit hinzuzufügen 
+oder zu entfernen.
+
+.. figure:: assets/webeditor_serial.PNG
+   :align: left
+   :scale: 70% 
+
+Der Open/Close Serial Button erlaubt es dir, dynamisch mit MicroPython auf dem micro:bit zu arbeiten, indem du die 
+REPL-Befehlszeile benutzt.
+
+Read, Evaluate, Print Loop (REPL)
++++++++++++++++++++++++++++++++++
+
+    1. Lies die Benutzereingabe
+    2. Überprüfe den Code
+    3. Gib das Ergebnis aus
+    4. Gehe in der Schleife zurück zu Schritt 1
+
+.. figure:: assets/webeditor_repl.PNG
+   :align: left
+   :scale: 70% 
+
+Text-Editor
++++++++++++
+
+.. figure:: assets/webeditor_text.PNG
+   :align: left
+   :scale: 70% 
+
+Im Texteditor schreiben und bearbeiten wir unsere Skripte. Der Texteditor versucht zu helfen, indem er 
+den Text einfärbt, um zu zeigen, was die verschiedenen Teile des Programms sind. Zum Beispiel sind die 
+Python-Schlüsselwörter (Wörter, die in die Python-Sprache eingebaut sind) grau. Die heller gefärbten Wörter 
+sind Teile des Programms, das du erstellt hast. Braune Wörter sind konstante Werte, die sich nie ändern und 
+lila Wörter stellen Zeichenketten dar, die angezeigt werden sollen. Alle Zeilen sind nummeriert, wobei die 
+aktuelle Zeile hervorgehoben ist.
+
+**Autovervollständigung (Autocomplete)**
+
+.. video:: assets/autocomplete-1.mp4
+
+Die Autovervollständigung gibt dir während der Eingabe Vorschläge für deinen Python-Code, damit du besser 
+verstehst, welche Funktionen dir zur Verfügung stehen. Das ist eine große Hilfe um Tippfehler zu vermeiden und 
+funktionierende Programme zu erstellen.
+
+Drücke die TAB-Taste auf deiner Tastatur, um die aktuelle Eingabe automatisch zu vervollständigen.
