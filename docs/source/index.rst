@@ -24,7 +24,7 @@ Die Challenge-Aufgaben können für Team-Wettbewerbe oder einfach zum Spaß im K
 ihnen basieren auf Übungen von M. Atkinson auf der großartigen Website `Multiwingspan <http://multiwingspan.co.uk/micro.php>`_ 
 und wurden teilweise ein wenig angepasst.
 
-Um diese Dokumentation im pdf-, epub- oder html-Format herunterzuladen, klicke auf den Link unten in der 
+Um diese Dokumentation im pdf-, epub- oder html-Format herunterzuladen, klicke auf den Link *Read the Docs* unten in der 
 Seitenleiste auf der linken Seite:
 
 .. image:: sidebar.jpg
