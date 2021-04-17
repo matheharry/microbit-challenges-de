@@ -48,10 +48,12 @@ Sobald der Editor installiert ist, starte ihn und schließe den micro:bit an dei
 Web Editor verwenden
 ====================
 
-Ein einfacher browserbasierter Code-Editor, der Lehrern und Lernenden hilft, die textbasierte Programmierung 
+Ein einfacher `browserbasierter Code-Editor`_, der Lehrern und Lernenden hilft, die textbasierte Programmierung 
 auf dem micro:bit optimal zu nutzen. Der Python-Editor ist perfekt für alle, die ihre Coding-Fähigkeiten weiter 
 ausbauen wollen. Eine Auswahl an Snippets und eine Reihe von vorgefertigten Bildern, Sounds und Musik unterstützen 
 dich bei der Programmierung.
+
+.. _`browserbasierter Code-Editor`: https://python.microbit.org/v/beta
 
 Menü
 -----
