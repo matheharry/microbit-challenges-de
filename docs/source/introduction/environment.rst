@@ -58,7 +58,7 @@ Menü
 
 .. figure:: assets/header.png
    :align: center
-   :scale: 50% 
+   :scale: 30% 
 
 Das Hauptmenü des Editors enthält verschiedene Buttons, mit denen du mit dem Editor und dem micro:bit arbeiten kannst. 
 Wenn du zusätzliche Funktionen im Editor aktiviert hast, wie z.B. WebUSB, kannst du zusätzliche Buttons in diesem Menü 
