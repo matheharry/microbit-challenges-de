@@ -15,8 +15,8 @@ Es gibt im Wesentlichen vier Optionen:
 .. _`Mu Editor`: https://codewith.mu/
 .. _`MicroPython App` : https://chrome.google.com/webstore/detail/micropython/lhdjeebhcalhgnbigbngiaglmladclbo?hl=de-GE
 
-Mu Editor
-=========
+Mu Editor verwenden
+===================
 
 Für dieses Tutorial werden wir den Mu-Editor verwenden, aber du kannst natürlich auch einen anderen Editor verwenden, der dir besser gefällt.
 Um Mu herunterzuladen, gehe auf die Mu Website_. Hier steht eine `Schritt-für-Schritt-Anleitung`_ zur Verfügung.
@@ -45,8 +45,8 @@ Sobald der Editor installiert ist, starte ihn und schließe den micro:bit an dei
 
 .. _`MicroPython-Umgebung`: https://docs.micropython.org/en/latest/library/index.html
 
-Web Editor
-==========
+Web Editor verwenden
+====================
 
 Ein einfacher browserbasierter Code-Editor, der Lehrern und Lernenden hilft, die textbasierte Programmierung 
 auf dem micro:bit optimal zu nutzen. Der Python-Editor ist perfekt für alle, die ihre Coding-Fähigkeiten weiter 
@@ -54,7 +54,7 @@ ausbauen wollen. Eine Auswahl an Snippets und eine Reihe von vorgefertigten Bild
 dich bei der Programmierung.
 
 Menü
-----
+-----
 
 .. figure:: assets/header.PNG
    :align: center
@@ -144,7 +144,9 @@ aktuelle Zeile hervorgehoben ist.
 
 **Autovervollständigung (Autocomplete)**
 
-.. video:: assets/autocomplete-1.mp4
+.. raw:: html
+
+    <video controls src="assets/autocomplete-1.mp4"></video>
 
 Die Autovervollständigung gibt dir während der Eingabe Vorschläge für deinen Python-Code, damit du besser 
 verstehst, welche Funktionen dir zur Verfügung stehen. Das ist eine große Hilfe um Tippfehler zu vermeiden und 
