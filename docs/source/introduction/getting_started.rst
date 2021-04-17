@@ -51,10 +51,11 @@ der Programmierung und die Funktionen des micro:bit. Das Ziel ist es, dich mit d
 zu machen Programmierung zu bringen, so dass du ein eigenes kleines Projekt erstellen kannst, das du uns 
 in der ersten Woche zeigen wirst, um dich mit der Programmierung von #circular_definition vertraut zu machen. 
 
-Du brauchst dich nicht unbedingt akribisch durch die ganze 
-Theorie, die in Grundlagen der Programmierung behandelt wird, durcharbeiten, besonders wenn du ein Anfänger 
-bist. Fange an, einfache Programme mit dem micro:bit zu schreiben und lerne nach und nach weitere Programmierkonzepte 
-kennen indem du weiterliest. Fühle dich frei, die Teile zu überspringen, in denen du dich sicher fühlst und wähle die 
+Du brauchst dich nicht unbedingt akribisch durch die ganze Theorie, die in Grundlagen der Programmierung 
+behandelt wird, durcharbeiten, besonders wenn du ein Anfänger bist. Fange an, einfache Programme mit dem 
+micro:bit zu schreiben und lerne nach und nach weitere Programmierkonzepte kennen indem du weiterliest. 
+
+Fühle dich frei, die Teile zu überspringen, in denen du dich sicher fühlst und wähle die 
 Teile, die wichtig sind. Während du mehr über das Programmieren lernst, wirst du natürlich immer bessere und 
 effizientere Wege finden, um deine Projekte der Vergangenheit zu erledigen, aber im Moment solltest du dich darauf 
 konzentrieren, den Einstieg zu finden.
@@ -70,9 +71,18 @@ die micro:bit runtime_ erkunden, die dir mehr Flexibilität bei der Verwendung d
 
 .. _runtime: https://lancaster-university.github.io/microbit-docs/
 
-.. note:: Wenn du dich beim Lesen der Tutorials verwirrt fühlst oder das Gefühl hast, dass du mehr Anleitung brauchst, 
-   um mit dem Programmieren zu beginnen, lass dich nicht entmutigen! Es gibt eine Reihe von kostenlosen Online-Kurse, 
-   die dir die Grundlagen der Programmierung mit Python näher bringen, wie zum Beispiel dieser_. Versuche, die ersten 
-   paar Lektionen durchzugehen, und alles sollte mehr Sinn machen.
+.. note:: Wenn du dich beim Lesen der Tutorials schwer tust und dich nicht auskennst oder du das Gefühl hast, 
+   dass du mehr Anleitung brauchst, um mit dem Programmieren beginnen zu können, lass dich nicht entmutigen! 
+
+   Es gibt nichts Gutes außer man tut es!
+
+   Es gibt eine Reihe von kostenlosen Online-Kursen, die dir die Grundlagen der Programmierung mit Python näher 
+   bringen, wie zum Beispiel dieser_. Dringend zu empfehlen ist auch dieses YouTube-Tutorial_, das dir die 
+   "Sprache" Python und ihre, wie bei allen Programmiersprachen ganz streng einzuhaltende, Grammatik erklärt. 
+   
+   Beginne auf jeden Fall damit, die ersten paar Lektionen Schritt für Schritt nachzuvollziehen, schau an den oben 
+   erwähnten Stellen nach, wie Python funktioniert, wenn etwas nicht so hinhaut wie du dir das gedacht hast, und 
+   lass dich auf keinen Fall entmutigen! Denn mit der Zeit wird alles Sinn machen.
 
 .. _dieser: https://www.python-lernen.de/ 
+.. _YouTube-Tutorial: https://www.youtube.com/playlist?list=PL_pqkvxZ6ho3u8PJAsUU-rOAQ74D0TqZB
