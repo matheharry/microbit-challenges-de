@@ -173,7 +173,7 @@ indiziert werden, kannst du einen Wert aus einem Dictionary abrufen, indem du de
 
 Hier ein Vergleich zwischen ``List`` und ``Dictionary``:
 
-.. figure::assets/DictsList.png
+.. figure:: assets/DictsList.png
 	:align: center
 	:scale: 70%
 
