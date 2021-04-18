@@ -1,9 +1,9 @@
-Input/Output
-------------
+Ein-/Ausgänge (E/A)
+====================
 
 An der Unterkante des BBC micro:bit befinden sich Metallstreifen, die den Eindruck erwecken, 
-dass das Gerät Zähne hat. Das sind die Input/Output Pins (oder kurz I/O Pins). Man könnte auch
-Eingabe- und Ausgabe-Pins dazu sagen.
+dass das Gerät Zähne hat. Das sind die Eingabe- und Ausgabe-Pins (oder kurz E/A Pins). Man 
+nennt sie auch Input/Output bzw. I/O Pins.
 
 .. image:: https://microbit-micropython.readthedocs.io/en/v2-docs/_images/blue-microbit.png
     :width: 300px
@@ -15,6 +15,8 @@ befestigen. Das sind die mit 0, 1, 2, 3V und GND bezeichneten Pins (Computer beg
 Null zu zählen). Wenn du ein sogenanntes Edge-Connector- oder BreakOut-Board am Gerät anschließt, 
 kannst du auch ganz leicht Kabel an die anderen (kleineren) Pins anschließen.
 
+Berührungserkennung
+-------------------
 Auf dem neuesten micro:bit **V2** kann auch das micro:bit Logo als Touch-Eingang verwendet werden.
 
 Jeder Pin auf dem BBC micro:bit wird durch ein *Objekt* namens ``pinN`` repräsentiert wobei ``N`` 
