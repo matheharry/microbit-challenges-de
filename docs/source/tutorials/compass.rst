@@ -45,11 +45,11 @@ Denke daran, bevor du den Kompass benutzt, solltest du ihn kalibrieren, sonst k�
 	print("x Wert: ", x, ", y Wert: ", y)
 	sleep(500)
 
-    Dieser Code liest das Magnetfeld in zwei Richtungen (wie ein echter Kompass) aus und gibt dann die Werte zurück, 
-    was einfach genug erscheint. Je stärker das Feld ist, desto größer ist die Zahl. Experimentiere damit und finde 
-    heraus, welches die x-Achse für das Magnetometer ist.
+Dieser Code liest das Magnetfeld in zwei Richtungen (wie ein echter Kompass) aus und gibt dann die Werte zurück, 
+was einfach genug erscheint. Je stärker das Feld ist, desto größer ist die Zahl. Experimentiere damit und finde 
+heraus, welches die x-Achse für das Magnetometer ist.
 
-    Wenn du die Richtung wissen willst, musst du :math:`tan^{-1} (y/x)` berechnen, in Python wird das geschrieben als::
+Wenn du die Richtung wissen willst, musst du :math:`tan^{-1} (y/x)` berechnen, in Python wird das geschrieben als::
 
     import math
     from microbit import *
