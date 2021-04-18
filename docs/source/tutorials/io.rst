@@ -26,9 +26,7 @@ die Nummer des Pins ist. Um also zum Beispiel mit dem Pin etwas zu tun der mit e
 ist, musst du in deinem Skript das Objekt namens ``pin0`` benutzen. Der Logo-Pin des **V2** 
 verwendet ``pin_logo``.
 
-Einfach!
-
-Diese Objekte haben verschiedene *Methoden*, die mit ihnen verbunden sind, je nachdem, was der spezifische 
+Diese Pin-Objekte haben verschiedene *Methoden*, die mit ihnen verbunden sind, je nachdem, was der spezifische 
 Pin kann.
 
 Kitzeliges Python
