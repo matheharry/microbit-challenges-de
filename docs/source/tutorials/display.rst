@@ -128,6 +128,18 @@ Es gibt fünf Zeilen mit fünf Zahlen, so dass es möglich ist, die individuelle
 Helligkeit für jedes der fünf Pixel auf jeder der fünf Zeilen auf dem
 Display einzustellen und anzuzeigen. 
 
+Welches Bild ist hier zu sehen? ::
+
+    from microbit import *
+
+    meinBild = Image("00900:"
+                "09090:"
+                "90009:"
+                "05550:"
+                "05950")
+
+
+display.show(meinBild)
 
 Animation
 ---------
