@@ -134,9 +134,10 @@ Berechnung der Gesamtbeschleunigung: ::
 Wenn du den Beschleunigungssensor still hältst (auf den Tisch legst), ergibt dies eine Beschleunigung 
 von etwa 1g, unabhängig davon, in welcher Orientierung du den BBC micro:bit hältst - und sie wird davon 
 abweichen, wenn du ihn bewegst. Tatsächlich wird der Wert leicht variieren, auch wenn du ihn still hältst, 
-weil der Beschleunigungsmesser kein perfektes Messgerät ist. Wenn wir eine Größe genau wissen wollten,
-wäre eine sogenannte *Kalibrierung* nötig, bei der die Sensordaten genau eingemessen und mit einem Richtwert
-verglichen werden.
+weil der Beschleunigungsmesser kein perfektes Messgerät ist. 
+
+Immer wenn wir eine Größe genau wissen wollen, ist eine sogenannte *Kalibrierung* nötig, bei der die Sensordaten 
+genau eingemessen und mit einem Richtwert verglichen werden.
 
 
 Übungsaufgaben
