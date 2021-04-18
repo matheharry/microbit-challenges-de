@@ -54,7 +54,6 @@ toll, mehr Challenges und weitere Projekte zu haben.
    tutorials/thermometer.rst
    tutorials/music.rst
    tutorials/radio.rst
-   tutorials/edge.rst
 
 .. toctree::
    :maxdepth: 1

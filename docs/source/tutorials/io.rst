@@ -5,18 +5,34 @@ An der Unterkante des BBC micro:bit befinden sich Metallstreifen, die den Eindru
 dass das Gerät Zähne hat. Das sind die Eingabe- und Ausgabe-Pins (oder kurz E/A Pins). Man 
 nennt sie auch Input/Output bzw. I/O Pins.
 
-.. image:: https://microbit-micropython.readthedocs.io/en/v2-docs/_images/blue-microbit.png
-    :width: 300px
+Platinenstecker
+----------------
+
+Um den micro:bit und seine Funktionen vollständig zu nutzen, um mit der Welt zu kommunizieren, musst 
+du etwas über seinen Platinenstecker lernen. Dieser kann verwendet werden, um sich mit externen 
+Schaltungen und Komponenten zu verbinden.
+
+.. figure:: assets/edge_connector.svg
     :align: center
-    :alt: micro:bit mit beschrifteten Pins
+
+    Source: https://tech.microbit.org/hardware/edgeconnector/
 
 Einige der Stifte sind größer als andere, so dass es möglich ist, Krokodilklemmen an ihnen zu 
 befestigen. Das sind die mit 0, 1, 2, 3V und GND bezeichneten Pins (Computer beginnen immer bei 
 Null zu zählen). Wenn du ein sogenanntes Edge-Connector- oder BreakOut-Board am Gerät anschließt, 
-kannst du auch ganz leicht Kabel an die anderen (kleineren) Pins anschließen.
+kannst du auch ganz leicht Kabel an die anderen (kleineren) Pins anschließen. Die kleineren Pins 
+ermöglichen dir Verbindungen zu den verschiedenen Bauteilen des micro:bit oder du
+kannst sie für deine eigenen Zwecke verwenden.
 
 Auf dem neuesten micro:bit **V2** kann auch das micro:bit Logo als Touch-Eingang verwendet werden.
 
+Die Beschreibung der einzelnen Pins und wofür sie verwendet werden können, findest du unter <https://microbit.pinout.xyz/>. 
+Siehe auch die `Entwicklerreferenz`_ für weitere Informationen. 
+
+_`Entwicklerreferenz`: https://tech.microbit.org/hardware/edgeconnector/
+
+Verwendung der Pins
+--------------------
 Jeder Pin auf dem BBC micro:bit wird durch ein *Objekt* namens ``pinN`` repräsentiert wobei ``N`` 
 die Nummer des Pins ist. Um also zum Beispiel mit dem Pin etwas zu tun der mit einer 0 (Null) beschriftet 
 ist, musst du in deinem Skript das Objekt namens ``pin0`` benutzen. Der Logo-Pin des **V2** 
