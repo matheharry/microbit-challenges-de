@@ -16,7 +16,7 @@ Null zu zählen). Wenn du ein sogenanntes Edge-Connector- oder BreakOut-Board am
 kannst du auch ganz leicht Kabel an die anderen (kleineren) Pins anschließen.
 
 Berührungserkennung
--------------------
+--------------------
 Auf dem neuesten micro:bit **V2** kann auch das micro:bit Logo als Touch-Eingang verwendet werden.
 
 Jeder Pin auf dem BBC micro:bit wird durch ein *Objekt* namens ``pinN`` repräsentiert wobei ``N`` 
