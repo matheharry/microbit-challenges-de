@@ -1,11 +1,17 @@
-*******************
-Consonant or Vowel?
-*******************
+*********************
+Konsonant oder Vokal?
+*********************
 	
-Description
-===========
+Beschreibung
+=============
 
-In this challenge you will make a reaction game called Consonant or Vowel.  The micro:bit must show the player  a letter which 
-is either a consonant or a vowel. The player must press button ``A`` if it is a consonant and button ``B`` if it is a vowel. They
-must choose an answer in 1 second.  If the player presses the wrong button, the micro:bit displays a suitable image or message and the game ends. 
-If they press the correct button, the micro:bit displays a message or image and the player gets a point and can play again.
+In dieser Herausforderung sollst du ein Reaktionsspiel namens *Konsonant oder Vokal* 
+programmieren. Der micro:bit muss dem Spieler einen Buchstaben zeigen, der entweder ein 
+Konsonant oder ein Vokal ist. Der Spieler muss die Taste ``A`` drücken, wenn es ein Konsonant 
+ist und die Taste ``B``, wenn es ein Vokal ist. Sie muss eine Lösung innerhalb von 1 Sekunde wählen.  
+
+Wenn der Spieler die falsche Taste drückt, zeigt das micro:bit ein passendes Bild oder eine Nachricht 
+an und das Spiel endet. 
+
+Wenn sie die richtige Taste drücken, zeigt das micro:bit eine Nachricht oder ein Bild an und der Spieler 
+bekommt einen Punkt und kann weiter spielen.
