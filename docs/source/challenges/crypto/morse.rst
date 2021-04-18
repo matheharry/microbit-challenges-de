@@ -42,8 +42,8 @@ Du wirst das Alphabet mit dem Morsecode in deinem Programm speichern müssen. Du
                    'C':'---.', 
                     ...  }
 
-Auf Deutsch bedeutet das: das Zeichen 'A' soll durch die Zeichenkette '.-' ersetzt werden; das Zeichen 'B' 
-soll durch die Zeichenkette '-...' ersetzt werden und so weiter. Du kannst ein Dictionary so ausgeben::
+Auf Deutsch bedeutet das: das Zeichen `A` soll durch die Zeichenkette `.-` ersetzt werden; das Zeichen `B` 
+soll durch die Zeichenkette `-...` ersetzt werden und so weiter. Du kannst ein Dictionary so ausgeben::
 
     print(morse_code)
 
