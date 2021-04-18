@@ -73,6 +73,6 @@ Das gibt die Kompassrichtung als Ganzzahl im Bereich von 0 bis 360 an, was dem W
 entspricht. Norden wäre also 0. Du musst das Gerät erst kalibrieren, bevor du ``compass.heading`` verwendest.
 
 Übungsaufgaben
-==============
+===============
 * Mache den micro:bit zu einem Kompass, der die LED aufleuchten lässt, die dem Norden am nächsten liegt.
 * Kalibriere dein Magnetometer. Finde heraus, ob die Kalibrierung über die Zeit (ungefähr) gleich bleibt und ob sie innerhalb oder außerhalb eines Gebäudes oder in der Nähe von etwas, das viel Stahl enthält (z.B. ein Aufzug), gleich ist.
