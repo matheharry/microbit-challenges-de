@@ -3,17 +3,19 @@ Thermometer
 ***************
 .. py:module:: microbit
 
-The thermometer on the micro:bit is embedded in one of the chips – and chips get warm when powered up. Consequently, it doesn’t measure room temperature very
-accurately. The chip that is used to measure temperature can be found on the left hand side of the back of the micro:bit:
+Das Thermometer auf dem micro:bit ist in einem der Chips eingebettet - und Chips werden warm, 
+wenn sie eingeschaltet werden. Deshalb misst es die Raumtemperatur nicht sehr genau. 
+Der Chip, mit dem die Temperatur gemessen wird, befindet sich auf der Rückseite des micro:bit links:
 
 .. image:: assets/thermometer.png
    :scale: 40 %
    :align: center
 
 
-Basic Functions
+Grundfunktionen
 ================
-There is only one basic function for the thermometer – to get the temperature, which is returned as an integer in degrees Celsius:: 
+Das Thermometer hat nur eine grundlegende Funktion - die Temperatur zu messen, die als Ganzzahl in 
+Grad Celsius zurückgegeben wird:: 
 
    from microbit import *
    
@@ -22,12 +24,16 @@ There is only one basic function for the thermometer – to get the temperature,
       display.scroll(str(temp) + 'C')
       sleep(500)
 
-The temperature the thermometer measures will typically be higher than the true temperature because it’s getting heated from both the room and the electronics on the board. 
-If we know that the temperature is 27°C but the micro:bit is consistently reporting temperatures that are, say, 3 degrees higher, then we can correct the reading. 
-To do this accurately, you need to know the real temperature without using the micro:bit. Can you find a way to do that?
+Die Temperatur, die das Thermometer misst, wird typischerweise höher sein als die tatsächliche Temperatur, 
+da es sowohl vom Raum als auch von der Elektronik auf dem Board erwärmt wird. Wenn wir wissen, dass die 
+Temperatur 27°C beträgt, aber das micro:bit ständig Temperaturen anzeigt, die, sagen wir, 3 Grad höher sind, 
+dann können wir die Messung korrigieren. Dazu musst du die wirkliche Temperatur kennen bzw. ohne den 
+micro:bit mit einem anderen Thermometer messen. 
 
-Practice questions
+Wie könnte das aussehen?
+
+Übungsaufgaben
 ===================
-* Try calibrating the thermometer. Does it still give the right temperature when you move it to a warmer or cooler place?
-* Make the LEDs change pattern as temperature changes
-* Find out how much the temperature changes in a room when you open a window – what do you think that tells you about heating energy wasted?
+* Versuche das Thermometer zu kalibrieren. Zeigt es immer noch die richtige Temperatur an, wenn du es an einen wärmeren oder kühleren Ort stellst?
+* Lass die LEDs ihr Muster ändern, wenn sich die Temperatur ändert.
+* Finde heraus, wie sehr sich die Temperatur in einem Raum ändert, wenn du ein Fenster öffnest - was denkst du, sagt das über die verschwendete Heizenergie aus?
