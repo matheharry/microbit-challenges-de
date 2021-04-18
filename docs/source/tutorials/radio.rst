@@ -23,8 +23,8 @@ anderen micro:bit in Reichweite empfangen: ::
 
 	radio.on()			
 
-Einstellen der Kanalnummer (Funkgruppe)
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Einstellen des Kanals (Funkgruppe)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Wenn du nur Nachrichten innerhalb einer Gruppe von Geräten teilen willst, dann muss jeder micro:bit 
 in der Gruppe so konfiguriert werden, dass er die gleiche Kanalnummer besitzt. Die Kanalnummer muss 
 eine Zahl zwischen ``0`` und ``100`` sein: ::
@@ -32,7 +32,7 @@ eine Zahl zwischen ``0`` und ``100`` sein: ::
 	# Wähle die Kanalnummer 19
 	radio.config(channel=19)	 
 
-Es ist wichtig, dies zu tun, besonders wenn du dich in einem Raum mit anderen Leuten, die ihre 
+Es ist wichtig, dies zu tun, besonders wenn du dich in einem Raum mit anderen Leuten, die auch ihre 
 micro:bits benutzen, befindest, weil dein micro:bit sonst alle Nachrichten in der Nähe mitbekommt und das 
 ist nicht das, was du normalerweise willst. 
 
@@ -96,4 +96,4 @@ mangelnder RAM-Kapazität nicht.
 Übungsaufgaben
 ====================
 * Sende jedes Mal eine Nachricht, wenn die Taste ``A`` gedrückt wird.
-* Du wirst ein Paar micro:bits benötigen. Programmiere einen micro:bit, um Nachrichten zu empfangen und gib die empfangene Nachricht mit der Methode ``print()`` aus. Lass diesen micro:bit mit einem USB-Kabel an deinem Computer angeschlossen. Programmiere den andere micro:bit so, dass er die Beschleunigungsmesserwerte oder die Temperaturmesswerte in Nachrichten jede Sekunde sendet. Trenne diesen micro:bit vom Computer und benutze eine Batterie, um ihn zu betreiben. Glückwunsch! Du hast einen Datenlogger erstellt!
+* Du benötigst hierfür micro:bits. Programmiere einen micro:bit, um Nachrichten zu empfangen und gib die empfangene Nachricht mit der Methode ``print()`` aus. Lass diesen micro:bit mit einem USB-Kabel an deinem Computer angeschlossen. Programmiere den andere micro:bit so, dass er die Beschleunigungsmesserwerte oder die Temperaturmesswerte in Nachrichten jede Sekunde sendet. Trenne diesen micro:bit vom Computer und benutze eine Batterie, um ihn zu betreiben. Glückwunsch! Du hast einen Datenlogger erstellt!
