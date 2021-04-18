@@ -1,7 +1,7 @@
 ********
 Musik
 ********
-Der **micro:bit V2** kann zum Abspielen einfacher Melodien verwendet werden. Auch das ältere Modell
+Der **micro:bit V2** kann direkt zum Abspielen einfacher Melodien verwendet werden. Auch das ältere Modell
 ist dazu in der Lage, vorausgesetzt du verbindest einen Lautsprecher mit deinem Board. 
 
 Wenn du Kopfhörer verwendest, kannst du Krokodilklemmen verwenden, um deinen micro:bit mit Kopfhörern zu verbinden: 
