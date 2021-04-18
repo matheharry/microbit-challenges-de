@@ -1,31 +1,39 @@
 **********
-Compass
+Kompass
 **********
 .. py:module:: microbit.compass
 
-A magnetometer measures magnetic field strength in each of three axes. It can be used to create a digital compass or to explore magnetic fields, such as those generated 
-by a permanent magnet or those around a coil through which a current is running.  
+Ein Magnetometer misst die magnetische Feldstärke in jeder der drei Achsen. Es kann verwendet 
+werden, um einen digitalen Kompass zu erstellen oder um Magnetfelder zu erforschen, wie die, 
+die von einem Permanentmagneten erzeugt werden oder die um eine Spule, durch die ein Strom fließt,
+entstehen.  
 
 .. image:: assets/compass.png
    :scale: 40 %
    :align: center
 
-The interpretation of magnetic field strength is not easy. The driver for the magnetometer returns raw values. Each magnetometer is different and will require calibration 
-to account for offsets in the raw numbers and distortions due to the magnetic field introduced by what is known as hard and soft iron interference.
+Die Auswertung der magnetischen Feldstärke ist nicht einfach. Der Treiber für das Magnetometer gibt 
+Rohwerte zurück. Jedes Magnetometer ist anders und muss kalibriert werden, um Abweichungen in den Rohwerten 
+und Verzerrungen durch das Magnetfeld zu berücksichtigen, die durch die sogenannte Hart- und 
+Weicheiseninterferenz entstehen.
 
-Before doing anything else, you should calibrate your BBC micro:bit but beware:
+Bevor du zu messen beginnst, solltest du deinen BBC micro:bit also unbedingt jedesmal kalibrieren, 
+aber beachte dabei folgendes:
 
 .. warning::
 
-    Calibrating the compass will cause your program to pause until calibration
-    is complete. Calibration consists of a little game to draw a circle on the
-    LED display by rotating the device.
+    Das Kalibrieren des Kompasses führt dazu, dass dein Programm pausiert, bis die Kalibrierung abgeschlossen 
+    ist. Die Kalibrierung besteht aus einem kleinen Spiel, um durch Drehen des Geräts einen Kreis auf das LED 
+    Display zu zeichnen.
 
 
-Basic Functions
+Grundfunktionen
 ================
-The interface to the magnetometer looks very much like the interface to the accelerometer, except that we only use the x and y values to determine direction.  Remember, 
-before using the compass you should calibrate it, otherwise the readings may be wrong: ::
+
+Die *Schnittstelle* des Magnetometers (die Art und Weise, wie Daten ausgetauscht werden) sieht sehr ähnlich aus 
+wie die des Beschleunigungsmessers, außer dass wir nur die x- und y-Werte zur Richtungsbestimmung verwenden.
+
+Denke daran, bevor du den Kompass benutzt, solltest du ihn kalibrieren, sonst können die Messwerte falsch sein: ::
 
     from microbit import *
 
@@ -34,11 +42,14 @@ before using the compass you should calibrate it, otherwise the readings may be 
     while True:
         x = compass.get_x() 
         y = compass.get_y() 
-	print("x reading: ", x, ", y reading: ", y)
+	print("x Wert: ", x, ", y Wert: ", y)
 	sleep(500)
 
-This reads the magnetic field in two dimensions (like an actual compass) and outputs the values, which seems easy enough.  The stronger the field, the bigger the number. Try it out and figure out which is the x axis for the magnetometer.
-If you want to know the direction you need to calculate :math:`tan^{-1} (y/x)`, in python this is written as::
+    Dieser Code liest das Magnetfeld in zwei Richtungen (wie ein echter Kompass) aus und gibt dann die Werte zurück, 
+    was einfach genug erscheint. Je stärker das Feld ist, desto größer ist die Zahl. Experimentiere damit und finde 
+    heraus, welches die x-Achse für das Magnetometer ist.
+
+    Wenn du die Richtung wissen willst, musst du :math:`tan^{-1} (y/x)` berechnen, in Python wird das geschrieben als::
 
     import math
     from microbit import *
@@ -48,19 +59,20 @@ If you want to know the direction you need to calculate :math:`tan^{-1} (y/x)`, 
     while True:
         x = compass.get_x() 
         y = compass.get_y() 
-    	angle = math.atan2(y,x) *180/math.pi
+    	winkel = math.atan2(y,x) *180/math.pi
 	print("x", x, " y", y)
-	print("Direction: ", angle)
+	print("Richtung: ", winkel)
 	sleep(500)
 
-The 180/PI is because the angle returned is in radians rather than degrees.  Fortunately, the BBC micro:bit has a function to calculate the heading automatically::
+Das 180/PI liegt daran, dass der zurückgegebene Winkel im Bogenmaß und nicht in Grad angegeben ist.  Glücklicherweise hat 
+der BBC micro:bit eine Funktion, um die Richtung automatisch zu berechnen::
 
    compass.heading()
 
-This gives the compass heading, as an integer in the range from 0 to 360, representing the angle in degrees, clockwise, with north as 0. You still need to calibrate the 
-device before you use ``compass.heading``.
+Das gibt die Kompassrichtung als Ganzzahl im Bereich von 0 bis 360 an, was dem Winkel in Grad im Uhrzeigersinn 
+entspricht. Norden wäre also 0. Du musst das Gerät erst kalibrieren, bevor du ``compass.heading`` verwendest.
 
-Practice questions
-===================
-* Make the micro:bit into a compass that illuminates the LED closest to where north lies.
-* Calibrate your magnetometer. Find out whether the calibration stays (about) the same over time and whether it is the same inside or outside a building or near something that has a lot of steel in it (e.g. a lift).
+Übungsaufgaben
+==============
+* Mache den micro:bit zu einem Kompass, der die LED aufleuchten lässt, die dem Norden am nächsten liegt.
+* Kalibriere dein Magnetometer. Finde heraus, ob die Kalibrierung über die Zeit (ungefähr) gleich bleibt und ob sie innerhalb oder außerhalb eines Gebäudes oder in der Nähe von etwas, das viel Stahl enthält (z.B. ein Aufzug), gleich ist.
