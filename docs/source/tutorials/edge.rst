@@ -9,7 +9,6 @@ Schaltungen und Komponenten zu verbinden.
 Um den Platinenstecker nutzen zu können, benötigst du jedoch zusätzliches Equipment wie Krokodilklemmen/Bananenstecker 
 oder andere Steckverbinder für externe Platinen (1,27mm Raster).
 
-.. _`touch sensing` : https://microbit-micropython.readthedocs.io/en/latest/tutorials/io.html
 
 .. figure:: assets/edge_connector.svg
     :align: center
@@ -19,6 +18,8 @@ oder andere Steckverbinder für externe Platinen (1,27mm Raster).
 Es gibt 5 Ringe, die mit Krokodilklemmen bzw. 4mm Bananensteckern verbunden werden können - 2 davon (3V, GND) 
 werden mit der micro:bit Stromversorgung verbunden und die anderen drei können für die allgemeine Ein-/Ausgabe 
 verwendet werden, entweder analog bzw. mit PWM (Pulsweitenmodulation) oder mit `Berührungserkennung`_. 
+
+.. _`Berührungserkennung` : https://microbit-micropython.readthedocs.io/en/latest/tutorials/io.html
 
 Die kleineren 1,27 mm Streifen erlauben dir Verbindungen zu verschiedenen Teilen des micro:bit oder du
 kannst sie für deine eigenen Zwecke verwenden.
