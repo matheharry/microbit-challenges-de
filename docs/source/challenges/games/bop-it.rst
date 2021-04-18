@@ -1,20 +1,22 @@
-******
-Bop-it
-******
+*************
+Bop-it Spiel
+*************
 	
-Description
-===========
+Beschreibung
+=============
 
-In this challenge you will make a reaction game similar to bop-it_. The first bop-it game, pictured below, was released in the 1960s and since then there have 
-been many variants which test your reactions with light, sound and action.
+In dieser Herausforderung wirst du ein Reaktionsspiel ähnlich wie Bop-it_ programmieren. Das erste bop-it Spiel, 
+das unten abgebildet ist, wurde in den 1960er Jahren veröffentlicht und seitdem gab es viele Varianten, die deine 
+Reaktionen mit Licht, Sound und Bewegung testen.
 
-.. _bop-it: https://en.wikipedia.org/wiki/Bop_It
+.. _Bop-it: https://en.wikipedia.org/wiki/Bop_It
 
 
 .. figure:: assets/bop_it.jpg
    :scale: 60 %
 
-   The original bop-it design, source: Wikipedia
+   Das originale Bop-it Design, Quelle: Wikipedia
 
-In the version of the game you create, the player must press the correct button,  ``A`` or ``B``, in under 1 second. If the player
-presses the wrong button, the game ends. If they press the correct button, they get a point and can play again.
+In der Version des Spiels, die du erstellst, muss der Spieler die richtige Taste, ``A`` oder ``B``, in unter 1 
+Sekunde drücken. Wenn der Spieler die falsche Taste drückt, endet das Spiel. Wenn er die richtige Taste drückt, 
+bekommt er einen Punkt und kann weiterspielen.
