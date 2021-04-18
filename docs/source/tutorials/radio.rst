@@ -1,68 +1,74 @@
 ******
-Radio
+Funk
 ******
-Micro:bit has a Bluetooth Lowe Energy (BLE) antenna that can be used to transmit and receive messages.
+Der Micro:bit verfügt über eine Bluetooth Lowe Energy (BLE) Antenne, die zum Senden und 
+Empfangen von Nachrichten genutzt werden kann.
 
 .. image:: assets/radio.png
    :scale: 40 %
    :align: center
 
 
-Basic Functions
+Grundfunktionen
 ================
 
-Getting ready 
+Vorbereitung 
 -------------
-Before you can use the radio you must remember to import the ``radio`` module and to turn the radio on.  Once the radio is on, it will be able to receive messages from 
-any other micro:bit within range: :: 
+Bevor du den Funk benutzen kannst, musst du daran denken, das Modul ``radio`` zu importieren und 
+den Funk einzuschalten. Sobald der Funk eingeschaltet ist, kannst du damit Nachrichten von jedem 
+anderen micro:bit in Reichweite empfangen: :: 
 
 	from microbit import *
 	import radio		
 
 	radio.on()			
 
-Setting a channel number
-^^^^^^^^^^^^^^^^^^^^^^^^
-If you only want share messages within a group of devices then each micro:bit in the group must be configured to share the same channel number. The channel number must 
-be a number between ``0`` and ``100``: ::
+Einstellen der Kanalnummer (Funkgruppe)
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Wenn du nur Nachrichten innerhalb einer Gruppe von Geräten teilen willst, dann muss jeder micro:bit 
+in der Gruppe so konfiguriert werden, dass er die gleiche Kanalnummer besitzt. Die Kanalnummer muss 
+eine Zahl zwischen ``0`` und ``100`` sein: ::
 
-	# Set the channel number to 19
+	# Wähle die Kanalnummer 19
 	radio.config(channel=19)	 
 
-It is important to do this if you are in a room with other people using their micro:bits because otherwise your micro:bit will overhear all the messages nearby and that 
-is not what you usually want. 
+Es ist wichtig, dies zu tun, besonders wenn du dich in einem Raum mit anderen Leuten, die ihre 
+micro:bits benutzen, befindest, weil dein micro:bit sonst alle Nachrichten in der Nähe mitbekommt und das 
+ist nicht das, was du normalerweise willst. 
 
-Setting the power level
-^^^^^^^^^^^^^^^^^^^^^^^
-Finally, you should set the power level for the radio. By default, your micro:bit will be transmitting on power level 0 which means that your messages won't get 
-transmitted very far. The power level can be a value between ``0`` and ``7``::
+Einstellen der Sendeleistung
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Zum Schluss solltest du die Leistungsstufe für den Funk einstellen. Standardmäßig sendet dein micro:bit auf 
+Leistungsstufe 0, was bedeutet, dass deine Nachrichten nicht sehr weit übertragen werden. Die Leistungsstufe 
+kann ein Wert zwischen ``0`` und ``7`` sein.::
 
-	# Set the power level to 7
+	# Sendeleistung auf 7 stellen
 	radio.config(power=7)	
 
-Sending and receiving a message
--------------------------------
-Now you are ready to send or receive a message. You can send a string which is up to 250 characters in length in the message: ::
+Eine Nachricht senden und empfangen
+------------------------------------
+Jetzt bist du bereit, eine Nachricht zu senden oder zu empfangen. Du kannst eine Zeichenkette mit einer Länge von 
+bis zu 250 Zeichen senden: ::
 
 	message_to_master = "Ash nazg durbatulûk, ash nazg gimbatul, ash nazg thrakatulûk, agh burzum-ishi krimpatul."
 
 	radio.send(message_to_master)
 
 
-Receiving a message: ::
+Empfange eine Nachricht: ::
 
     message_received = radio.receive()
 
-Putting it together
--------------------
+Alle Teile zusammengefügt
+--------------------------
 ::
 
 	from microbit import * 
 	import radio
 
 	radio.on()
-	radio.config(channel=19)	# Choose your own channel number
-	radio.config(power=7)		# Turn the signal up to full strength 
+	radio.config(channel=19)	# Wähle deine eigene Kanalnummer
+	radio.config(power=7)		# Setze das Signal auf die volle Stärke 
 
 	message_to_master = "Ash nazg durbatulûk, ash nazg gimbatul, ash nazg thrakatulûk, agh burzum-ishi krimpatul."
 	
@@ -75,16 +81,19 @@ Putting it together
 		    print(incoming)
 		sleep(500)
 
-If you print the incoming message, you will see that sometimes it contains the value ``None``. That is because sometimes the micro:bit checks for a message but nothing 
-has arrived. We can ignore these non-events by checking whether ``incoming`` equals ``None`` and ignoring it if that is the case.
+Wenn du die eingehende Nachricht ausgibst, wirst du sehen, dass sie manchmal den Wert ``None`` enthält. 
+Das liegt daran, dass der micro:bit manchmal nach einer Nachricht sucht, aber noch nichts angekommen ist. 
+Wir können diese ``None``-Ereignisse ignorieren, indem wir prüfen, ob ``incoming`` gleich ``None`` ist 
+und alles ignorieren, wenn das der Fall ist.
 
-Interfacing With Your Phone
+Verbindung zum Smartphone
 ----------------------------
 
-Using the microbit Bluetooth antenna, it's possible to connect your micro:bit to your phone and interact with micro:bit wirelessly. However, MicroPython does not support
-this capability due to lack of RAM capacity. 
+Mit Hilfe der microbit Bluetooth Antenne ist es möglich, dein micro:bit mit deinem Telefon zu verbinden und 
+drahtlos mit dem micro:bit zu kommunizieren. Allerdings unterstützt MicroPython diese Fähigkeit aufgrund 
+mangelnder RAM-Kapazität nicht. 
 
-Practice questions
+Übungsaufgaben
 ====================
-* Send a message every time button ``A`` is pressed.
-* You will need a pair of micro:bits. Program one micro:bit to receive messages and print the message received using the ``print()`` method. Leave this micro:bit plugged into your computer with a USB cable. Program the other micro:bit to send accelerometer readings or the temperature readings in messages every second. Unplug this micro:bit and use a battery pack to power it. Congratulations! you have created a data logger!   
+* Sende jedes Mal eine Nachricht, wenn die Taste ``A`` gedrückt wird.
+* Du wirst ein Paar micro:bits benötigen. Programmiere einen micro:bit, um Nachrichten zu empfangen und gib die empfangene Nachricht mit der Methode ``print()`` aus. Lass diesen micro:bit mit einem USB-Kabel an deinem Computer angeschlossen. Programmiere den andere micro:bit so, dass er die Beschleunigungsmesserwerte oder die Temperaturmesswerte in Nachrichten jede Sekunde sendet. Trenne diesen micro:bit vom Computer und benutze eine Batterie, um ihn zu betreiben. Glückwunsch! Du hast einen Datenlogger erstellt!
