@@ -1,11 +1,11 @@
 **************
-Catch the Eggs
+Fange die Eier
 **************
 
-Description
-===========
+Beschreibung
+=============
 
-In this challenge you will test the player's ability to catch an egg in a basket. Imagine there is 
-a chocolate egg dropping from the sky. The player must catch the egg before it hits the ground. The player
-can move either right or left by using the ``A`` and ``B`` buttons on the micro:bit. If the egg hits 
-the floor the game ends. 
+In dieser Herausforderung sollst du die Fähigkeit des Spielers testen, ein Ei in einem Korb zu fangen. 
+Stell dir vor es fällt ein Schokoladenei vom Himmel. Der Spieler muss das Ei fangen bevor es auf den 
+Boden fällt. Der Spieler kann sich entweder nach rechts oder links bewegen, indem er die Tasten ``A`` 
+und ``B`` auf dem micro:bit benutzt. Wenn das Ei den Boden berührt, endet das Spiel. 
