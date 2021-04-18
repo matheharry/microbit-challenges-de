@@ -5,7 +5,7 @@ Bop-it Spiel
 Beschreibung
 =============
 
-In dieser Herausforderung wirst du ein Reaktionsspiel ähnlich wie Bop-it_ programmieren. Das erste bop-it Spiel, 
+In dieser Herausforderung sollst du ein Reaktionsspiel ähnlich wie Bop-it_ programmieren. Das erste bop-it Spiel, 
 das unten abgebildet ist, wurde in den 1960er Jahren veröffentlicht und seitdem gab es viele Varianten, die deine 
 Reaktionen mit Licht, Sound und Bewegung testen.
 
