@@ -1,10 +1,13 @@
-***************
-Edge Connector
-***************
+*****************
+Platinenstecker
+*****************
 
-To fully starts using micro:bit and its functions to interface with the world, you will need to learn about its edge connector. This can be used to connect to external
-circuits and components. 
-However, in order to use the edge connector, you will need extra equipment like crocodile clips/banana plugs or other external PCB connectors (1.27mm pitch).
+Um den micro:bit und seine Funktionen vollständig zu nutzen, um mit der Welt zu kommunizieren, musst 
+du etwas über seinen Platinenstecker lernen. Dieser kann verwendet werden, um sich mit externen 
+Schaltungen und Komponenten zu verbinden. 
+
+Um den Platinenstecker nutzen zu können, benötigst du jedoch zusätzliches Equipment wie Krokodilklemmen/Bananenstecker 
+oder andere Steckverbinder für externe Platinen (1,27mm Raster).
 
 .. _`touch sensing` : https://microbit-micropython.readthedocs.io/en/latest/tutorials/io.html
 
@@ -13,11 +16,14 @@ However, in order to use the edge connector, you will need extra equipment like 
 
     Source: https://tech.microbit.org/hardware/edgeconnector/
 
-There are 5 rings to connect with 4mm crocodile clips/banana plugs - 2 of them (3V, GND) are connected to the micro:bit power supply and the other three can be used for 
-general purpose input/output using both analog and PWM (pulse width modulation) and `touch sensing`_. The smaller 1.27 mm strips allow you to either connect to different 
-parts of micro:bit or which you can use for your own purposes.
+Es gibt 5 Ringe, die mit Krokodilklemmen bzw. 4mm Bananensteckern verbunden werden können - 2 davon (3V, GND) 
+werden mit der micro:bit Stromversorgung verbunden und die anderen drei können für die allgemeine Ein-/Ausgabe 
+verwendet werden, entweder analog bzw. mit PWM (Pulsweitenmodulation) oder mit `Berührungserkennung`_. 
 
-You can find the description of each of the pins and what they can be used for at <https://microbit.pinout.xyz/>. Refer to the `developer
-reference`_ for further information. 
+Die kleineren 1,27 mm Streifen erlauben dir Verbindungen zu verschiedenen Teilen des micro:bit oder du
+kannst sie für deine eigenen Zwecke verwenden.
 
-_`developer reference`: https://tech.microbit.org/hardware/edgeconnector/
+Die Beschreibung der einzelnen Pins und wofür sie verwendet werden können, findest du unter <https://microbit.pinout.xyz/>. 
+Siehe auch die `Entwicklerreferenz`_ für weitere Informationen. 
+
+_`Entwicklerreferenz`: https://tech.microbit.org/hardware/edgeconnector/
