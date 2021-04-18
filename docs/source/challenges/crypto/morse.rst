@@ -13,10 +13,10 @@ können.  Die Symbole, die für jeden Buchstaben verwendet werden, sind in der A
 unten dargestellt. 
 
 .. figure:: assets/morse.png
-   :scale: 60 %
-   :align: center
+    :scale: 60 %
+    :align: center
    
-   Source: raspberrypi.org
+    Source: raspberrypi.org
 
 Natürlich bist du nicht auf elektrische Impulse beschränkt, du kannst eine Morsebotschaft 
 auch mit Licht oder sogar mit Ton übertragen. Eine Morsenachricht, die über elektrische Kabel 
@@ -24,8 +24,8 @@ gesendet wird, ist als Telegramm bekannt - eine Nachricht, die von einem Funker 
 Ende mit einer Morsetaste wie der hier abgebildeten in Morsecode übersetzt wird.
 
 .. figure:: assets/J38TelegraphKey.jpg
-   :scale: 60 %
-   :align: center
+    :scale: 60 %
+    :align: center
 
     Morsetaste, Quelle: Wikipedia 
 
