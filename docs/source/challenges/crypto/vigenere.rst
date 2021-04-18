@@ -1,34 +1,37 @@
-****************
-Vigenère Cipher
-****************
+*************************
+Vigenère-Verschlüsselung
+*************************
 
-This cipher, also called 'le chiffre indéchiffrable', was first described by Giovan Battista Belazzo. Although the concept is easy to understand, the cipher resisted 
-breaking for three centuries until Friedrich Kasiski introduced a first succesful general attack.  
+Diese Verschlüsselung, auch 'le chiffre indéchiffrable' genannt, wurde erstmals von Giovan Battista Belazzo 
+beschrieben. Obwohl das Konzept leicht zu verstehen ist, konnte die Verschlüsselung drei Jahrhunderte lang 
+nicht geknackt werden, bis Friedrich Kasiski einen ersten erfolgreichen Generalangriff vorstellte.  
 
 .. figure:: assets/vigenere_table.jpg
    :align: center
    
-   Vigenère table (Source: https://tinyurl.com/yxmbt48f)
+   Vigenère Tabelle (Source: https://tinyurl.com/yxmbt48f)
 
-It works similarly to Caesar substitution cipher, since it's also based on shifting aplhabet positions. This time instead of shifting all letters 
-by the same value, we choose a keyword which determines a different value for each letter in the plaintext.
+Sie funktioniert ähnlich wie die Cäsar-Verschlüsselung, da sie ebenfalls auf der Verschiebung von Buchstabenpositionen 
+basiert. Anstatt alle Buchstaben um den gleichen Wert zu verschieben, wählen wir diesmal ein Schlüsselwort, das für 
+jeden Buchstaben im Klartext einen anderen Wert bestimmt.
 
-As an example, suppose that this is our plaintext: ::
+Als Beispiel, nehmen wir an, dass dies unser Klartext ist: ::
     
     ATTACKATDAWN
 
-Then you choose a keyword (such as snake) and repeat it for each row of plaintext: ::
+Dann wählst du ein Schlüsselwort (z.B. Snake) und wiederholst es für jede Zeile des Klartextes: ::
 
     SNAKESNAKESN
 
-Then you use each letter of the key to determine the shift of every letter of the plaintext: ::
+Dann benutzt du jeden Buchstaben des Schlüssels, um die Verschiebung jedes Buchstabens des Klartextes zu bestimmen: ::
 
     Plaintext:  ATTACKATDAWN
     Key:        SNAKESNAKESN
     Ciphertext: SGTKGCNTNEOA
 
-You can try to encipher and decipher your own messages. If you're up for a challenge, try to find the key and decrypt this ciphertext enciphered using Vigenère cipher (hint:
-it's not easy):    
+Du kannst versuchen, deine eigenen Nachrichten zu verschlüsseln und zu entschlüsseln. Wenn du Lust auf eine 
+Herausforderung hast, versuche den Schlüssel zu finden und diesen mit der Vigenère-Verschlüsselung 
+verschlüsselten Text zu entschlüsseln (Hinweis: Es ist nicht einfach):    
 
     Wckl'g jwym avr Tlvfqydnxkwn Vyehqgxat oof im lhm nqmna oyrmavz. Vi  qtfg gwym  hzpdfhs  wf  p  ahschgjxzg  idjtawyt  jbxivs  dhyars  zr  avr  ucktsaiympca  dd  lbungq  
     tur  naqh  ucgtq  bag  vcrhewpprbuu  rudxjh  bc  axyhnxl  vhfodl-­‐uhgrs  jbms  sdpfz.
