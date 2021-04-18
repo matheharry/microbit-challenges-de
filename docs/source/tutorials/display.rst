@@ -137,9 +137,8 @@ Welches Bild ist hier zu sehen? ::
                 "90009:"
                 "05550:"
                 "05950")
-
-
-display.show(meinBild)
+                
+    display.show(meinBild)
 
 Animation
 ---------
