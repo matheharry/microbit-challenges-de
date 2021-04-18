@@ -1,17 +1,21 @@
 ***********
-Sprit Level
+Wasserwaage
 ***********
 
-Description
-===========
-In this project, we will use the accelerometer to make a spirit level.  
+Beschreibung
+============
+In diesem Projekt werden wir den Beschleunigungssensor nutzen, um eine Wasserwaage herzustellen.  
 
 
 .. figure::  assets/spirit.jpg
    :scale: 60 %
 
-   Image source: Wikipedia
+   Quelle: Wikipedia
 
-A spirit level, like the one in the picture above, is used to tell whether a surface is flat. If you put a spirit level on a flat surface the bubble will rest in the 
-middle of the tube. If the surface is tilted to the left or right, the bubble will also move to the left or right indicating visually that there is a slope. You can use accelerometer
-values to determine whether the micro:bit is on a flat surface or not and give the user a signal by displaying an arrow, for example, to indicate a tilt. 
+Eine Wasserwaage, wie die im Bild oben, wird verwendet, um festzustellen, ob eine Oberfläche waagrecht ist. 
+Wenn du eine Wasserwaage auf eine ebene Fläche legst, ruht die Blase in der Mitte der Röhre. Wenn die Oberfläche 
+nach links oder rechts geneigt ist, wird sich die Blase ebenfalls nach links oder rechts bewegen und anschaulich 
+anzeigen, dass es eine Neigung gibt. 
+
+Du kannst die vom Beschleunigungsmesser zurückgegebenen Werte dazu benutzen, herauszufinden, ob der micro:bit 
+auf einer ebenen Fläche steht oder nicht. Zeige dem Benutzer die Neigung z.B. mit einem Pfeil an. 
