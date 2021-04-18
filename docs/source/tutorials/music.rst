@@ -1,39 +1,41 @@
 ********
-Sound
+Musik
 ********
-Micro:bit can be used to play simple tunes, provided that you connect a speaker to your board. 
+Der **micro:bit V2** kann zum Abspielen einfacher Melodien verwendet werden. Auch das ältere Modell
+ist dazu in der Lage, vorausgesetzt du verbindest einen Lautsprecher mit deinem Board. 
 
-If you are using headphones you can use crocodile clips to connect your micro:bit to headphones: 
+Wenn du Kopfhörer verwendest, kannst du Krokodilklemmen verwenden, um deinen micro:bit mit Kopfhörern zu verbinden: 
 
 ..  figure:: assets/headphones_connect.png
     :align: center	
     :scale: 70 %
 
-.. warning:: You cannot control the volume of the sound level from the micro:bit. Please be very careful if you were using headphones. A speaker is a safer choice while 
-	working with sound.
+.. warning:: Du kannst die Lautstärke des Tonpegels nicht über den micro:bit steuern. 
+	Bitte sei sehr vorsichtig, wenn du Kopfhörer verwendest. Ein Lautsprecher ist die 
+	sicherere Wahl bei der Arbeit mit Klängen.
 
-You can also connect your micro:bit to a speaker using crocodile clips: 
+Du kannst deinen micro:bit auch mittels Krokodilklemmen mit einem Lautsprecher verbinden: 
 
 .. figure:: assets/connect_speaker.jpg
    :align: center
 
    Source: <https://www.kitronik.co.uk/blog/microbit-alarm-kitronik-university/>
 
-Basic Functions
+Grundfunktionen
 ================
 
-Play a tune
------------
-To play a tune you can use the ``play`` function: ::
+Eine Melodie spielen
+---------------------
+Um eine Melodie zu spielen, kannst du die Funktion ``play`` verwenden: ::
 
 	from microbit import *
 	import music
 
 	music.play(music.NYAN)
 
-.. note:: You must import the ``music`` module to play and control sound.
+.. note:: Du musst das Modul ``music`` importieren, um Klänge zu spielen und zu regeln.
 
-The music module includes a number of built-in tunes. Here's some of them: 
+Das Musikmodul enthält eine Reihe von eingebauten Melodien. Hier sind einige von ihnen: 
 
  *  ``music.DADADADUM``
  *  ``music.ENTERTAINER``
@@ -43,10 +45,11 @@ The music module includes a number of built-in tunes. Here's some of them:
  * ``music.RINGTONE``
  
  
-Make your own tune
--------------------
-To play a tune, specify the note (C,D,E,F,G,A,B; including sharps (eg.: C#)) to play. Optionally, it's possible to specify the octave (1-8) and the duration it will be played
-for: ::
+Mach deine eigene Melodie
+---------------------------
+Um eine Melodie zu spielen, gibst du die zu spielende Note an (C,D,E,F,G,A,B; inkl. der 
+Halbtöne (z.B.: C#)). Wahlweise kannst du auch die Oktave (1-8) und die Dauer der 
+Wiedergabe angeben: ::
 	
 	from microbit import *
 	import music
@@ -54,31 +57,34 @@ for: ::
 	# Play a 'C'
 	music.play('C')
 
-	# Play a 'C' for 4 beats long
+	# Spiele ein 'C' 4 Schläge lang
 	music.play('C:4')
 
-	# Play a 'C' in octave number 3 for 4 beats long
+	# Spiele 4 Schläge lang ein 'C' in der 3. Oktave
 	music.play('C3:4')
 
-Playing a series of notes one after the other is easy, you just put the notes you want to play in a list::
+	Eine Reihe von Noten nacheinander zu spielen ist einfach, du fügst die Noten, die du spielen 
+	willst, einfach in eine Liste ein::
 
 	from microbit import *
 	import music
 
-	# Tune: Frere Jacques
-	tune = ["C4:4", "D4:4", "E4:4", "C4:4", "C4:4", "D4:4", "E4:4", "C4:4",
+	# Lied: Frere Jacques
+	lied = ["C4:4", "D4:4", "E4:4", "C4:4", "C4:4", "D4:4", "E4:4", "C4:4",
         	"E4:4", "F4:4", "G4:8", "E4:4", "F4:4", "G4:8"]
-	music.play(tune)
+	music.play(lied)
 	
-Micro:bit will remember the octave of the note defined previously. Hence, the tune above can be rewritten as follows: ::
+Der Micro:bit merkt sich die Oktave der zuvor definierten Note. Daher kann die obige Melodie wie 
+folgt umgeschrieben werden: ::
 
-	tune = ["C4:4", "D4:4", "E4:4", "C:4", "C:4", "D:4", "E:4", "C:4",
+	lied = ["C4:4", "D4:4", "E4:4", "C:4", "C:4", "D:4", "E:4", "C:4",
         	"E:4", "F4:4", "G4:8", "E:4", "F:4", "G:8"]
 
 
-Advanced Functions
-===================
-You can also specify the note you want to play using its frequency using the ``pitch`` method. For example, to create a police siren effect ::
+Fortgeschrittene Funktionen
+============================
+Du kannst auch die Note, die du spielen willst, über ihre Frequenz mit der Methode ``pitch`` bestimmen. 
+Zum Beispiel, um einen Polizeisirenen-Effekt zu erzeugen ::
 
 	while True:
 		for freq in range(880, 1760, 16):
@@ -86,9 +92,10 @@ You can also specify the note you want to play using its frequency using the ``p
 		for freq in range(1760, 880, -16):
 			music.pitch(freq, 6)
 	 
-Can you guess what this does? Each time around the loop a new frequency is calculated by adding (or subtracting) 16. 
+Kannst du erraten, was hier passiert? Jedes Mal, wenn du die Schleife durchläufst, wird eine neue Frequenz 
+berechnet, indem du 16 addierst (oder subtrahierst). 
 
-Practice questions
-===================
-* Make up your own tune.
-* Make a musical instrument. Change the pitch of the sound played based on the readings from the accelerometer.  
+Übungsaufgaben
+===============
+* Erfinde deine eigene Melodie.
+* Baue ein Musikinstrument. Verändere die Tonhöhe des gespielten Tons basierend auf den Messwerten des Beschleunigungsmessers.  
