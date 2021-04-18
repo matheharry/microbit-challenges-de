@@ -1,39 +1,50 @@
-**********
-Morse Code
-**********
+**************
+Morsealphabet
+**************
 
-Description
-===========
+Beschreibung
+============
 
-Morse code was invented in 1836 by a group of people including the American artist Samuel F. B. Morse. Using Morse code  a message is  represented as a series of electrical pulses which can be sent along wires to an electromagnet at the receiving end of the system.  The symbols used for each letter are shown in the figure below. 
+Das Morsealphabet wurde 1836 von einer Gruppe von Menschen erfunden, zu denen 
+auch der amerikanische Künstler Samuel F. B. Morse gehörte. Mit dem Morsealphabet 
+wird eine Nachricht als eine Reihe von elektrischen Impulsen dargestellt, die entlang 
+von Kabeln zu einem Elektromagneten am empfangenden Ende des Systems gesendet werden 
+können.  Die Symbole, die für jeden Buchstaben verwendet werden, sind in der Abbildung 
+unten dargestellt. 
 
 .. figure:: assets/morse.png
    :scale: 60 %
    :align: center
-
+   
    Source: raspberrypi.org
 
-Of course, you aren't limited to electrical pulses, you can transmit a Morse code message using light or even sound.  A Morse code message sent over electrical wires is 
-known as a telegram - a message translated to Morse code by an operator at the sending end using a a telegraph key like the one pictured here.
+Natürlich bist du nicht auf elektrische Impulse beschränkt, du kannst eine Morsebotschaft 
+auch mit Licht oder sogar mit Ton übertragen. Eine Morsenachricht, die über elektrische Kabel 
+gesendet wird, ist als Telegramm bekannt - eine Nachricht, die von einem Funker am sendenden 
+Ende mit einer Morsetaste wie der hier abgebildeten in Morsecode übersetzt wird.
 
-.. figure:: assets/J38TelegraphKey.jpg 
+.. figure:: assets/J38TelegraphKey.jpg
    :scale: 60 %
    :align: center
 
-    Telegraph key, source: Wikipedia 
+    Morsetaste, Quelle: Wikipedia 
 
-The message is converted back to normal text by another operator at the receiving end. 
+Die Nachricht wird von einem anderen Funker auf der Empfangsseite wieder in normalen Text umgewandelt. 
 
-Your goal is to turn your micro:bit into a machine that can encode messages using Morse code. We will call the message to be converted *plain text*.  You will need to store the alphabet with the morse code in your program. You can use a python *dictionary* to do this. Here is part of a python dictionary for morse code::
+Deine Aufgabe ist es, den micro:bit in eine Maschine zu verwandeln, die Nachrichten mit Morsecode 
+verschlüsseln kann. Wir werden die zu konvertierende Nachricht *plain Text* nennen.  
+
+Du wirst das Alphabet mit dem Morsecode in deinem Programm speichern müssen. Du kannst dafür ein Python 
+*Dictionary* verwenden. Hier ist ein Teil eines Python-Dictionarys für Morsecode::
 
     morse_code = { 'A':'.-', 
                    'B':'-...',
                    'C':'---.', 
                     ...  }
 
-In English, this means: the character 'A' should be substituted with the string '.-'; the character 'B' should be substituted with the string '-...' and so on. You can 
-print a dictionary using::
+Auf Deutsch bedeutet das: das Zeichen 'A' soll durch die Zeichenkette '.-' ersetzt werden; das Zeichen 'B' 
+soll durch die Zeichenkette '-...' ersetzt werden und so weiter. Du kannst ein Dictionary so ausgeben::
 
     print(morse_code)
 
-Try this out, experiment using the REPL. 
+Probiere das aus, experimentiere mit der REPL. 
