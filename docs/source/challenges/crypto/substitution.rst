@@ -3,7 +3,7 @@ Substitution
 *************
 	
 Beschreibung
-===========
+=============
 
 Die Verschlüsselung durch Substitutions ist trügerisch einfach. Nachrichten werden mit einem Schlüssel 
 verschlüsselt, der im Voraus erstellt wird. Du erzeugst den Schlüssel, indem du die Positionen der Buchstaben 
