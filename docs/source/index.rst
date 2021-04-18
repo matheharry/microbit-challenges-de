@@ -48,13 +48,13 @@ toll, mehr Challenges und weitere Projekte zu haben.
 
    tutorials/display.rst
    tutorials/buttons.rst
-   tutorials/io.rst
    tutorials/accelerometer.rst
    tutorials/compass.rst
    tutorials/thermometer.rst
    tutorials/music.rst
    tutorials/radio.rst
-
+   tutorials/io.rst
+   
 .. toctree::
    :maxdepth: 1
    :caption: Grundlagen der Programmierung
