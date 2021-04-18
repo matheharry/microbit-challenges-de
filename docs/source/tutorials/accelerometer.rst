@@ -1,34 +1,35 @@
-*****************
-Accelerometer
-*****************
+*********************
+Beschleunigungsmesser
+*********************
 
-As its name suggests, the accelerometer on a BBC micro:bit measures acceleration.
-The accelerometer is set to measure acceleration values in the range +2g to -2g, and cannot be changed with MicroPython so far. These values are registered on a scale 
-of values in range 0 .. 1024. 
+Wie der Name schon sagt, misst der Beschleunigungsmesser auf einem BBC micro:bit die Beschleunigung.
+Der Beschleunigungsmesser ist so eingestellt, dass er Beschleunigungswerte im Bereich von +2g bis -2g misst, 
+und diese Werte können mit MicroPython ausgelesen werden und auf den Bereich 0 ... 1024 abgebildet. 
 
 .. figure:: assets/accelerometer.png
    :scale: 40 %
    :align: center
 
-The micro:bit measures movement along
-three axes:
+Der micro:bit misst die Bewegung entlang dreier Achsen:
 
-* X - tilting from left to right.
-* Y - tilting forwards and backwards.
-* Z - moving up and down.
+* X - Kippen von links nach rechts.
+* Y - Kippen nach vorne und hinten.
+* Z - Bewegung nach oben und unten.
 
 .. figure:: assets/microbit_axes.png
    :align: center 	
 
-Basic Functions
+Grundfunktionen
 ===============
-The measurement for each axis is a positive or negative number
-indicating a value in milli-g's. When the reading is 0 you are "level"
-along that particular axis. 
+Die Messung für jede Achse ist eine positive oder negative Zahl
+die einen Wert in milli-g's (g ist die Erdbeschleunigung) 
+angibt. Wenn der Messwert 0 ist, bist du "ruhig"
+entlang der jeweiligen Achse. 
 
-You can access acceleration measurements one at a time or get all three
-values at once and store them in a list.
-You can learn more about lists in the basics of programming section, but for now, just use the following code: :: 
+Du kannst die Beschleunigungswerte einzeln oder alle drei
+Werte auf einmal abrufen und sie in einer Liste speichern.
+Du kannst mehr über Listen in den Grundlagen der Programmierung lernen, 
+aber für den Moment verwende einfach den folgenden Code: :: 
 
 	from microbit import *
 
@@ -39,80 +40,85 @@ You can learn more about lists in the basics of programming section, but for now
 	    print("x, y, z:", x, y, z)
 	    sleep(500)
 
-Upload this and open the serial monitor. Hold the micro:bit flat with the
-LEDs uppermost. You should see that the X and Y accelerations are near
-to zero, and the Z acceleration is close to -1024. This tells you that
-gravity is acting downwards relative to the micro:bit. Flip the board over
-so the LEDs are nearest the floor. The Z value should become positive at
-+1024 milli-g. If you shake the micro:bit vigorously enough, you’ll see that the
-accelerations go up to ±2048 milli-g. That’s because this accelerometer is set
-to measure a maximum of ±2048 milli-g: the true number might be higher than that.
+Lade den Code auf den micro:bit und öffne den seriellen Monitor. Halte den 
+micro:bit flach mit den LEDs nach oben. Du solltest sehen, dass die X- und 
+Y-Beschleunigungen nahe Null sind, und die Z-Beschleunigung nahe bei -1024. 
+Das bedeutet, dass die Schwerkraft relativ zum micro:bit nach unten wirkt. 
+Drehe das Board um so dass die LEDs dem Boden am nächsten sind. Der Z-Wert 
+sollte positiv werden bei +1024 milli-g. Wenn du den micro:bit kräftig genug 
+schüttelst, wirst du sehen, dass die Beschleunigungen bis zu ±2048 milli-g 
+ansteigen. Das liegt daran, dass der Beschleunigungssensor auf ein Maximum 
+von ±2048 milli-g eingestellt ist: die tatsächliche Zahl kann höher sein als 
+das.
 
-If you've ever wondered how a mobile phone knows which way to orient
-its screen, it's because it uses an accelerometer in exactly the same way as
-the program above. Game controllers also contain accelerometers to enable steering.
+Wenn du dich jemals gefragt hast, woher ein Mobiltelefon weiß, in welche Richtung 
+es den Bildschirm ausrichten soll, dann liegt das daran, dass es den Beschleunigungssensor 
+auf genau die gleiche Weise wie das obige Programm abfragt. Auch Gamecontroller 
+enthalten Beschleunigungssensoren, um die Steuerung zu ermöglichen.
 	
-Gestures
+Gesten
 --------
 
-The really interesting side-effect of having an accelerometer is gesture
-detection. If you move your BBC micro:bit in a certain way (as a gesture) then
-micro:bit is able to detect this.
+Der wirklich interessante Nebeneffekt des Beschleunigungssensors ist die Gestenerkennung. 
+Wenn du deinen BBC micro:bit auf eine bestimmte Art und Weise bewegst (als Geste), dann 
+ist der micro:bit in der Lage, dies zu erkennen.
 
-micro:bit is able to recognise the following gestures: ``up``, ``down``,
+Der micro:bit ist in der Lage, die folgenden Gesten zu erkennen: ``up``, ``down``,
 ``left``, ``right``, ``face up``, ``face down``, ``freefall``, ``3g``, ``6g``,
-``8g``, ``shake``. Gestures are always represented as strings. While most of
-the names should be obvious, the ``3g``, ``6g`` and ``8g`` gestures apply when
-the device encounters these levels of g-force.
+``8g``, ``shake``. Gesten werden immer als Strings dargestellt. Während die meisten Namen 
+offensichtlich sein sollten, gelten die ``3g``, ``6g`` und ``8g`` Gesten, wenn
+das Gerät auf diese Stufen der G-Kraft trifft.
 
-To get the current gesture use the ``accelerometer.current_gesture`` method.
-Its result is going to be one of the named gestures listed above. For example,
-this program will display a happy emoticon if it's face up::
+Um die aktuelle Geste zu erhalten, benutze die Methode ``accelerometer.current_gesture``.
+Das Ergebnis wird eine der oben genannten Gesten sein. Zum Beispiel wird dieses Programm 
+ein glückliches Emoticon anzeigen, wenn das Display nach oben zeigt::
 
     from microbit import *
 
     while True:
-        gesture = accelerometer.current_gesture()
-        if gesture == "face up":
+        geste = accelerometer.current_gesture()
+        if geste == "face up":
             display.show(Image.HAPPY)
         else:
             display.show(Image.ANGRY)
 
-Within the *scope* of the loop the current gesture is
-read and assigned to ``gesture``. The ``if`` conditional checks if ``gesture`` is
-equal to ``"face up"`` (Python uses ``==`` to test for equality, a single
-equals sign ``=`` is used for assignment - just like how we assign the gesture
-reading to the ``gesture`` object). If the gesture is equal to ``"face up"``
-then use the display to show a happy face. Otherwise, the device is made to
-look angry!
+Innerhalb des *Geltungsbereichs (Scope)* der Schleife wird die aktuelle Geste gelesen 
+und der Variablen ``geste`` zugewiesen. Die ``if``-Bedingung prüft, ob ``geste`` 
+gleich ``"face up"`` ist (Python verwendet ``==``, um auf Gleichheit zu testen, 
+ein einzelnes Gleichheitszeichen ``=`` wird für die Zuweisung verwendet - genau wie wir 
+die gelesenen Gesten der ``geste``-Variablen zuweisen). Wenn die Geste gleich ``"face up"`` 
+ist, dann benutze das Display, um ein glückliches Gesicht zu zeigen. Ansonsten wird das Gerät 
+dazu gebracht, wütend dreinzuschauen!
 
 
-Advanced Functions
-==================
-There aren’t any for the accelerometer, but it's worth looking at how 
-we can use the 3D acceleration to detect different kinds of motion like a 
-being shaken. Acceleration is what
-is known as a vector quantity – it has a
-magnitude (size, length) and a direction. To get the overall magnitude,
-irrespective of orientation, with only X and Y axes (i.e. we had a 2D accelerometer) the situation would be:
+Fortgeschrittene Funktionen
+===========================
+
+Für den Beschleunigungssensor gibt es keine, aber es lohnt sich zu schauen, wie 
+wie wir die 3D-Beschleunigung nutzen können, um verschiedene Arten von Bewegung zu erkennen. 
+Wir könnten zB erkennen wollen, ob er geschüttelt wird. Die Beschleunigung ist eine so genannte 
+Vektorgröße - sie hat einen Betrag (Größe, Länge) und eine Richtung. Um den Gesamtbetrag in 
+X- und Y-Richtung zu erhalten, ohne auf die Z-Achse zu achten (d.h. wir hätten einen 
+2D-Beschleunigungsmesser), würde die Situation so aussehen:
 
 .. image:: assets/microbitOverallAcceleration.jpg
    :scale: 60 %
    :align: left
 
-We can calculate the magnitude (length) of the resultant using Pythagoras' rule:
+Wir können den Betrag (Länge) der Resultierenden mit dem Satz des Pythagoras berechnen:
 
 .. math::
 
-   acceleration = \sqrt{x^2 + y^2}
+   beschleunigung = \sqrt{x^2 + y^2}
 
-The same principle holds with a 3D accelerometer. So the overall magnitude of the resultant acceleration vector is:
+Das gleiche Prinzip gilt für einen 3D-Beschleunigungsmesser. Der Gesamtbetrag des 
+resultierenden Beschleunigungsvektors ist also gleich:
 
 .. math::
 
-   acceleration = \sqrt{x^2 + y^2 + z^2}
+	beschleunigung = \sqrt{x^2 + y^2 + z^2}
 
-Calculating the overall acceleration: ::
+Berechnung der Gesamtbeschleunigung: ::
 
 	from microbit import *
 	import math
@@ -121,23 +127,22 @@ Calculating the overall acceleration: ::
 	    x = accelerometer.get_x()
 	    y = accelerometer.get_y()
 	    z = accelerometer.get_z() 
-	    acceleration = math.sqrt(x**2 + y**2 + z**2)
-	    print("acceleration", acceleration)
+	    beschleunigung = math.sqrt(x**2 + y**2 + z**2)
+	    print("Beschleunigung", beschleunigung)
 	    sleep(500)
 
-Now if you keep the the accelerometer still (put it on the desk), this
-will give an acceleration of about 1g, irrespective of what orientation
-you have the BBC micro:bit in – and it will be different to that as you
-move it about. Actually, the value will vary slightly even if you
-keep it still, because the accelerometer isn’t a perfect measuring
-device. Dealing with this is a process called calibration and is something
-we have to do when we need to know a quantity accurately.
+Wenn du den Beschleunigungssensor still hältst (auf den Tisch legst), ergibt dies eine Beschleunigung 
+von etwa 1g, unabhängig davon, in welcher Orientierung du den BBC micro:bit hältst - und sie wird davon 
+abweichen, wenn du ihn bewegst. Tatsächlich wird der Wert leicht variieren, auch wenn du ihn still hältst, 
+weil der Beschleunigungsmesser kein perfektes Messgerät ist. Wenn wir eine Größe genau wissen wollten,
+wäre eine sogenannte *Kalibrierung* nötig, bei der die Sensordaten genau eingemessen und mit einem Richtwert
+verglichen werden.
 
 
-Practice questions
-===================
-* Using the BBC micro:bit music library, play a note based on the the reading from the accelerometer. Hint: set the pitch to the value of the accelerometer measurement.
-* Display the characters 'L' or 'R' depending on whether the BBC micro:bit is tilted to the left or the right.
-* Make the LEDs light up when the magnitude of the acceleration is greater than 1024 milli-gs.
-* Shake the micro:bit to make the LEDs light up.
-* Make a dice, hint: use one of the Python random functions. Type ``import random`` at the top of your program and use ``random.randrange(start, stop)``. This will generate a random number between ``start`` and ``stop`` - 1.
+Übungsaufgaben
+===============
+* Benutze die BBC micro:bit Musikbibliothek und spiele eine Note, die auf dem Messwert des Beschleunigungsmessers basiert. Tipp: Stelle die Tonhöhe auf den Wert des Beschleunigungsmessers ein.
+* Zeige die Zeichen 'L' oder 'R' an, je nachdem, ob der BBC micro:bit nach links oder rechts gekippt ist.
+* Lasse die LEDs aufleuchten, wenn die Größe der Beschleunigung größer als 1024 milli-g's ist.
+* Schüttle den micro:bit, um die LEDs aufleuchten zu lassen.
+* Mache einen Würfel. Tipp: benutze eine der Python Zufallsfunktionen. Gib ``import random`` am Anfang deines Programms ein und verwende ``random.randrange(start, stop)``. Dies wird eine Zufallszahl zwischen ``start`` und ``stop - 1`` erzeugen.
