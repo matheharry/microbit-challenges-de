@@ -63,8 +63,8 @@ Wiedergabe angeben: ::
 	# Spiele 4 Schläge lang ein 'C' in der 3. Oktave
 	music.play('C3:4')
 
-	Eine Reihe von Noten nacheinander zu spielen ist einfach, du fügst die Noten, die du spielen 
-	willst, einfach in eine Liste ein::
+Eine Reihe von Noten nacheinander zu spielen ist einfach, du fügst die Noten, die du spielen 
+willst, einfach in eine Liste ein::
 
 	from microbit import *
 	import music
