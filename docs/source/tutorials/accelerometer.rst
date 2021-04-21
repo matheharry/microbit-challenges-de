@@ -64,10 +64,11 @@ Wenn du deinen BBC micro:bit auf eine bestimmte Art und Weise bewegst (als Geste
 ist der micro:bit in der Lage, dies zu erkennen.
 
 Der micro:bit ist in der Lage, die folgenden Gesten zu erkennen: 
+
 * ``up``, ``down``
 * ``left``, ``right``
 * ``face up``, ``face down``
-* ``freefall``, ``3g``, ``6g``, ``8g``, 
+* ``freefall``, ``3g``, ``6g``, ``8g``
 * ``shake``.
  
 Gesten werden immer als Strings dargestellt. Während die meisten Namen 
