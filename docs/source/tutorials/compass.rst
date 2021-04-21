@@ -1,7 +1,6 @@
-**********
+********
 Kompass
-**********
-.. py:module:: microbit.compass
+********
 
 Ein Magnetometer misst die magnetische Feldstärke in jeder der drei Achsen. Es kann verwendet 
 werden, um einen digitalen Kompass zu erstellen oder um Magnetfelder zu erforschen, wie die, 
