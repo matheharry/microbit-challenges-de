@@ -94,7 +94,7 @@ oben zeigt::
 3. Wenn die Geste gleich ``"face up"`` ist, dann benutze das Display, um ein glückliches Gesicht zu zeigen. 
 4. Ansonsten wird das Gerät dazu gebracht, wütend dreinzuschauen!
 
-Was macht das folgende Programm?:
+Was macht das folgende Programm?::
 
 	from microbit import *
 	while True:
