@@ -93,7 +93,7 @@ Zum Beispiel, um einen Polizeisirenen-Effekt zu erzeugen ::
 			music.pitch(freq, 6)
 	 
 Kannst du erraten, was hier passiert? Jedes Mal, wenn du die Schleife durchläufst, wird eine neue Frequenz 
-berechnet, indem du 16 addierst (oder subtrahierst). 
+berechnet, indem du 16 addierst (oder subtrahierst). Eine for-Schleife die man hören kann!
 
 Übungsaufgaben
 ===============
