@@ -49,28 +49,12 @@ Dieser Code liest das Magnetfeld in zwei Richtungen (wie ein echter Kompass) aus
 was einfacher aussieht als es ist. Je stärker das Feld ist, desto größer ist die Zahl. Experimentiere damit und finde 
 heraus, welches die x-Achse für das Magnetometer ist.
 
-Wenn du die Richtung wissen willst, musst du :math:`tan^{-1} (y/x)` berechnen, in Python wird das geschrieben als::
-
-    import math
-    from microbit import *
-
-    compass.calibrate()
-
-    while True:
-        x = compass.get_x() 
-        y = compass.get_y() 
-    	winkel = math.atan2(y,x) *180/math.pi
-	print("x", x, " y", y)
-	print("Richtung: ", winkel)
-	sleep(500)
-
-Das 180/PI liegt daran, dass der zurückgegebene Winkel im Bogenmaß und nicht in Grad angegeben ist.  Glücklicherweise hat 
-der BBC micro:bit eine Funktion, um die Richtung automatisch zu berechnen::
+Der micro:bit kann die genaue Richtung zurückgeben, in die er gedreht ist::
 
    compass.heading()
 
 Das gibt die Kompassrichtung als Ganzzahl im Bereich von 0 bis 360 an, was dem Winkel in Grad im Uhrzeigersinn 
-entspricht. Norden wäre also 0. Du musst das Gerät erst kalibrieren, bevor du ``compass.heading`` verwendest.
+entspricht. Norden wäre also 0. Du musst das Gerät erst kalibrieren, bevor du ``compass.heading()`` verwendest.
 
 Übungsaufgaben
 ===============
