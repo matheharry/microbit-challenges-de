@@ -98,6 +98,7 @@ oben zeigt::
 Was macht das folgende Programm?::
 
 	from microbit import *
+	
 	while True:
 		if accelerometer.is_gesture("up"):
 			display.show(Image.ARROW_S)
