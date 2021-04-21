@@ -43,5 +43,5 @@ Hier haben wir die Variable ``meineAnzahl`` benutzt, um die Anzahl der Tastebet�
 Kannst du sagen, was dieser Codeschnipsel sonst noch macht?
 
 Die sleep()-Funktion werden wir oft verwenden. Um sie richtig einzusetzen, musst du dein Programm so planen, dass die 
-Verzögerungen, die du durch den Aufruf dieser Funktion ausgelöst werden, zu der jeweils richtigen Zeit passieren. Das
+Verzögerungen, die durch den Aufruf dieser Funktion ausgelöst werden, zu der jeweils richtigen Zeit passieren. Das
 musst du genau planen!
