@@ -94,6 +94,21 @@ oben zeigt::
 3. Wenn die Geste gleich ``"face up"`` ist, dann benutze das Display, um ein glückliches Gesicht zu zeigen. 
 4. Ansonsten wird das Gerät dazu gebracht, wütend dreinzuschauen!
 
+Was macht das folgende Programm?:
+
+	from microbit import *
+	while True:
+		if accelerometer.is_gesture("up"):
+			display.show(Image.ARROW_S)
+		elif accelerometer.is_gesture("right"):
+			display.show(Image.ARROW_E)
+		elif accelerometer.is_gesture("down"):
+			display.show(Image.ARROW_N)
+		elif accelerometer.is_gesture("left"):
+			display.show(Image.ARROW_W)
+		else:
+			display.clear()
+		sleep(20)
 
 Fortgeschrittene Funktionen
 ===========================
