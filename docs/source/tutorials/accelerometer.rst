@@ -75,7 +75,7 @@ Gesten werden immer als Strings dargestellt. Während die meisten Namen
 offensichtlich sein sollten, gelten die ``3g``, ``6g`` und ``8g`` Gesten, wenn
 das Gerät entsprechend schnell beschleunigt wird.
 
-Um die aktuelle Geste zu erhalten, benutze die Methode ``accelerometer.current_gesture``.
+Um die aktuelle Geste zu erhalten, benutze die Methode ``accelerometer.current_gesture()``.
 Das Ergebnis wird eine der oben genannten Gesten sein. 
 
 Zum Beispiel wird dieses Programm ein glückliches Emoticon anzeigen, wenn das Display nach
@@ -98,7 +98,7 @@ oben zeigt::
 Was macht das folgende Programm?::
 
 	from microbit import *
-	
+
 	while True:
 		if accelerometer.is_gesture("up"):
 			display.show(Image.ARROW_S)
