@@ -54,7 +54,15 @@ Richtung zurückgeben, in die er gedreht ist::
    compass.heading()
 
 Das gibt die Kompassrichtung als Ganzzahl im Bereich von 0 bis 360 an, was dem Winkel in Grad im Uhrzeigersinn 
-entspricht. Norden wäre also 0. Du musst das Gerät erst kalibrieren, bevor du ``compass.heading()`` verwendest.
+entspricht. Norden wäre also 0. Du musst das Gerät erst kalibrieren, bevor du ``compass.heading()`` verwendest.::
+
+    from microbit import *
+
+    compass.calibrate()
+    while True:
+        richtung = compass.heading()
+        print(richtung)
+        sleep(100)
 
 Übungsaufgaben
 ===============
