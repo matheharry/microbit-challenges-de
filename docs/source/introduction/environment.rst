@@ -21,7 +21,7 @@ Mu Editor verwenden
 Für dieses Tutorial werden wir den Mu-Editor verwenden, aber du kannst natürlich auch einen anderen Editor verwenden, der dir besser gefällt.
 Um Mu herunterzuladen, gehe auf die Mu Website_. Hier steht eine `Schritt-für-Schritt-Anleitung`_ zur Verfügung.
 
-.. _`Schritt-für-Schritt-Anleitung`: https://docs.google.com/document/d/1U-UTHD-6ji6kDecHd4lGKwDZGI4WQ8nTN7-ju4AIrtI/preview
+.. _`Schritt-für-Schritt-Anleitung`: https://docs.google.com/document/d/1S5etlP-8M21CJGMawijKD00qzNokz1waKBrlP2ujO74/edit?usp=sharing
 .. _Website: https://codewith.mu/en/
 
 Du kannst verschiedene Optionen wählen, um Mu zu installieren. Die, die du höchstwahrscheinlich auf deinem eigenen Gerät benutzen wirst, 
