@@ -47,7 +47,7 @@ Manchmal wollen wir nur, dass ein Programm wartet, bis etwas passiert, zum Beisp
 		if button_a.is_pressed():
 			display.scroll("A")
 		else:
-			display.scroll(Image.ASLEEP)				
+			display.show(Image.ASLEEP)				
 
 Das heißt, wenn die Taste ``A`` gedrückt wird, wird ein ``A`` und ansonsten ``Image.ASLEEP`` auf dem LED Display angezeigt. 
 
@@ -62,7 +62,7 @@ Auf diese Weise solltest du nie wieder einen Tastendruck verpassen: ::
 	    if button_a.was_pressed(): 
 	        display.scroll("A")
 	    else:
-		display.scroll(Image.ASLEEP)
+		display.show(Image.ASLEEP)
 
 	    sleep(1000)
 
