@@ -63,15 +63,22 @@ Der wirklich interessante Nebeneffekt des Beschleunigungssensors ist die Gestene
 Wenn du deinen BBC micro:bit auf eine bestimmte Art und Weise bewegst (als Geste), dann 
 ist der micro:bit in der Lage, dies zu erkennen.
 
-Der micro:bit ist in der Lage, die folgenden Gesten zu erkennen: ``up``, ``down``,
-``left``, ``right``, ``face up``, ``face down``, ``freefall``, ``3g``, ``6g``,
-``8g``, ``shake``. Gesten werden immer als Strings dargestellt. Während die meisten Namen 
+Der micro:bit ist in der Lage, die folgenden Gesten zu erkennen: 
+* ``up``, ``down``
+* ``left``, ``right``
+* ``face up``, ``face down``
+* ``freefall``, ``3g``, ``6g``, ``8g``, 
+* ``shake``.
+ 
+Gesten werden immer als Strings dargestellt. Während die meisten Namen 
 offensichtlich sein sollten, gelten die ``3g``, ``6g`` und ``8g`` Gesten, wenn
-das Gerät auf diese Stufen der G-Kraft trifft.
+das Gerät entsprechend schnell beschleunigt wird.
 
 Um die aktuelle Geste zu erhalten, benutze die Methode ``accelerometer.current_gesture``.
-Das Ergebnis wird eine der oben genannten Gesten sein. Zum Beispiel wird dieses Programm 
-ein glückliches Emoticon anzeigen, wenn das Display nach oben zeigt::
+Das Ergebnis wird eine der oben genannten Gesten sein. 
+
+Zum Beispiel wird dieses Programm ein glückliches Emoticon anzeigen, wenn das Display nach
+oben zeigt::
 
     from microbit import *
 
@@ -82,13 +89,10 @@ ein glückliches Emoticon anzeigen, wenn das Display nach oben zeigt::
         else:
             display.show(Image.ANGRY)
 
-Innerhalb des *Geltungsbereichs (Scope)* der Schleife wird die aktuelle Geste gelesen 
-und der Variablen ``geste`` zugewiesen. Die ``if``-Bedingung prüft, ob ``geste`` 
-gleich ``"face up"`` ist (Python verwendet ``==``, um auf Gleichheit zu testen, 
-ein einzelnes Gleichheitszeichen ``=`` wird für die Zuweisung verwendet - genau wie wir 
-die gelesenen Gesten der ``geste``-Variablen zuweisen). Wenn die Geste gleich ``"face up"`` 
-ist, dann benutze das Display, um ein glückliches Gesicht zu zeigen. Ansonsten wird das Gerät 
-dazu gebracht, wütend dreinzuschauen!
+1. Innerhalb des *Geltungsbereichs (Scope)* der Schleife wird die aktuelle Geste gelesen und der Variablen ``geste`` zugewiesen. 
+2. Die ``if``-Bedingung prüft, ob ``geste`` gleich ``"face up"`` ist (Python verwendet ``==``, um auf Gleichheit zu testen, ein einzelnes Gleichheitszeichen ``=`` wird für die Zuweisung verwendet - genau wie wir die gelesenen Gesten der ``geste``-Variablen zuweisen). 
+3. Wenn die Geste gleich ``"face up"`` ist, dann benutze das Display, um ein glückliches Gesicht zu zeigen. 
+4. Ansonsten wird das Gerät dazu gebracht, wütend dreinzuschauen!
 
 
 Fortgeschrittene Funktionen
