@@ -49,7 +49,7 @@ die LEDs auf der obersten horizontalen und der rechten vertikalen Seite anschalt
 
 	from microbit import *
 
-	for i in range (5):
+	for i in range(5):
 	   # Setze das Pixel in der Spalte auf 0, Zeile i auf 9 
 	   display.set_pixel(0, i, 9) 
 
