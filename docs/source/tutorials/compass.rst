@@ -49,7 +49,7 @@ Dieser Code liest das Magnetfeld in zwei Richtungen (wie ein echter Kompass) aus
 was einfacher aussieht als es ist. Je stärker das Feld ist, desto größer ist die Zahl. Experimentiere damit und finde 
 heraus, welches die x-Achse für das Magnetometer ist.
 
-Der micro:bit kann die genaue Richtung zurückgeben, in die er gedreht ist::
+Der micro:bit kann nach der Kalibrierung die genaue Richtung zurückgeben, in die er gedreht ist::
 
    compass.heading()
 
