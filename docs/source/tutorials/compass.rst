@@ -64,6 +64,10 @@ entspricht. Norden wäre also 0. Du musst das Gerät erst kalibrieren, bevor du 
         print(richtung)
         sleep(100)
 
+Mit diesem Programm kannst du testen, welche Werte wir für die Kompassrichtung erhalten. Achte darauf, dass du auf 
+die REPL Taste klickst, nachdem du dieses Programm auf den micro:bit flashst. Wenn du die Kalibrierung abgeschlossen 
+hast, solltest du 10 Positionsangaben pro Sekunde auf der Konsole ausgegeben bekommen.
+
 Übungsaufgaben
 ===============
 * Mache den micro:bit zu einem Kompass, der die LED aufleuchten lässt, die dem Norden am nächsten liegt.
