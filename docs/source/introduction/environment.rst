@@ -130,7 +130,8 @@ oder zu entfernen.
 REPL
 ++++
 
-Auch der Webeditor erlaubt die Verwendung einer REPL-Konsole über den Open/Close Serial Button.
+Auch der Webeditor erlaubt die Verwendung einer REPL-Konsole über den Open/Close Serial Button, um Befehle direkt auf
+dem micro:bit ausführen zukönnen-
 
 .. figure:: assets/webeditor_repl.png
    :align: center
