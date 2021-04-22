@@ -12,7 +12,7 @@ Es gibt im Wesentlichen vier Optionen:
 .. _`micro:bit Editor`: https://python.microbit.org
 .. _`Beta-Version`: https://python.microbit.org/v/beta
 .. _`Mu Editor`: https://codewith.mu/
-.. _`MicroPython App` : https://chrome.google.com/webstore/detail/micropython/lhdjeebhcalhgnbigbngiaglmladclbo?hl=de-GE
+.. _`MicroPython App`: https://chrome.google.com/webstore/detail/micropython/lhdjeebhcalhgnbigbngiaglmladclbo?hl=de-GE
 
 Mu Editor verwenden
 ===================
@@ -36,9 +36,20 @@ auf allen Geräten funktioniert.
    :scale: 70% 
    :target: https://codewith.mu/en/download
 
-Sobald der Editor installiert ist, starte ihn und schließe den micro:bit an deinen Computer an.
+Sobald der Editor installiert ist, starte ihn und schließe den micro:bit an deinen Computer an. Mu erkennt ihn automatisch und du
+kannst sofort loslegen.
 
-.. note:: Für diejenigen, die vorher mit Python gearbeitet haben, MicroPython unterstützt keine 
+Read, Evaluate, Print Loop (REPL)
++++++++++++++++++++++++++++++++++
+Der Button **REPL** erlaubt es dir, dynamisch mit MicroPython auf dem micro:bit zu arbeiten, indem du die REPL-Befehlszeile 
+direkt auf deinem micro:bit benutzt. 
+
+    1. LESEN (read): Lies die Benutzereingabe
+    2. AUSWERTEN (evaluate): Überprüfe den Code und führe ihn aus
+    3. AUSGEBEN (print): Gib das Ergebnis aus
+    4. SCHLEIFE (loop): Gehe in der Schleife zurück zu Schritt 1
+
+.. note:: Für diejenigen, die vorher mit Python gearbeitet haben: MicroPython unterstützt keine 
     regulären externen Python-Bibliotheken, da viele zu groß für ein Embedded Gerät sind. Allerdings 
     wurde ein Subset speziell für die `MicroPython-Umgebung`_ neu erstellt. 
 
@@ -116,16 +127,10 @@ oder zu entfernen.
    :align: left
    :scale: 50% 
 
-Read, Evaluate, Print Loop (REPL)
-+++++++++++++++++++++++++++++++++
+REPL
+++++
 
-Der Open/Close Serial Button erlaubt es dir, dynamisch mit MicroPython auf dem micro:bit zu arbeiten, indem du die 
-REPL-Befehlszeile benutzt.
-
-    1. Lies die Benutzereingabe
-    2. Überprüfe den Code
-    3. Gib das Ergebnis aus
-    4. Gehe in der Schleife zurück zu Schritt 1
+Auch der Webeditor erlaubt die Verwendung einer REPL-Konsole über den Open/Close Serial Button.
 
 .. figure:: assets/webeditor_repl.png
    :align: center
