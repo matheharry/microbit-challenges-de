@@ -77,9 +77,9 @@ die micro:bit runtime_ erkunden, die dir mehr Flexibilität bei der Verwendung d
 .. note:: Wenn du dir beim Lesen der Tutorials schwer tust und dich nicht auskennst oder du das Gefühl hast, 
    dass du mehr Anleitung brauchst, um mit dem Programmieren beginnen zu können, lass dich nicht entmutigen! 
 
-   *Es gibt nichts Gutes außer man tut es!* Dieser Satz von Erich Kästner beschreibt perfekt das Programmierenlernen.
-   Man müsste ihn vielleicht noch ein bisschen erweitern mit: *... und dann tut man es noch einmal, und wenn's 
-   immer noch nicht funktioniert eben noch einmal und noch einmal!* 😉
+   **Es gibt nichts Gutes außer man tut es!** Dieser Satz von Erich Kästner beschreibt perfekt das Programmierenlernen.
+   Man müsste ihn vielleicht noch ein bisschen erweitern mit: **... und dann tut man es noch einmal, und wenn's 
+   immer noch nicht funktioniert eben noch einmal und noch einmal!** 😉
 
    Es gibt eine Reihe von kostenlosen Online-Kursen, die dir die Grundlagen der Programmierung mit Python näher 
    bringen, wie zum Beispiel dieser_. Dringend zu empfehlen ist auch dieses YouTube-Tutorial_, das dir die 
