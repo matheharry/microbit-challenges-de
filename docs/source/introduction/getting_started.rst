@@ -56,7 +56,7 @@ behandelt wird, durcharbeiten, besonders wenn du ein Anfänger bist. Fange an, e
 micro:bit zu schreiben und lerne nach und nach weitere Programmierkonzepte kennen indem du weiterliest. 
 
 Fühle dich frei, die Teile zu überspringen, in denen du dich sicher fühlst und wähle die 
-Teile, die wichtig sind. Während du mehr über das Programmieren lernst, wirst du natürlich immer bessere und 
+Teile, die dir wichtig sind. Während du mehr über das Programmieren lernst, wirst du natürlich immer bessere und 
 effizientere Wege finden, um deine Projekte der Vergangenheit zu erledigen, aber im Moment solltest du dich darauf 
 konzentrieren, den Einstieg zu finden.
 
@@ -71,7 +71,7 @@ die micro:bit runtime_ erkunden, die dir mehr Flexibilität bei der Verwendung d
 
 .. _runtime: https://lancaster-university.github.io/microbit-docs/
 
-.. note:: Wenn du dich beim Lesen der Tutorials schwer tust und dich nicht auskennst oder du das Gefühl hast, 
+.. note:: Wenn du dir beim Lesen der Tutorials schwer tust und dich nicht auskennst oder du das Gefühl hast, 
    dass du mehr Anleitung brauchst, um mit dem Programmieren beginnen zu können, lass dich nicht entmutigen! 
 
    Es gibt nichts Gutes außer man tut es!
