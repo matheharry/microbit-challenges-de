@@ -6,7 +6,7 @@ Bevor du mit dem Programmieren beginnst, benötigst du einen Quellcode-Editor, u
 Es gibt im Wesentlichen vier Optionen: 
 
     - Im Web-Browser: `micro:bit Editor`_ (momentan empfehle ich allerdings die aktuelle `Beta-Version`_!)
-    - Für Anfänger am PC: `Mu Editor`_ 
+    - Für Anfänger am PC perfekt: der `Mu Editor`_ (unsere erste Wahl)
     - `MicroPython App`_ wenn du ein Chromebook benutzt  
     - Dein normaler Python-Editor mit einer Reihe von CLI-Befehlen (fortgeschritten)  
 
