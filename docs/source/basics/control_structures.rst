@@ -56,28 +56,32 @@ die LEDs auf der obersten horizontalen und der rechten vertikalen Seite anschalt
 	   # Setze das Pixel in der Spalte auf 4, Zeile i auf 9	
 	   display.set_pixel(4, i, 9)	 
 
-Hier ist ein weiteres Beispiel.  Du könntest eine ``for Schleife`` verwenden, um alle LEDs nacheinander einzuschalten, eine nach der anderen::
+Hier ist ein weiteres Beispiel.  Du könntest eine ``for Schleife`` verwenden, um alle LEDs nacheinander 
+einzuschalten, eine nach der anderen::
 
     from microbit import *
 
     display.clear()
     for x in range(0, 5):
         for y in range(0, 5):
-            display.set_pixel(x, y, 9)  
+            display.set_pixel(x, y, 9)
+            sleep(100)  
 
-Die ``for Schleife`` lässt dich eine Schleife mit Hilfe eines Zählers eine bestimmte Anzahl von Malen ausführen. Die äußere Schleife::
+Die ``for Schleife`` lässt dich eine Schleife mit Hilfe eines Zählers eine bestimmte Anzahl von Malen ausführen. 
+Die äußere Schleife::
 
         for x in range(0,5):
 
-führt die Schleife fünfmal aus und ersetzt jedes Mal ``x`` durch aufeinanderfolgende Werte im Bereich ``0`` bis ``4`` (in Python und den meisten Programmiersprachen, 
-beginnen wir immer von ``0`` zu zählen). Die Schleife hört auf, bevor sie 5, den letzten Wert im Bereich, erreicht.
+führt die Schleife fünfmal aus und ersetzt jedes Mal ``x`` durch aufeinanderfolgende Werte im Bereich ``0`` 
+bis ``4`` (in Python und den meisten Programmiersprachen, beginnen wir immer von ``0`` zu zählen). Die Schleife 
+hört auf, bevor sie 5, den letzten Wert im Bereich, erreicht.
 
 Die innere Schleife::
 
         for y in range(0,5):
 
-führt die Schleife fünfmal aus und ersetzt ``y`` jedes Mal durch aufeinanderfolgende Werte im Bereich ``0`` bis ``4``. Auch hier stoppt die Schleife, bevor sie den letzten Wert im Bereich erreicht.
-
+führt die Schleife fünfmal aus und ersetzt ``y`` jedes Mal durch aufeinanderfolgende Werte im Bereich ``0`` bis ``4``. 
+Auch hier stoppt die Schleife, bevor sie den letzten Wert im Bereich erreicht.
 
 
 While Schleifen
@@ -104,6 +108,20 @@ wenn die Temperatur auf dem micro:bit unter einen bestimmten Wert fällt, also m
 	    sleep(1000)
 
 	display.show(Image.HAPPY)
+
+Im folgenden Programm wird eine ``while``-Schleife mit der oberen ``for``-Schleife kombiniert. Was glaubst du,
+macht das folgende Programm? ::
+
+    from microbit import *
+    import random
+
+    display.clear()
+
+    while True:
+        for x in range(5):
+            for y in range(5):
+                display.set_pixel(x, y, random.randrange(10))
+                sleep(100)
 
 
 Ereignisschleifen
