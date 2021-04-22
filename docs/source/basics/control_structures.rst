@@ -19,20 +19,17 @@ Das erste Beispiel für einen Anwendungsfall von Kontrollstrukturen liegt dann v
 Codes nur dann ausführen willst, **wenn** (``if``) eine bestimmte Bedingung erfüllt ist. 
 Zum Beispiel, wenn du ein Ereignis nur auslösen willst, wenn eine Taste gedrückt wird (``if button_a.is_pressed()``): ::
 
-	from microbit import *
-	import love
-		
-	while True:
-		if button_a.is_pressed():
-			love.badaboom()
-													
-		elif button_b.is_pressed():
-			display.show(Image.HAPPY)
-													
-		else:
-			display.show(Image.GHOST)
+    from microbit import *
+    import love
 
-	sleep(100)
+    while True:
+        if button_a.is_pressed():
+            love.badaboom()
+        elif button_b.is_pressed():
+            display.show(Image.HAPPY)
+        else:
+            display.show(Image.GHOST)            
+        sleep(100)
 
 
 Falls du eine andere Aufgabe unter verschiedenen Bedingungen ausführen willst, verwende die ``elif`` (kurz für ``else if``) Anweisung. Die ``else`` 
