@@ -87,7 +87,9 @@ die micro:bit runtime_ erkunden, die dir mehr Flexibilität bei der Verwendung d
    
    Beginne auf jeden Fall damit, die ersten paar Lektionen Schritt für Schritt nachzuvollziehen, schau an den oben 
    erwähnten Stellen nach, wie Python funktioniert, wenn etwas nicht so hinhaut wie du dir das gedacht hast, und 
-   lass dich auf keinen Fall entmutigen! Denn mit der Zeit wird alles Sinn machen.
+   sieh jeden Fehler als das was er ist - als einen wichtigen Schritt zum Meistercoder! 
+   
+   Denn mit der Zeit wird alles einen Sinn ergeben.
 
 .. _python-lernen.de: https://www.python-lernen.de/ 
 .. _YouTube-Tutorial: https://www.youtube.com/playlist?list=PL_pqkvxZ6ho3u8PJAsUU-rOAQ74D0TqZB
