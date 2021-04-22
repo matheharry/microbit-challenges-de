@@ -49,11 +49,8 @@ direkt auf deinem micro:bit benutzt.
     3. AUSGEBEN (print): Gib das Ergebnis aus
     4. SCHLEIFE (loop): Gehe in der Schleife zurück zu Schritt 1
 
-.. note:: Für diejenigen, die vorher mit Python gearbeitet haben: MicroPython unterstützt keine 
-    regulären externen Python-Bibliotheken, da viele zu groß für ein Embedded Gerät sind. Allerdings 
-    wurde ein Subset speziell für die `MicroPython-Umgebung`_ neu erstellt. 
-
-.. _`MicroPython-Umgebung`: https://docs.micropython.org/en/latest/library/index.html
+So wird es dir ganz einfach gemacht, Befehle auszuprobieren und herumzuexperimentieren! Außerdem werden Fehlermeldungen
+auf der REPL-Konsole ausgegeben und erleichter so das Debuggen (so nennt man die Fehlersuche)
 
 Web Editor verwenden
 ====================
@@ -66,7 +63,7 @@ dich bei der Programmierung.
 .. _`browserbasierter Code-Editor`: https://python.microbit.org/v/beta
 
 Menü
------
++++++
 
 .. figure:: assets/header.png
    :align: center
@@ -158,3 +155,9 @@ verstehst, welche Funktionen dir zur Verfügung stehen. Das ist eine große Hilf
 funktionierende Programme zu erstellen.
 
 Drücke die TAB-Taste auf deiner Tastatur, um die aktuelle Eingabe automatisch zu vervollständigen.
+
+.. note:: Für diejenigen, die vorher mit Python gearbeitet haben: MicroPython unterstützt keine 
+    regulären externen Python-Bibliotheken, da viele zu groß für ein Embedded Gerät sind. Allerdings 
+    wurde ein Subset speziell für die `MicroPython-Umgebung`_ neu erstellt. 
+
+.. _`MicroPython-Umgebung`: https://docs.micropython.org/en/latest/library/index.html
