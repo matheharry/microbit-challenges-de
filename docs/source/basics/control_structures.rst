@@ -42,87 +42,8 @@ Schleifen sind eine sehr nützliche Struktur, wenn du einen bestimmten Codeblock
 Es gibt zwei Arten von Schleifen: ``for``-Schleifen, die mitzählen, wie oft ein Codeblock ausgeführt wird, und ``while``-Schleifen, die
 eine Aktion ausführen, bis eine Bedingung, die du angegeben hast, nicht mehr wahr ist. 
 
-For Schleifen
--------------
-Es kommt vor, dass du eine Aktion eine bestimmte Anzahl von Malen ausführen willst, oder du musst nachverfolgen, wie oft sie ausgeführt wurde. Zum Beispiel möchtest du 
-die LEDs auf der obersten horizontalen und der rechten vertikalen Seite anschalten. Du kannst eine ``for`` Schleife verwenden, um zu ändern, welche LED leuchtet.::
-
-	from microbit import *
-
-	for i in range(5):
-	   # Setze das Pixel in der Spalte auf 0, Zeile i auf 9 
-	   display.set_pixel(0, i, 9) 
-
-	   # Setze das Pixel in der Spalte auf 4, Zeile i auf 9	
-	   display.set_pixel(4, i, 9)	 
-
-Hier ist ein weiteres Beispiel.  Du könntest eine ``for Schleife`` verwenden, um alle LEDs nacheinander 
-einzuschalten, eine nach der anderen::
-
-    from microbit import *
-
-    display.clear()
-    for x in range(0, 5):
-        for y in range(0, 5):
-            display.set_pixel(x, y, 9)
-            sleep(100)  
-
-Die ``for Schleife`` lässt dich eine Schleife mit Hilfe eines Zählers eine bestimmte Anzahl von Malen ausführen. 
-Die äußere Schleife::
-
-        for x in range(0,5):
-
-führt die Schleife fünfmal aus und ersetzt jedes Mal ``x`` durch aufeinanderfolgende Werte im Bereich ``0`` 
-bis ``4`` (in Python und den meisten Programmiersprachen, beginnen wir immer von ``0`` zu zählen). Die Schleife 
-hört auf, bevor sie 5, den letzten Wert im Bereich, erreicht.
-
-Die innere Schleife::
-
-        for y in range(0,5):
-
-führt die Schleife fünfmal aus und ersetzt ``y`` jedes Mal durch aufeinanderfolgende Werte im Bereich ``0`` bis ``4``. 
-Auch hier stoppt die Schleife, bevor sie den letzten Wert im Bereich erreicht.
-
-
 While Schleifen
----------------
-Eines der häufigsten Dinge, die du mit einer ``while`` Schleife machen kannst, ist etwas für immer zu tun, d.h. bis der micro:bit
-ausgeschaltet oder zurückgesetzt wird. Vielleicht hast du ein Spiel für deinen micro:bit programmiert oder vielleicht sammelt er 
-Temperaturdaten. Hier ist ein Beispiel für einen Code, der sich ewig wiederholt::
-
-	from microbit import *
-	
-	while True:
-	    display.scroll("Hallo Welt")
-
-Dieser Code wird wiederholt die Meldung ``Hallo Welt`` anzeigen. Du wirst wahrscheinlich mindestens eine ``while True:`` Schleife in deinem Programm haben
-um den micro:bit am Laufen zu halten.
-
-Aber was ist, wenn du eine Aktion nur ausführen willst, während etwas passiert? Vielleicht möchtest du ein Bild anzeigen
-wenn die Temperatur auf dem micro:bit unter einen bestimmten Wert fällt, also musst du die Temperatur prüfen::
-
-	from microbit import *
-	
-	while (temperature() < 18):
-	    display.scroll(Image.SAD)
-	    sleep(1000)
-
-	display.show(Image.HAPPY)
-
-Im folgenden Programm wird eine ``while``-Schleife mit der oberen ``for``-Schleife kombiniert. Was glaubst du,
-macht das folgende Programm? ::
-
-    from microbit import *
-    import random
-
-    display.clear()
-
-    while True:
-        for x in range(5):
-            for y in range(5):
-                display.set_pixel(x, y, random.randrange(10))
-                sleep(100)
-
+++++++++++++++++
 
 Ereignisschleifen
 ------------------
@@ -182,6 +103,86 @@ Schleife mit dem Code-Block fort. Es wird dann so aussehen, als würde dein Ger�
 es mit einem überraschten Blick im Gesicht wieder aufwacht.
 
 Probiere es aus!
+
+Aber was ist, wenn du eine Aktion nur ausführen willst, während etwas passiert? Vielleicht möchtest du ein Bild anzeigen
+wenn die Temperatur auf dem micro:bit unter einen bestimmten Wert fällt, also musst du die Temperatur prüfen::
+
+	from microbit import *
+	
+	while (temperature() < 18):
+	    display.scroll(Image.SAD)
+	    sleep(1000)
+
+	display.show(Image.HAPPY)
+
+Endlosschleife
+--------------
+Eines der häufigsten Dinge, die du mit einer ``while`` Schleife machen kannst, ist etwas für immer zu tun, d.h. bis der micro:bit
+ausgeschaltet oder zurückgesetzt wird. Vielleicht hast du ein Spiel für deinen micro:bit programmiert oder vielleicht sammelt er 
+Temperaturdaten. Hier ist ein Beispiel für einen Code, der sich ewig wiederholt::
+
+	from microbit import *
+	
+	while True:
+	    display.scroll("Hallo Welt")
+
+Dieser Code wird wiederholt die Meldung ``Hallo Welt`` anzeigen. Du wirst wahrscheinlich mindestens eine ``while True:`` Schleife in deinem Programm haben
+um den micro:bit am Laufen zu halten.
+
+For Schleifen
+++++++++++++++
+Es kommt vor, dass du eine Aktion eine bestimmte Anzahl von Malen ausführen willst, oder du musst nachverfolgen, wie oft sie ausgeführt wurde. Zum Beispiel möchtest du 
+die LEDs auf der obersten horizontalen und der rechten vertikalen Seite anschalten. Du kannst eine ``for`` Schleife verwenden, um zu ändern, welche LED leuchtet.::
+
+	from microbit import *
+
+	for i in range(5):
+	   # Setze das Pixel in der Spalte auf 0, Zeile i auf 9 
+	   display.set_pixel(0, i, 9) 
+
+	   # Setze das Pixel in der Spalte auf 4, Zeile i auf 9	
+	   display.set_pixel(4, i, 9)	 
+
+Hier ist ein weiteres Beispiel.  Du könntest eine ``for Schleife`` verwenden, um alle LEDs nacheinander 
+einzuschalten, eine nach der anderen::
+
+    from microbit import *
+
+    display.clear()
+    for x in range(0, 5):
+        for y in range(0, 5):
+            display.set_pixel(x, y, 9)
+            sleep(100)  
+
+Die ``for Schleife`` lässt dich eine Schleife mit Hilfe eines Zählers eine bestimmte Anzahl von Malen ausführen. 
+Die äußere Schleife::
+
+        for x in range(0,5):
+
+führt die Schleife fünfmal aus und ersetzt jedes Mal ``x`` durch aufeinanderfolgende Werte im Bereich ``0`` 
+bis ``4`` (in Python und den meisten Programmiersprachen, beginnen wir immer von ``0`` zu zählen). Die Schleife 
+hört auf, bevor sie 5, den letzten Wert im Bereich, erreicht.
+
+Die innere Schleife::
+
+        for y in range(0,5):
+
+führt die Schleife fünfmal aus und ersetzt ``y`` jedes Mal durch aufeinanderfolgende Werte im Bereich ``0`` bis ``4``. 
+Auch hier stoppt die Schleife, bevor sie den letzten Wert im Bereich erreicht.
+
+Was glaubst du, macht das folgende Programm? ::
+
+    from microbit import *
+    import random
+
+    display.clear()
+
+    while True:
+        for x in range(5):
+            for y in range(5):
+                display.set_pixel(x, y, random.randrange(10))
+                sleep(100)
+
 
 Übungsaufgaben
 ===================
