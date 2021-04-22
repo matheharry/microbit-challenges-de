@@ -5,10 +5,9 @@ Deine Arbeitsumgebung einrichten
 Bevor du mit dem Programmieren beginnst, benötigst du einen Quellcode-Editor, um Programme auf deinem micro:bit schreiben, laden und ausführen zu können. 
 Es gibt im Wesentlichen vier Optionen: 
 
-    - Im Web-Browser: `micro:bit Editor`_ (momentan empfehle ich allerdings die aktuelle `Beta-Version`_!)
-    - Für Anfänger am PC perfekt: der `Mu Editor`_ (unsere erste Wahl)
-    - `MicroPython App`_ wenn du ein Chromebook benutzt  
-    - Dein normaler Python-Editor mit einer Reihe von CLI-Befehlen (fortgeschritten)  
+* für Anfänger am PC perfekt: der `Mu Editor`_ (unsere erste Wahl)
+* im Web-Browser: der `micro:bit Editor`_ (momentan empfehle ich allerdings die aktuelle `Beta-Version`_!)
+* am Chromebook: die `MicroPython App`_   
 
 .. _`micro:bit Editor`: https://python.microbit.org
 .. _`Beta-Version`: https://python.microbit.org/v/beta
