@@ -63,7 +63,7 @@ Sie könnte etwa so aussehen::
     Kaputte Dachrinne reparieren
     Den Rasen mähen
 
-Wenn ich meine To-Do-Liste noch etwas weiter unterteilen möchte, würde ich vielleicht etwas schreiben wie das hier::
+Wenn ich meine To-Do-Liste noch weiter unterteilen möchte, würde ich vielleicht etwas schreiben wie das hier::
 
     Einkaufen:
         Eier
@@ -78,7 +78,7 @@ Wenn ich meine To-Do-Liste noch etwas weiter unterteilen möchte, würde ich vie
         Kraftstoffstand des Rasenmähers prüfen
 
 Es ist offensichtlich, dass die Hauptaufgaben in Unteraufgaben aufgeteilt sind, die *Einrückung* unterhalb der Hauptaufgabe, 
-zu der sie gehören. Also ``Eier``, Speck`` und ``Tomaten`` offensichtlich mit ``Einkaufen`` verwandt sind. Durch das Einrücken 
+zu der sie gehören. Also ``Eier``, ``Speck`` und ``Tomaten`` offensichtlich mit ``Einkaufen`` verwandt sind. Durch das Einrücken 
 von Dingen können wir auf einen Blick erkennen, wie die Aufgaben miteinander zusammenhängen.
 
 Dies wird *Verschachtelung* genannt. Wir benutzen die Verschachtelung, um Codeblöcke wie diesen zu erstellen::
@@ -94,13 +94,13 @@ Die Funktion ``running_time()`` gibt die Anzahl der Millisekunden zurück, seit 
 
 Die Zeile ``while running_time() < 10000:`` prüft, ob die laufende Zeit weniger als als 10000 Millisekunden 
 (d.h. 10 Sekunden) ist. Wenn ja wird das Display ``Image.ASLEEP`` anzeigen. Beachte wie diese Zeile unter der 
-"While"-Anweisung eingerückt ist, genau wie in unserer To-Do-Liste.
+``While``-Anweisung eingerückt ist, genau wie in unserer To-Do-Liste.
 
 Offensichtlich, wenn die Laufzeit gleich oder größer als 10000 Millisekunden ist dann wird auf dem 
-Display ``Image.SURPRISED`` angezeigt. Warum? Weil die ``while`` Bedingung falsch sein wird (``Laufzeit`` 
-ist nicht mehr ``< 10000``). In diesem Fall ist die Schleife beendet und das Programm fährt nach der ``while`` 
-Schleife mit dem Code-Block fort. Es wird dann so aussehen, als würde dein Gerät für 10 Sekunden schlafen, bevor 
-es mit einem überraschten Blick im Gesicht wieder aufwacht.
+Display ``Image.SURPRISED`` angezeigt. Warum? Weil die ``while`` Bedingung falsch sein wird (Die Laufzeit 
+``running_time()`` ist nicht mehr ``< 10000``). In diesem Fall ist die Schleife beendet und das Programm fährt 
+nach der ``while`` Schleife mit dem Code-Block fort. Es wird dann so aussehen, als würde dein Gerät für 10 
+Sekunden schlafen, bevor es mit einem überraschten Blick im Gesicht wieder aufwacht.
 
 Probiere es aus!
 
