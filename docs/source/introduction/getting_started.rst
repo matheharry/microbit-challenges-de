@@ -82,12 +82,12 @@ die micro:bit runtime_ erkunden, die dir mehr Flexibilität bei der Verwendung d
    immer noch nicht funktioniert eben noch einmal und noch einmal!** 😉
 
    Es gibt eine Reihe von kostenlosen Online-Kursen, die dir die Grundlagen der Programmierung mit Python näher 
-   bringen, wie zum Beispiel dieser_. Dringend zu empfehlen ist auch dieses YouTube-Tutorial_, das dir die 
+   bringen, wie zum Beispiel python-lernen.de_. Dringend zu empfehlen ist auch dieses YouTube-Tutorial_, das dir die 
    "Sprache" Python und ihre, wie bei allen Programmiersprachen ganz streng einzuhaltende, Grammatik erklärt. 
    
    Beginne auf jeden Fall damit, die ersten paar Lektionen Schritt für Schritt nachzuvollziehen, schau an den oben 
    erwähnten Stellen nach, wie Python funktioniert, wenn etwas nicht so hinhaut wie du dir das gedacht hast, und 
    lass dich auf keinen Fall entmutigen! Denn mit der Zeit wird alles Sinn machen.
 
-.. _dieser: https://www.python-lernen.de/ 
+.. _python-lernen.de: https://www.python-lernen.de/ 
 .. _YouTube-Tutorial: https://www.youtube.com/playlist?list=PL_pqkvxZ6ho3u8PJAsUU-rOAQ74D0TqZB
