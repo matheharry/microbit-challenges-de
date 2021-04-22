@@ -50,7 +50,7 @@ Die Abschnitte dieses Tutorials führen dich durch das Programmieren mit dem mic
 der Programmierung und die Funktionen des micro:bit. Das Ziel ist es, dich mit dem Programmieren vertraut 
 zu machen, so dass du ein eigenes kleines Projekt erstellen kannst. 
 
-Unser Ziel hier ist unter anderem, ein (immer besseres) Schere-Stein-Papier-Spiel zu machen - von ganz 
+Unser Ziel hier ist unter anderem, ein (immer besseres) *Schere-Stein-Papier-Spiel* zu machen - von ganz 
 einfach bis ... (ganz deiner Phantasie überlassen!). So nebenbei lernst du dabei die Programmiersprachen
 Python.
 
