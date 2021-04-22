@@ -10,10 +10,11 @@ Du wirst dabei kontrollieren wollen, welche Anweisungen ausgeführt werden oder 
    :align: center
    :scale: 40%
 
-Bedingte Anweisungen
-======================
+Bedingte Anweisungen mit if
+============================
 
-Das erste Beispiel für einen Anwendungsfall von Kontrollstrukturen liegt dann vor, wenn du einen Teil deines Codes nur dann ausführen willst, wenn eine bestimmte Bedingung erfüllt ist. 
+Das erste Beispiel für einen Anwendungsfall von Kontrollstrukturen liegt dann vor, wenn du einen Teil deines Codes nur dann ausführen willst, 
+**wenn** (``if``) eine bestimmte Bedingung erfüllt ist. 
 Zum Beispiel, wenn du ein Ereignis nur auslösen willst, wenn eine Taste gedrückt wird: ::
 
 	from microbit import *
@@ -32,8 +33,9 @@ Zum Beispiel, wenn du ein Ereignis nur auslösen willst, wenn eine Taste gedrüc
 	sleep(100)
 
 
-Falls du eine andere Aufgabe unter verschiedenen Bedingungen ausführen willst, verwende die ``elif`` (kurz für ``else if``) Anweisung. Die ``else`` Anweisung ist nützlich, wenn du etwas dann tun willst
-wenn keine Bedingung zutrifft. Die beiden letztgenannten Anweisungen sind nur verwendbar, wenn du zuvor eine ``if``-Anweisung verwendet hast, aber keine davon ist zwingend notwendig.
+Falls du eine andere Aufgabe unter verschiedenen Bedingungen ausführen willst, verwende die ``elif`` (kurz für ``else if``) Anweisung. Die ``else`` 
+Anweisung ist nützlich, wenn du etwas dann tun willst wenn keine Bedingung zutrifft. Die beiden letztgenannten Anweisungen sind nur verwendbar, 
+wenn du zuvor eine ``if``-Anweisung verwendet hast, aber keine davon ist zwingend notwendig.
 
 Schleifen (Loops)
 =================
