@@ -2,9 +2,11 @@
 Kontrollstrukturen
 ******************
 
-Das erste Programm im Abschnitt *Erste Schritte* bestand aus aufeinanderfolgenden Anweisungen, die nacheinander ausgeführt wurden. In den meisten Fällen wirst du jedoch eine komplexere Struktur für deinen Code benötigen. 
-Du wirst dabei kontrollieren wollen, welche Anweisungen ausgeführt werden oder wie oft sie ausgeführt werden. Dies ist der Zeitpunkt, an dem die in diesem Abschnitt vorgestellten Kontrollstrukturen
-- wie z.B. Schleifen oder bedingte Anweisungen - nützlich sind. 
+Das erste Programm im Abschnitt *Erste Schritte* bestand aus aufeinanderfolgenden Anweisungen, 
+die nacheinander ausgeführt wurden. In den meisten Fällen wirst du jedoch eine komplexere Struktur 
+für deinen Code benötigen. Du wirst dabei kontrollieren wollen, welche Anweisungen ausgeführt werden 
+oder wie oft sie ausgeführt werden. Dies ist der Zeitpunkt, an dem die in diesem Abschnitt vorgestellten 
+Kontrollstrukturen - wie z.B. *Schleifen* oder *bedingte Anweisungen* - nützlich sind. 
 
 .. image:: assets/control_structures_diagram.png
    :align: center
@@ -13,9 +15,9 @@ Du wirst dabei kontrollieren wollen, welche Anweisungen ausgeführt werden oder 
 Bedingte Anweisungen mit if
 ============================
 
-Das erste Beispiel für einen Anwendungsfall von Kontrollstrukturen liegt dann vor, wenn du einen Teil deines Codes nur dann ausführen willst, 
-**wenn** (``if``) eine bestimmte Bedingung erfüllt ist. 
-Zum Beispiel, wenn du ein Ereignis nur auslösen willst, wenn eine Taste gedrückt wird: ::
+Das erste Beispiel für einen Anwendungsfall von Kontrollstrukturen liegt dann vor, wenn du einen Teil deines 
+Codes nur dann ausführen willst, **wenn** (``if``) eine bestimmte Bedingung erfüllt ist. 
+Zum Beispiel, wenn du ein Ereignis nur auslösen willst, wenn eine Taste gedrückt wird (``if button_a.is_pressed()``): ::
 
 	from microbit import *
 	import love
