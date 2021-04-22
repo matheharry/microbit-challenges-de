@@ -48,8 +48,11 @@ Leitfaden für diese Anleitung
 
 Die Abschnitte dieses Tutorials führen dich durch das Programmieren mit dem micro:bit, die Grundlagen 
 der Programmierung und die Funktionen des micro:bit. Das Ziel ist es, dich mit dem Programmieren vertraut 
-zu machen, so dass du ein eigenes kleines Projekt erstellen kannst. Unser Ziel hier ist es, ein (immer besseres) 
-Schere-Stein-Papier-Spiel zu machen - von ganz einfach bis ...
+zu machen, so dass du ein eigenes kleines Projekt erstellen kannst. 
+
+Unser Ziel hier ist unter anderem, ein (immer besseres) Schere-Stein-Papier-Spiel zu machen - von ganz 
+einfach bis ... (ganz deiner Phantasie überlassen!). So nebenbei lernst du dabei die Programmiersprachen
+Python.
 
 Du brauchst dich nicht unbedingt akribisch durch die ganze Theorie, die in Grundlagen der Programmierung 
 behandelt wird, durcharbeiten, besonders wenn du ein Anfänger bist. Fange an, einfache Programme mit dem 
