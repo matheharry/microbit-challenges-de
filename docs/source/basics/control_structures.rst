@@ -138,11 +138,13 @@ die LEDs auf der obersten horizontalen und der rechten vertikalen Seite anschalt
 	from microbit import *
 
 	for i in range(5):
-	   # Setze das Pixel in der Spalte auf 0, Zeile i auf 9 
-	   display.set_pixel(0, i, 9) 
+	   # Setze das Pixel in der Spalte 0, Zeile i auf 9 
+	   display.set_pixel(0, i, 9)
+       sleep(100) 
 
-	   # Setze das Pixel in der Spalte auf 4, Zeile i auf 9	
-	   display.set_pixel(4, i, 9)	 
+	   # Setze das Pixel in der Spalte 4, Zeile i auf 9	
+	   display.set_pixel(4, i, 9)
+       sleep(100)	 
 
 Hier ist ein weiteres Beispiel.  Du könntest eine ``for Schleife`` verwenden, um alle LEDs nacheinander 
 einzuschalten, eine nach der anderen::
