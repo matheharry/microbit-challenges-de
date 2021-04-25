@@ -127,13 +127,14 @@ Temperaturdaten. Hier ist ein Beispiel für einen Code, der sich ewig wiederholt
 	while True:
 	    display.scroll("Hallo Welt")
 
-Dieser Code wird wiederholt die Meldung ``Hallo Welt`` anzeigen. Du wirst wahrscheinlich mindestens eine ``while True:`` Schleife in deinem Programm haben
-um den micro:bit am Laufen zu halten.
+Dieser Code wird wiederholt die Meldung ``Hallo Welt`` anzeigen. Du wirst wahrscheinlich mindestens eine ``while True:`` Schleife 
+in deinem Programm haben um den micro:bit am Laufen zu halten.
 
 For Schleifen
 ++++++++++++++
-Es kommt vor, dass du eine Aktion eine bestimmte Anzahl von Malen ausführen willst, oder du musst nachverfolgen, wie oft sie ausgeführt wurde. Zum Beispiel möchtest du 
-die LEDs auf der obersten horizontalen und der rechten vertikalen Seite anschalten. Du kannst eine ``for`` Schleife verwenden, um zu ändern, welche LED leuchtet.::
+Es kommt vor, dass du eine Aktion eine bestimmte Anzahl von Malen ausführen willst, oder du musst nachverfolgen, wie oft sie 
+ausgeführt wurde. Zum Beispiel möchtest du die LEDs auf der obersten horizontalen und der rechten vertikalen Seite anschalten. 
+Du kannst eine ``for`` Schleife verwenden, um zu ändern, welche LED leuchtet.::
 
 	from microbit import *
 
@@ -191,9 +192,6 @@ Was glaubst du, macht das folgende Programm? ::
 ===================
 
 1. Zeige ein anderes Bild an, je nachdem in welche Seite der microbit gekippt ist.
-
 2. Programmiere ein LED 'Symbol', das sich in die Richtung bewegt, in die der micro:bit gekippt ist.
-
 3. Programmiere ein LED-Symbol, das sich im Kreis bewegt. Versuche es zu einer Schlange zu erweitern, indem du dem ursprünglichen Symbol einen Schwanz aus LEDs hinzufügst.
-
 4. Mache das Gleiche wie in der vorherigen Frage, aber lass diesmal das Symbol anhalten, wenn eine Taste gedrückt wird und starte neu, wenn sie erneut gedrückt wird.
