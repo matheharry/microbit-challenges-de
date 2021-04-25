@@ -141,11 +141,13 @@ Du kannst eine ``for`` Schleife verwenden, um zu ändern, welche LED leuchtet.::
 	for i in range(5):  # range(5) entspricht der Liste [0,1,2,3,4], hat also 5 Werte
 	   # Setze das Pixel in der Spalte 0, Zeile i auf 9 
 	   display.set_pixel(0, i, 9)
-       sleep(100) 
+       
+       sleep(100)
 
 	   # Setze das Pixel in der Spalte 4, Zeile i auf 9	
 	   display.set_pixel(4, i, 9)
-       sleep(100)	 
+       
+       sleep(100)
 
 Hier ist ein weiteres Beispiel.  Du könntest eine ``for Schleife`` verwenden, um alle LEDs nacheinander 
 einzuschalten, eine nach der anderen::
