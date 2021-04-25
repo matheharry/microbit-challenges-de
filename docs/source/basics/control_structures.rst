@@ -138,7 +138,7 @@ Du kannst eine ``for`` Schleife verwenden, um zu ändern, welche LED leuchtet.::
 
 	from microbit import *
 
-	for i in range(5):
+	for i in range(5):  # range(5) entspricht der Liste [0,1,2,3,4], hat also 5 Werte
 	   # Setze das Pixel in der Spalte 0, Zeile i auf 9 
 	   display.set_pixel(0, i, 9)
        sleep(100) 
