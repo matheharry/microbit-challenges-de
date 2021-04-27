@@ -81,8 +81,9 @@ Versuche nun, die REPL-Konsole zu öffnen:
 Etwas ändern 
 -------------
 
-Der beste Weg, um zu lernen, wie etwas funktioniert, ist zu versuchen, den Code ein wenig zu verändern, um zu sehen was dann passiert.
-Und die *Dokumentation zu lesen*, um zu sehen, was alles möglich, gehört natürlich auch zum Alltag von Programmierern.
+Der beste Weg, um zu lernen, wie etwas funktioniert, ist zu versuchen, den Code ein wenig 
+zu verändern, um zu sehen was dann passiert. Und die *Dokumentation zu lesen*, um zu sehen, 
+was alles möglich ist, gehört sowieso auch zum Alltag von Programmierern.
 
                                     <\|°_°\|>
 
@@ -90,7 +91,7 @@ Und die *Dokumentation zu lesen*, um zu sehen, was alles möglich, gehört natü
 
    - Wozu ist die Verzögerung (``sleep()``) da? Ist sie notwendig? Versuche einmal sie zu entfernen.
    - Was passiert, wenn du ``True`` durch ``False`` ersetzt?
-   - Was passiert, wenn du ``scroll()`` durch ``show()`` ersetzst?
+   - Was passiert, wenn du ``show()`` durch ``scroll()`` ersetzst?
 
 Nun hast du dein erstes Programm geschrieben und damit herumexperimentiert. In den nächsten Abschnitten erfährst du mehr über das Schreiben 
 komplexerer Programme und über weitere Einsatzmöglichkeiten des micro:bit.
