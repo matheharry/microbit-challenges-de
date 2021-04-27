@@ -14,11 +14,20 @@ Hände verwendet.
 
 Wir benötigen also 3 Bilder. Diese speichern wir in 3 Variablen. Um anzuzeigen, dass die
 Werte dieser Variablen im Programm nicht verändert werden sollen, schreiben wir sie in
-Großbuchstaben. ::
+Großbuchstaben. Die Bilder könnten zB so aussehen: ::
 
     from microbit import *
 
     SCHERE = Image("99009:99090:00900:99090:99009:")
     STEIN  = Image("09990:99999:99999:09990:00000:")
     PAPIER = Image("00000:09990:09990:09990:09990:")
+
+Die Auswahl soll mittels der Tasten erfolgen.
+
+* ``Taste A`` -> zeige die Schere an
+* ``Taste B`` -> zeige den Stein an
+* ``Tasten A+B`` -> zeige das Papier an
+
+SSP 2 - Zufälliges Bild
+=======================
 
