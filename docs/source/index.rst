@@ -68,7 +68,7 @@ toll, mehr Challenges und weitere Projekte zu haben.
    basics/classes_objects.rst   
    
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
    :caption: Challenges
 
    challenges/crypto/morse.rst 
