@@ -43,9 +43,8 @@ was bedeutet, dass diese Schleife ewig weiterläuft - es ist dasselbe, als wenn 
 Der Rest des Programms ist ganz einfach ::
 
 	from microbit import *
-
 	while True:
-            display.show('Hallo Welt!')
+         display.show('Hallo Welt!')
          display.show(Image.HEART)
 	      print('Hallo du!')    
     	   sleep(2000)
