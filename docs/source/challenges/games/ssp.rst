@@ -52,6 +52,6 @@ SSP 4 - Der micro:bit lernt die Regeln
 Wir kombinieren die ersten 2 Versionen und bringen dem micro:bit die Regeln des Spiels bei.
 
 * Wie in *SSP 1* wählen wir über die Tasten unser Bild, das dann angezeigt wird.
-* Jetzt wählt der micro:bit ein zufälliges Bild, das uns nach einem Countdown angezeigt wird.
+* Jetzt wählt der micro:bit wie in *SSP 2* ein zufälliges Bild, das uns nach einem Countdown angezeigt wird.
 * Für uns ist jetzt natürlich klar, wer gewonnen hat. Wir freuen uns, wenn wir gewonnen haben, langweilen uns über ein Unentschieden oder sind traurig, wenn wir verlosren haben. Genau diese Reaktionen wollen wir auch von unserem micro:bit sehen!
 
