@@ -43,13 +43,15 @@ Wir können die vorige Variante so abändern, dass alles ganz ohne Taste und nur
 des micro:bit funktioniert!
 
 Die 2 Tasten verwenden wir, um den Punktestand mitzuzählen und anzuzeigen.
+
 * ``Taste A`` zählt die Siege des micro:bits 
 * ``Taste B`` zählt deine Siege
 
-SSP 4 - 
+SSP 4 - Der micro:bit lernt die Regeln
+=======================================
+Wir kombinieren die ersten 2 Versionen und bringen dem micro:bit die Regeln des Spiels bei.
 
-
-SSP 4 - 
-
-
+* Wie in *SSP 1* wählen wir über die Tasten unser Bild, das dann angezeigt wird.
+* Jetzt wählt der micro:bit ein zufälliges Bild, das uns nach einem Countdown angezeigt wird.
+* Für uns ist jetzt natürlich klar, wer gewonnen hat. Wir freuen uns, wenn wir gewonnen haben, langweilen uns über ein Unentschieden oder sind traurig, wenn wir verlosren haben. Genau diese Reaktionen wollen wir auch von unserem micro:bit sehen!
 
