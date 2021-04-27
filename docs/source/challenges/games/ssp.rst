@@ -30,9 +30,14 @@ Die Auswahl soll mittels der Tasten erfolgen.
 
 SSP 2 - Zufälliges Bild
 ========================
-Wir verwenden den micro:bit immer noch, um miteinander zu spielen. Diesesmal bestimmen
-aber nicht wir, welches Bild angezeigt wird. Der micro:bit soll zufällig eines der
-3 Bilder auswählen und zeigen, wenn wir die ``Taste A`` drücken.
+Dieses mal bestimmen nicht wir, welches Bild angezeigt wird. Der micro:bit soll zufällig eines der
+3 Bilder auswählen und zeigen, wenn wir die ``Taste A`` drücken. So können wir miteinander
+oder auch selbst gegen den micro:bit spielen. Spannender wird das, wenn wir auch einen Countdown
+einbauen, der 3 - 2 - 1 herunterzählt, bevor er das Bild anzeigt!
 
 Noch besser wird es, wenn das durch Schütteln des micro:bit funktioniert!
+
+
+
+
 
