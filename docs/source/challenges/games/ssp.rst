@@ -29,5 +29,10 @@ Die Auswahl soll mittels der Tasten erfolgen.
 * ``Tasten A+B`` -> zeige das Papier an
 
 SSP 2 - Zufälliges Bild
-=======================
+========================
+Wir verwenden den micro:bit immer noch, um miteinander zu spielen. Diesesmal bestimmen
+aber nicht wir, welches Bild angezeigt wird. Der micro:bit soll zufällig eines der
+3 Bilder auswählen und zeigen, wenn wir die ``Taste A`` drücken.
+
+Noch besser wird es, wenn das durch Schütteln des micro:bit funktioniert!
 
