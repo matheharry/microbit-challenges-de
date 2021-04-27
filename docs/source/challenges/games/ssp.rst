@@ -32,12 +32,24 @@ SSP 2 - Zufälliges Bild
 ========================
 Dieses mal bestimmen nicht wir, welches Bild angezeigt wird. Der micro:bit soll zufällig eines der
 3 Bilder auswählen und zeigen, wenn wir die ``Taste A`` drücken. So können wir miteinander
-oder auch selbst gegen den micro:bit spielen. Spannender wird das, wenn wir auch einen Countdown
-einbauen, der 3 - 2 - 1 herunterzählt, bevor er das Bild anzeigt!
+oder auch selbst gegen den micro:bit spielen. 
 
-Noch besser wird es, wenn das durch Schütteln des micro:bit funktioniert!
+Spannender wird das, wenn wir auch einen Countdown einbauen, der 3 - 2 - 1 herunterzählt, bevor er 
+das Bild anzeigt! Kannst du das mit einer for-Schleife machen?
+
+SSP 3 - Schütteln und Highscore
+================================
+Wir können die vorige Variante so abändern, dass alles ganz ohne Taste und nur durch Schütteln 
+des micro:bit funktioniert!
+
+Die 2 Tasten verwenden wir, um den Punktestand mitzuzählen und anzuzeigen.
+* ``Taste A`` zählt die Siege des micro:bits 
+* ``Taste B`` zählt deine Siege
+
+SSP 4 - 
 
 
+SSP 4 - 
 
 
 
