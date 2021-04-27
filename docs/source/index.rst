@@ -70,7 +70,9 @@ toll, mehr Challenges und weitere Projekte zu haben.
 .. toctree::
    :maxdepth: 1
    :caption: Challenges
-
+   
+   challenges/games/ssp.rst
+   
    challenges/crypto/morse.rst 
    challenges/crypto/caesar.rst 
    challenges/crypto/substitution.rst
