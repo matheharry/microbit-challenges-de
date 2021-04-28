@@ -9,11 +9,11 @@ In diesem Abschnitt werden wir nicht weiter auf Methoden eingehen, aber wir werd
 Funktionen verwenden
 ====================
 
-Eine großartige Sache an Funktionen ist, dass sie in mehr als einem Programm verwendet werden können und Code-Wiederholungen vermeiden. Auf die gleiche Weise kannst du Funktionen verwenden, die andere Leute 
-geschrieben haben. 
-In Python können nützliche Funktionen zu Modulen zusammengestellt werden (obwohl du das nicht tun musst) - das ``random`` Modul ist ein gutes Beispiel. 
-Um die Funktionen des Random-Moduls zu nutzen, musst du das Modul zuerst `importieren`. Sobald du das getan hast, kannst du alle Funktionen des Moduls benutzen. Hier sind zwei Beispiele 
-von Funktionen aus 'random'.
+Eine großartige Sache an Funktionen ist, dass sie in mehr als einem Programm verwendet werden können und Code-Wiederholungen 
+vermeiden. Auf die gleiche Weise kannst du Funktionen verwenden, die andere Leute geschrieben haben. In Python können nützliche 
+Funktionen zu Modulen zusammengestellt werden (obwohl du das nicht tun musst) - das ``random`` Modul ist ein gutes Beispiel. 
+Um die Funktionen des Random-Moduls zu nutzen, musst du das Modul zuerst `importieren`. Sobald du das getan hast, kannst du 
+alle Funktionen des Moduls benutzen. Hier sind zwei Beispiele von Funktionen aus 'random'.
 
 Die Funktion ``random.randint()`` erlaubt es uns, eine zufällige Ganzzahl (Integer) aus einem bestimmten Bereich zu erzeugen::
 
@@ -22,10 +22,11 @@ Die Funktion ``random.randint()`` erlaubt es uns, eine zufällige Ganzzahl (Inte
 	
 	display.show(str(random.randint(1, 6)))
 
-Im obigen Code wird eine Zufallszahl zwischen 1 und 5 generiert - die obere Grenze, in diesem Fall 6, wird nie einbezogen.
+Im obigen Code wird eine Zufallszahl von 1 bis 6 generiert - die obere Grenze ist in diesem Fall (ausnahmsweise!) mit dabei, 
+dh jede der Zahlen 1, 2, 3, 4, 5 und 6 können angezeigt werden.
 	
-In diesem Codeschnipsel prüft die Funktion ``random.choice`` wie viele Elemente in der Namensliste sind, erzeugt eine zufällige Ganzzahl im Bereich von 0 bis zur Listenlänge 
-und gibt ein Listenelement mit dem Index der erzeugten Ganzzahl zurück::
+In diesem Codeschnipsel prüft die Funktion ``random.choice`` wie viele Elemente in der Namensliste sind, erzeugt eine zufällige 
+Ganzzahl im Bereich von 0 bis zur Listenlänge und gibt ein Listenelement mit dem Index der erzeugten Ganzzahl zurück::
 
 	from microbit import *
 	import random
