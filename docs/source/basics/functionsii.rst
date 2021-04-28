@@ -2,8 +2,8 @@
 Funktionen II
 **************
 
-Jetzt, wo du weißt, wie man Funktionen in der Praxis einsetzt, gibt es einige weitere Konzepte, die dir helfen werden, das Verhalten von Funktionen nicht nur in Python zu verstehen,
-sondern auch in anderen Sprachen.  
+Jetzt, wo du weißt, wie man Funktionen in der Praxis einsetzt, gibt es einige weitere Konzepte, die dir 
+helfen werden, das Verhalten von Funktionen nicht nur in Python zu verstehen, sondern auch in anderen Sprachen.  
 
 Geltungsbereich (Scope)
 =======================
@@ -11,7 +11,8 @@ Geltungsbereich (Scope)
 Globale und lokale Variablen
 ----------------------------
 
-Stell dir vor, du möchtest eine leicht abgeänderte Funktion ``printBirthdayGreeting()`` von vorher verwenden und du möchtest das Alter bei jedem Aufruf der Funktion erhöhen: ::
+Stell dir vor, du möchtest eine leicht abgeänderte Funktion ``printBirthdayGreeting()`` von vorher verwenden 
+und du möchtest das Alter bei jedem Aufruf der Funktion erhöhen: ::
 
 	name = "Johann"
 	alter = 32
@@ -22,18 +23,22 @@ Stell dir vor, du möchtest eine leicht abgeänderte Funktion ``printBirthdayGre
 
 	printBirthdayGreeting()	
 
-Kannst du erkennen, was falsch ist? Wenn du versuchst, den Code auszuführen, wirst du wahrscheinlich diese Meldung erhalten: UnboundLocalError: local variable 'alter' referenced before assignment``.
+Kannst du erkennen, was falsch ist? Wenn du versuchst, den Code auszuführen, wirst du wahrscheinlich diese 
+Meldung erhalten: UnboundLocalError: local variable 'alter' referenced before assignment``.
 
-Um dies zu verstehen, müssen wir über den Geltungsbereich (Scope) sprechen. Scope ist eine 'Umgebung', in der eine Variable definiert ist, und auf die dort zugegriffen und in die geschrieben werden kann. Unter diesem Gesichtspunkt kennen wir zwei 
-Typen von Variablen: globale und lokale.
+Um dies zu verstehen, müssen wir über den Geltungsbereich (Scope) sprechen. Scope ist eine 'Umgebung', in der 
+eine Variable definiert ist, und auf die dort zugegriffen und in die geschrieben werden kann. Unter diesem Gesichtspunkt 
+kennen wir zwei Typen von Variablen: globale und lokale.
 
-Standardmäßig sind alle Variablen, die innerhalb einer Funktion definiert sind, lokal - du kannst nicht auf sie außerhalb der Funktion zugreifen. Und da der Geltungsbereich
-innerhalb der Funktion anders ist als der globale, ist es möglich, den gleichen Namen für zwei verschiedene Variablen zu verwenden.
+Standardmäßig sind alle Variablen, die innerhalb einer Funktion definiert sind, lokal - du kannst nicht auf sie außerhalb 
+der Funktion zugreifen. Und da der Geltungsbereich innerhalb der Funktion anders ist als der globale, ist es möglich, den 
+gleichen Namen für zwei verschiedene Variablen zu verwenden.
 
 Kannst du jetzt erklären, was im obigen Codeschnipsel passiert ist?
 
-``alter`` außerhalb der ``printBirthdayGreeting()`` Funktion ist eine globale Variable. Wenn wir jedoch innerhalb der Funktion darauf zugreifen wollen, betrachtet Python es als eine neue
-lokale Variable. Wie lösen wir das Problem? Wir können die Variable ``alter`` als ``global`` deklarieren: ::
+``alter`` außerhalb der ``printBirthdayGreeting()`` Funktion ist eine globale Variable. Wenn wir jedoch innerhalb der 
+Funktion darauf zugreifen wollen, betrachtet Python es als eine neue lokale Variable. Wie lösen wir das Problem? Wir 
+können die Variable ``alter`` als ``global`` deklarieren: ::
 
 	name = "Johann"
 	alter = 32
