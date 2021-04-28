@@ -16,7 +16,7 @@ und du möchtest das Alter bei jedem Aufruf der Funktion erhöhen: ::
 
 	name = "Johann"
 	alter = 32
-
+	
 	def printBirthdayGreeting():
 		alter += 1
 	    return "Happy Birthday " + name + ", du bist " + str(alter) + " Jahre alt!" 
