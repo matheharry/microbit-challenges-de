@@ -69,7 +69,7 @@ Wenn ich meine To-Do-Liste noch weiter unterteilen möchte, würde ich vielleich
     Einkaufen:
         Eier
         Speck
-        Tomaten:
+        Tomaten
     Kaputte Dachrinne reparieren:
         Leiter von nebenan leihen
         Hammer und Nägel finden
