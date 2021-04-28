@@ -2,9 +2,10 @@
 Funktionen I
 ************
 
-Funktionen und Methoden beziehen sich auf nützliche Codeschnipsel, die einem bestimmten Zweck dienen und normalerweise viele Male in deinem Programm verwendet werden. 
-Wahrscheinlich hast du sowohl Funktionen als auch Methoden schon benutzt, ohne es unbedingt zu merken. 
-In diesem Abschnitt werden wir nicht weiter auf Methoden eingehen, aber wir werden erklären, wie man Funktionen benutzt und schreibt. 
+Funktionen und Methoden beziehen sich auf nützliche Codeschnipsel, die einem bestimmten Zweck dienen und normalerweise 
+viele Male in deinem Programm verwendet werden. Wahrscheinlich hast du sowohl Funktionen als auch Methoden schon benutzt, 
+ohne es unbedingt zu merken. In diesem Abschnitt werden wir nicht weiter auf Methoden eingehen, aber wir werden erklären, 
+wie man Funktionen benutzt und schreibt. 
 
 Funktionen verwenden
 ====================
@@ -39,7 +40,8 @@ Ganzzahl im Bereich von 0 bis zur Listenlänge und gibt ein Listenelement mit de
 Eigene Funktionen erstellen
 ============================
 
-Funktionen können dir helfen, deinen Code zu organisieren und ihn ordentlich zu halten. Hier ist ein Beispiel für eine einfache Funktion, die eine Nachricht ausgibt::
+Funktionen können dir helfen, deinen Code zu organisieren und ihn ordentlich zu halten. Hier ist ein Beispiel für 
+eine einfache Funktion, die eine Nachricht ausgibt::
 
 
 	def zeigeBegruessung():
@@ -49,9 +51,11 @@ Funktionen können dir helfen, deinen Code zu organisieren und ihn ordentlich zu
 
 	zeigeBegruessung()
 
-Das ist keine sehr interessante Funktion, oder? Du kannst Funktionen mächtiger machen, indem du `Parameter` und `Rückgabewerte` benutzt. Wenn du dir eine Funktion wie eine Black Box vorstellst 
-dann ist ein Parameter ein Eingabewert und ein Rückgabewert ist das, was du am anderen Ende bekommst. Nehmen wir an, wir wollen ein kleines Programm schreiben, das einige 
-Freunde mit einer Nachricht begrüßt, die ihren Namen und ihr Alter enthält: ::
+Das ist keine sehr interessante Funktion, oder? Du kannst Funktionen mächtiger machen, indem du `Parameter` 
+und `Rückgabewerte` benutzt. Wenn du dir eine Funktion wie eine Black Box vorstellst dann ist ein Parameter 
+ein Eingabewert und ein Rückgabewert ist das, was du am anderen Ende bekommst. Nehmen wir an, wir wollen 
+ein kleines Programm schreiben, das einige Freunde mit einer Nachricht begrüßt, die ihren Namen und ihr Alter 
+enthält: ::
 
 	from microbit import *
 
@@ -63,18 +67,15 @@ Freunde mit einer Nachricht begrüßt, die ihren Namen und ihr Alter enthält: :
  	display.scroll(printBirthdayGreeting("Sonja", 9))
  	display.scroll(printBirthdayGreeting("Maria", 11))
 		
-Die Funktion ``printBirthdayGreeting`` stellt die Geburtstagsnachricht für uns zusammen und gibt einen String zurück. ``str()`` wird benutzt, um das ``Alter``, 
-welches eine Zahl ist, in einen String zu verwandeln.  Du musst keine Funktionen oder Rückgabewerte in deinen Funktionen verwenden, es sei denn, du willst/brauchst sie.	
+Die Funktion ``printBirthdayGreeting`` stellt die Geburtstagsnachricht für uns zusammen und gibt einen String 
+zurück. ``str()`` wird benutzt, um das ``Alter``, welches eine Zahl ist, in einen String zu verwandeln. Du musst 
+keine Funktionen oder Rückgabewerte in deinen Funktionen verwenden, es sei denn, du willst/brauchst sie.	
 
 Übungsaufgaben
 ===================
 
 1. Schreibe eine Funktion ``blink(x, y)``, die eine LED an den Koordinaten, die durch die Parameter x und y angegeben werden, einmal blinken lässt.
-
 2. Benutze die Funktion ``blink(x, y)`` um alle LEDs nacheinander blinken zu lassen.
-
 3. Schreibe eine Funktion button_count() die ein Tupel zurückgibt, das die Anzahl der Betätigungen von Taste A und Taste B enthält. (fix)
-
 4. Kombiniere die beiden Funktionen in einem Programm, das es dem Benutzer ermöglicht, die Koordinaten der blinkenden LED durch Drücken der Tasten einzustellen.
-
 5. Schau dir die Skripte an, die du zuvor geschrieben hast und prüfe, ob du deinen Code durch die Verwendung von Funktionen verbessern könntest (oder nicht).
