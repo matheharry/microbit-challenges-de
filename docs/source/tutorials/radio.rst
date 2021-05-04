@@ -14,9 +14,9 @@ Grundfunktionen
 
 Vorbereitung 
 -------------
-Bevor du den Funk benutzen kannst, musst du daran denken, das Modul ``radio`` zu importieren und 
-den Funk einzuschalten. Sobald der Funk eingeschaltet ist, kannst du damit Nachrichten von jedem 
-anderen micro:bit in Reichweite empfangen: :: 
+Bevor du den Funk benutzen kannst, darfst du nicht vergessen, das Modul ``radio`` zu importieren und 
+den Funk mit ``radio.on()`` einzuschalten. Sobald der Funk eingeschaltet ist, kannst du damit Nachrichten 
+von jedem anderen micro:bit in Reichweite empfangen: :: 
 
 	from microbit import *
 	import radio		
@@ -38,8 +38,8 @@ ist nicht das, was du normalerweise willst.
 
 Einstellen der Sendeleistung
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Zum Schluss solltest du die Leistungsstufe für den Funk einstellen. Standardmäßig sendet dein micro:bit auf 
-Leistungsstufe 0, was bedeutet, dass deine Nachrichten nicht sehr weit übertragen werden. Die Leistungsstufe 
+Zum Schluss solltest du die Sendeleistung für den Funk einstellen. Standardmäßig sendet dein micro:bit auf 
+der Leistungsstufe 0, was bedeutet, dass deine Nachrichten nicht sehr weit übertragen werden. Die Sendeleistung 
 kann ein Wert zwischen ``0`` und ``7`` sein.::
 
 	# Sendeleistung auf 7 stellen
@@ -50,7 +50,7 @@ Eine Nachricht senden und empfangen
 Jetzt bist du bereit, eine Nachricht zu senden oder zu empfangen. Du kannst eine Zeichenkette mit einer Länge von 
 bis zu 250 Zeichen senden: ::
 
-	message_to_master = "Ash nazg durbatulûk, ash nazg gimbatul, ash nazg thrakatulûk, agh burzum-ishi krimpatul."
+	message_to_master = "Zwischen uns funkt es!"
 
 	radio.send(message_to_master)
 
@@ -70,7 +70,7 @@ Alle Teile zusammengefügt
 	radio.config(channel=19)	# Wähle deine eigene Kanalnummer
 	radio.config(power=7)		# Setze das Signal auf die volle Stärke 
 
-	message_to_master = "Ash nazg durbatulûk, ash nazg gimbatul, ash nazg thrakatulûk, agh burzum-ishi krimpatul."
+	message_to_master = "Zwischen uns funkt es!"
 	
 	# Event loop.
 	while True:
@@ -84,16 +84,16 @@ Alle Teile zusammengefügt
 Wenn du die eingehende Nachricht ausgibst, wirst du sehen, dass sie manchmal den Wert ``None`` enthält. 
 Das liegt daran, dass der micro:bit manchmal nach einer Nachricht sucht, aber noch nichts angekommen ist. 
 Wir können diese ``None``-Ereignisse ignorieren, indem wir prüfen, ob ``incoming`` gleich ``None`` ist 
-und alles ignorieren, wenn das der Fall ist.
+und dann ganz einfach nichts ausgeben.
 
 Verbindung zum Smartphone
 ----------------------------
 
-Mit Hilfe der microbit Bluetooth Antenne ist es möglich, dein micro:bit mit deinem Telefon zu verbinden und 
+Mit Hilfe der microbit Bluetooth Antenne ist es möglich, deinen micro:bit mit deinem Telefon zu verbinden und 
 drahtlos mit dem micro:bit zu kommunizieren. Allerdings unterstützt MicroPython diese Fähigkeit aufgrund 
 mangelnder RAM-Kapazität nicht. 
 
 Übungsaufgaben
 ====================
 * Sende jedes Mal eine Nachricht, wenn die Taste ``A`` gedrückt wird.
-* Du benötigst hierfür micro:bits. Programmiere einen micro:bit, um Nachrichten zu empfangen und gib die empfangene Nachricht mit der Methode ``print()`` aus. Lass diesen micro:bit mit einem USB-Kabel an deinem Computer angeschlossen. Programmiere den andere micro:bit so, dass er die Beschleunigungsmesserwerte oder die Temperaturmesswerte in Nachrichten jede Sekunde sendet. Trenne diesen micro:bit vom Computer und benutze eine Batterie, um ihn zu betreiben. Glückwunsch! Du hast einen Datenlogger erstellt!
+* Du benötigst für diese Aufgabe 2 micro:bits. Programmiere einen micro:bit, um Nachrichten zu empfangen und gib die empfangene Nachricht mit der Methode ``print()`` aus. Lass diesen micro:bit mit einem USB-Kabel an deinem Computer angeschlossen. Programmiere den andere micro:bit so, dass er die Beschleunigungsmesserwerte oder die Temperaturmesswerte in Nachrichten jede Sekunde sendet. Trenne diesen micro:bit vom Computer und benutze eine Batterie, um ihn zu betreiben. Glückwunsch! Du hast einen Datenlogger erstellt!
