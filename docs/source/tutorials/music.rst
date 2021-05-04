@@ -104,7 +104,7 @@ Sprachausgabe
 ==============
 
 Weil es gar soviel Spaß macht, damit herumzuspielen, möchte ich hier auf das noch in 
-Entwicklung befindliche ``speech``-Modul hinweisen. Auf der `englischsprachigen 
+Entwicklung befindliche ``speech``-Modul hinweisen. Auf der Seite der `englischsprachigen 
 MicroPython-Dokumentation <https://microbit-micropython.readthedocs.io/en/latest/tutorials/speech.html>`_ 
 wird es vorgestellt, kann sich aber noch verändern.
 
