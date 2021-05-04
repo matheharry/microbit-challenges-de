@@ -21,7 +21,10 @@ von jedem anderen micro:bit in Reichweite empfangen: ::
 	from microbit import *
 	import radio		
 
-	radio.on()			
+	radio.on()
+	
+Da dieses Modul Strom verbraucht, sollte es, wenn es nicht mehr benötigt wird mittels ``radio.off()`` 
+wieder ausschalten.
 
 Einstellen des Kanals (Funkgruppe)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
