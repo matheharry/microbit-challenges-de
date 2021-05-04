@@ -99,3 +99,24 @@ berechnet, indem du 16 addierst (oder subtrahierst). Eine for-Schleife die man h
 ===============
 * Erfinde deine eigene Melodie.
 * Baue ein Musikinstrument. Verändere die Tonhöhe des gespielten Tons basierend auf den Messwerten des Beschleunigungsmessers.  
+
+Sprachausgabe
+==============
+
+Weil es gar soviel Spaß macht, damit herumzuspielen, möchte ich hier auf das noch in 
+Entwicklung befindliche ``speech``-Modul hinweisen. Auf der `englischsprachigen 
+MicroPython-Dokumentation <https://microbit-micropython.readthedocs.io/en/latest/tutorials/speech.html>`_ 
+wird es vorgestellt, kann sich aber noch verändern.
+
+Hier ein Versuch, unserem Engländer microbit ein paar deutsche Sätze zu entlocken: ::
+
+	from microbit import *
+	import speech
+
+	# Der Klassiker auf Deutsch in Lautschrift.
+	speech.pronounce("/HAHLLOH WEHLT.")
+	
+	sleep(700)
+
+	# So geht's auch ;-)
+	speech.say("Eech been eyen clyner robotair",  speed=92, pitch=60, throat=190, mouth=190)
