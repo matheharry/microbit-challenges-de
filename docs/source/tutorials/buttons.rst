@@ -21,6 +21,8 @@ Irgendwie sollte MicroPython auf das Drücken der Tasten reagieren können. Viel
 einem Tastendruck starten oder stoppen oder vielleicht möchtest du wissen, wie oft jede Taste gedrückt wurde. All 
 das ist recht einfach umzusetzen.
 
+Link zur `englischsprachigen MicroPython-Dokumentation <https://microbit-micropython.readthedocs.io/en/latest/tutorials/buttons.html>`_
+
 Grundfunktionen
 ================
 
