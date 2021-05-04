@@ -9,8 +9,8 @@ micro:bit MicroPython Tutorial
 Diese Dokumentation kann unter <http://microbit-challenges-de.readthedocs.io/de/latest/index.html> angesehen 
 werden. 
 
-Sie basiert größtenteils auf der **englischen MicroPython** `Dokumentation <http://microbit-micropython.readthedocs.io>`_ 
-und der Arbeit von `Rae Harbird`_. 
+Sie basiert größtenteils auf der **englischsprachigen MicroPython** `Dokumentation <http://microbit-micropython.readthedocs.io>`_ 
+(es lohnt sich, auch dort vorbeizuschauen!) und der Arbeit von `Rae Harbird`_. 
 
 .. _Rae Harbird: https://microbit-challenges.readthedocs.io/
 
