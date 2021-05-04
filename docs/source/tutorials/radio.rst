@@ -8,6 +8,7 @@ Empfangen von Nachrichten genutzt werden kann.
    :scale: 40 %
    :align: center
 
+Link zur `englischsprachigen MicroPython-Dokumentation <https://microbit-micropython.readthedocs.io/en/latest/tutorials/radio.html>`_
 
 Grundfunktionen
 ================
