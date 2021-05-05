@@ -113,7 +113,7 @@ Hier ein Versuch, unserem Engländer microbit ein paar deutsche Sätze zu entloc
 	from microbit import *
 	import speech
 
-	# Der Klassiker auf Deutsch in Lautschrift.
+	# Der Klassiker auf Deutsch in spezieller Lautschrift.
 	speech.pronounce("/HAHLLOH WEHLT.")
 	
 	sleep(700)
