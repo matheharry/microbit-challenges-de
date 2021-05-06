@@ -51,10 +51,14 @@ SSP 4 - Der micro:bit lernt die Regeln
 =======================================
 Wir kombinieren die ersten 2 Versionen und bringen dem micro:bit die Regeln des Spiels bei.
 
+* Wie in *SSP 1* wählen wir über die Tasten unser Bild, das dann angezeigt wird.
+* Jetzt wählt der micro:bit wie in *SSP 2* ein zufälliges Bild, das uns nach einem Countdown angezeigt wird.
+* Für uns ist jetzt natürlich klar, wer gewonnen hat. Wir freuen uns, wenn wir gewonnen haben, langweilen uns über ein Unentschieden oder sind traurig, wenn wir verloren haben. Genau diese Reaktionen wollen wir auch von unserem micro:bit sehen!
+
 In einem ersten Schritt müssen wir uns die Regeln als *Wenn ..., dann ...* Sätze notieren. 
 Wir stellen uns das Ganze aus der Sicht des micro:bit vor, der glücklich dreinschauen soll,
 wenn er gewonnen hat. Beim Verlieren soll er natürlich traurig sein und sonst solala.
-Das könnte, angelehnt an die Schreibweise der Python ``if``-Bedinguingen, so aussehen: ::
+Das könnte, angelehnt an die Schreibweise der Python ``if``-Bedingungen, so aussehen: ::
 
     Wenn microbit == spieler:
         Unentschieden (😐)
@@ -63,12 +67,8 @@ Das könnte, angelehnt an die Schreibweise der Python ``if``-Bedinguingen, so au
             Gewonnen! (😁)
         Sonst:
             Verloren! (😞)
-    Sonst wenn ...
+    Sonst wenn spieler == STEIN:
+        ...
 
 So kommen wir zu verschachtelten ``if``-Bedingungen. Das funktioniert zwar, ist aber nicht 
 sehr elegant. Besser geht das, wenn wir sogenannte :ref:`Logische Operationen` verwenden.
-
-
-* Wie in *SSP 1* wählen wir über die Tasten unser Bild, das dann angezeigt wird.
-* Jetzt wählt der micro:bit wie in *SSP 2* ein zufälliges Bild, das uns nach einem Countdown angezeigt wird.
-* Für uns ist jetzt natürlich klar, wer gewonnen hat. Wir freuen uns, wenn wir gewonnen haben, langweilen uns über ein Unentschieden oder sind traurig, wenn wir verloren haben. Genau diese Reaktionen wollen wir auch von unserem micro:bit sehen!
