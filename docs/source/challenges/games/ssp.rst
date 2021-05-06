@@ -72,3 +72,4 @@ Das könnte, angelehnt an die Schreibweise der Python ``if``-Bedingungen, so aus
 
 So kommen wir zu verschachtelten ``if``-Bedingungen. Das funktioniert zwar, ist aber nicht 
 sehr elegant. Besser geht das, wenn wir sogenannte :ref:`Logische Operationen` verwenden.
+Auf diese Weise können wir mit Und ``
