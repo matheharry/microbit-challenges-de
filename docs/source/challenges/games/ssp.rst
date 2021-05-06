@@ -28,6 +28,10 @@ Die Auswahl soll mittels der Tasten erfolgen.
 * ``Taste B`` -> zeige den Stein an
 * ``Tasten A+B`` -> zeige das Papier an
 
+Da das Spiel nicht nur einmal zu spielen sein soll, soll der micro:bit andauernd darauf 
+achten, welche Taste gedrückt wurde. Deshalb benötigen wir, wie bei fast allen Programmen 
+die auf einem Mikrochip laufen, eine :ref:`Endlosschleife` mit ``while True``. 
+
 SSP 2 - Zufälliges Bild
 ========================
 Dieses mal bestimmen nicht wir, welches Bild angezeigt wird. Der micro:bit soll zufällig eines der
@@ -75,4 +79,4 @@ sehr elegant. Besser geht das, wenn wir sogenannte :ref:`Logische Operationen` v
 Auf diese Weise können wir mit Und ``and`` bzw. Oder ``or`` die Regeln schöner formulieren. 
 zB. ::
 
-    Wenn microbit == SCHERE and spieler == PAPIER or microbit == STEIN and ...
+    Wenn (microbit == SCHERE and spieler == PAPIER) or (microbit == STEIN and ...
