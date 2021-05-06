@@ -192,7 +192,7 @@ Logische Operationen
 
 Logische Operatoren testen den Wahrheitswert ihrer Operanden.
 
-+--------------+----------------------------------+--------------------+
++--------------+----------------------------------+-------------------+
 | **Operator** |  **Gibt ``True`` zurück, wenn**  | **Example**       |
 +==============+==================================+===================+
 | and          |  beide Operanden Wahr sind       | ``True and True`` |
