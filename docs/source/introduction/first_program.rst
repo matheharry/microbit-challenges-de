@@ -110,8 +110,6 @@ zu können, sind auch noch andere Unterlagen vorhanden, mit denen man noch mehr 
    .. _`Jupyter-Notebooks auf Binder`: https://mybinder.org/v2/gh/matheharry/MicroPython-Crashkurs/main
 
    .. image:: assets/arbeitsweise.png
-   :scale: 80% 
-   :align: center
 
 Nun hast du dein erstes Programm geschrieben und damit herumexperimentiert. In den nächsten Abschnitten erfährst du mehr über das Schreiben 
 komplexerer Programme und über weitere Einsatzmöglichkeiten des micro:bit.
