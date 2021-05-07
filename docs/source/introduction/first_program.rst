@@ -85,17 +85,33 @@ Der beste Weg, um zu lernen, wie etwas funktioniert, ist zu versuchen, den Code 
 zu verändern, um zu sehen was dann passiert. Und die *Dokumentation zu lesen*, um zu sehen, 
 was alles möglich ist, gehört sowieso auch zum Alltag von Programmierern.
 
-                                    <\|°_°\|>
-
 **Fragen, die du dir stellen könntest:**
 
    - Wozu ist die Verzögerung (``sleep()``) da? Ist sie notwendig? Versuche einmal sie zu entfernen.
    - Was passiert, wenn du ``True`` durch ``False`` ersetzt?
    - Was passiert, wenn du ``show()`` durch ``scroll()`` ersetzst?
 
+Überblick über die Arbeitsweise
+---------------------------------
+
+Um Programme für den micro:bit schreiben zu können, musst du wissen, welche Befehle er verstehen kann 
+und wie man diese in Python hinschreiben muss. Da man sich die ganzen Regeln und Begriffe (vor allem 
+am Anfang) schwer merken kann, muss man wissen wo man nachschauen kann. Du wirst also sehr oft zwischen 
+diesem Tutorial und der **Entwicklungsumgebung Mu** hin- und herwechseln, wenn etwas unklar ist. 
+
+Da in diesem Tutorial nur das allernötigste zu Python beschrieben wird, um mit dem micro:bit arbeiten 
+zu können, sind auch noch andere Unterlagen vorhanden, mit denen man noch mehr über Python erfahren kann.
+
+.. seealso:: 
+   - Schau dir auch die komplette `micro:bit Dokumentation für MicroPython`_ an.
+   - Um die Programmiersprache Python besser kennenzulernen stehen auch interaktive `Jupyter-Notebooks auf Binder`_ zur Verfügung. Hier kannst du direkt Dinge ausprobieren und lernst dabei, wie Python 3 funktioniert.
+
+   .. _`micro:bit Dokumentation für MicroPython`: https://microbit-micropython.readthedocs.io/en/latest/tutorials/introduction.html
+   .. _`Jupyter-Notebooks auf Binder`: https://mybinder.org/v2/gh/matheharry/MicroPython-Crashkurs/main
+
+   .. image:: assets/arbeitsweise.png
+   :scale: 80% 
+   :align: center
+
 Nun hast du dein erstes Programm geschrieben und damit herumexperimentiert. In den nächsten Abschnitten erfährst du mehr über das Schreiben 
 komplexerer Programme und über weitere Einsatzmöglichkeiten des micro:bit.
-
-.. seealso:: Schau dir auch die komplette micro:bit Dokumentation_ für MicroPython an.
-
-   .. _Dokumentation: https://microbit-micropython.readthedocs.io/en/latest/tutorials/introduction.html 
