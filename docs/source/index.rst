@@ -15,9 +15,11 @@ Sie basiert größtenteils auf der **englischsprachigen MicroPython** `Dokumenta
 
 .. _Rae Harbird: https://microbit-challenges.readthedocs.io/
 
-Die Arbeitsblätter sind so gestaltet, dass sie den Schülern eine Einführung in die Funktionen des
-micro:bit vermitteln sollen.  Es werden kurze praktische Beispiele gegeben und die Schüler werden aufgefordert, mit 
-Hilfe der vorgestellten Grundbausteine Lösungen für weiterführende Aufgaben zu programmieren.
+Die Themengebiete decken den Funktionsumfang des BBC micro:bit ab und sind so gestaltet, dass 
+sie den Schülern eine Einführung in die Funktionen anhand kurzer Code-Schnipsel vermitteln sollen.  
+Es werden also kurze praktische Beispiele gegeben und die Schüler werden aufgefordert, mit Hilfe dieser 
+vorgestellten Grundbausteine Lösungen für weiterführende Aufgaben zu programmieren und damit 
+herumzuexperimentieren.
 
 Schülern das Programmieren mit einem Mikroprozessor wie dem micro:bit, der noch dazu mit Sensoren 
 ausgestattet ist, beizubringen, ermöglicht es den Lernenden, sofortiges Feedback zu ihrem Code zu erhalten, 
