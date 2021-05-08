@@ -6,8 +6,9 @@
 micro:bit MicroPython Tutorial
 ===============================
 
-Diese Dokumentation kann unter <http://microbit-challenges-de.readthedocs.io/de/latest/index.html> angesehen 
-werden. 
+Diese Dokumentation sollte unter <https://micropython.matheharry.de/> geöffnet werden. Dort sind 
+zusätzliche Materialien und Quizzes zur Wissensüberprüfung vorhanden, die den Lernprozess 
+unterstützen sollen. 
 
 Sie basiert größtenteils auf der **englischsprachigen MicroPython** `Dokumentation <http://microbit-micropython.readthedocs.io>`_ 
 (es lohnt sich, auch dort vorbeizuschauen!) und der Arbeit von `Rae Harbird`_. 
