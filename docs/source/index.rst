@@ -21,7 +21,7 @@ Es werden also kurze praktische Beispiele gegeben und die Schüler werden aufgef
 vorgestellten Grundbausteine Lösungen für weiterführende Aufgaben zu programmieren und damit 
 herumzuexperimentieren.
 
-Zur `Wissensüberprüfung <https://micropython.matheharry.de/wissensberprfung.html>`_ stehen zu jedem Themengebiet 
+Zur `Wissensüberprüfung <https://micropython.matheharry.de/check_dein_wissen.html>`_ stehen zu jedem Themengebiet 
 auch kleine Quizzes zu Verfügung.
 
 Schülern das Programmieren mit einem Mikroprozessor wie dem micro:bit, der noch dazu mit Sensoren 
