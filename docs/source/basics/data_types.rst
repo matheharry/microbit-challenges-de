@@ -36,8 +36,6 @@ deiner micro:bit Spiele zu speichern:
 
 .. figure:: assets/dataTypes.png 
 	 :align: center
-     
-	 Source: <http://www.bbc.co.uk/education/guides/zwmbgk7/revision/3>
 
 
 Operationen
