@@ -35,7 +35,7 @@ und wurden teilweise ein wenig angepasst.
 Um diese Dokumentation im pdf-, epub- oder html-Format herunterzuladen, klicke auf den Link *Read the Docs* unten in der 
 Seitenleiste auf der linken Seite:
 
-.. image:: sidebar.jpg
+.. image:: sidebar.png
 
 Wenn du zu dieser Sammlung beitragen möchtest, nur zu! Installiere git und erstelle einen Branch. Es wäre 
 toll, mehr Challenges und weitere Projekte zu haben.
