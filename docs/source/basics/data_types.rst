@@ -16,7 +16,7 @@ Die Wichtigsten sind:
 
 Eine kleine Übersicht mit Beispielen:
 
-+=================+======================================================+====================+
++-----------------+------------------------------------------------------+--------------------+
 | **Datentyp**    | **Beschreibung**                                     | **Beispiel**       |
 +=================+======================================================+====================+
 | Integers        | Ganze Zahlen                                         | ``42``             |
@@ -167,7 +167,7 @@ Python hat eine Reihe von Vergleichsoperatoren, die es uns erlauben, Vergleiche 
 
 .. tabularcolumns:: |L|l|
 
-+================================+========================================+
++--------------------------------+----------------------------------------+
 | **Vergleichsoperator**         | **Bedeutung**                          |
 +================================+========================================+
 | ==                             | ist gleich                             |
@@ -190,7 +190,7 @@ Logische Operationen
 
 Logische Operatoren testen den Wahrheitswert ihrer Operanden.
 
-+==============+==================================+===================+
++--------------+----------------------------------+-------------------+
 | **Operator** |  **Gibt ``True`` zurück, wenn**  | **Example**       |
 +==============+==================================+===================+
 | and          |  beide Operanden Wahr sind       | ``True and True`` |
@@ -206,7 +206,7 @@ Zugehörigkeitsoperatoren
 
 Zugehörigkeitsoperatoren sind nützlich, um das Vorhandensein eines Elements in einer Sequenz zu bestimmen. 
 
-+==============+===========================================================+==========================+
++--------------+-----------------------------------------------------------+--------------------------+
 | **Operator** | **Gibt ``True`` zurück, wenn**                            | **Beispiel**             |
 +==============+===========================================================+==========================+
 |   in         | sich ein Variablenwert in der angegebenen Reihe befindet  | ``x in [1, 2, 3, 4]``    |
