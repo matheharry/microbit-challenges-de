@@ -19,15 +19,15 @@ Eine kleine Übersicht mit Beispielen:
 +-----------------+------------------------------------------------------+--------------------+
 | **Datentyp**    | **Beschreibung**                                     | **Beispiel**       |
 +=================+======================================================+====================+
-| Integers        | Ganze Zahlen                                         | ``42``             |
+| Integer         | Ganze Zahlen                                         | ``42``             |
 +-----------------+------------------------------------------------------+--------------------+
-| Floats          | Zahlen mit dem Dezimalpunkt (kein Komma!), Brüche    | ``3.1415``         |
+| Float           | Zahlen mit dem Dezimalpunkt (kein Komma!), Brüche    | ``3.1415``         |
 +-----------------+------------------------------------------------------+--------------------+
-| Complex numbers | Zahlen mit einem Real und einem Imaginärteil         | ``1 + 3j``         |
+| Complex number  | Zahlen mit einem Real und einem Imaginärteil         | ``1 + 3j``         |
 +-----------------+------------------------------------------------------+--------------------+
-| Strings         | Durch Anführungszeichen begrenzte Zeichenketten      | ``"Hallo Welt!"``  |
+| String          | Durch Anführungszeichen begrenzte Zeichenketten      | ``"Hallo Welt!"``  |
 +-----------------+------------------------------------------------------+--------------------+
-| Booleans        | Werte, die Wahr oder Falsch sein können              | ``False``          |
+| Boolean         | Werte, die Wahr oder Falsch sein können              | ``False``          |
 +-----------------+------------------------------------------------------+--------------------+
 
 Auch in einem einfachen Programm wirst du die meisten dieser Datentypen verwenden. Hier sind zB. 
