@@ -209,7 +209,7 @@ Zugehörigkeitsoperatoren sind nützlich, um das Vorhandensein eines Elements in
 +--------------+-----------------------------------------------------------+--------------------------+
 | **Operator** | **Gibt ``True`` zurück, wenn**                            | **Beispiel**             |
 +==============+===========================================================+==========================+
-|   in         | sich ein Variablenwert in der angegebenen Reihe befindet  | ``x in [1, 2, 3, 4]``    |
+| in           | sich ein Variablenwert in der angegebenen Reihe befindet  | ``x in [1, 2, 3, 4]``    |
 +--------------+-----------------------------------------------------------+--------------------------+
 | not in       | kein Variablenwert in der angegebenen Liste gefunden wird | ``x not in [1, 2, 3, 4]``|
 +--------------+-----------------------------------------------------------+--------------------------+
