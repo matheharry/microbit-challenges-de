@@ -43,8 +43,8 @@ Schleifen sind eine sehr nützliche Struktur, wenn du einen bestimmten Codeblock
 Es gibt zwei Arten von Schleifen: ``for``-Schleifen, die mitzählen, wie oft ein Codeblock ausgeführt wird, und ``while``-Schleifen, die
 eine Aktion ausführen, bis eine Bedingung, die du angegeben hast, nicht mehr wahr ist. 
 
-While Schleifen
-++++++++++++++++
+While Schleife
++++++++++++++++
 
 Ereignisschleifen
 ------------------
@@ -130,8 +130,8 @@ Temperaturdaten. Hier ist ein Beispiel für einen Code, der sich ewig wiederholt
 Dieser Code wird wiederholt die Meldung ``Hallo Welt`` anzeigen. Du wirst wahrscheinlich mindestens eine ``while True:`` Schleife 
 in deinem Programm haben um den micro:bit am Laufen zu halten.
 
-For Schleifen
-++++++++++++++
+For Schleife
++++++++++++++
 Es kommt vor, dass du eine Aktion eine bestimmte Anzahl von Malen ausführen willst, oder du musst nachverfolgen, wie oft sie 
 ausgeführt wurde. Zum Beispiel möchtest du die LEDs auf der obersten horizontalen und der rechten vertikalen Seite anschalten. 
 Du kannst eine ``for`` Schleife verwenden, um zu ändern, welche LED leuchtet.::
