@@ -58,7 +58,8 @@ Web Editor verwenden
 Ein einfacher `browserbasierter Code-Editor`_, der Lehrern und Lernenden hilft, die textbasierte Programmierung 
 auf dem micro:bit optimal zu nutzen. Der Python-Editor ist perfekt für alle, die ihre Coding-Fähigkeiten weiter 
 ausbauen wollen. Eine Auswahl an Snippets und eine Reihe von vorgefertigten Bildern, Sounds und Musik unterstützen 
-dich bei der Programmierung.
+dich bei der Programmierung. Um den Editor zu verwenden, den `Link <https://python.microbit.org/v/beta>`__ unbedingt
+in einem **neuen Tab** öffnen (per Rechtsklick).
 
 .. _`browserbasierter Code-Editor`: https://python.microbit.org/v/beta
 
