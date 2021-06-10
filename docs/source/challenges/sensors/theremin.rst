@@ -23,10 +23,10 @@ der Musik.
 Übrigens: ein kurzer Blick auf Listen
 --------------------------------------
 
-Als Teil dieser Aufgabe musst du einige Werte des Beschleunigungsmessers sammeln und in einer Liste 
+Als Teil dieser Aufgabe musst du einige Werte des Beschleunigungsmessers sammeln und in einer :ref:`Liste` 
 speichern und dann deren Durchschnitt berechnen. Hier sind einige Informationen darüber, wie man das macht. 
 
-Eine Liste ist eine Datenstruktur, die in so gut wie allen Programmiersprachen verwendet wird. In unserem Fall, 
+Eine :ref:`Liste` ist eine Datenstruktur, die in so gut wie allen Programmiersprachen verwendet wird. In unserem Fall, 
 ist es eine nummerierte Sammlung von Beschleunigungssensorwerten. Im Wesentlichen ist es eine Sammlung von Kästchen, 
 in die wir Werte eintragen können - jedes Kästchen hat eine Nummer, beginnend bei 0 und aufsteigend.
 

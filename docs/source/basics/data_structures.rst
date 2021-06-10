@@ -2,8 +2,8 @@
 Datenstrukturen
 ****************
 
-Listen
-======
+Liste
+=====
 
 Eine Liste ("Array") ist eine Datenstruktur, die verwendet wird, um einen beliebigen Datentyp (oder eine andere Struktur) in geordneter Weise zu speichern. Eine Liste ist die Datenstruktur, die du wahrscheinlich am häufigsten benutzen wirst. Sagen wir, wir wollen 
 den Punktestand eines Spielers speichern. Wir könnten eine Liste wie die oben abgebildete verwenden. Die Liste hat eine "Box" für jeden Wert. Die Daten, die in einer Liste gespeichert sind, werden "Elemente" genannt. 
@@ -117,8 +117,8 @@ innerhalb eines Tupels zugewiesen hast, können sie nicht mehr geändert werden.
 
 Die Veränderbarkeit ist ein weiterer Unterschied zwischen Strings und Listen - während Listen veränderbar sind, sind es Strings nicht.
 
-Sets
-=====
+Set
+====
 
 Im Gegensatz zu Listen und Tupeln, enthalten Sets eine **ungeordnete** Sammlung von Elementen ohne Duplikate. Das ermöglicht das Testen der Zugehörigkeit oder das Entfernen 
 doppelter Elemente. ::
@@ -164,8 +164,8 @@ Für weitere Methoden, siehe Python Dokumentation_.
 
    Alle Elemente innerhalb eines Sets sind einzigartig
 
-Dictionaries
-=============
+Dictionary
+===========
 
 Ein Dictionary ist ein ungeordnetes Set von ``Schlüssel : Wert`` Paaren. Es ist eine Regel, dass 
 alle Schlüssel eindeutig sind und keine Duplikate haben. Anders als Listen oder Tupel, die durch Zahlen 
