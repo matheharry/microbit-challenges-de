@@ -35,7 +35,7 @@ Gehen wir den Code, der unsere Planung in Python realisiert, Zeile für Zeile du
     from microbit import *
 
 Der Import von Paketen (wie microbit) in Python ermöglicht es uns, Funktionen oder Objekte zu verwenden, die in reinem
-Python nicht definiert sind. In diesem Fall ist es zum Beispiel ``display`` oder ``show``. ::     
+Python nicht definiert sind. In unserem Fall sind es zum Beispiel die Funktionen ``display`` oder ``show``. ::     
 
 	while True: 
 
