@@ -39,10 +39,10 @@ auf allen Geräten funktioniert.
 Sobald der Editor installiert ist, starte ihn und schließe den micro:bit an deinen Computer an. Mu erkennt ihn automatisch und du
 kannst sofort loslegen.
 
-Read, Evaluate, Print Loop (REPL)
-+++++++++++++++++++++++++++++++++
-Der Button **REPL** erlaubt es dir, dynamisch mit MicroPython auf dem micro:bit zu arbeiten, indem du die REPL-Befehlszeile 
-direkt auf deinem micro:bit benutzt. 
+REPL
++++++
+Der Button **REPL** (Read, Evaluate, Print Loop) erlaubt es dir, dynamisch mit MicroPython auf dem micro:bit zu arbeiten, indem du 
+die REPL-Befehlszeile direkt auf deinem micro:bit benutzt. 
 
     1. LESEN (read): Lies die Benutzereingabe
     2. AUSWERTEN (evaluate): Überprüfe den Code und führe ihn aus

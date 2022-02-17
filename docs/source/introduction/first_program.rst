@@ -26,7 +26,7 @@ aber nur, damit du verstehst, wie so ein Plan aussehen könnte::
       Für zwei Sekunden warten
 
 Es gibt zwei Möglichkeiten, die Ausgabe deines Codes anzuzeigen: Entweder du nutzt die auf dem micro:bit verfügbaren 
-Ausgaben (z.B. die LEDs) oder die REPL (Read Print Evaluate Loop) Konsole, die im Editor mit der ``print`` Anweisung 
+Ausgaben (z.B. die LEDs) oder die :ref:`REPL`-Konsole, die im Editor mit der ``print`` Anweisung 
 verfügbar ist. Die Konsole ist besonders nützlich, um Bugs (Fehler) in deinem Code zu finden oder
 neue Konzepte oder Ideen auszuprobieren.  
 
