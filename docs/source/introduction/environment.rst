@@ -125,8 +125,8 @@ oder zu entfernen.
    :align: left
    :scale: 50% 
 
-REPL
-++++
+REPL-Befehlszeile
++++++++++++++++++
 
 Auch der Webeditor erlaubt die Verwendung einer REPL-Konsole über den Open/Close Serial Button, um Befehle direkt auf
 dem micro:bit ausführen zukönnen-
