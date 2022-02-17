@@ -30,17 +30,19 @@ Ausgaben (z.B. die LEDs) oder die REPL (Read Print Evaluate Loop) Konsole, die i
 verfügbar ist. Die Konsole ist besonders nützlich, um Bugs (Fehler) in deinem Code zu finden oder
 neue Konzepte oder Ideen auszuprobieren.  
 
-Gehen wir das Zeile für Zeile durch::
+Gehen wir den Code, der unsere Planung in Python realisiert, Zeile für Zeile durch::
 
     from microbit import *
 
-Der Import von Paketen (wie microbit) in Python ermöglicht es uns, Funktionen oder Objekte zu verwenden, die in reinem Python nicht definiert sind. In diesem Fall ist es zum Beispiel ``display`` oder ``show``. ::     
+Der Import von Paketen (wie microbit) in Python ermöglicht es uns, Funktionen oder Objekte zu verwenden, die in reinem
+Python nicht definiert sind. In diesem Fall ist es zum Beispiel ``display`` oder ``show``. ::     
 
 	while True: 
 
-In diesem Fall soll etwas (was auch immer dieser Anweisung folgt und eingerückt ist) ausgeführt werden, während die Bedingung, die auf ``While`` folgt, wahr ist. In diesem Fall ist die Bedingung das Schlüsselwort ``True``, 
-was bedeutet, dass diese Schleife ewig weiterläuft - es ist dasselbe, als wenn du (5 > 1) schreibst, was am Ende natürlich immer zu ``True``, also Wahr, ausgewertet wird.  
-Der Rest des Programms ist ganz einfach ::
+In diesem Fall soll etwas (was auch immer dieser Anweisung folgt und eingerückt ist) ausgeführt werden, während die Bedingung,
+die auf ``While`` folgt, wahr ist. In diesem Fall ist die Bedingung das Schlüsselwort ``True``, was bedeutet, dass diese Schleife
+ewig weiterläuft - es ist dasselbe, als wenn du (5 > 1) schreibst, was am Ende natürlich immer zu ``True``, also Wahr, ausgewertet
+wird.  Der Rest des Programms ist ganz einfach ::
 
 	from microbit import *
 	while True:
@@ -50,14 +52,15 @@ Der Rest des Programms ist ganz einfach ::
     	   sleep(2000)
       
 Es wird ``Hallo Welt!`` und dann das Herz auf dem LED Display angezeigt. 
-Die Anweisung ``print('Hallo du!')``, gibt die Nachricht in der REPL aus. Drücke nun die REPL Taste im Menü, um das REPL Fenster anzuzeigen:
+Die Anweisung ``print('Hallo du!')``, gibt die Nachricht in der REPL aus. Drücke nun die REPL Taste im Menü, um das REPL Fenster
+anzuzeigen:
 
 .. image:: assets/mu_repl_bar.png
    :scale: 70%
    :align: center
 
-Das REPL-Fenster zeigt uns Nachrichten vom micro:bit an und erlaubt uns auch, Befehle direkt an den micro:bit zu senden. Für den Moment werden wir die REPL nur benutzen 
-um Nachrichten und Fehlermeldungen zu sehen, die wir mit dem ``print``-Befehl ausgeben. 
+Das REPL-Fenster zeigt uns Nachrichten vom micro:bit an und erlaubt uns auch, Befehle direkt an den micro:bit zu senden. Für den
+Moment werden wir die REPL nur benutzen um Nachrichten und Fehlermeldungen zu sehen, die wir mit dem ``print``-Befehl ausgeben. 
 
 Programm hochladen (Flash)
 --------------------------
@@ -111,5 +114,5 @@ zu können, sind auch noch andere Unterlagen vorhanden, mit denen man noch mehr 
 
    .. image:: assets/arbeitsweise.png
 
-Nun hast du dein erstes Programm geschrieben und damit herumexperimentiert. In den nächsten Abschnitten erfährst du mehr über das Schreiben 
-komplexerer Programme und über weitere Einsatzmöglichkeiten des micro:bit.
+Nun hast du dein erstes Programm geschrieben und damit herumexperimentiert. In den nächsten Abschnitten erfährst
+du mehr über das Schreiben komplexerer Programme und über weitere Einsatzmöglichkeiten des micro:bit.
