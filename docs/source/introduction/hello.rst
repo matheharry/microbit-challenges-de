@@ -62,7 +62,7 @@ nie weggelassen werden!
 Kopiere den "Hello, World!"-Code in deinen Editor und flashe ihn auf das Gerät. 
 
     - Kannst du herausfinden, wie du die Nachricht ändern kannst? 
-    - Kannst du den micro:bit dazu bringen, dass er "Hallo" zu dir sagt? Er könnte zum Beispiel "Hallo, Nikolaus!" sagen. 
+    - Kannst du den micro:bit dazu bringen, dass er "Hallo" zu dir sagt? Er könnte zum Beispiel "Hallo, Ladislaus!" sagen. 
         Kleiner Tipp: du musst das Argument der Scroll-Methode ändern.
 
 .. warning::
@@ -86,7 +86,8 @@ Kopiere den "Hello, World!"-Code in deinen Editor und flashe ihn auf das Gerät.
     Sonderzeichen wie ``"`` oder ``:`` vergessen oder hinzugefügt hast. Das ist so, als ob du einen Punkt in der
     Mitte eines Satzes stehen hast. Es ist dann schwer zu verstehen, was du genau meinst.
 
-    Dein Microbit reagiert möglicherweise nicht mehr: Du kannst keinen neuen Code flashen oder
-    Befehle in der REPL eingeben. Wenn das passiert, versuche es mit einem Neustart. Das
-    heißt, ziehe das USB-Kabel (und das Batteriekabel, falls es angeschlossen ist), dann stecke
-    das Kabel wieder ein. Eventuell musst du auch deine Code-Editor Anwendung beenden und neu starten.
+    Dein Microbit reagiert möglicherweise nicht mehr: 
+    
+    Du kannst keinen neuen Code flashen oder Befehle in der REPL eingeben. Wenn das passiert, versuche
+    es mit einem Neustart. Das heißt, ziehe das USB-Kabel ab (und das Batteriekabel, falls es angeschlossen ist),
+    dann stecke das Kabel wieder ein. Eventuell musst du auch deine Code-Editor Anwendung beenden und neu starten.
