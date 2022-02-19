@@ -12,6 +12,8 @@ Mit MicroPython ist das ganz einfach::
     from microbit import *
     display.scroll("Hello, World!")
 
+Sehen wir uns diese 2 Zeilen Code nun etwas genauer an.
+
 Erklärungen und Grundbegriffe
 ==============================
 
