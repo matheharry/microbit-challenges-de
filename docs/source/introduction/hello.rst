@@ -45,7 +45,8 @@ Wir können dem LED-Display oder irgendeinem anderen Objekt sagen was es tun sol
 einen Punkt ans Ende seines Namens setzen: ``display.``
 
 Gleich nach dem Punkt folgt dann etwas, das wie ein Befehl aussieht (tatsächlich nennt man das
-eine *Methode*). In diesem Fall benutzen wir die Methode ``scroll`` die eine Laufschrift erzeugt. 
+eine *Methode*). In diesem Fall benutzen wir die Methode ``scroll`` die eine Laufschrift erzeugt:
+``display.scroll()``
 
 Da ``scroll`` wissen muss, welche Zeichen über das Display "gescrollt" werden sollen, übergeben wir
 diese Zeichen zwischen doppelten Anführungszeichen (``"``) innerhalb von Klammern (``(`` und ``)``). 
