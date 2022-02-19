@@ -24,7 +24,7 @@ zu arbeiten. Alle Werkzeuge dazu befinden sich in einem Modul namens ``microbit`
 ist eine Bibliothek mit bereits existierendem Code). 
 
 Wenn du etwas mit ``import`` importierst, sagst du MicroPython, dass du es benutzen willst, und ``*`` 
-ist Pythons Art, *ALLES* zu sagen. Also bedeutet ``from microbit import *`` auf Deutsch: 
+ist Pythons Art, *"alles"* zu sagen. Also bedeutet ``from microbit import *`` auf Deutsch: 
 
 "Ich möchte alles aus der Code-Bibliothek *microbit* verwenden können".
 
@@ -32,16 +32,18 @@ Die zweite Zeile::
 
     display.scroll("Hello, World!")
 
-weist MicroPython an, das Display zum Scrollen der Zeichenkette "Hello, World!" zu verwenden.
+weist MicroPython an, das LED-Display zum Scrollen der Zeichenkette "Hello, World!" zu verwenden.
 
 Der ``display`` Teil dieser Zeile ist ein sogenanntes *Objekt* aus dem ``microbit``-Modul, das 
 das LED-Display des Gerätes repräsentiert. Wir sagen ganz allgemein "Objekt" zu allen möglichen
 Bestandteilen des microbits, die mit unserem Code zusammenarbeiten sollen. Genaugenommen ist in
 Python alles ein Objekt. Man redet deshalb auch von *objektorientierten Programmiersprachen*.
 
-Wir können dem LED-Display sagen was es tun soll, indem wir einen Punkt ans Ende von ``display.`` setzen,
-gefolgt von etwas, das wie ein Befehl aussieht (tatsächlich nennt man das eine *Methode*). In diesem
-Fall benutzen wir die Methode ``scroll`` die eine Laufschrift erzeugt. 
+Wir können dem LED-Display oder irgendeinem anderen Objekt sagen was es tun soll, indem wir einen Punkt
+seines Namens setzen: ``display.``
+
+Gleich nach dem Punkt folgt dann etwas, das wie ein Befehl aussieht (tatsächlich nennt man das
+eine *Methode*). In diesem Fall benutzen wir die Methode ``scroll`` die eine Laufschrift erzeugt. 
 
 Da ``scroll`` wissen muss, welche Zeichen über das Display "gescrollt" werden sollen, übergeben wir
 diese Zeichen zwischen doppelten Anführungszeichen (``"``) innerhalb von Klammern (``(`` und ``)``). 
