@@ -19,12 +19,14 @@ Jede Zeile führt etwas Bestimmtes aus. Die erste Zeile::
 
     from microbit import *
 
-...sagt MicroPython, dass es sich alles besorgen soll, was es benötigt, um mit dem BBC micro:bit 
-zu arbeiten. All dieses     Zubehör befindet sich in einem Modul namens ``microbit`` (ein Modul 
+sagt MicroPython, dass es sich alles besorgen soll, was es benötigt, um mit dem BBC micro:bit 
+zu arbeiten. Alle Werkzeuge dazu befinden sich in einem Modul namens ``microbit`` (ein Modul 
 ist eine Bibliothek mit bereits existierendem Code). 
+
 Wenn du etwas mit ``import`` importierst, sagst du MicroPython, dass du es benutzen willst, und ``*`` 
-ist Pythons Art, *alles* zu sagen. Also bedeutet ``from microbit import *`` auf Deutsch: "Ich möchte 
-alles aus der microbit Code Bibliothek verwenden können".
+ist Pythons Art, *ALLES* zu sagen. Also bedeutet ``from microbit import *`` auf Deutsch: 
+
+"Ich möchte alles aus der Code-Bibliothek *microbit* verwenden können".
 
 Die zweite Zeile::
 
