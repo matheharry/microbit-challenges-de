@@ -1,7 +1,10 @@
 # MatheHarry - micro:bit MicroPython Tutorial
 
-Diese Tutorials richten sich an Schüler mit wenig Programmiererfahrung, um ihnen einen Anreiz zu geben, mit dem Programmieren mit dem micro:bit zu beginnen. Die Blätter bieten grundlegende Informationen über die Funktionen und die Programmierung des micro:bit zusammen mit praktischen Beispielen. Die Schüler werden ermutigt, diese Materialien zu nutzen, um eigene Projekte zu entwerfen.
-Die Tutorials können auf <https://microbit-challenges-de.readthedocs.io/> abgerufen werden.
+Diese Tutorials richten sich an Schüler mit wenig oder gar keiner Programmiererfahrung. Ziel ist es, einen niederschwelligen Anreiz zu schaffen, mit dem Programmieren zu beginnen. Der BBC micro:bit hat sich in Schulen schon als motivierende Plattform mit Spaßfaktor etabliert und stellt auch eine MicroPython-Umgebung zur Verfügung.
+
+Diese deutschsprachige Sammlung bietet grundlegende Informationen über die Funktionen und die Programmierung des micro:bit zusammen mit praktischen Beispielen. Die Schüler werden ermutigt, diese Materialien zu nutzen, um damit zu experimentieren und eigene Projekte zu entwerfen.
+
+Die Tutorials können auf <https://microbit-challenges-de.readthedocs.io/> abgerufen werden. Diese Dokumentation ist auch eingebunden in die Seite <https://micropython.matheharry.de/>, wo sie um eine Sammlung von interaktiven Quizfragen erweitert wurde.
 
 Der Inhalt dieser Übungsblätter ist an einigen Stellen eine gekürzte Version der BBC micro:bit MicroPython Dokumentation unter <http://microbit-micropython.readthedocs.io>.
 Einige der Challenges wurden von den Übungen von M. Atkinson auf der großartigen Website Multiwingspan <http://multiwingspan.co.uk/micro.php> adaptiert.
