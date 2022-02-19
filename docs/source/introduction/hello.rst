@@ -36,7 +36,7 @@ Die zweite Zeile::
 
 weist MicroPython an, das LED-Display zum Scrollen der Zeichenkette "Hello, World!" zu verwenden.
 
-Der ``display`` Teil dieser Zeile ist ein sogenanntes *Objekt* aus dem ``microbit``-Modul, das 
+Der ``display`` Teil dieser Zeile ist ein sogenanntes **Objekt** aus dem ``microbit``-Modul, das 
 das LED-Display des Gerätes repräsentiert. Wir sagen ganz allgemein "Objekt" zu allen möglichen
 Bestandteilen des microbits, die mit unserem Code zusammenarbeiten sollen. Genaugenommen ist in
 Python alles ein Objekt. Man redet deshalb auch von *objektorientierten Programmiersprachen*.
@@ -45,12 +45,12 @@ Wir können dem LED-Display oder irgendeinem anderen Objekt sagen was es tun sol
 einen Punkt ans Ende seines Namens setzen: ``display.``
 
 Gleich nach dem Punkt folgt dann etwas, das wie ein Befehl aussieht (tatsächlich nennt man das
-eine *Methode*). In diesem Fall benutzen wir die Methode ``scroll`` die eine Laufschrift erzeugt:
+eine **Methode**). In diesem Fall benutzen wir die Methode ``scroll`` die eine Laufschrift erzeugt:
 ``display.scroll()``
 
 Da ``scroll`` wissen muss, welche Zeichen über das Display "gescrollt" werden sollen, übergeben wir
 diese Zeichen zwischen doppelten Anführungszeichen (``"``) innerhalb von Klammern (``(`` und ``)``). 
-Diese werden die *Argumente* genannt. 
+Diese werden die **Argumente** genannt. 
 
 Zum Beispiel bedeutet ``display.scroll("Hello, World!")`` auf Deutsch: "Ich möchte, dass du den Text 
 'Hello, World!' über den Bildschirm laufen lässt". 
