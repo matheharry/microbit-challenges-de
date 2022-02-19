@@ -39,8 +39,8 @@ das LED-Display des Gerätes repräsentiert. Wir sagen ganz allgemein "Objekt" z
 Bestandteilen des microbits, die mit unserem Code zusammenarbeiten sollen. Genaugenommen ist in
 Python alles ein Objekt. Man redet deshalb auch von *objektorientierten Programmiersprachen*.
 
-Wir können dem LED-Display oder irgendeinem anderen Objekt sagen was es tun soll, indem wir einen Punkt
-seines Namens setzen: ``display.``
+Wir können dem LED-Display oder irgendeinem anderen Objekt sagen was es tun soll, indem wir zuerst
+einen Punkt ans Ende seines Namens setzen: ``display.``
 
 Gleich nach dem Punkt folgt dann etwas, das wie ein Befehl aussieht (tatsächlich nennt man das
 eine *Methode*). In diesem Fall benutzen wir die Methode ``scroll`` die eine Laufschrift erzeugt. 
