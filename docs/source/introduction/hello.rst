@@ -55,8 +55,9 @@ Diese werden die *Argumente* genannt.
 Zum Beispiel bedeutet ``display.scroll("Hello, World!")`` auf Deutsch: "Ich möchte, dass du den Text 
 'Hello, World!' über den Bildschirm laufen lässt". 
 
-Wenn eine Methode keine Argumente benötigt, heißt das, dass die Klammern leer bleiben: ``()``
-Die Klammern dürfen also nie weggelassen werden!
+Wenn eine Methode keine Argumente benötigt, heißt das, dass die Klammern leer bleiben. Das wäre zB
+bei der Methode ``display.clear()`` zum Löschen des Bildschirms der Fall. Die Klammern dürfen also
+nie weggelassen werden!
 
 Kopiere den "Hello, World!"-Code in deinen Editor und flashe ihn auf das Gerät. 
 
