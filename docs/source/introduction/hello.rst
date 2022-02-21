@@ -86,7 +86,7 @@ Kopiere den "Hello, World!"-Code in deinen Editor und flashe ihn auf das Gerät.
     Sonderzeichen wie ``"`` oder ``:`` vergessen oder hinzugefügt hast. Das ist so, als ob du einen Punkt in der
     Mitte eines Satzes stehen hast. Es ist dann schwer zu verstehen, was du genau meinst.
 
-    Dein Microbit reagiert möglicherweise nicht mehr: 
+    **Wenn dein Microbit nicht mehr reagiert:**
     
     Du kannst keinen neuen Code flashen oder Befehle in der REPL eingeben. Wenn das passiert, versuche
     es mit einem Neustart. Das heißt, ziehe das USB-Kabel ab (und das Batteriekabel, falls es angeschlossen ist),
