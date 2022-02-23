@@ -88,6 +88,6 @@ Kopiere den "Hello, World!"-Code in deinen Editor und flashe ihn auf das Gerät.
 
     **Wenn dein Microbit nicht mehr reagiert:**
     
-    Du kannst keinen neuen Code flashen oder Befehle in der REPL eingeben. Wenn das passiert, versuche
-    es mit einem Neustart. Das heißt, ziehe das USB-Kabel ab (und das Batteriekabel, falls es angeschlossen ist),
-    dann stecke das Kabel wieder ein. Eventuell musst du auch deine Code-Editor Anwendung beenden und neu starten.
+    Wenn du keinen neuen Code flashen oder keine Befehle in der REPL eingeben kannst, versuche es mit einem Neustart.
+    Das heißt, ziehe das USB-Kabel ab (und das Batteriekabel, falls es angeschlossen ist) und stecke danach das Kabel
+    wieder ein. Eventuell musst du auch deine Code-Editor Anwendung beenden und neu starten.
