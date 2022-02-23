@@ -14,10 +14,11 @@ Den Code entwerfen (Design & Edit)
 ----------------------------------
 
 Als erstes wirst du ein Programm schreiben, das die Nachricht "Hallo Welt!" gefolgt von einem Bild auf dem Display 
-deines micro:bit anzeigt und "Hallo du" auf der Mu Konsole ausgibt. 
+deines micro:bit anzeigt. Danach soll "Hallo du" auf der Mu Konsole ausgegeben werden. 
+
 Es ist ratsam, darüber nachzudenken, was du mit deinem Code erreichen willst und wie du es erreichen willst, 
-bevor du mit dem Schreiben beginnst. Es gibt hier nicht viel an Planung und Entwurf zu leisten,
-aber nur, damit du verstehst, wie so ein Plan aussehen könnte::
+bevor du mit dem Schreiben beginnst. Es gibt hier zwar nicht viel zu planen oder entwerfen, aber nur, damit du
+verstehst, wie so ein Plan aussehen könnte::
 
     Für immer wiederholen:
       Scrolle "Hallo Welt!" über das LED Display
