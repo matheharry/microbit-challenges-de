@@ -105,11 +105,11 @@ bzw. "sonst wenn") und ``else`` ("sonst"). Diese sogenannten *Bedingungen* sind 
 aller Programmiersprachen und funktionieren folgendermaßen: ::
 
 	Wenn etwas ist Wahr:
-		# mach etwas
+		# mach dies
 	SonstWenn etwas anderes ist Wahr:
-		# mach etwas anderes
+		# mach das
 	Sonst:
-		# mach wieder etwas anderes.
+		# mach sonstwas.
 
 In Python ähnelt das sehr der gesprochenen englischen Sprache::
 
