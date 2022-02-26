@@ -81,9 +81,9 @@ einstellst.
 
 Versuche nun ``button_a.isPressed()`` anstelle von ``button_a.was_pressed()`` zu verwenden.
 
-Lass uns ein ganz einfaches Tamagotchi machen. Es ist immer traurig, außer du drückst die Taste ``A``. Wenn du die Taste
-``B`` drückst, stirbt es. (Mir ist klar, dass das kein sehr angenehmes Spiel ist, vielleicht fällt dir etwas ein, wie man es
-verbessern und netter gestalten kann 😃)::
+Wir wollen als nächstes ein ganz einfaches Tamagotchi machen. Es ist immer traurig, außer du drückst die Taste ``A``. Wenn du
+die Taste ``B`` drückst, stirbt es. (Mir ist klar, dass das kein sehr ausgefeiltes Spiel ist. Vielleicht fällt dir etwas ein, wie
+man es verbessern und netter gestalten kann 😃)::
 
 	from microbit import *
 
@@ -97,8 +97,18 @@ verbessern und netter gestalten kann 😃)::
 
 	display.clear()
 
-Siehst du, wie wir prüfen, welche Tasten gedrückt werden? Wir benutzen ``if``, ``elif`` (kurz für "else if") 
-und ``else``. Diese werden *Bedingungen* genannt und funktionieren so::
+Um zu prüfen, welche Tasten gedrückt werden, benutzen wir ``if`` ("wenn"), ``elif`` (kurz für "else if"
+bzw. "sonst wenn") und ``else`` ("sonst"). Diese sogenannten *Bedingungen* sind ein wichtiger Bestandteil
+aller Programmiersprachen und funktionieren folgendermaßen: ::
+
+	Wenn etwas ist Wahr:
+		# mach etwas
+	SonstWenn etwas anderes ist Wahr:
+		# mach etwas anderes
+	Sonst:
+		# mach wieder etwas anderes.
+
+In Python ähnelt das sehr der gesprochenen englischen Sprache, findest du nicht?::
 
 	if something is True:
 		# do one thing
@@ -107,7 +117,6 @@ und ``else``. Diese werden *Bedingungen* genannt und funktionieren so::
 	else:
 		# do yet another thing.
 
-Das ähnelt dem Englischen schon sehr, findest du nicht?
 
 Die Methode ``is_pressed`` liefert nur zwei Ergebnisse: ``True`` oder ``False``.
 Wenn du die Taste drückst, gibt sie ``True`` zurück, ansonsten gibt sie ``False``. 
