@@ -212,6 +212,13 @@ Bootsbildern definiert: ::
     all_boats = [boat1, boat2, boat3, boat4, boat5, boat6] #Liste aller Boote
     display.show(all_boats, delay=200)    
 
+Übungsaufgaben
+===================
+* Probiere einige der eingebauten Bilder aus, um zu sehen, wie sie aussehen. 
+* Animiere die ``Image.ALL_ARROWS`` Liste. Wie vermeidest du eine ewige Schleife (Hinweis: das Gegenteil von ``True`` ist ``False``). Kannst du die Geschwindigkeit der Animation verändern?
+* Erstelle dein eigenes Bild. Versuche als nächstes, es aus- und wieder einzublenden?
+* Mache ein Sprite, benutze eine einzelne LED auf dem Display. Kannst du es springen lassen, wenn du eine Taste drückst?
+
 .. tip::
     Auf der sehr empfehlenswerten Seite von MultiWingSpan_ kann man ein kleines Tool herunterladen
     mit dem man solche micro:bit Bilder und Animationen ganz einfach herstellen kann!
@@ -221,10 +228,3 @@ Bootsbildern definiert: ::
 .. image:: anim.png
    :align: left
    :scale: 60%
-
-Übungsaufgaben
-===================
-* Probiere einige der eingebauten Bilder aus, um zu sehen, wie sie aussehen. 
-* Animiere die ``Image.ALL_ARROWS`` Liste. Wie vermeidest du eine ewige Schleife (Hinweis: das Gegenteil von ``True`` ist ``False``). Kannst du die Geschwindigkeit der Animation verändern?
-* Erstelle dein eigenes Bild. Versuche als nächstes, es aus- und wieder einzublenden?
-* Mache ein Sprite, benutze eine einzelne LED auf dem Display. Kannst du es springen lassen, wenn du eine Taste drückst?
