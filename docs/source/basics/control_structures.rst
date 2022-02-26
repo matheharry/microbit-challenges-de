@@ -37,7 +37,7 @@ Falls du eine andere Aufgabe unter verschiedenen Bedingungen ausführen willst, 
 Die ``else``-Anweisung ist nützlich, wenn du etwas dann tun willst, wenn keine Bedingung zutrifft. Die beiden letztgenannten Anweisungen 
 sind nur verwendbar, wenn du zuvor eine ``if``-Anweisung verwendet hast, aber keine davon ist zwingend notwendig.
 
-Ein einfaches Beispiel dazu findest du im Kapitel :ref:`Tasten` bei der Programmierung eines :ref:`Tamagotchi`
+Ein einfaches Beispiel dazu findest du im Kapitel :ref:`Tasten` bei der Programmierung eines :ref:`Tamagotchi`.
 
 Schleifen (Loops)
 =================
