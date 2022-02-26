@@ -108,7 +108,7 @@ aller Programmiersprachen und funktionieren folgendermaßen: ::
 	Sonst:
 		# mach wieder etwas anderes.
 
-In Python ähnelt das sehr der gesprochenen englischen Sprache, findest du nicht?::
+In Python ähnelt das sehr der gesprochenen englischen Sprache::
 
 	if something is True:
 		# do one thing
