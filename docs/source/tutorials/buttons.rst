@@ -4,11 +4,14 @@ Tasten
 
 .. py:module:: microbit.button
 
-Bis jetzt haben wir Code erstellt, der das Gerät dazu bringt, etwas zu machen. Das wird *Output* genannt. 
-Wir wollen aber auch, dass das Gerät auf Ereignisse reagiert. Solche Ereignisse werden *Inputs* genannt.
+Bis jetzt haben wir Code erstellt, der das Gerät dazu bringt, einfach irgendetwas zu machen
+und auszugeben. Wir reden davon, dass ein *Output* bzw. eine *Ausgabe* erzeugt wurde. Wir wollen
+aber auch, dass das Gerät auf Ereignisse von Außen reagiert. Solche Ereignisse werden *Inputs*
+oder *Eingaben* genannt.
 
 Es ist leicht zu merken: Output ist das, was das Gerät in die Welt hinausgibt, während Input das ist, was 
-in das Gerät hineingeht, um dann verarbeiten zu werden.
+in das Gerät hineingeht, um dann verarbeiten zu werden. Man spricht auch vom *EVA-Prinzip*:
+**E**ingabe - **V**erarbeitung - **A**usgabe
 
 Das augenscheinlichste Eingabegerät auf dem micro:bit sind die beiden Tasten, die mit ``A`` und ``B`` bezeichnet 
 sind. Du kannst die Tasten verwenden, um Eingaben vom Benutzer zu erhalten.
