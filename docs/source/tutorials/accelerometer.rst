@@ -5,8 +5,8 @@ Beschleunigungsmesser
 Wie der Name schon sagt, misst der Beschleunigungsmesser die Beschleunigung oder anders gesagt,
 die Bewegungsänderungen deines BBC micro:bit. Der Beschleunigungsmesser ist so eingestellt, dass
 er Beschleunigungswerte im Bereich von +2g bis -2g misst (mit g wird die Größe der Erdbeschleunigung
-bzw. Gravitation bezeichnet), und diese Werte können mit MicroPython ausgelesen werden und auf den
-Bereich 0 ... 1024 abgebildet.
+bzw. Gravitation bezeichnet), und diese Werte können mit MicroPython ausgelesen und auf den
+Bereich 0 ... 1024 abgebildet werden.
 
 .. figure:: assets/accelerometer.png
    :scale: 40 %
@@ -14,8 +14,8 @@ Bereich 0 ... 1024 abgebildet.
 
 Der micro:bit misst die Bewegung entlang dreier Achsen:
 
-* X - Bewegung von links nach rechts.
-* Y - Bewegung nach vorne und hinten.
+* X - Bewegung/Kippen von links nach rechts.
+* Y - Bewegung/Kippen nach vorne und hinten.
 * Z - Bewegung nach oben und unten.
 
 .. figure:: assets/microbit_axes.png
