@@ -48,7 +48,7 @@ Hier sind einige der anderen Bilder, die du verwenden kannst:
     * ``Image.RABBIT``, ``Image.COW``, ``Image.DUCK``, ``Image.HOUSE``, ``Image.TORTOISE``, ``Image.BUTTERFLY``, ``Image.GIRAFFE``, ``Image.SNAKE``
 
 
-EineLaufschrift anzeigen 
+Eine Laufschrift anzeigen 
 -------------------------
 Benutze ``scroll``, um einen String am Display als Laufschrift anzuzeigen ::
 
@@ -90,7 +90,7 @@ Du könntest eine :ref:`For Schleife` verwenden, um alle LEDs nacheinander einzu
     	for y in range(0, 5):
     	    display.set_pixel(x,y,9)  
 
-Die ``for Schleife`` lässt dich eine Schleife mit Hilfe eines Zählers eine bestimmte Anzahl von Malen
+Die ``for``- Schleife lässt dich eine Schleife mit Hilfe eines Zählers eine bestimmte Anzahl von Malen
 ausführen. Die äußere Schleife::
 
 	for x in range(0,5)
