@@ -212,13 +212,13 @@ Bootsbildern definiert: ::
     all_boats = [boat1, boat2, boat3, boat4, boat5, boat6] #Liste aller Boote
     display.show(all_boats, delay=200)    
 
-.. note::
+.. tip::
     Auf der sehr empfehlenswerten Seite von MultiWingSpan_ kann man ein kleines Tool herunterladen
     mit dem man solche micro:bit Bilder und Animationen ganz einfach herstellen kann!
 
 .. _MultiWingSpan: http://multiwingspan.co.uk/micro.php?page=vbanim
 
-.. image:: http://multiwingspan.co.uk/images/micro/anim.png
+.. image:: anim.png
    :align: center
    :scale: 60%
 
