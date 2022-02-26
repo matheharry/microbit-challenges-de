@@ -2,8 +2,8 @@
 Kontrollstrukturen
 ******************
 
-Das erste Programm im Abschnitt *Erste Schritte* bestand aus aufeinanderfolgenden Anweisungen, 
-die nacheinander ausgeführt wurden. In den meisten Fällen wirst du jedoch eine komplexere Struktur 
+Das erste Programm im Abschnitt *Erste Schritte* bestand aus *aufeinanderfolgenden Anweisungen*, 
+die einfach nur *nacheinander ausgeführt* wurden. In den meisten Fällen wirst du jedoch eine komplexere Struktur 
 für deinen Code benötigen. Du wirst dabei kontrollieren wollen, welche Anweisungen ausgeführt werden 
 oder wie oft sie ausgeführt werden. Dies ist der Zeitpunkt, an dem die in diesem Abschnitt vorgestellten 
 Kontrollstrukturen - wie z.B. *Schleifen* oder *bedingte Anweisungen* - nützlich sind. 
