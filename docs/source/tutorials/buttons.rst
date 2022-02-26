@@ -81,6 +81,9 @@ einstellst.
 
 Versuche nun ``button_a.isPressed()`` anstelle von ``button_a.was_pressed()`` zu verwenden.
 
+Tamagotchi
+-----------
+
 Wir wollen als nächstes ein ganz einfaches Tamagotchi machen. Es ist immer traurig, außer du drückst die Taste ``A``. Wenn du
 die Taste ``B`` drückst, stirbt es. (Mir ist klar, dass das kein sehr ausgefeiltes Spiel ist. Vielleicht fällt dir etwas ein, wie
 man es verbessern und netter gestalten kann 😃)::
