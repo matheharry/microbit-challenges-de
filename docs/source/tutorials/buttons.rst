@@ -39,13 +39,13 @@ Eine Endlosschleife ist einfach::
         # Mach etwas
 
 (Erinnere dich, ``while`` prüft, ob etwas wahr (``True``) ist, um herauszufinden, ob es seinen Codeblock ausführen soll. 
-Da ``True`` offensichtlich immer ``True`` ist, erhältst du eine unendliche Schleife).
+Da ``True`` offensichtlich immer *Wahr* ist, erhältst du eine unendliche Schleife).
 
 Prüfen, ob eine Taste gedrückt ist
 ------------------------------------
 
-Manchmal wollen wir nur, dass ein Programm wartet, bis etwas passiert, zum Beispiel: wir könnten den micro:bit bitten, zu warten, bis, sagen wir, die Taste 
-``A`` gedrückt wird und dann eine Nachricht ausgeben. Das geht zum Beispiel so: ::
+Manchmal wollen wir nur, dass ein Programm wartet, bis etwas passiert, zum Beispiel: wir könnten den micro:bit bitten,
+zu warten, bis, sagen wir, die Taste ``A`` gedrückt wird und dann eine Nachricht ausgeben. Das geht zum Beispiel so: ::
 
 	from microbit import *
 
@@ -57,10 +57,12 @@ Manchmal wollen wir nur, dass ein Programm wartet, bis etwas passiert, zum Beisp
 
 Das heißt, wenn die Taste ``A`` gedrückt wird, wird ein ``A`` und ansonsten ``Image.ASLEEP`` auf dem LED Display angezeigt. 
 
-Das Problem bei der Verwendung von ``is_pressed()`` ist, dass du, wenn du die Taste nicht genau in dem Moment der Abfrage drückst, nicht 
-feststellen kannst, ob die Taste jemals gedrückt wurde oder nicht. Es könnte der Fall sein, dass der Benutzer die Taste drückt, während der Code etwas anderes macht, und der Tastendruck wird übersehen. 
-Die ``was_pressed()`` Funktion ist nützlich, wenn du Code schreiben willst, der gelegentlich prüft, ob die Taste gedrückt wurde, dann aber etwas anderes macht. 
-Auf diese Weise solltest du nie wieder einen Tastendruck verpassen: ::
+Das Problem bei der Verwendung von ``is_pressed()`` ist, dass du, wenn du die Taste nicht genau in dem Moment der Abfrage
+drückst, nicht feststellen kannst, ob die Taste jemals gedrückt wurde oder nicht. Es könnte der Fall sein, dass der Benutzer
+die Taste drückt, während der Code etwas anderes macht, und der Tastendruck wird übersehen. 
+
+Die ``was_pressed()`` Funktion ist nützlich, wenn du Code schreiben willst, der gelegentlich prüft, ob die Taste gedrückt wurde,
+dazwischen aber etwas anderes macht. Auf diese Weise solltest du nie wieder einen Tastendruck verpassen: ::
 
 	from microbit import *
 
@@ -72,14 +74,16 @@ Auf diese Weise solltest du nie wieder einen Tastendruck verpassen: ::
 
 	    sleep(1000)
 
-Am Display wird ein ``A`` für eine Sekunde angezeigt, wenn du die Taste drückst, und dann wird ``Image.ASLEEP`` angezeigt. Wenn du die Taste drückst, während das 
-Programm gerade die Zeitverzögerung auslöst, dann wird das ``A`` nicht sofort angezeigt, sondern erst, wenn die Testbedingung der if-Anweisung ausgeführt wird. Das wird umso deutlicher, je 
-länger du die Verzögerung einstellst.
+Am Display wird ein ``A`` für eine Sekunde angezeigt, wenn du die Taste drückst, und dann wird ``Image.ASLEEP`` angezeigt.
+Wenn du die Taste drückst, während das Programm gerade die Zeitverzögerung auslöst, dann wird das ``A`` nicht sofort angezeigt,
+sondern erst, wenn die Testbedingung der if-Anweisung ausgeführt wird. Das wird umso deutlicher, je länger du die Verzögerung
+einstellst.
 
 Versuche nun ``button_a.isPressed()`` anstelle von ``button_a.was_pressed()`` zu verwenden.
 
-Lass uns ein ganz einfaches Cyber-Pet machen. Es ist immer traurig, außer du drückst die Taste ``A``. Wenn du die Taste ``B`` drückst, stirbt es. (Mir ist klar, dass das kein sehr angenehmes 
-Spiel ist, vielleicht fällt dir etwas ein, wie man es verbessern kann)::
+Lass uns ein ganz einfaches Tamagotchi machen. Es ist immer traurig, außer du drückst die Taste ``A``. Wenn du die Taste
+``B`` drückst, stirbt es. (Mir ist klar, dass das kein sehr angenehmes Spiel ist, vielleicht fällt dir etwas ein, wie man es
+verbessern und netter gestalten kann 😃)::
 
 	from microbit import *
 
@@ -108,11 +112,14 @@ Das ähnelt dem Englischen schon sehr, findest du nicht?
 Die Methode ``is_pressed`` liefert nur zwei Ergebnisse: ``True`` oder ``False``.
 Wenn du die Taste drückst, gibt sie ``True`` zurück, ansonsten gibt sie ``False``. 
 Den obigen Code könnte man so ins Deutsche übersetzen: 
-"Für immer und ewig, wenn Taste A gedrückt wird, zeige ein glückliches Gesicht, oder, wenn Taste B gedrückt wird, 
-beende die Schleife. Immer sonst zeige ein trauriges Gesicht." 
-Mit der ``break`` Anweisung "brechen" wir aus der Schleife aus und stoppen das eigentlich für immer und ewig laufende Programm.
 
-Ganz am Ende, wenn das Cyber-Pet tot ist, löschen (``clear``) wir das Display.
+"Für immer und ewig, wenn Taste A gedrückt wird, zeige ein glückliches Gesicht, oder, wenn Taste B gedrückt wird, 
+beende die Schleife und damit das Spiel. Immer sonst zeige ein trauriges Gesicht." 
+
+Mit der ``break`` Anweisung "brechen" wir aus der Schleife aus und stoppen das eigentlich
+für immer und ewig laufende Programm.
+
+Ganz am Ende, wenn das Tamagotchi tot ist, löschen (``clear``) wir das Display.
 
 	- Fällt dir ein Weg ein, dieses Spiel weniger tragisch zu gestalten? 
 	- Wie würdest du überprüfen, ob *beide* Tasten gedrückt sind? (Tipp: weiter unten wird das behandelt).
@@ -130,10 +137,12 @@ Um zu zählen, wie oft eine Taste gedrückt wurde, kannst du die
 	   display.scroll(str(count))	
 
 Der micro:bit pausiert für 3 Sekunden, wacht dann auf und überprüft, wie oft die Taste ``A`` gedrückt wurde. 
-Die Anzahl der Tastendrücke wird in ``count`` gespeichert. Um ``count`` am Display auszugeben, muss man beachten, 
-dass es sich dabei um eine Zahl - die Anzahl der Tastendrücke - handelt. ``scroll`` kann aber nur Strings ausgeben, 
-weshalb wir den numerischen Wert in einen String aus Zeichen umwandeln müssen. Das machen wir mit der ``str`` Funktion 
-(kurz für "string" ~ sie wandelt alle möglichen Objekte in Strings um).
+Die Anzahl der Tastendrücke wird in ``count`` gespeichert. 
+
+Um ``count`` am Display auszugeben, muss man beachten, dass es sich dabei um eine Zahl - die Anzahl der
+Tastendrücke - handelt. ``scroll`` kann aber nur Strings ausgeben, weshalb wir den numerischen Wert ``count``
+in einen String aus Zeichen umwandeln müssen. Das machen wir mit der ``str`` Funktion (kurz für "string" ~ sie
+wandelt alle möglichen Objekte in Strings um).
 
 Kannst du deine eigene ``get_presses`` Funktion erstellen? 
 
@@ -142,8 +151,9 @@ Erweiterte Funktionen
 
 Überprüfung beider Tasten
 ---------------------------
-Es ist möglich, eine Reihe von Ereignissen mit Hilfe von bedingten Anweisungen zu überprüfen. Sagen wir, du möchtest prüfen, ob die Taste ``A`` gedrückt wurde oder die Taste ``B`` gedrückt wurde oder 
-ob beide Tasten zur gleichen Zeit gedrückt wurden: ::  
+Es ist möglich, eine Reihe von Ereignissen mit Hilfe von bedingten Anweisungen zu überprüfen. Sagen wir, du möchtest
+prüfen, ob die Taste ``A`` gedrückt wurde oder die Taste ``B`` gedrückt wurde oder ob beide Tasten zur gleichen Zeit
+gedrückt wurden: ::  
 
 	from microbit import *
 
@@ -157,7 +167,9 @@ ob beide Tasten zur gleichen Zeit gedrückt wurden: ::
 	        display.scroll("B")
 	    sleep(100)
 
-Der obige Code zeigt den Buchstaben an, der der Taste entspricht. Wenn beide Tasten gleichzeitig gedrückt werden, wird ``AB`` angezeigt. 
+Der obige Code zeigt den Buchstaben an, der der Taste entspricht. Wenn beide Tasten gleichzeitig gedrückt werden,
+wird ``AB`` angezeigt.
+
 Was passiert, wenn ``sleep(0)`` gesetzt bzw. ganz weggelassen wird?
 
  
