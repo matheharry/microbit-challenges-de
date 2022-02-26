@@ -219,7 +219,7 @@ Bootsbildern definiert: ::
 .. _MultiWingSpan: http://multiwingspan.co.uk/micro.php?page=vbanim
 
 .. image:: anim.png
-   :align: center
+   :align: left
    :scale: 60%
 
 Übungsaufgaben
