@@ -214,7 +214,7 @@ Bootsbildern definiert: ::
 
 .. note::
     Auf der sehr empfehlenswerten Seite von MultiWingSpan_ kann man ein kleines Tool herunterladen
-    mit dem solche micro:bit Bilder und Animationen ganz einfach herstellen kann!
+    mit dem man solche micro:bit Bilder und Animationen ganz einfach herstellen kann!
 
 .. _MultiWingSpan: http://multiwingspan.co.uk/micro.php?page=vbanim
 
