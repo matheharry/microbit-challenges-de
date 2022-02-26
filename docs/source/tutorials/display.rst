@@ -2,9 +2,13 @@
 LED Display
 ***********
 
-Dies ist eine Kurzanleitung für einige Dinge, die du mit dem LED Display machen kannst. Probiere die Dinge aus - schau, was passiert und sieh, was du machen kannst. Es gibt 25 LEDs, nummeriert von (0,0)   
-in der oberen linken Ecke bis (4,4) in der unteren rechten Ecke und können alle auf verschiedene Helligkeitsstufen eingestellt werden. Du kannst die LEDs wie einen Bildschirm benutzen, um 
-einzelne Zeichen, eine Zeichenkette oder ein kleines Bild.
+Dies ist eine Kurzanleitung für einige Dinge, die du mit dem LED Display machen kannst. Probiere
+die Dinge aus - schau, was passiert und was du alles machen kannst. Es gibt 25 LEDs, nummeriert von (0,0)   
+in der oberen linken Ecke bis (4,4) in der unteren rechten Ecke und sie können alle auf verschiedene
+Helligkeitsstufen eingestellt werden.
+
+Du kannst die LEDs wie einen Bildschirm benutzen, um 
+einzelne Zeichen, eine Zeichenkette oder ein kleines Bild anzuzeigen.
 
 
 .. image:: assets/happy.png
@@ -26,8 +30,8 @@ Du kannst Zeichen auf dem LED Display mit der Methode ``show`` anzeigen: ::
 
 Die Zeichen, die du auf dem Display anzeigst, müssen innerhalb eines Paares von Anführungszeichen stehen, entweder " " oder ' '. 
  
-Das ``microbit`` Modul kommt mit vielen eingebauten Bildern, die auf dem Display angezeigt werden können.
-Um zum Beispiel eine lächelndes Gesicht anzuzeigen ::
+Das ``microbit`` Modul hat schon viele Bilder eingebaut, die auf dem Display angezeigt werden können.
+Um zum Beispiel eine lächelndes Gesicht anzuzeigen, kannst du das vorhandene ``Image``-Objekt verwenden ::
 
     from microbit import *
 
@@ -44,9 +48,9 @@ Hier sind einige der anderen Bilder, die du verwenden kannst:
     * ``Image.RABBIT``, ``Image.COW``, ``Image.DUCK``, ``Image.HOUSE``, ``Image.TORTOISE``, ``Image.BUTTERFLY``, ``Image.GIRAFFE``, ``Image.SNAKE``
 
 
-Einen String scrollen 
----------------------
-Benutze ``scroll``, um einen String über das Display zu scrollen: ::
+EineLaufschrift anzeigen 
+-------------------------
+Benutze ``scroll``, um einen String am Display als Laufschrift anzuzeigen ::
 
     from microbit import *
 
@@ -67,15 +71,17 @@ Fortgeschrittene Funktionen
 
 Ein Pixel setzen
 ----------------
-Du kannst die Helligkeit eines Pixels auf dem LED Display mit der Methode ``set_pixel`` einstellen: ::
+Du kannst die Helligkeit eines Pixels auf dem LED Display mit der Methode ``set_pixel(spalte,zeile,hellligkeit)``
+einstellen: ::
 
     from microbit import *
 
     display.set_pixel(0,4,9)
 
-Das setzt die LED in Spalte ``0`` und Zeile ``4`` auf eine Helligkeit von ``9``. Der Helligkeitswert kann eine ganze Zahl 
-zwischen 0 und 9 sein. 0 schaltet die LED aus und 9 ist die hellste Einstellung. Du könntest eine ``for Schleife``  
-verwenden, um alle LEDs nacheinander einzustellen: ::
+Das setzt die LED in Spalte ``0`` und Zeile ``4`` auf eine Helligkeit von ``9``. Der Helligkeitswert
+kann eine ganze Zahl zwischen 0 und 9 sein. 0 schaltet die LED aus und 9 ist die hellste Einstellung.
+
+Du könntest eine :ref:`For Schleife` verwenden, um alle LEDs nacheinander einzustellen: ::
 
     from microbit import *
 
@@ -84,24 +90,27 @@ verwenden, um alle LEDs nacheinander einzustellen: ::
     	for y in range(0, 5):
     	    display.set_pixel(x,y,9)  
 
-Die ``for Schleife`` lässt dich eine Schleife mit Hilfe eines Zählers eine bestimmte Anzahl von Malen ausführen. Die äußere Schleife::
+Die ``for Schleife`` lässt dich eine Schleife mit Hilfe eines Zählers eine bestimmte Anzahl von Malen
+ausführen. Die äußere Schleife::
 
 	for x in range(0,5)
 
-führt die Schleife fünfmal aus und ersetzt ``x`` durch aufeinanderfolgende Werte im Bereich ``0`` bis ``4`` für ``x``. Die Schleife hört auf, bevor sie den letzten Wert im Bereich erreicht.
+führt die Schleife fünfmal aus und ersetzt ``x`` durch aufeinanderfolgende Werte im Bereich ``0`` bis ``4``
+für ``x``. Die Schleife hört auf, bevor sie den letzten Wert im Bereich erreicht.
 
 Die innere Schleife::
 
 	for y in range(0,5):
 
-führt die Schleife fünfmal aus und ersetzt ``y`` jedes Mal durch aufeinanderfolgende Werte aus dem Bereich ``0`` bis ``4``. Die Schleife hört auf, bevor sie den letzten Wert im Bereich erreicht.
+führt die Schleife fünfmal aus und ersetzt ``y`` jedes Mal durch aufeinanderfolgende Werte aus dem Bereich ``0``
+bis ``4``. Die Schleife hört auf, bevor sie den letzten Wert im Bereich erreicht.
 
 Eigene Bilder
 -------------
 Was ist, wenn du dein eigenes Bild für das Display auf dem micro:bit erstellen möchtest?
 
-Wie bereits erwähnt, kann jedes LED-Pixel auf dem Display auf einen von zehn Werten von 0 (aus) bis 9 (voll ein) eingestellt werden. 
-Mit dieser Information ist es möglich, ein neues Bild wie dieses zu erstellen ::
+Wie bereits erwähnt, kann jedes LED-Pixel auf dem Display auf einen von zehn Werten von 0 (aus) bis 9 (voll ein)
+eingestellt werden. Mit dieser Information ist es möglich, ein neues Bild wie dieses zu erstellen ::
 
         from microbit import *
 
@@ -123,9 +132,10 @@ wobei die Masten dunkler sind als der Rumpf des Schiffes).
 
 Hast du herausgefunden, wie man ein Bild malt? Hast du bemerkt, dass jede Zeile des
 Displays durch eine Zeile aus Zahlen dargestellt wird, die mit ``:`` endet und
-zwischen ``"`` Anführungszeichen eingeschlossen ist? Jede Zahl gibt eine Helligkeit an.
-Es gibt fünf Zeilen mit fünf Zahlen, so dass es möglich ist, die individuelle
-Helligkeit für jedes der fünf Pixel auf jeder der fünf Zeilen auf dem
+zwischen ``"`` Anführungszeichen eingeschlossen ist?
+
+Jede Zahl gibt eine Helligkeit an. Es gibt fünf Zeilen mit fünf Zahlen, so dass es möglich ist,
+die individuelle Helligkeit für jedes der fünf Pixel auf jeder der fünf Zeilen auf dem
 Display einzustellen und anzuzeigen. 
 
 Welches Bild ist hier zu sehen? ::
@@ -151,12 +161,15 @@ und ``Image.ALL_ARROWS``: ::
 
     display.show(Image.ALL_CLOCKS, loop=True, delay=100)
 
-Der micro:bit zeigt jedes Bild in der Liste an, eines nach dem anderen. Wenn du ``loop=True`` einstellst, wird das Programm in einer Schleife durch die Liste laufen, ohne Ende. Es ist auch möglich 
-eine Verzögerung zwischen den Bildern einzustellen, indem man das Attribut ``delay`` auf den gewünschten Wert in Millisekunden setzt ``delay=100``.
+Der micro:bit zeigt jedes Bild in der Liste an, eines nach dem anderen. Wenn du ``loop=True``
+einstellst, wird das Programm in einer Schleife durch die Liste laufen, ohne Ende. Es ist auch
+möglich eine Verzögerung zwischen den Bildern einzustellen, indem man das Attribut ``delay`` auf
+den gewünschten Wert in Millisekunden setzt ``delay=100``.
 
-Um deine eigene Animation zu erstellen, musst du eine Liste von Bildern erstellen. 
+Um deine eigene Animation zu erstellen, musst du also nur eine Liste von Bildern erstellen. 
 
-In diesem Beispiel wird ein Boot im Boden des Displays versinken. Dazu haben wir eine Liste mit 6 Bootsbildern definiert: ::
+In diesem Beispiel wird ein Boot im Boden des Displays versinken. Dazu haben wir eine Liste mit 6
+Bootsbildern definiert: ::
 
     from microbit import *
 
@@ -196,8 +209,18 @@ In diesem Beispiel wird ein Boot im Boden des Displays versinken. Dazu haben wir
                   "00000:"
                   "00000")
 
-    all_boats = [boat1, boat2, boat3, boat4, boat5, boat6]
+    all_boats = [boat1, boat2, boat3, boat4, boat5, boat6] #Liste aller Boote
     display.show(all_boats, delay=200)    
+
+.. note::
+    Auf der sehr empfehlenswerten Seite von MultiWingSpan_ kann man ein kleines Tool herunterladen
+    mit dem solche micro:bit Bilder und Animationen ganz einfach herstellen kann!
+
+.. _MultiWingSpan: http://multiwingspan.co.uk/micro.php?page=vbanim
+
+.. image:: http://multiwingspan.co.uk/images/micro/anim.png
+   :align: center
+   :scale: 60%
 
 Übungsaufgaben
 ===================
