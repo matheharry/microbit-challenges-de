@@ -2,9 +2,11 @@
 Beschleunigungsmesser
 *********************
 
-Wie der Name schon sagt, misst der Beschleunigungsmesser auf einem BBC micro:bit die Beschleunigung.
-Der Beschleunigungsmesser ist so eingestellt, dass er Beschleunigungswerte im Bereich von +2g bis -2g misst, 
-und diese Werte können mit MicroPython ausgelesen werden und auf den Bereich 0 ... 1024 abgebildet. 
+Wie der Name schon sagt, misst der Beschleunigungsmesser die Beschleunigung oder anders gesagt,
+die Bewegungsänderungen deines BBC micro:bit. Der Beschleunigungsmesser ist so eingestellt, dass
+er Beschleunigungswerte im Bereich von +2g bis -2g misst (mit g wird die Größe der Erdbeschleunigung
+bzw. Gravitation bezeichnet), und diese Werte können mit MicroPython ausgelesen werden und auf den
+Bereich 0 ... 1024 abgebildet.
 
 .. figure:: assets/accelerometer.png
    :scale: 40 %
@@ -12,8 +14,8 @@ und diese Werte können mit MicroPython ausgelesen werden und auf den Bereich 0 
 
 Der micro:bit misst die Bewegung entlang dreier Achsen:
 
-* X - Kippen von links nach rechts.
-* Y - Kippen nach vorne und hinten.
+* X - Bewegung von links nach rechts.
+* Y - Bewegung nach vorne und hinten.
 * Z - Bewegung nach oben und unten.
 
 .. figure:: assets/microbit_axes.png
@@ -22,12 +24,11 @@ Der micro:bit misst die Bewegung entlang dreier Achsen:
 Grundfunktionen
 ===============
 Die Messung für jede Achse ist eine positive oder negative Zahl
-die einen Wert in milli-g's (g ist die Erdbeschleunigung) 
-angibt. Wenn der Messwert 0 ist, bist du "ruhig"
-entlang der jeweiligen Achse. 
+die einen Wert in milli-g's angibt. Wenn der Messwert 0 ist, bist
+du "ruhig" entlang der jeweiligen Achse. 
 
 Du kannst die Beschleunigungswerte einzeln oder alle drei
-Werte auf einmal abrufen und sie in einer Liste speichern.
+Werte auf einmal abrufen und sie in einer **Liste** speichern.
 Du kannst mehr über Listen in den Grundlagen der Programmierung lernen, 
 aber für den Moment verwende einfach den folgenden Code: :: 
 
@@ -59,7 +60,7 @@ enthalten Beschleunigungssensoren, um die Steuerung zu ermöglichen.
 Gesten
 --------
 
-Der wirklich interessante Nebeneffekt des Beschleunigungssensors ist die Gestenerkennung. 
+Eine wirklich interessante Anwendung des Beschleunigungssensors ist die Gestenerkennung. 
 Wenn du deinen BBC micro:bit auf eine bestimmte Art und Weise bewegst (als Geste), dann 
 ist der micro:bit in der Lage, dies zu erkennen.
 
@@ -91,7 +92,7 @@ oben zeigt::
             display.show(Image.ANGRY)
 
 1. Innerhalb des *Geltungsbereichs (Scope)* der Schleife wird die aktuelle Geste gelesen und der Variablen ``geste`` zugewiesen. 
-2. Die ``if``-Bedingung prüft, ob ``geste`` gleich ``"face up"`` ist (Python verwendet ``==``, um auf Gleichheit zu testen, ein einzelnes Gleichheitszeichen ``=`` wird für die Zuweisung verwendet - genau wie wir die gelesenen Gesten der ``geste``-Variablen zuweisen). 
+2. Die ``if``-Bedingung prüft, ob ``geste`` gleich ``"face up"`` ist (Python verwendet ``==``, um auf Gleichheit zu testen, ein einzelnes Gleichheitszeichen ``=`` wird für die Zuweisung verwendet - so wie wir die gelesenen Gesten in der Zeile darüber der Variablen ``geste`` zugewiesen haben). 
 3. Wenn die Geste gleich ``"face up"`` ist, dann benutze das Display, um ein glückliches Gesicht zu zeigen. 
 4. Ansonsten wird das Gerät dazu gebracht, wütend dreinzuschauen!
 
@@ -116,11 +117,12 @@ Fortgeschrittene Funktionen
 ===========================
 
 Für den Beschleunigungssensor gibt es keine, aber es lohnt sich zu schauen, wie 
-wie wir die 3D-Beschleunigung nutzen können, um verschiedene Arten von Bewegung zu erkennen. 
-Wir könnten zB erkennen wollen, ob er geschüttelt wird. Die Beschleunigung ist eine so genannte 
-Vektorgröße - sie hat einen Betrag (Größe, Länge) und eine Richtung. Um den Gesamtbetrag in 
-X- und Y-Richtung zu erhalten, ohne auf die Z-Achse zu achten (d.h. wir hätten einen 
-2D-Beschleunigungsmesser), würde die Situation so aussehen:
+wir die 3D-Beschleunigung nutzen können, um verschiedene Arten von Bewegung zu erkennen. 
+
+Wir könnten zB erkennen wollen, ob unser micro:bit geschüttelt wird. Die Beschleunigung ist
+eine sogenannte Vektorgröße - sie hat einen Betrag (Größe, Länge) und eine Richtung. Um den
+Gesamtbetrag in X- und Y-Richtung zu erhalten, ohne auf die Z-Achse zu achten, könnte man
+bei dieser 2D-Beschleunigung dann wie folgt vorgehen:
 
 .. image:: assets/microbitOverallAcceleration.jpg
    :scale: 60 %
@@ -153,9 +155,9 @@ Berechnung der Gesamtbeschleunigung: ::
 	    sleep(500)
 
 Wenn du den Beschleunigungssensor still hältst (auf den Tisch legst), ergibt dies eine Beschleunigung 
-von etwa 1g, unabhängig davon, in welcher Orientierung du den BBC micro:bit hältst - und sie wird davon 
-abweichen, wenn du ihn bewegst. Tatsächlich wird der Wert leicht variieren, auch wenn du ihn still hältst, 
-weil der Beschleunigungsmesser kein perfektes Messgerät ist. 
+von etwa 1g, unabhängig davon, in welcher Orientierung du den BBC micro:bit hältst. Wenn du nun den micro:bit
+bewegst, wird sich dieser Wert ändern und davon abweichen. Tatsächlich wird der Wert leicht variieren, auch
+wenn du ihn still hältst, weil der Beschleunigungsmesser kein perfektes Messgerät ist. 
 
 Immer wenn wir eine Größe genau wissen wollen, ist eine sogenannte *Kalibrierung* nötig, bei der die Sensordaten 
 genau eingemessen und mit einem Richtwert verglichen werden.

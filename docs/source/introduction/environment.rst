@@ -2,8 +2,8 @@
 Deine Arbeitsumgebung einrichten
 ********************************
 
-Bevor du mit dem Programmieren beginnst, benötigst du einen Quellcode-Editor, um Programme auf deinem micro:bit schreiben, laden und ausführen zu können. 
-Es gibt im Wesentlichen vier Optionen: 
+Bevor du mit dem Programmieren beginnst, benötigst du einen Quellcode-Editor, um Programme auf deinem micro:bit
+schreiben, laden und ausführen zu können. Es gibt im Wesentlichen vier Optionen: 
 
 * für Anfänger am PC perfekt: der `Mu Editor`_ (unsere erste Wahl)
 * im Web-Browser: der `micro:bit Editor`_ (momentan empfehle ich allerdings die aktuelle `Beta-Version`_!)
@@ -17,8 +17,9 @@ Es gibt im Wesentlichen vier Optionen:
 Mu Editor verwenden
 ===================
 
-Für dieses Tutorial werden wir den Mu-Editor verwenden, aber du kannst natürlich auch einen anderen Editor verwenden, der dir besser gefällt.
-Um Mu herunterzuladen, gehe auf die Mu Website_. Hier steht eine `Schritt-für-Schritt-Anleitung`_ zur Verfügung.
+Für dieses Tutorial werden wir mit dem Mu-Editor arbeiten, aber du kannst natürlich auch einen anderen Editor verwenden,
+der dir besser gefällt. Um Mu herunterzuladen, gehe auf die Mu Website_. Hier steht eine `Schritt-für-Schritt-Anleitung`_
+zur Verfügung.
 
 .. _`Schritt-für-Schritt-Anleitung`: https://micropython.matheharry.de/installation_der_entwicklungsumgebung.html?nav=false
 .. _Website: https://codewith.mu/en/
