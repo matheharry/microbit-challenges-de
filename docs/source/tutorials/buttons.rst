@@ -12,10 +12,10 @@ oder *Eingaben* genannt.
 Es ist leicht zu merken: Output ist das, was das Gerät in die Welt hinausgibt, während Input das
 ist, was in das Gerät hineingeht, um dann verarbeiten zu werden.
 
-Man spricht auch vom *EVA-Prinzip*: **E**ingabe - **V**erarbeitung - **A**usgabe
+Man spricht auch vom **EVA**-Prinzip: **E**ingabe - **V**erarbeitung - **A**usgabe
 
-Das augenscheinlichste Eingabegerät auf dem micro:bit sind die beiden Tasten, die mit ``A`` und ``B`` bezeichnet 
-sind. Du kannst die Tasten verwenden, um Eingaben vom Benutzer zu erhalten.
+Das augenscheinlichste Eingabegerät auf dem micro:bit sind die beiden Tasten, die mit ``A`` und ``B``
+bezeichnet sind. Du kannst die Tasten verwenden, um Eingaben vom Benutzer zu erhalten.
 
 .. image:: assets/buttons.png
    :scale: 40 %
