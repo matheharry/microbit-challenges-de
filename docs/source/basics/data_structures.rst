@@ -5,8 +5,11 @@ Datenstrukturen
 Liste
 =====
 
-Eine Liste ("Array") ist eine Datenstruktur, die verwendet wird, um einen beliebigen Datentyp (oder eine andere Struktur) in geordneter Weise zu speichern. Eine Liste ist die Datenstruktur, die du wahrscheinlich am häufigsten benutzen wirst. Sagen wir, wir wollen 
-den Punktestand eines Spielers speichern. Wir könnten eine Liste wie die oben abgebildete verwenden. Die Liste hat eine "Box" für jeden Wert. Die Daten, die in einer Liste gespeichert sind, werden "Elemente" genannt. 
+Eine Liste ("Array") ist eine Datenstruktur, die verwendet wird, um einen beliebigen Datentyp (oder eine
+andere Struktur) in geordneter Weise zu speichern. Eine Liste ist die Datenstruktur, die du wahrscheinlich
+am häufigsten benutzen wirst. Sagen wir, wir wollen den Punktestand eines Spielers speichern. Wir könnten
+eine Liste wie die oben abgebildete verwenden. Die Liste hat eine "Box" für jeden Wert. Die Daten, die in
+einer Liste gespeichert sind, werden "Elemente" genannt. 
 
 .. figure:: assets/list_arrow.png 
 	 :align: center
@@ -17,34 +20,39 @@ Um eine Liste zu erstellen, gibst du ihren Inhalt in eckigen Klammern an und tre
 
 	from microbit import *
 
-	high_scores = [25, 20, 10, 15, 30]       # Erstelle eine Liste und speichere einige Werte in ihr.
+	high_scores = [25, 20, 10, 15, 30]      # Erstelle eine Liste und speichere einige Werte in ihr.
 	print(high_scores[0])			# Gibt 25 aus
 	print(high_scores[3])			# Gibt 15 aus
 
 
-Den Wert eines der Elemente in einer Liste zu finden ist einfach, solange du im Hinterkopf behältst, dass Python die Elemente ab '0' zählt. In der ``high_scores`` Liste 
-oben, ist ``high_scores[0]`` 25 und ``high_scores[3]`` ist 15.
+Den Wert eines der Elemente in einer Liste zu finden ist einfach, solange du im Hinterkopf behältst, dass
+Python die Elemente ab '0' zählt. In der ``high_scores`` Liste oben, ist ``high_scores[0]`` 25 und
+``high_scores[3]`` ist 15.
 
-Hier kannst du auch sehen, dass auf bestimmte Elemente in einer Liste über ihren Index zugegriffen werden kann. Außerdem ist es möglich, Listen zu zerschneiden, um nur einen Teil der Liste 
-abhängig vom Index zu erhalten. Wenn du nur die ersten drei willst, kannst du ``high_scores[0:3]`` schreiben, oder, da wir bei 0 anfangen, können wir es zu ``high_scores[:3]`` abkürzen. Beachte, dass
-der rechte Endpunkt immer ausgeschlossen ist, also bezieht sich der obige "Ausschnitt" auf das mathematische Intervall ``[0,2]``.
+Hier kannst du auch sehen, dass auf bestimmte Elemente in einer Liste über ihren Index zugegriffen werden kann.
+Außerdem ist es möglich, Listen zu zerschneiden, um nur einen Teil der Liste abhängig vom Index zu erhalten.
+Wenn du nur die ersten drei willst, kannst du ``high_scores[0:3]`` schreiben, oder, da wir bei 0 anfangen, können
+wir es zu ``high_scores[:3]`` abkürzen. Beachte, dass der rechte Endpunkt immer ausgeschlossen ist, also bezieht
+sich der obige "Ausschnitt" auf das mathematische Intervall ``[0,2]``.
 
-Natürlich besitzt Python schon Funktionen für die Arbeit mit Listen. Der folgende Codeschnipsel berechnet die Summe aller Elemente und berechnet dann den durchschnittlichen Punktestand. ::		
+Natürlich besitzt Python schon Funktionen für die Arbeit mit Listen. Der folgende Codeschnipsel berechnet die
+Summe aller Elemente und berechnet dann den durchschnittlichen Punktestand. ::		
 
 	punkte_gesamt = 0
 	
 	for punkte in high_scores: 		# Für jedes Element ...
 		punkte_gesamt = punkte_gesamt + punkte
 
-	durchschnitt = punkte_gesamt / len(high_scores)  # Benutze hier die Funktion len() um die "Länge" der Liste zu ermitteln 
+	durchschnitt = punkte_gesamt / len(high_scores)  # Mit der Funktion len() wird "Länge" der Liste ermittelt 
 
 Das Gleiche kann sogar in einer Zeile mit der Funktion ``sum`` gemacht werden::
 
 	durchschnitt_kurzfassung = sum(high_score) / len(high_score)	 
 
 
-Da du nicht unbedingt weißt, welche Werte in der Liste sein werden, oder wie groß die Liste sein wird, ist es nützlich, die ``append`` Funktion zu kennen. 
-Du kannst sie zum Beispiel benutzen, um eine Liste mit Temperaturmesswerten oder Beschleunigungsmessungen zu füllen:: 
+Da du nicht unbedingt weißt, welche Werte in der Liste sein werden, oder wie groß die Liste sein wird, ist es
+nützlich, die ``append`` Funktion zu kennen. Du kannst sie zum Beispiel benutzen, um eine Liste mit
+Temperaturmesswerten oder Beschleunigungsmessungen zu füllen:: 
 
 	from microbit import *
 
@@ -53,8 +61,8 @@ Du kannst sie zum Beispiel benutzen, um eine Liste mit Temperaturmesswerten oder
 		temperaturaufzeichnungen.append(temperature())
 		sleep(1000)			 
 
-Die ``for`` Schleife wird 100 mal ausgeführt und ``i`` hat Werte von 0 bis 99. Dadurch wird die Temperatur jede Sekunde für 100 Sekunden gemessen und der Wert 
-an das Ende der Liste angefügt. 
+Die ``for`` Schleife wird 100 mal ausgeführt und ``i`` hat Werte von 0 bis 99. Dadurch wird die Temperatur
+jede Sekunde für 100 Sekunden gemessen und der Wert an das Ende der Liste angefügt. 
 
 
 Das Löschen von Elementen aus einer Liste ist genauso einfach::
@@ -75,7 +83,7 @@ das letzte Element in der Liste löscht.
 
 .. tip:: Du kannst hier_ nachschauen, um weitere nützliche Methoden für Listen zu sehen.
 
-.. _hier: https://docs.python.org/2/tutorial/datastructures.html#tuples-and-sequences
+.. _hier: https://docs.python.org/2/tutorial/datastructures.html#
 
 .. note:: Du fragst dich vielleicht, ob Strings als Liste betrachtet werden können. Auch wenn ein String ein Array von Zeichen ist und wir sogar ähnliche Operationen mit ihnen durchführen können  
 	(wie z.B. Slicing), sind sie beide unterschiedliche Objekttypen mit unterschiedlichen Methoden (versuche ``dir(str)`` und ``dir(list)`` in deiner Konsole einzugeben). 
@@ -83,15 +91,16 @@ das letzte Element in der Liste löscht.
 Sortieren
 ^^^^^^^^^
 
-Oft wirst du die Daten in deiner Liste sortiert haben wollen, zum Beispiel bei der Implementierung von Suchalgorithmen. In Python ist es einfach, Listen zu sortieren, indem man die 
-``sort(key=, reverse=)`` Funktion verwendet::
+Oft wirst du die Daten in deiner Liste sortiert haben wollen, zum Beispiel bei der Implementierung von
+Suchalgorithmen. In Python ist es einfach, Listen zu sortieren, indem man die ``sort()`` Funktion verwendet::
 
 	high_scores = [25, 20, 10, 15, 30]
 	high_scores.sort()
 
-Du kannst nicht nur Zahlen sortieren - sein optionaler Schlüsselparameter erlaubt es dir, deine eigene Funktion für den Vergleich von Elementen in deiner Liste anzugeben (zum Beispiel, wenn du 
-eine Liste von Strings nach der Länge sortieren willst, kannst du die Funktion len() als Parameter übergeben). Die Übergabe von false an den reverse Parameter erlaubt es dir, in absteigender 
-Reihenfolge zu sortieren. ::
+Du kannst nicht nur Zahlen sortieren - der optionale Parameter ``key=`` erlaubt es dir, deine eigene Funktion für
+den Vergleich von Elementen in deiner Liste anzugeben (zum Beispiel, wenn du eine Liste von Strings nach der Länge
+sortieren willst, kannst du die Funktion len() als Parameter übergeben). Die Übergabe von false an den Parameter
+``reverse=`` erlaubt es dir, in absteigender Reihenfolge zu sortieren. ::
 
 	list = ['länger', 'kurz', 'am längsten']
 
