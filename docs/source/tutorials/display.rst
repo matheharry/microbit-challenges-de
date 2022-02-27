@@ -220,11 +220,11 @@ Bootsbildern definiert: ::
 * Mache ein Sprite, benutze eine einzelne LED auf dem Display. Kannst du es springen lassen, wenn du eine Taste drückst?
 
 .. tip::
-    Auf der sehr empfehlenswerten Seite von MultiWingSpan_ kann man ein kleines Tool herunterladen
-    mit dem man solche micro:bit Bilder und Animationen ganz einfach herstellen kann!
+    Auf der sehr empfehlenswerten Seite MultiWingSpan_ kann man ein kleines Tool herunterladen,
+    mit dem man den Code für solche micro:bit Bilder und Animationen ganz einfach erstellen kann!
 
 .. _MultiWingSpan: http://multiwingspan.co.uk/micro.php?page=vbanim
 
 .. image:: anim.png
-   :align: left
+   :align: center
    :scale: 60%
