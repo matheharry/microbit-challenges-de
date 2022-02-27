@@ -43,7 +43,7 @@ Summe aller Elemente und berechnet dann den durchschnittlichen Punktestand. ::
 	for punkte in high_scores: 		# Für jedes Element ...
 		punkte_gesamt = punkte_gesamt + punkte
 
-	durchschnitt = punkte_gesamt / len(high_scores)  # Mit der Funktion len() wird "Länge" der Liste ermittelt 
+	durchschnitt = punkte_gesamt / len(high_scores)  # Die Funktion len() gibt die "Länge" der Liste zurück 
 
 Das Gleiche kann sogar in einer Zeile mit der Funktion ``sum`` gemacht werden::
 
