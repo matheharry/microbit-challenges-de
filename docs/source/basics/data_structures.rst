@@ -112,25 +112,29 @@ sortieren willst, kannst du die Funktion len() als Parameter übergeben). Die Ü
 Tupel
 =======
 
-Tupel sind ähnlich wie Listen, da sie verwendet werden, um eine geordnete Folge von Elementen zu speichern, die normalerweise einen unterschiedlichen Datentyp haben.::
+Tupel sind ähnlich wie Listen, da sie verwendet werden, um eine geordnete Folge von Elementen zu speichern,
+die normalerweise einen unterschiedlichen Datentyp haben.::
 
     high_scores_unveraenderlich = (25, 20, 10, 15, 30)
 
-	Du kannst Werte auf die gleiche Weise wie mit Listen abrufen, aber der wichtigste Unterschied ist, dass Tupel `unveränderlich` sind. Das bedeutet, dass du in der ``high_scores`` 
-	Liste oben, den Wert einzelner Elemente ändern kannst: ::
+Du kannst Werte auf die gleiche Weise wie mit Listen abrufen, aber der wichtigste Unterschied ist, dass Tupel
+`unveränderlich` sind. Das bedeutet, dass du in der ``high_scores`` Liste oben, den Wert einzelner Elemente
+ändern kannst: ::
 
     high_scores[0] = 42
 
-Der Versuch, einen Wert innerhalb von ``high_scores_unveraenderlich`` zu ändern, gibt jedoch einen ``TypeError: Object tuple does not support item assignment`` zurück. Sobald du Werte 
+Der Versuch, einen Wert innerhalb von ``high_scores_unveraenderlich`` zu ändern, gibt jedoch einen
+``TypeError: Object tuple does not support item assignment`` zurück. Sobald du Werte 
 innerhalb eines Tupels zugewiesen hast, können sie nicht mehr geändert werden. 
 
-Die Veränderbarkeit ist ein weiterer Unterschied zwischen Strings und Listen - während Listen veränderbar sind, sind es Strings nicht.
+Die Veränderbarkeit ist ein weiterer Unterschied zwischen Strings und Listen - während Listen veränderbar
+sind, sind es Strings nicht.
 
 Set
 ====
 
-Im Gegensatz zu Listen und Tupeln, enthalten Sets eine **ungeordnete** Sammlung von Elementen ohne Duplikate. Das ermöglicht das Testen der Zugehörigkeit oder das Entfernen 
-doppelter Elemente. ::
+Im Gegensatz zu Listen und Tupeln, enthalten Sets eine **ungeordnete** Sammlung von Elementen ohne Duplikate.
+Das ermöglicht das Testen der Zugehörigkeit oder das Entfernen doppelter Elemente. ::
 
 	set = {8, 12, 22}
 
@@ -148,7 +152,8 @@ doppelter Elemente. ::
 
 	 
 
-Da ein Set eine ungeordnete Sammlung von Elementen ist, ist eine Indexierung nicht möglich. Python unterstützt typische Set-Operationsmethoden: ::
+Da ein Set eine ungeordnete Sammlung von Elementen ist, ist eine Indexierung nicht möglich. Python unterstützt
+typische Set-Operationsmethoden: ::
 
 	set_a = {1,2,3,4,5}
 	set_b = {4,5,6,7}
@@ -162,7 +167,8 @@ Da ein Set eine ungeordnete Sammlung von Elementen ist, ist eine Indexierung nic
 	# Gib true zurück, wenn set_a alle Elemente von set_c enthält
 	set_a.issuperset(set_c)
 
-Ein leeres Set wird mit der Methode ``set()`` erzeugt, da die Verwendung von geschweiften Klammern ein leeres Dictionary erzeugt (siehe unten).  	
+Ein leeres Set wird mit der Methode ``set()`` erzeugt, da die Verwendung von geschweiften Klammern ein leeres
+Dictionary erzeugt (siehe unten).  	
 
 Für weitere Methoden, siehe Python Dokumentation_.
 
