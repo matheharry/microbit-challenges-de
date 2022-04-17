@@ -14,7 +14,7 @@ sind endlos. Lass uns einen Blick auf die Funktionen werfen, die du in deinen Pr
  * Ein Magnetometer, um dir zu sagen, in welche Richtung du gehst.
  * Eine Funk- und eine Bluetooth-Verbindung, um mit anderen Geräten zu interagieren.
 
-.. figure:: assets/microbit-hardware-access.jpg
+.. figure:: assets/microbit-hardware.webp
    :scale: 35%
    :align: center
    
