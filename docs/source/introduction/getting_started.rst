@@ -57,6 +57,12 @@ Unter anderem versuchen wir gemeinsam ein (immer besseres) *Schere-Stein-Papier-
 einfach bis ... (ganz deiner Phantasie überlassen!). Das Erlernen der Programmiersprache Python sollte dabei
 irgendwie *nebenbei passieren* 👍.
 
+.. figure:: assets/rock-paper-scissors.svg
+   :scale: 100%
+   :align: center
+   
+   Source: https://publicdomainvectors.org/
+
 Du brauchst dich nicht unbedingt akribisch durch die ganze Theorie, die in :ref:`Grundlagen der Programmierung` 
 behandelt wird, durcharbeiten, besonders wenn du ein Anfänger bist. Fange an, einfache Programme mit dem 
 micro:bit zu schreiben und lerne nach und nach weitere Programmierkonzepte kennen indem du weiterliest. 
