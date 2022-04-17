@@ -71,13 +71,7 @@ so doch viel über den Aufbau und Ablauf eines Python-Programms lernen.
 Fühle dich frei, die Teile zu überspringen, in denen du dich sicher fühlst und wähle die 
 Teile, die dir wichtig sind. Während du mehr über das Programmieren lernst, wirst du natürlich immer bessere und 
 effizientere Wege finden, um deine Projekte der Vergangenheit zu erledigen, aber im Moment solltest du dich darauf 
-konzentrieren, den Einstieg zu finden.
-
-Die hier behandelten Themen werden in der Regel nur gestreift und viele Dinge werden absichtlich nicht erklärt,
-weil eigentlich alles im Internet zu finden ist. Hier sollst du die Grundlagen kennenlernen und vor allem ermutigt
-werden, Dinge einfach auszuprobieren! Einige der wichtigen Fähigkeiten die du im Laufe der Schule und deiner späteren
-Arbeit brauchen wirst, sind das selbstständige Arbeiten mit Unterlagen und die Fähigkeit, offizielle Dokumente zu lesen.
-Daher solltest du ruhig auch andere (und bessere) Unterlagen lesen, als die, die du hier findest.  
+konzentrieren, den Einstieg zu finden.  
 
 .. _runtime: https://lancaster-university.github.io/microbit-docs/
 
@@ -88,6 +82,12 @@ Daher solltest du ruhig auch andere (und bessere) Unterlagen lesen, als die, die
    Man müsste ihn vielleicht noch ein bisschen erweitern mit: **... und dann tut man es noch einmal, und wenn's 
    immer noch nicht funktioniert eben noch einmal und noch einmal!** 😉
 
+   Die hier behandelten Themen werden in der Regel nur gestreift und viele Dinge werden absichtlich nicht erklärt,
+   weil eigentlich alles im Internet zu finden ist. Hier sollst du die Grundlagen kennenlernen und vor allem ermutigt
+   werden, Dinge einfach auszuprobieren! Einige der wichtigen Fähigkeiten die du im Laufe der Schule und deiner späteren
+   Arbeit brauchen wirst, sind das selbstständige Arbeiten mit Unterlagen und die Fähigkeit, offizielle Dokumente zu lesen.
+   Daher solltest du ruhig auch andere (und bessere) Unterlagen lesen, als die, die du hier findest.
+   
    Es gibt eine Reihe von kostenlosen Online-Kursen, die dir die Grundlagen der Programmierung mit Python näher 
    bringen, wie zum Beispiel python-lernen.de_. Dringend zu empfehlen ist auch dieses YouTube-Tutorial_, das dir die 
    "Sprache" Python und ihre, wie bei allen Programmiersprachen ganz streng einzuhaltende, Grammatik erklärt. 
