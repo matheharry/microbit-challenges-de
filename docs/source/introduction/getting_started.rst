@@ -61,10 +61,12 @@ Du brauchst dich nicht unbedingt akribisch durch die ganze Theorie, die in :ref:
 behandelt wird, durcharbeiten, besonders wenn du ein Anfänger bist. Fange an, einfache Programme mit dem 
 micro:bit zu schreiben und lerne nach und nach weitere Programmierkonzepte kennen indem du weiterliest. 
 
-Wenn du schon mit der grafischen Programmieroberfläche *MakeCode* vertraut bist, lass dir deine Programme auch einmal als
+Wenn du schon mit der grafischen Programmieroberfläche MakeCode_ vertraut bist, lass dir deine Programme auch einmal als
 Pytho-Code darstellen. Allerdings unterscheiden sich der Code dort etwas von den MicroPythonj-Befehlen, die wir hier verwenden.
 Auch wenn die Syntax (so nennt man die Regeln und den Wortschatz, die für eine Sprache gelten) unterschiedlich ist, kann man
 so doch viel über den Aufbau und Ablauf eines Python-Programms lernen.
+
+.. _MakeCode: https://makecode.microbit.org/
 
 Fühle dich frei, die Teile zu überspringen, in denen du dich sicher fühlst und wähle die 
 Teile, die dir wichtig sind. Während du mehr über das Programmieren lernst, wirst du natürlich immer bessere und 
