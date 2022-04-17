@@ -17,8 +17,10 @@ schreiben, laden und ausführen zu können. Es gibt im Wesentlichen vier Optione
 Mu Editor verwenden
 ===================
 
-Für dieses Tutorial werden wir mit dem Mu-Editor arbeiten, aber du kannst natürlich auch einen anderen Editor verwenden,
-der dir besser gefällt. Um Mu herunterzuladen, gehe auf die Mu Website_. Hier steht eine `Schritt-für-Schritt-Anleitung`_
+Für dieses Tutorial werden wir mit dem Mu-Editor arbeiten, aber du kannst natürlich auch einen der anderen Editor verwenden.
+
+
+Um Mu herunterzuladen, gehe auf die Mu Website_. Hier steht eine `Schritt-für-Schritt-Anleitung`_
 zur Verfügung.
 
 .. _`Schritt-für-Schritt-Anleitung`: https://micropython.matheharry.de/installation_der_entwicklungsumgebung.html?nav=false

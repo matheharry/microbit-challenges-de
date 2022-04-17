@@ -2,9 +2,29 @@
 Micro:bit - Übersicht 
 **************************
 
-Der BBC micro:bit ist ein programmierbarer Mikrocomputer bzw. Mikrocontroller - mit dem man alle 
-möglichen Projekte erstellen kann, von Robotern bis hin zu Musikinstrumenten - die Möglichkeiten 
-sind endlos. Lass uns einen Blick auf die Funktionen werfen, die du in deinen Programmen verwenden kannst:
+Der BBC micro:bit ist ein Computer im Taschenformat, mit dem du lernen kannst, wie Software und Hardware zusammenarbeiten.
+Er hat eine LED-Anzeige, Tasten, Sensoren und viele Ein- und Ausgabefunktionen, die du programmieren und mit denen du
+herumexperimentieren kannst. Die neueste Version des micro:bit bietet zusätzlich die Möglichkeit, akustische Signale zu
+empfangen und wiederzugeben.
+
+Ist der micro:bit ein Computer oder ein Mikrocontroller?
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Vielleicht hast du gehört, dass der micro:bit auch als Mikrocontroller bezeichnet wird. Auf dem Board befindet sich nämlich
+ein Mikrocontroller, der so programmiert werden kann, dass er bestimmte Aufgaben ausführt, aber es hat auch Ein- und Ausgabegeräte
+wie Tasten und eine LED-Anzeige, was den miro:bit zu mehr als einem Mikrocontroller macht.
+
+.. figure:: assets/EVA-Prinzip.png
+   :scale: 100%
+   :align: center
+   
+   Source: https://commons.wikimedia.org/wiki/File:EVA-Prinzip.svg
+
+Ein Mikroprozessor plus Arbeitsspeicher, Datenspeicher und Ein- und Ausgabegeräte ergeben einen Computer (*EVA-Prinzip*).
+Der micro:bit ist lediglich ein Computer im Taschenformat, mit dem man alle möglichen Projekte erstellen kann - von Robotern
+bis hin zu Musikinstrumenten - die Möglichkeiten sind endlos. 
+
+Lass uns einen Blick auf die Funktionen werfen, die du in deinen Programmen verwenden kannst:
 
  * 25 rote LED-Lichter, die Nachrichten und Bilder anzeigen können.
  * Zwei programmierbare Tasten (A und B), mit denen du dem micro:bit sagen kannst, wann er etwas starten und stoppen soll.
