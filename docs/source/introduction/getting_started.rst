@@ -102,15 +102,13 @@ konzentrieren, den Einstieg zu finden.
 .. _runtime: https://lancaster-university.github.io/microbit-docs/
 
 .. note:: Wenn du dir beim Lesen der Tutorials schwer tust und dich nicht auskennst oder du das Gefühl hast, 
-   dass du mehr Anleitung brauchst, um mit dem Programmieren beginnen zu können, lass dich nicht entmutigen! 
+   dass du mehr Anleitung brauchst, um mit dem Programmieren beginnen zu können, lass dich nicht entmutigen!
+
+   .. figure:: assets/ichschaffdas.png
 
    **Es gibt nichts Gutes außer man tut es!** Dieser Satz von Erich Kästner beschreibt perfekt das Programmierenlernen.
    Man müsste ihn vielleicht noch ein bisschen erweitern mit: **... und dann tut man es noch einmal, und wenn's 
    immer noch nicht funktioniert eben noch einmal und noch einmal!** 😉
-
-   .. figure:: assets/ichschaffdas.png
-   :scale: 100%
-   :align: center
 
    Die hier behandelten Themen werden in der Regel nur gestreift und viele Dinge werden absichtlich nicht erklärt,
    weil eigentlich alles im Internet zu finden ist. Hier sollst du die Grundlagen kennenlernen und vor allem ermutigt
