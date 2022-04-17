@@ -58,7 +58,7 @@ einfach bis ... (ganz deiner Phantasie überlassen!). Das Erlernen der Programmi
 irgendwie *nebenbei passieren* 👍.
 
 .. figure:: assets/rock-paper-scissors.svg
-   :scale: 100%
+   :scale: 60%
    :align: center
    
    Source: https://publicdomainvectors.org/
