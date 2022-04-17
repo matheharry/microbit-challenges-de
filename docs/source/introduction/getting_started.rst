@@ -32,9 +32,10 @@ schau dir den Abschnitt :ref:`Programmierung des micro:bit mit anderen Sprachen`
 
 MicroPython ist eine Version von Python_, die auf Mikrocontrollern wie dem micro:bit laufen kann. Da die 
 Funktionalität der beiden nahezu identisch ist (siehe hier_ für den Unterschied im Verhalten), beziehen wir 
-uns in diesen Tutorials auf die verwendete Sprache als Python. Programmieren in Python besteht aus
-dem Beschreiben einer Reihe von Schritten, die ausgeführt werden sollen. An welche genau einzuhaltende 
-Regeln (ähnlich wie der Grammatik beim Sprachenlernen) du dich dabei halten musst, lernst du Schritt für 
+uns in diesen Tutorials auf die verwendete Sprache als Python anstatt MicroPython.
+
+Programmieren in Python besteht aus dem Beschreiben einer Reihe von Schritten, die ausgeführt werden sollen.
+An welche Regeln du dich dabei (ähnlich wie der Grammatik beim Sprachenlernen) ganz genau halten musst, lernst du Schritt für 
 Schritt, wenn du deine ersten Programme schreibst.  
 
 .. _Python: https://www.python.org/
@@ -59,6 +60,11 @@ irgendwie *nebenbei passieren* 👍.
 Du brauchst dich nicht unbedingt akribisch durch die ganze Theorie, die in :ref:`Grundlagen der Programmierung` 
 behandelt wird, durcharbeiten, besonders wenn du ein Anfänger bist. Fange an, einfache Programme mit dem 
 micro:bit zu schreiben und lerne nach und nach weitere Programmierkonzepte kennen indem du weiterliest. 
+
+Wenn du schon mit der grafischen Programmieroberfläche *MakeCode* vertraut bist, lass dir deine Programme auch einmal als
+Pytho-Code darstellen. Allerdings unterscheiden sich der Code dort etwas von den MicroPythonj-Befehlen, die wir hier verwenden.
+Auch wenn die Syntax (so nennt man die Regeln und den Wortschatz, die für eine Sprache gelten) unterschiedlich ist, kann man
+so doch viel über den Aufbau und Ablauf eines Python-Programms lernen.
 
 Fühle dich frei, die Teile zu überspringen, in denen du dich sicher fühlst und wähle die 
 Teile, die dir wichtig sind. Während du mehr über das Programmieren lernst, wirst du natürlich immer bessere und 
