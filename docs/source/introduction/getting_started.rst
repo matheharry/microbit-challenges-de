@@ -21,10 +21,10 @@ wie Tasten und eine LED-Anzeige, was den miro:bit zu mehr als einem Mikrocontrol
    Source: https://commons.wikimedia.org/wiki/File:EVA-Prinzip.svg
 
 Ein Mikroprozessor plus Arbeitsspeicher, Datenspeicher und Ein- und Ausgabegeräte ergeben einen Computer (*EVA-Prinzip*).
-Der micro:bit ist lediglich ein Computer im Taschenformat, mit dem man alle möglichen Projekte erstellen kann - von Robotern
+Der micro:bit ist lediglich ein Computer im Taschenformat, mit dem man alle möglichen Projekte erstellen kann: von Robotern
 bis hin zu Musikinstrumenten - die Möglichkeiten sind endlos. 
 
-Lass uns einen Blick auf die Funktionen werfen, die du in deinen Programmen verwenden kannst:
+Schauen wir uns die Funktionen, die du in deinen Programmen verwenden kannst, einmal an:
 
  * 25 rote LED-Lichter, die Nachrichten und Bilder anzeigen können.
  * Zwei programmierbare Tasten (A und B), mit denen du dem micro:bit sagen kannst, wann er etwas starten und stoppen soll.
@@ -42,11 +42,11 @@ Lass uns einen Blick auf die Funktionen werfen, die du in deinen Programmen verw
    
    Source: https://microbit.org/guide/features/
 
-Du kannst den micro:bit mit verschiedenen Sprachen_ programmieren.
+Du kannst den micro:bit mit verschiedenen Programmiersprachen_ zum Leben erwecken.
 
-.. _Sprachen: https://microbit.org/code/
+.. _Programmiersprachen: https://microbit.org/code/
 
-Zur Auswahl stehen MicroPython, C++ oder JavaScript. Dieses Tutorial konzentriert sich auf das Programmieren von 
+Zur Auswahl stehen **MicroPython, C++** oder **JavaScript**. Dieses Tutorial konzentriert sich auf das Programmieren von 
 micro:bit mit MicroPython, aber wenn du bereits mit Python vertraut bist oder eine zusätzliche Herausforderung suchst, 
 schau dir den Abschnitt :ref:`Programmierung des micro:bit mit anderen Sprachen` an.
 
