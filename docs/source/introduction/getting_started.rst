@@ -13,9 +13,11 @@ sind endlos. Lass uns einen Blick auf die Funktionen werfen, die du in deinen Pr
  * Ein Beschleunigungssensor, um Bewegungen zu erkennen.
  * Ein Magnetometer, um dir zu sagen, in welche Richtung du gehst.
  * Eine Funk- und eine Bluetooth-Verbindung, um mit anderen Geräten zu interagieren.
+ * Ein Microphon und einen Lautsprecher
+ * Einen berührungssensitive Taste als Logo
 
 .. figure:: assets/microbit-hardware.webp
-   :scale: 35%
+   :scale: 100%
    :align: center
    
    Source: https://microbit.org/guide/features/
