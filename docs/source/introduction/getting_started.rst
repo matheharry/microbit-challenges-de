@@ -57,11 +57,11 @@ Unter anderem versuchen wir gemeinsam ein (immer besseres) *Schere-Stein-Papier-
 einfach bis ... (ganz deiner Phantasie überlassen!). Das Erlernen der Programmiersprache Python sollte dabei
 irgendwie *nebenbei passieren* 👍.
 
-.. figure:: assets/rock-paper-scissors.svg
-   :scale: 30%
+.. figure:: assets/rock-paper-scissors.png
+   :scale: 100%
    :align: center
    
-   Source: https://publicdomainvectors.org/
+   Source: https://openclipart.org/detail/213382/rockpaperscissors
 
 Du brauchst dich nicht unbedingt akribisch durch die ganze Theorie, die in :ref:`Grundlagen der Programmierung` 
 behandelt wird, durcharbeiten, besonders wenn du ein Anfänger bist. Fange an, einfache Programme mit dem 
@@ -100,7 +100,7 @@ konzentrieren, den Einstieg zu finden.
    
    Beginne auf jeden Fall damit, die ersten paar Lektionen Schritt für Schritt nachzuvollziehen, schau an den oben 
    erwähnten Stellen nach, wie Python funktioniert, wenn etwas nicht so hinhaut wie du dir das gedacht hast, und 
-   sieh jeden Fehler als das was er ist - als einen wichtigen Schritt zum Meistercoder! 
+   betrachte jeden Fehler als das was er ist - als einen wichtigen Schritt zum Meistercoder! 
    
    Denn mit der Zeit wird alles einen Sinn ergeben.
 
