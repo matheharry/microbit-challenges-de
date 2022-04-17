@@ -45,7 +45,7 @@ Dieses mal bestimmen nicht wir, welches Bild angezeigt wird. Der micro:bit soll 
 oder auch selbst gegen den micro:bit spielen. 
 
 Spannender wird das, wenn wir auch einen Countdown einbauen, der 3 - 2 - 1 herunterzählt, bevor er 
-das Bild anzeigt! Kannst du das mit einer for-Schleife machen?
+das Bild anzeigt! Kannst du das mit einer :ref:`For Schleife` machen?
 
 SSP 3 - Schütteln und Highscore
 ================================
