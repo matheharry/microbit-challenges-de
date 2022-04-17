@@ -108,6 +108,10 @@ konzentrieren, den Einstieg zu finden.
    Man müsste ihn vielleicht noch ein bisschen erweitern mit: **... und dann tut man es noch einmal, und wenn's 
    immer noch nicht funktioniert eben noch einmal und noch einmal!** 😉
 
+   .. figure:: assets/ichschaffdas.png
+   :scale: 100%
+   :align: center
+
    Die hier behandelten Themen werden in der Regel nur gestreift und viele Dinge werden absichtlich nicht erklärt,
    weil eigentlich alles im Internet zu finden ist. Hier sollst du die Grundlagen kennenlernen und vor allem ermutigt
    werden, Dinge einfach auszuprobieren! Einige der wichtigen Fähigkeiten die du im Laufe der Schule und deiner späteren
