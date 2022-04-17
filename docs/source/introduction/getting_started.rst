@@ -62,7 +62,7 @@ behandelt wird, durcharbeiten, besonders wenn du ein Anfänger bist. Fange an, e
 micro:bit zu schreiben und lerne nach und nach weitere Programmierkonzepte kennen indem du weiterliest. 
 
 Wenn du schon mit der grafischen Programmieroberfläche MakeCode_ vertraut bist, lass dir deine Programme auch einmal als
-Python-Code darstellen. Allerdings unterscheiden sich der Code dort etwas von den MicroPython-Befehlen, die wir hier verwenden.
+Python-Code darstellen. Allerdings unterscheidet sich der Code dort etwas von den MicroPython-Befehlen, die wir hier verwenden.
 Auch wenn die Syntax (so nennt man die Regeln und den Wortschatz, die für eine Sprache gelten) unterschiedlich ist, kann man
 so doch viel über den Aufbau und Ablauf eines Python-Programms lernen.
 
@@ -73,10 +73,11 @@ Teile, die dir wichtig sind. Während du mehr über das Programmieren lernst, wi
 effizientere Wege finden, um deine Projekte der Vergangenheit zu erledigen, aber im Moment solltest du dich darauf 
 konzentrieren, den Einstieg zu finden.
 
-Die hier behandelten Themen werden in der Regel nur gestreift und viele Dinge werden absichtlich nicht erklärt. 
-Einige der wichtigen Fähigkeiten die du im Laufe der Schule und deiner späteren Arbeit brauchen wirst, sind das 
-selbstständige Erforschen von Materialien und die Fähigkeit, offizielle Dokumente zu lesen. Daher solltest du 
-ruhig auch andere Unterlagen lesen, als die, die du hier findest.  
+Die hier behandelten Themen werden in der Regel nur gestreift und viele Dinge werden absichtlich nicht erklärt,
+weil eigentlich alles im Internet zu finden ist. Hier sollst du die Grundlagen kennenlernen und vor allem ermutigt
+werden, Dinge einfach auszuprobieren! Einige der wichtigen Fähigkeiten die du im Laufe der Schule und deiner späteren
+Arbeit brauchen wirst, sind das selbstständige Arbeiten mit Unterlagen und die Fähigkeit, offizielle Dokumente zu lesen.
+Daher solltest du ruhig auch andere (und bessere) Unterlagen lesen, als die, die du hier findest.
 
 Wenn deine Fähigkeiten mittel bis fortgeschritten sind, wirst du diese Dokumentation vielleicht nicht sehr interessant 
 finden. Wie auch immer, der micro:bit ist ein äußerst flexibles Gerät und du könntest dann vielleicht 
