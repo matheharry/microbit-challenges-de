@@ -217,6 +217,7 @@ Bootsbildern definiert: ::
 * Probiere einige der eingebauten Bilder aus, um zu sehen, wie sie aussehen. 
 * Animiere die ``Image.ALL_ARROWS`` Liste. Wie vermeidest du eine ewige Schleife (Hinweis: das Gegenteil von ``True`` ist ``False``). Kannst du die Geschwindigkeit der Animation verändern?
 * Erstelle dein eigenes Bild. Versuche als nächstes, es aus- und wieder einzublenden?
+* Programmiere einen Würfel, der zufällig eines der 6 Würfelmuster anzeigt
 * Mache ein Sprite, benutze eine einzelne LED auf dem Display. Kannst du es springen lassen, wenn du eine Taste drückst?
 
 .. tip::
