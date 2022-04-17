@@ -77,11 +77,7 @@ Die hier behandelten Themen werden in der Regel nur gestreift und viele Dinge we
 weil eigentlich alles im Internet zu finden ist. Hier sollst du die Grundlagen kennenlernen und vor allem ermutigt
 werden, Dinge einfach auszuprobieren! Einige der wichtigen Fähigkeiten die du im Laufe der Schule und deiner späteren
 Arbeit brauchen wirst, sind das selbstständige Arbeiten mit Unterlagen und die Fähigkeit, offizielle Dokumente zu lesen.
-Daher solltest du ruhig auch andere (und bessere) Unterlagen lesen, als die, die du hier findest.
-
-Wenn deine Fähigkeiten mittel bis fortgeschritten sind, wirst du diese Dokumentation vielleicht nicht sehr interessant 
-finden. Wie auch immer, der micro:bit ist ein äußerst flexibles Gerät und du könntest dann vielleicht 
-die micro:bit runtime_ erkunden, die dir mehr Flexibilität bei der Verwendung des Geräts bietet.  
+Daher solltest du ruhig auch andere (und bessere) Unterlagen lesen, als die, die du hier findest.  
 
 .. _runtime: https://lancaster-university.github.io/microbit-docs/
 
@@ -104,3 +100,7 @@ die micro:bit runtime_ erkunden, die dir mehr Flexibilität bei der Verwendung d
 
 .. _python-lernen.de: https://www.python-lernen.de/ 
 .. _YouTube-Tutorial: https://www.youtube.com/playlist?list=PL_pqkvxZ6ho3u8PJAsUU-rOAQ74D0TqZB
+
+Wenn deine Fähigkeiten mittel bis fortgeschritten sind, wirst du diese Dokumentation vielleicht nicht sehr interessant 
+finden. Wie auch immer, der micro:bit ist ein äußerst flexibles Gerät und du könntest dann vielleicht 
+die micro:bit runtime_ erkunden, die dir mehr Flexibilität bei der Verwendung des Geräts bietet.
