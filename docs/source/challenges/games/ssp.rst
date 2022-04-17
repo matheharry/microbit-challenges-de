@@ -6,6 +6,12 @@ Wir wollen hier versuchen, das bekannte Spiel *Schere - Stein - Papier* auf
 unterschiedliche Art und Weise umzusetzen. Dabei lernen wir Schritt für 
 Schritt mittels Python unseren micro:bit zu steuern.
 
+.. figure:: ../introduction/assets/rock-paper-scissors.png
+   :scale: 60%
+   :align: center
+   
+   Source: https://openclipart.org/detail/213382/rockpaperscissors
+
 SSP 1 - Die Grundlagen
 ======================
 Hier wollen wir den micro:bit nur dazu verwenden, ein entsprechendes Bild am Display 
