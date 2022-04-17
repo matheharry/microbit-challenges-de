@@ -65,6 +65,10 @@ Wir kombinieren die ersten 2 Versionen und bringen dem micro:bit die Regeln des 
 * Jetzt wählt der micro:bit wie in *SSP 2* ein zufälliges Bild, das uns nach einem Countdown angezeigt wird.
 * Für uns ist jetzt natürlich klar, wer gewonnen hat. Wir freuen uns, wenn wir gewonnen haben, langweilen uns über ein Unentschieden oder sind traurig, wenn wir verloren haben. Genau diese Reaktionen wollen wir auch von unserem micro:bit sehen!
 
+.. figure:: assets/champion.png
+   :scale: 60%
+   :align: center
+
 In einem ersten Schritt müssen wir uns die Regeln als *Wenn ..., dann ...* Sätze notieren. 
 Wir stellen uns das Ganze aus der Sicht des micro:bit vor, der glücklich dreinschauen soll,
 wenn er gewonnen hat. Beim Verlieren soll er natürlich traurig sein und sonst solala.
