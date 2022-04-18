@@ -77,7 +77,7 @@ Das geht ganz einfach mit der ``str()``-Methode ::
     display.show(str(3.14))   # korrekte Typumwandlung
     display.show(3.14)        # funktioniert leider auch
     display.show("3,14")      # Vorsicht: Dezimalzeichen ist der Punkt!!
-    display.show(str(3.14))   # TypeError
+    display.show(str(3,14))   # TypeError
     display.show(3,14)        # TypeError
 
 Löschen des Displays
