@@ -90,7 +90,7 @@ volle Helligkeit (9).::
         display.set_pixel(x,0,9)
         sleep(500)  
 
-Passe das Programm so an, dass die mittlere Pixelreihe anstelle der oberen Reihe eingeschaltet wird.
+*Aufgabe:* Passe das Programm so an, dass die mittlere Pixelreihe anstelle der oberen Reihe eingeschaltet wird.
 
 Du könntest verschachtelete *For-Schleifen* verwenden, um alle LEDs nacheinander einzustellen: ::
 
@@ -102,21 +102,21 @@ Du könntest verschachtelete *For-Schleifen* verwenden, um alle LEDs nacheinande
     	    display.set_pixel(x,y,9)  
 
 Die ``for``- Schleife lässt dich eine Schleife mit Hilfe eines Zählers eine bestimmte Anzahl von Malen
-ausführen. Die äußere Schleife::
+ausführen. Die **äußere Schleife**::
 
 	for x in range(0,5)
 
 führt die Schleife fünfmal aus und ersetzt ``x`` durch aufeinanderfolgende Werte im Bereich ``0`` bis ``4``
-für ``x``. Die Schleife hört auf, bevor sie den letzten Wert im Bereich erreicht.
+für ``x``. Die Schleife hört auf, bevor sie den letzten Wert im angegebenen Bereich erreicht.
 
-Die innere Schleife::
+Die **innere Schleife**::
 
 	for y in range(0,5):
 
 führt die Schleife fünfmal aus und ersetzt ``y`` jedes Mal durch aufeinanderfolgende Werte aus dem Bereich ``0``
-bis ``4``. Die Schleife hört auf, bevor sie den letzten Wert im Bereich erreicht.
+bis ``4``. So werden der Reihe nach also für jede Zeile alle Pixel gesetzt.
 
-
+*Aufgabe:* Wie muss die :ref:`For Schleife` aussehen, damit die Pixel spaltenweise gesetzt werden?
 
 Eigene Bilder
 -------------
