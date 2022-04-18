@@ -78,7 +78,7 @@ indem du die jeweilige Zeile "auskommentierst" (dh die Raute # am Zeilenanfang l
     #display.show(str(3.14))   # korrekte Typumwandlung
     #display.show(3.14)        # funktioniert leider auch
     #display.show("3,14")      # Vorsicht: Dezimalzeichen ist der Punkt!! Hier egal weil String.
-    #display.show(3,14)        # leider kein TypeError: Anzeige 3 mit 14ms Verzögerung
+    #display.show(31,1408)     # leider kein TypeError: Anzeige 31 mit 1408ms Verzögerung zw. 3 und 1
     #display.show(str(3,14))   # TypeError
 
 Dass die Methode ``show()`` "anwenderfreundlicher" gemacht wurde, führt im Zusammenhang mit Zahlen unter
