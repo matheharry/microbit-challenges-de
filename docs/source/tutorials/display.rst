@@ -68,18 +68,22 @@ Normalerweise führt das zu einem Fehler namens *TypeError*, da wir weiter oben 
 Das ist zwar ganz praktisch, aber völlig untypisch für Python. Du solltest dich deshalb nicht darauf verlassen und
 **Zahlen vorher in Strings umwandeln**!
 
-Das geht ganz einfach mit der ``str()``-Methode ::
+Das geht ganz einfach mit der ``str()``-Methode. Probiere die unterschiedlichen ``show``-Aufrufe aus,
+indem du die jeweilige Zeile "auskommentierst" (dh die Raute # am Zeilenanfang löschst) ::
 
     from microbit import *
 
     display.show(str(6))      # korrekte Typumwandlung
     display.show(6)           # funktioniert leider auch
-    display.show(str(3.14))   # korrekte Typumwandlung
-    display.show(3.14)        # funktioniert leider auch
-    display.show("3,14")      # Vorsicht: Dezimalzeichen ist der Punkt!!
-    display.show(str(3,14))   # TypeError
-    display.show(3,14)        # TypeError
+    #display.show(str(3.14))   # korrekte Typumwandlung
+    #display.show(3.14)        # funktioniert leider auch
+    #display.show("3,14")      # Vorsicht: Dezimalzeichen ist der Punkt!! Hier egal weil String.
+    #display.show(3,14)        # leider kein TypeError: Anzeige 3 mit 14ms Verzögerung
+    #display.show(str(3,14))   # TypeError
 
+Dass die Methode ``show()`` "anwenderfreundlicher" gemacht wurde, führt im Zusammenhang mit Zahlen unter
+Umständen zu schwer nachvollziehbarem Verhalten - also Vorsicht!
+    
 Löschen des Displays
 ---------------------
 Wenn du das LED Display löschen möchtest, kannst du dies wie folgt tun: ::
