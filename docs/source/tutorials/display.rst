@@ -72,7 +72,7 @@ Fortgeschrittene Funktionen
 Ein Pixel setzen
 ----------------
 Du kannst die Helligkeit eines Pixels auf dem LED Display mit der Methode ``set_pixel(spalte,zeile,hellligkeit)``
-einstellen: ::
+einstellen oder ein- und ausschalten, indem du die Koordinaten eines Pixels *(x-Spalte,y-Zeile)* verwendest: ::
 
     from microbit import *
 
@@ -81,7 +81,18 @@ einstellen: ::
 Das setzt die LED in Spalte ``0`` und Zeile ``4`` auf eine Helligkeit von ``9``. Der Helligkeitswert
 kann eine ganze Zahl zwischen 0 und 9 sein. 0 schaltet die LED aus und 9 ist die hellste Einstellung.
 
-Du könntest eine :ref:`For Schleife` verwenden, um alle LEDs nacheinander einzustellen: ::
+Der folgende Code setzt mit einer :ref:`For Schleife` jedes der Pixel in der oberen Zeile (y=0) auf
+volle Helligkeit (9).::
+
+    from microbit import *
+
+    for x in range(5):
+        display.set_pixel(x,0,9)
+        sleep(500)  
+
+Passe das Programm so an, dass die mittlere Pixelreihe anstelle der oberen Reihe eingeschaltet wird.
+
+Du könntest verschachtelete *For-Schleifen* verwenden, um alle LEDs nacheinander einzustellen: ::
 
     from microbit import *
 
@@ -104,6 +115,8 @@ Die innere Schleife::
 
 führt die Schleife fünfmal aus und ersetzt ``y`` jedes Mal durch aufeinanderfolgende Werte aus dem Bereich ``0``
 bis ``4``. Die Schleife hört auf, bevor sie den letzten Wert im Bereich erreicht.
+
+
 
 Eigene Bilder
 -------------
