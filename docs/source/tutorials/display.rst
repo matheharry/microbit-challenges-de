@@ -13,7 +13,7 @@ einzelne Zeichen, eine Zeichenkette oder ein kleines Bild anzuzeigen.
 
 .. image:: assets/happy.png
    :align: center
-   :scale: 60 %
+   :scale: 80 %
 
 Grundfunktionen
 ===============
