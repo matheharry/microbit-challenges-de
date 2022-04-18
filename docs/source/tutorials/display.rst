@@ -15,23 +15,27 @@ einzelne Zeichen, eine Zeichenkette oder ein kleines Bild anzuzeigen.
    :align: center
    :scale: 60 %
 
-
 Grundfunktionen
 ===============
 
 Einen String oder ein Bild anzeigen
 -----------------------------------
 
-Du kannst Zeichen auf dem LED Display mit der Methode ``show`` anzeigen: ::
+Du kannst Zeichen - einen sogenannten :ref:`String` - oder Bilder auf dem LED Display mit der Methode ``show`` anzeigen: ::
 
     from microbit import *
 
     display.show("Hallo")
 
-Die Zeichen, die du auf dem Display anzeigst, müssen innerhalb eines Paares von Anführungszeichen stehen, entweder " " oder ' '. 
+Die Zeichen, die du auf dem Display anzeigst, müssen als :ref:`String` innerhalb eines Paares von Anführungszeichen
+stehen, entweder " " oder ' '. 
  
-Das ``microbit`` Modul hat schon viele Bilder eingebaut, die auf dem Display angezeigt werden können.
-Um zum Beispiel eine lächelndes Gesicht anzuzeigen, kannst du das vorhandene ``Image``-Objekt verwenden ::
+Bilder benötigen keine Anführungszeichen, da sie ja keine :ref:`String`s sind. Das ``microbit`` Modul hat schon viele
+Bilder eingebaut, die auf dem Display angezeigt werden können.
+
+Um zum Beispiel eine lächelndes Gesicht anzuzeigen, kannst du das vorhandene ``Image``-Objekt verwenden. Die vorhandenen
+Bilder werden dir von der Autovervollständigung im Mu-Editor zur Auswahl vorgeschlagen, nachdem du einen Punkt nach ``Image.``
+eingegeben hast. ::
 
     from microbit import *
 
@@ -56,6 +60,25 @@ Benutze ``scroll``, um einen String am Display als Laufschrift anzuzeigen ::
 
     display.scroll("Hallo!")
 
+Eine Zahl anzeigen
+------------------
+
+Inzwischen zeigt der Befehl ``display.show(6)`` wirklich die Zahl 6 an, obwohl sie nicht in Anführungszeichen steht.
+Normalerweise führt das zu einem Fehler namens *TypeError*, da wir weiter oben ja gelernthaben, dass ein :ref:`String`.
+Das ist zwar ganz praktisch, aber völlig untypisch für Python. Du solltest dich deshalb nicht darauf verlassen und
+**Zahlen vorher in Strings umwandeln**!
+
+Das geht ganz einfach mit der ``str()``-Methode ::
+
+    from microbit import *
+
+    display.show(str(6))      # korrekte Typumwandlung
+    display.show(6)           # funktioniert leider auch
+    display.show(str(3.14))   # korrekte Typumwandlung
+    display.show(3.14)        # funktioniert leider auch
+    display.show("3,14")      # Vorsicht: Dezimalzeichen ist der Punkt!!
+    display.show(str(3.14))   # TypeError
+    display.show(3,14)        # TypeError
 
 Löschen des Displays
 ---------------------
@@ -132,7 +155,7 @@ Aufgabe:
 
 .. image:: assets/quadratanimation.gif
    :align: center
-   :scale: 40 %
+   :scale: 30 %
 
 Eigene Bilder
 -------------
