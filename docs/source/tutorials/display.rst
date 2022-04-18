@@ -21,7 +21,7 @@ Grundfunktionen
 Einen String oder ein Bild anzeigen
 -----------------------------------
 
-Du kannst Zeichen - einen sogenannten :ref:`String` - oder Bilder auf dem LED Display mit der Methode ``show`` anzeigen: ::
+Du kannst Zeichen - einen sogenannten :ref:`String` - oder Bilder auf dem LED Display mit der Methode ``display.show()`` anzeigen: ::
 
     from microbit import *
 
