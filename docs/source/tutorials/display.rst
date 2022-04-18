@@ -82,7 +82,7 @@ Das setzt die LED in Spalte ``0`` und Zeile ``4`` auf eine Helligkeit von ``9``.
 kann eine ganze Zahl zwischen 0 und 9 sein. 0 schaltet die LED aus und 9 ist die hellste Einstellung.
 
 Der folgende Code setzt mit einer :ref:`For Schleife` jedes der Pixel in der oberen Zeile (y=0) auf
-volle Helligkeit (9).::
+volle Helligkeit (9)::
 
     from microbit import *
 
