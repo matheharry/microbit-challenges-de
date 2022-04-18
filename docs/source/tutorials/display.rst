@@ -66,7 +66,7 @@ Eine Zahl anzeigen
 Inzwischen zeigt der Befehl ``display.show(6)`` wirklich die Zahl 6 an, obwohl sie nicht in Anführungszeichen steht.
 Normalerweise führt das zu einem Fehler namens *TypeError*, da wir weiter oben ja gelernt haben, dass ein :ref:`Strings`-Wert
 erwartet wird. Das ist zwar ganz praktisch, aber völlig untypisch für Python. Du solltest dich deshalb nicht darauf verlassen und
-**Zahlen vorher in Strings umwandeln**!
+**Zahlen vorher immer in Strings umwandeln**!
 
 Das geht ganz einfach mit der ``str()``-Methode. Probiere die unterschiedlichen ``show``-Aufrufe aus,
 indem du die jeweilige Zeile "auskommentierst" (dh die Raute # am Zeilenanfang löschst) ::
