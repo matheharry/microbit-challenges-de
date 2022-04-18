@@ -95,7 +95,7 @@ Aufgaben:
 
 * Passe den Code aus dem Beispiel so an, dass er die Pixel der ersten Spalte statt der ersten Zeile zum Leuchten bringt.
 * Passe das Programm so an, dass die mittlere Pixelreihe anstelle der oberen Reihe eingeschaltet wird.
-
+* Schreibe ein Programm, das das mittlere Pixel jede halbe Sekunde an- und ausblinken lässt.
 
 Du könntest verschachtelete *For-Schleifen* verwenden, um alle LEDs nacheinander einzustellen: ::
 
@@ -126,7 +126,13 @@ Aufgabe:
 +++++++++
 
 * Wie muss die :ref:`For Schleife` aussehen, damit die Pixel spaltenweise gesetzt werden?
-* Erweitere den Beispielcode, damit die Pixel ausgeschaltet werden. Um sie in umgekehrter Reihenfolge auszuschalten, brauchst du eine Schleife, die rückwärts zählt. Ein Beispiel dafür wäre, ``for x in range(4,-1,-1):``
+* Erweitere den Beispielcode, damit die Pixel auch wieder ausgeschaltet werden. Um sie in umgekehrter Reihenfolge auszuschalten, brauchst du eine Schleife, die rückwärts zählt. Ein Beispiel dafür wäre, ``for x in range(4,-1,-1):``
+* Schreibe ein Programm, das die einzelnen Pixel des Displays ein- und ausblinken lässt. Es sollte so aussehen, als würde das blinkende Pixel über die ganze Matrix wandern.
+* Schreibe ein möglichst kurzes Programm, um am Display ein Quadrat kleiner und größer werden zu lassen.
+
+.. image:: assets/quadratanimation.gif
+   :align: center
+   :scale: 40 %
 
 Eigene Bilder
 -------------
@@ -175,7 +181,7 @@ Welches Bild ist hier zu sehen? ::
 
 Animation
 ---------
-Um eine Animation zu machen, benutze einfach eine Liste von Bildern.
+Um eine Animation zu machen, verwendet man am einfachsten eine :ref:`Liste` von Bildern.
 
 Wir können das anhand von bereits eingebauten Listen demonstrieren - ``Image.ALL_CLOCKS``
 und ``Image.ALL_ARROWS``: ::
@@ -189,7 +195,7 @@ einstellst, wird das Programm in einer Schleife durch die Liste laufen, ohne End
 möglich eine Verzögerung zwischen den Bildern einzustellen, indem man das Attribut ``delay`` auf
 den gewünschten Wert in Millisekunden setzt ``delay=100``.
 
-Um deine eigene Animation zu erstellen, musst du also nur eine Liste von Bildern erstellen. 
+Um deine eigene Animation zu erstellen, musst du also nur eine :ref:`Liste` von Bildern erstellen. 
 
 In diesem Beispiel wird ein Boot im Boden des Displays versinken. Dazu haben wir eine Liste mit 6
 Bootsbildern definiert: ::
