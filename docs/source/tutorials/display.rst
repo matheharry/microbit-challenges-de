@@ -90,7 +90,12 @@ volle Helligkeit (9)::
         display.set_pixel(x,0,9)
         sleep(500)  
 
-*Aufgabe:* Passe das Programm so an, dass die mittlere Pixelreihe anstelle der oberen Reihe eingeschaltet wird.
+Aufgaben: 
++++++++++
+
+* Passe den Code aus dem Beispiel so an, dass er die Pixel der ersten Spalte statt der ersten Zeile zum Leuchten bringt.
+* Passe das Programm so an, dass die mittlere Pixelreihe anstelle der oberen Reihe eingeschaltet wird.
+
 
 Du könntest verschachtelete *For-Schleifen* verwenden, um alle LEDs nacheinander einzustellen: ::
 
@@ -116,7 +121,10 @@ Die **innere Schleife**::
 führt die Schleife fünfmal aus und ersetzt ``y`` jedes Mal durch aufeinanderfolgende Werte aus dem Bereich ``0``
 bis ``4``. So werden der Reihe nach also für jede Zeile alle Pixel gesetzt.
 
-*Aufgabe:* Wie muss die :ref:`For Schleife` aussehen, damit die Pixel spaltenweise gesetzt werden?
+Aufgabe: 
++++++++++
+
+* Wie muss die :ref:`For Schleife` aussehen, damit die Pixel spaltenweise gesetzt werden?
 
 Eigene Bilder
 -------------
