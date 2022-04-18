@@ -102,29 +102,31 @@ Du könntest verschachtelete *For-Schleifen* verwenden, um alle LEDs nacheinande
     from microbit import *
 
     display.clear()
-    for x in range(0, 5):
-    	for y in range(0, 5):
-    	    display.set_pixel(x,y,9)  
+    for y in range(0, 5):
+    	for x in range(0, 5):
+    	    display.set_pixel(x,y,9)
+            sleep(100)  
 
 Die ``for``- Schleife lässt dich eine Schleife mit Hilfe eines Zählers eine bestimmte Anzahl von Malen
 ausführen. Die **äußere Schleife**::
 
-	for x in range(0,5)
+	for y in range(0,5)
 
-führt die Schleife fünfmal aus und ersetzt ``x`` durch aufeinanderfolgende Werte im Bereich ``0`` bis ``4``
-für ``x``. Die Schleife hört auf, bevor sie den letzten Wert im angegebenen Bereich erreicht.
+führt die Schleife fünfmal aus und ersetzt ``y`` durch aufeinanderfolgende Werte im Bereich ``0`` bis ``4``
+für ``y``. Die Schleife hört auf, bevor sie den letzten Wert im angegebenen Bereich erreicht.
 
 Die **innere Schleife**::
 
-	for y in range(0,5):
+	for x in range(0,5):
 
-führt die Schleife fünfmal aus und ersetzt ``y`` jedes Mal durch aufeinanderfolgende Werte aus dem Bereich ``0``
+führt die Schleife fünfmal aus und ersetzt ``x`` jedes Mal durch aufeinanderfolgende Werte aus dem Bereich ``0``
 bis ``4``. So werden der Reihe nach also für jede Zeile alle Pixel gesetzt.
 
 Aufgabe: 
 +++++++++
 
 * Wie muss die :ref:`For Schleife` aussehen, damit die Pixel spaltenweise gesetzt werden?
+* Erweitere den Beispielcode, damit die Pixel ausgeschaltet werden. Um sie in umgekehrter Reihenfolge auszuschalten, brauchst du eine Schleife, die rückwärts zählt. Ein Beispiel dafür wäre, ``for x in range(4,-1,-1):``
 
 Eigene Bilder
 -------------
