@@ -60,22 +60,49 @@ Web Editor verwenden
 
 Der neue  `browserbasierter Code-Editor`_ wurde von Grund auf mit Blick auf den Einsatz im Unterricht entwickelt. Er soll
 den Zugang zum textbasierten Programmieren auch für Schülerinnen und Schüler, die mit dem Thema Coding wenig anzufangen wissen,
-leichter machen, indem bekannte Lernbarrieren beseitigt wurden. Er bietet bei jedem Schritt auf den micro:bit zugeschnittene
+leichter machen, indem **bekannte Lernbarrieren beseitigt** wurden. Er bietet bei jedem Schritt auf den micro:bit zugeschnittene
 Hilfen an und ist für unterschiedlichste Jahrgänge perfekt geeignet.
 
-Eine Auswahl an Codeschnipsel und eine Reihe von vorgefertigten Bildern, Sounds und Musik sorgen von Anfang an 
-für Abwechslung und Spaß bei der Programmierung.
+.. figure:: assets/webeditorneu.png
+   :align: center
 
 Um den Editor zu verwenden, den `Link unbedingt in einem neuen Tab öffnen <https://python.microbit.org/v/beta>`__  
 (per Rechtsklick).
 
 .. _`browserbasierter Code-Editor`: https://python.microbit.org/v/beta
 
+Funktionierende Code-Beispiele und Code-Referenz durchsuchen
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Wenn du mit der textbasierten Programmierung beginnst, ist es oft schwer zu wissen, was genau du eingeben musst.
+
+Im Abschnitt "Referenz" findest du Beispiele für funktionierenden Code, den du per Drag & Drop in den Editor ziehen und
+sofort verwenden kannst. Das fördert unabhängiges und kreatives Lernen, indem es das Entdecken und Anwenden von
+micro:bit-Funktionen und grundlegenden Computerkonzepten wie Schleifen, Variablen und Entscheidungsstrukturen erleichtert.
+Diese Auswahl an Codeschnipseln und eine Reihe von vorgefertigten Bildern, Sounds und Musik sorgen so von Anfang an 
+für Abwechslung und Spaß bei der Programmierung.
+
+Intelligente Autovervollständigung
+++++++++++++++++++++++++++++++++++
+
+Die Autovervollständigungsfunktion zeigt dir während der Eingabe gültige Optionen an, damit du dich nicht an die genaue
+Syntax jedes Befehls erinnern musst.
+
+Fehlererkennung
++++++++++++++++
+
+Der Editor zeigt auch potenzielle Fehler an, z. B. Variablen oder Funktionen, die nicht definiert wurden, oder Code, der
+nicht erreichbar ist. Das kann helfen, einfache Tippfehler zu erkennen, bevor du den Code auf einen micro:bit überträgst.
+
+Normalerweise werden Fehler in Python erst bei der Ausführung erkannt und angezeigt, weshalb diese Funktion einen
+Vorteil zum **Mu-Editor** darstellt.
+
+
+
+
+
 .. note:: Der Web-Editor wurde nun grundlegend verändert und verbessert. Die Beschreibung hier bezieht sich auf die
    aktuelle Web-Version, allerdings sollte unbedingt die oben verlinkte Beta-Version verwendet werden!
-
-   .. figure:: assets/webeditorneu.png
-      :align: center
 
    Die Beschreibung wird angepasst ...
 
