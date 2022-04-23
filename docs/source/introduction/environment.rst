@@ -79,6 +79,7 @@ Wenn du mit der textbasierten Programmierung beginnst, ist es oft schwer zu wiss
 Im Abschnitt "Referenz" findest du Beispiele für funktionierenden Code, den du per Drag & Drop in den Editor ziehen und
 sofort verwenden kannst. Das fördert unabhängiges und kreatives Lernen, indem es das Entdecken und Anwenden von
 micro:bit-Funktionen und grundlegenden Computerkonzepten wie Schleifen, Variablen und Entscheidungsstrukturen erleichtert.
+
 Diese Auswahl an Codeschnipseln und eine Reihe von vorgefertigten Bildern, Sounds und Musik sorgen so von Anfang an 
 für Abwechslung und Spaß bei der Programmierung.
 
@@ -97,8 +98,12 @@ nicht erreichbar ist. Das kann helfen, einfache Tippfehler zu erkennen, bevor du
 Normalerweise werden Fehler in Python erst bei der Ausführung erkannt und angezeigt, weshalb diese Funktion einen
 Vorteil zum **Mu-Editor** darstellt.
 
+Codeformatierung
+++++++++++++++++
 
-
+Einrückungen spielen in Python eine zentrale Rolle und können am Anfang leicht zu Fehlern bei der Eingabe führen.
+Deshalb verfügt der Webeditor über eine Linien- und Farbhervorhebung, die dir zeigt, wo und wie der Code eingerückt
+werden sollte, damit du deinen Code leichter korrigieren kannst.
 
 
 .. note:: Der Web-Editor wurde nun grundlegend verändert und verbessert. Die Beschreibung hier bezieht sich auf die
