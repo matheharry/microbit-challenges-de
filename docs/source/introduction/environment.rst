@@ -58,7 +58,7 @@ auf der REPL-Konsole ausgegeben und erleichter so das Debuggen (so nennt man die
 Web Editor verwenden
 ====================
 
-Ein `browserbasierter Code-Editor`_, den Einstieg in die textbasierte Programmierung für Lehrer und Lernende 
+Ein `browserbasierter Code-Editor`_, der den Einstieg in die textbasierte Programmierung für Lehrer und Lernende 
 sehr leicht gestaltet und auf den micro:bit zugeschnittene Hilfen bei jedem Schritt anbietet. Der Python-Editor ist
 zumindest in der aktuellen Beta-Version perfekt für alle, die ihre Coding-Fähigkeiten weiter ausbauen wollen.
 Eine Auswahl an Snippets und eine Reihe von vorgefertigten Bildern, Sounds und Musik unterstützen 
