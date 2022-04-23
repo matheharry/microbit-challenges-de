@@ -122,11 +122,11 @@ In Python ähnelt das sehr der gesprochenen englischen Sprache::
 
 
 Die Methode ``is_pressed`` liefert nur zwei Ergebnisse: ``True`` oder ``False``.
-Wenn du die Taste drückst, gibt sie ``True`` zurück, ansonsten gibt sie ``False``. 
+Wenn du die Taste drückst, gibt sie ``True``, ansonsten gibt sie ``False`` zurück. 
 Den obigen Code könnte man so ins Deutsche übersetzen: 
 
-"Für immer und ewig, wenn Taste A gedrückt wird, zeige ein glückliches Gesicht, oder, wenn Taste B gedrückt wird, 
-beende die Schleife und damit das Spiel. Immer sonst zeige ein trauriges Gesicht." 
+*"Für immer und ewig, wenn Taste A gedrückt wird, zeige ein glückliches Gesicht, oder, wenn Taste B gedrückt wird, 
+beende die Schleife und damit das Spiel. Immer sonst zeige ein trauriges Gesicht."* 
 
 Mit der ``break`` Anweisung "brechen" wir aus der Schleife aus und stoppen das eigentlich
 für immer und ewig laufende Programm.
