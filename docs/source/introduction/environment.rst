@@ -58,11 +58,13 @@ auf der REPL-Konsole ausgegeben und erleichter so das Debuggen (so nennt man die
 Web Editor verwenden
 ====================
 
-Ein `browserbasierter Code-Editor`_, der den Einstieg in die textbasierte Programmierung für Lehrer und Lernende 
-sehr leicht gestaltet und auf den micro:bit zugeschnittene Hilfen bei jedem Schritt anbietet. Der Python-Editor ist
-zumindest in der aktuellen Beta-Version perfekt für alle, die ihre Coding-Fähigkeiten weiter ausbauen wollen.
-Eine Auswahl an Snippets und eine Reihe von vorgefertigten Bildern, Sounds und Musik unterstützen 
-dich bei der Programmierung.
+Der neue  `browserbasierter Code-Editor`_ wurde von Grund auf mit Blick auf den Einsatz im Unterricht entwickelt. Er soll
+den Zugang zum textbasierten Programmieren auch für Schülerinnen und Schüler, die mit dem Thema Coding wenig anzufangen wissen,
+leichter machen, indem bekannte Lernbarrieren beseitigt wurden. Er bietet bei jedem Schritt auf den micro:bit zugeschnittene
+Hilfen an und ist für unterschiedlichste Jahrgänge perfekt geeignet.
+
+Eine Auswahl an Codeschnipsel und eine Reihe von vorgefertigten Bildern, Sounds und Musik sorgen von Anfang an 
+für Abwechslung und Spaß bei der Programmierung.
 
 Um den Editor zu verwenden, den `Link unbedingt in einem neuen Tab öffnen <https://python.microbit.org/v/beta>`__  
 (per Rechtsklick).
@@ -71,6 +73,9 @@ Um den Editor zu verwenden, den `Link unbedingt in einem neuen Tab öffnen <http
 
 .. note:: Der Web-Editor wurde nun grundlegend verändert und verbessert. Die Beschreibung hier bezieht sich auf die
    aktuelle Web-Version, allerdings sollte unbedingt die oben verlinkte Beta-Version verwendet werden!
+
+   .. figure:: assets/webeditorneu.png
+      :align: center
 
    Die Beschreibung wird angepasst ...
 
