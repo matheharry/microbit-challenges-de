@@ -18,7 +18,7 @@ Das augenscheinlichste Eingabegerät auf dem micro:bit sind die beiden Tasten, d
 bezeichnet sind. Du kannst die Tasten verwenden, um Eingaben vom Benutzer zu erhalten.
 
 .. image:: assets/buttons.png
-   :scale: 40 %
+   :scale: 50 %
    :align: center
 
 Irgendwie sollte MicroPython auf das Drücken der Tasten reagieren können. Vielleicht möchtest du dein Programm mit 
@@ -30,10 +30,10 @@ Link zur `englischsprachigen MicroPython-Dokumentation <https://microbit-micropy
 Grundfunktionen
 ================
 
-Wenn wir wollen, dass MicroPython auf Tastendruck-Ereignisse reagiert, sollten wir das in eine Endlosschleife setzen 
+Wenn wir wollen, dass MicroPython auf Tastendruck-Ereignisse reagiert, sollten wir das in eine :ref:`Endlosschleife` setzen 
 und prüfen, ob die Taste zB. gedrückt (``is_pressed``) ist.
 
-Eine Endlosschleife ist einfach::
+Eine :ref:`Endlosschleife` ist schnell mit einer :ref:`While Schleife` erstellt::
 
     while True:
         # Mach etwas
@@ -44,8 +44,8 @@ Da ``True`` offensichtlich immer *Wahr* ist, erhältst du eine unendliche Schlei
 Prüfen, ob eine Taste gedrückt ist
 ------------------------------------
 
-Manchmal wollen wir nur, dass ein Programm wartet, bis etwas passiert, zum Beispiel: wir könnten den micro:bit bitten,
-zu warten, bis, sagen wir, die Taste ``A`` gedrückt wird und dann eine Nachricht ausgeben. Das geht zum Beispiel so: ::
+Manchmal wollen wir nur, dass ein Programm wartet, bis etwas passiert. Zum Beispiel könnten wir den micro:bit anweisen,
+zu warten, bis, sagen wir, die Taste ``A`` gedrückt wird um dann eine Nachricht auszugeben. Das geht zum Beispiel so: ::
 
 	from microbit import *
 
@@ -57,7 +57,7 @@ zu warten, bis, sagen wir, die Taste ``A`` gedrückt wird und dann eine Nachrich
 
 Das heißt, wenn die Taste ``A`` gedrückt wird, wird ein ``A`` und ansonsten ``Image.ASLEEP`` auf dem LED Display angezeigt. 
 
-Das Problem bei der Verwendung von ``is_pressed()`` ist, dass du, wenn du die Taste nicht genau in dem Moment der Abfrage
+Das Problem bei der Verwendung von ``is_pressed()`` ist, dass du, wenn du die Taste nicht genau im Moment der Abfrage
 drückst, nicht feststellen kannst, ob die Taste jemals gedrückt wurde oder nicht. Es könnte der Fall sein, dass der Benutzer
 die Taste drückt, während der Code etwas anderes macht, und der Tastendruck wird übersehen. 
 
