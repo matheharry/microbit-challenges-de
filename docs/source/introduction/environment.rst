@@ -45,7 +45,7 @@ kannst sofort loslegen.
 REPL
 +++++
 Der Button **REPL** (Read, Evaluate, Print Loop) erlaubt es dir, dynamisch mit MicroPython auf dem micro:bit zu arbeiten, indem du 
-die REPL-Befehlszeile direkt auf deinem micro:bit benutzt. 
+die REPL-Befehlszeile direkt auf deinem micro:bit benutzt und Befehle der Reihe nach eingibst. 
 
     1. LESEN (read): Lies die Benutzereingabe
     2. AUSWERTEN (evaluate): Überprüfe den Code und führe ihn aus
@@ -53,7 +53,7 @@ die REPL-Befehlszeile direkt auf deinem micro:bit benutzt.
     4. SCHLEIFE (loop): Gehe in der Schleife zurück zu Schritt 1
 
 So wird es dir ganz einfach gemacht, Befehle auszuprobieren und herumzuexperimentieren! Außerdem werden Fehlermeldungen
-auf der REPL-Konsole ausgegeben und erleichter so das Debuggen (so nennt man die Fehlersuche)
+auf der REPL-Konsole ausgegeben und erleichtern so das Debuggen (so nennt man die Fehlersuche)
 
 Web Editor verwenden
 ====================
@@ -84,7 +84,7 @@ Diese Auswahl an Codeschnipseln und eine Reihe von vorgefertigten Bildern, Sound
 für Abwechslung und Spaß bei der Programmierung.
 
 Intelligente Autovervollständigung
-++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++
 
 Die Autovervollständigungsfunktion zeigt dir während der Eingabe gültige Optionen an, damit du dich nicht an die genaue
 Syntax jedes Befehls erinnern musst.

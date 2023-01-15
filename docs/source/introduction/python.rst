@@ -6,13 +6,15 @@ Python ist eine sehr gute Wahl, egal ob du ein Anfänger bist, der die Grundlage
 oder ein erfahrener Programmierer, der eine große Anwendung entwickeln muss. Die Grundlagen von Python sind leicht 
 zu erlernen und dennoch sind die Möglichkeiten enorm.
 
-.. figure:: https://python-editor-2-2-0-beta-5.microbit.org/static/img/comic5.png
+.. figure:: https://upload.wikimedia.org/wikipedia/commons/9/94/Guido_van_Rossum_OSCON_2006_cropped.png
    :align: center
    :scale: 70%
 
-Python wurde in den späten 1980er Jahren entwickelt und ist eine für Anfänger und Einsteiger sehr gut geeignete 
-Programmiersprache, die später auch den Fortgeschrittenen und Profis alles bietet, was man sich beim Programmieren 
-wünscht. 
+   Source: MaartenschrijftOorspronkelijk: Doc Searls op Flickr, CC BY-SA 2.0 <https://creativecommons.org/licenses/by-sa/2.0>, via Wikimedia Commons
+
+Python wurde in den späten 1980er Jahren von Guido van Rossum entwickelt und ist eine für Anfänger und Einsteige
+sehr gut geeignete Programmiersprache, die später auch den Fortgeschrittenen und Profis alles bietet, was man sich
+beim Programmieren wünscht. 
 
 Python ist einfach
 =================== 
