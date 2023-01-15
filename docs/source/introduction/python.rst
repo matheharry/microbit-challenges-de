@@ -8,7 +8,7 @@ zu erlernen und dennoch sind die Möglichkeiten enorm.
 
 .. figure:: https://upload.wikimedia.org/wikipedia/commons/9/94/Guido_van_Rossum_OSCON_2006_cropped.png
    :align: center
-   :scale: 70%
+   :scale: 30%
 
    Source: MaartenschrijftOorspronkelijk: Doc Searls op Flickr, CC BY-SA 2.0 <https://creativecommons.org/licenses/by-sa/2.0>, via Wikimedia Commons
 
