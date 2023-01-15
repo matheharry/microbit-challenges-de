@@ -23,8 +23,8 @@ Der Reiz von Python liegt in seiner Einfachheit und Schönheit. Für eine Progra
 übersichtlich, und die Entwickler haben es bewusst so gehalten.
 
 Eine grobe Einschätzung der Komplexität einer Sprache kann man anhand der Anzahl der Schlüsselwörter oder reservierten 
-Wörter in der Sprache ablesen. Dies sind Wörter, die vom Compiler oder Interpreter reserviert sind, weil sie eine bestimmte 
-eingebaute Funktionalität der Sprache bezeichnen.
+Wörter in der Sprache ablesen. Man versteht darunter Wörter, die vom Compiler oder Interpreter reserviert sind, weil sie
+eine bestimmte eingebaute Funktionalität der Sprache bezeichnen.
 
 **Python 3** hat 33 Schlüsselwörter und **Python 2** hat 31. Im Gegensatz dazu hat **C++** 62, **Java** hat 53 
 und **Visual Basic** hat mehr als 120.
