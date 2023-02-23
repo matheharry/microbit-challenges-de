@@ -2,7 +2,7 @@
 Deine Arbeitsumgebung einrichten
 ********************************
 
-Bevor du mit dem Programmieren beginnst, benötigst du einen Quellcode-Editor, um Programme auf deinem micro:bit
+Bevor du mit dem Programmieren beginnst, benötigst du einen Quellcode-Editor, um Programme für den micro:bit
 schreiben, laden und ausführen zu können. Es gibt im Wesentlichen drei Optionen: 
 
 * der `micro:bit Web-Editor`_ (wer am neuesten Stand sein will kann auch die `Beta-Version`_ verwenden!)
@@ -13,47 +13,6 @@ schreiben, laden und ausführen zu können. Es gibt im Wesentlichen drei Optione
 .. _`Beta-Version`: https://python.microbit.org/v/beta
 .. _`Mu Editor`: https://codewith.mu/
 .. _`MicroPython App`: https://chrome.google.com/webstore/detail/micropython/lhdjeebhcalhgnbigbngiaglmladclbo?hl=de-GE
-
-Mu Editor verwenden
-===================
-
-Für dieses Tutorial werden wir mit dem Mu-Editor arbeiten, aber du kannst natürlich auch einen der anderen Editor verwenden.
-
-
-Um Mu herunterzuladen, gehe auf die Mu Website_. Hier steht eine `Schritt-für-Schritt-Anleitung`_
-zur Verfügung.
-
-.. _`Schritt-für-Schritt-Anleitung`: https://micropython.matheharry.de/installation_der_entwicklungsumgebung.html?nav=false
-.. _Website: https://codewith.mu/en/
-
-Du kannst verschiedene Optionen wählen, um Mu zu installieren. Die, die du höchstwahrscheinlich auf deinem eigenen Gerät benutzen wirst, 
-wenn du Administratorenrechte hast, ist ein Installer für dein Gerät (Mac/Windows), oder die Installation durch ein
-Python-Paket (pip) über die :ref:`Kommandozeile`, wenn du Python schon auf deinem Computer installiert hast.
-
-Falls du keine Administratorenrechte besitzt und Python auf deinem Gerät nicht installiert ist, bietet sich die portable Version *PortaMu* an. 
-Diese muss man einfach in einen Ordner entpacken und hat damit sofort eine anfängerfreundliche Programmierumgebung zur Verfügung, die ohne Installation 
-auf allen Geräten funktioniert. (Momentan ist leider **keine portable Version verfügbar!**)
-
-.. figure:: assets/installation_options.PNG
-   :align: center
-   :scale: 70% 
-   :target: https://codewith.mu/en/download
-
-Sobald der Editor installiert ist, starte ihn und schließe den micro:bit an deinen Computer an. Mu erkennt ihn automatisch und du
-kannst sofort loslegen.
-
-REPL
-+++++
-Der Button **REPL** (Read, Evaluate, Print Loop) erlaubt es dir, dynamisch mit MicroPython auf dem micro:bit zu arbeiten, indem du 
-die REPL-Befehlszeile direkt auf deinem micro:bit benutzt und Befehle der Reihe nach eingibst. 
-
-    1. LESEN (read): Lies die Benutzereingabe
-    2. AUSWERTEN (evaluate): Überprüfe den Code und führe ihn aus
-    3. AUSGEBEN (print): Gib das Ergebnis aus
-    4. SCHLEIFE (loop): Gehe in der Schleife zurück zu Schritt 1
-
-So wird es dir ganz einfach gemacht, Befehle auszuprobieren und herumzuexperimentieren! Außerdem werden Fehlermeldungen
-auf der REPL-Konsole ausgegeben und erleichtern so das Debuggen (so nennt man die Fehlersuche)
 
 Web Editor verwenden
 ====================
@@ -210,3 +169,44 @@ Drücke die TAB-Taste auf deiner Tastatur, um die aktuelle Eingabe automatisch z
     wurde ein Subset speziell für die `MicroPython-Umgebung`_ neu erstellt. 
 
 .. _`MicroPython-Umgebung`: https://docs.micropython.org/en/latest/library/index.html
+
+Mu Editor verwenden
+===================
+
+Für dieses Tutorial werden wir mit dem Mu-Editor arbeiten, aber du kannst natürlich auch einen der anderen Editor verwenden.
+
+
+Um Mu herunterzuladen, gehe auf die Mu Website_. Hier steht eine `Schritt-für-Schritt-Anleitung`_
+zur Verfügung.
+
+.. _`Schritt-für-Schritt-Anleitung`: https://micropython.matheharry.de/installation_der_entwicklungsumgebung.html?nav=false
+.. _Website: https://codewith.mu/en/
+
+Du kannst verschiedene Optionen wählen, um Mu zu installieren. Die, die du höchstwahrscheinlich auf deinem eigenen Gerät benutzen wirst, 
+wenn du Administratorenrechte hast, ist ein Installer für dein Gerät (Mac/Windows), oder die Installation durch ein
+Python-Paket (pip) über die :ref:`Kommandozeile`, wenn du Python schon auf deinem Computer installiert hast.
+
+Falls du keine Administratorenrechte besitzt und Python auf deinem Gerät nicht installiert ist, bietet sich die portable Version *PortaMu* an. 
+Diese muss man einfach in einen Ordner entpacken und hat damit sofort eine anfängerfreundliche Programmierumgebung zur Verfügung, die ohne Installation 
+auf allen Geräten funktioniert. (Momentan ist leider **keine portable Version verfügbar!**)
+
+.. figure:: assets/installation_options.PNG
+   :align: center
+   :scale: 70% 
+   :target: https://codewith.mu/en/download
+
+Sobald der Editor installiert ist, starte ihn und schließe den micro:bit an deinen Computer an. Mu erkennt ihn automatisch und du
+kannst sofort loslegen.
+
+REPL
++++++
+Der Button **REPL** (Read, Evaluate, Print Loop) erlaubt es dir, dynamisch mit MicroPython auf dem micro:bit zu arbeiten, indem du 
+die REPL-Befehlszeile direkt auf deinem micro:bit benutzt und Befehle der Reihe nach eingibst. 
+
+    1. LESEN (read): Lies die Benutzereingabe
+    2. AUSWERTEN (evaluate): Überprüfe den Code und führe ihn aus
+    3. AUSGEBEN (print): Gib das Ergebnis aus
+    4. SCHLEIFE (loop): Gehe in der Schleife zurück zu Schritt 1
+
+So wird es dir ganz einfach gemacht, Befehle auszuprobieren und herumzuexperimentieren! Außerdem werden Fehlermeldungen
+auf der REPL-Konsole ausgegeben und erleichtern so das Debuggen (so nennt man die Fehlersuche)
