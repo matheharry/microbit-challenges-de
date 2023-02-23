@@ -14,8 +14,8 @@ schreiben, laden und ausführen zu können. Es gibt im Wesentlichen drei Optione
 .. _`Mu Editor`: https://codewith.mu/
 .. _`MicroPython App`: https://chrome.google.com/webstore/detail/micropython/lhdjeebhcalhgnbigbngiaglmladclbo?hl=de-GE
 
-Web Editor verwenden
-====================
+Web Editor
+==========
 
 Der neue  `browserbasierter Code-Editor`_ wurde von Grund auf mit Blick auf den Einsatz im Unterricht entwickelt. Er soll
 den Zugang zum textbasierten Programmieren auch für Schülerinnen und Schüler, die mit dem Thema Coding wenig anzufangen wissen,
@@ -59,7 +59,7 @@ Der Editor zeigt auch potenzielle Fehler an, z. B. Variablen oder Funktionen, di
 nicht erreichbar ist. Das kann helfen, einfache Tippfehler zu erkennen, bevor du den Code auf einen micro:bit überträgst.
 
 Normalerweise werden Fehler in Python erst bei der Ausführung erkannt und angezeigt, weshalb diese Funktion einen
-Vorteil zum **Mu-Editor** darstellt.
+Vorteil zum :ref:`Mu-Editor` darstellt.
 
 Codeformatierung
 ++++++++++++++++
@@ -168,8 +168,8 @@ Drücke die TAB-Taste auf deiner Tastatur, um die aktuelle Eingabe automatisch z
 
 .. _`MicroPython-Umgebung`: https://docs.micropython.org/en/latest/library/index.html
 
-Mu Editor verwenden
-===================
+Mu Editor
+=========
 
 Für dieses Tutorial werden wir mit dem Mu-Editor arbeiten, aber du kannst natürlich auch einen der anderen Editor verwenden.
 
