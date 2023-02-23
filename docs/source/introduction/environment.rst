@@ -5,9 +5,9 @@ Deine Arbeitsumgebung einrichten
 Bevor du mit dem Programmieren beginnst, benötigst du einen Quellcode-Editor, um Programme für den micro:bit
 schreiben, laden und ausführen zu können. Es gibt im Wesentlichen drei Optionen: 
 
-* der `micro:bit Web-Editor`_ (wer am neuesten Stand sein will kann auch die `Beta-Version`_ verwenden!)
-* am PC: der `Mu Editor`_ (vor allem wenn man sich über den micro:bit hinaus mit Python beschäftigen möchte!)
-* am Chromebook: die `MicroPython App`_   
+* den `micro:bit Web-Editor`_ (wer am neuesten Stand sein will kann auch die `Beta-Version`_ verwenden!)
+* den `Mu Editor`_ am PC (vor allem wenn man sich über den micro:bit hinaus mit Python beschäftigen möchte!)
+* die `MicroPython App`_ am Chromebook
 
 .. _`micro:bit Web-Editor`: https://python.microbit.org
 .. _`Beta-Version`: https://python.microbit.org/v/beta
@@ -46,7 +46,11 @@ Intelligente Autovervollständigung
 +++++++++++++++++++++++++++++++++++
 
 Die Autovervollständigungsfunktion zeigt dir während der Eingabe gültige Optionen an, damit du dich nicht an die genaue
-Syntax jedes Befehls erinnern musst.
+Syntax jedes Befehls erinnern musst. Die in einem DropDown-Menü erscheinden Vorschläge können mittels ENTER-Taste 
+übernommen werden.
+
+.. figure:: assets/microbiteditor-autotype.gif
+   :align: center
 
 Fehlererkennung
 +++++++++++++++
@@ -63,12 +67,6 @@ Codeformatierung
 Einrückungen spielen in Python eine zentrale Rolle und können am Anfang leicht zu Fehlern bei der Eingabe führen.
 Deshalb verfügt der Webeditor über eine Linien- und Farbhervorhebung, die dir zeigt, wo und wie der Code eingerückt
 werden sollte, damit du deinen Code leichter korrigieren kannst.
-
-
-.. note:: Der Web-Editor wurde nun grundlegend verändert und verbessert. Die Beschreibung hier bezieht sich auf die
-   aktuelle Web-Version, allerdings sollte unbedingt die oben verlinkte Beta-Version verwendet werden!
-
-   Die Beschreibung wird angepasst ...
 
 Menü
 +++++
