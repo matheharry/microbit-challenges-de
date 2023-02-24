@@ -49,10 +49,10 @@ Der Rest des Programms ist ganz einfach ::
 
 	from microbit import *
 	while True:
-         display.scroll('Hallo PH Graz')
-         display.show(Image.HAPPY)
-	      print('Hello world!')    
-    	   sleep(2000)
+      display.scroll('Hallo PH Graz')
+      display.show(Image.HAPPY)
+	   print('Hello world!')    
+    	sleep(2000)
       
 Es wird ``Hallo PH Graz`` und dann das lachende Gesicht auf dem LED Display angezeigt. 
 Die Anweisung ``print('Hello world!')``, gibt die Nachricht in der REPL-Konsole aus. Um das REPL-Fenster
