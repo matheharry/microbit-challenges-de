@@ -41,7 +41,6 @@ micro:bit-Funktionen und grundlegenden Computerkonzepten wie Schleifen, Variable
 
 .. figure:: assets/microbiteditor-reference.gif
    :align: center
-   :scale: 100%
 
 Diese Auswahl an Codeschnipseln und eine Reihe von vorgefertigten Bildern, Sounds und Musik sorgen so von Anfang an 
 für Abwechslung und Spaß bei der Programmierung.
@@ -76,8 +75,7 @@ Menü
 +++++
 
 .. figure:: assets/microbiteditor-menu.png
-   :align: center
-   :scale: 100% 
+   :align: center 
 
 Das Hauptmenü des Editors enthält verschiedene Buttons, um deinen Code auf dem micro:bit ausführen zu lassen. 
 
@@ -86,7 +84,6 @@ Verbindungsschaltfläche, wenn du die 3 Punkte neben dem `Send to micro:bit` - B
 
 .. figure:: assets/microbit-connect.png
    :align: center
-   :scale: 100%
 
 Du wirst dann Schritt für Schritt durch den Verbindungsprozess geführt - beachte die sich öffnenden Fenster mit der Anleitung!
 
@@ -94,13 +91,11 @@ Wenn alles funktioniert hat siehst du folgendes Menü:
 
 .. figure:: assets/microbit-ready.png
    :align: center
-   :scale: 100%
 
 ---
 
 .. figure:: assets/microbiteditor-save.png
-   :align: left
-   :scale: 100% 
+   :align: left 
 
 Klicke auf den `Save` Button, um deine "hex"-Datei auf dem Computer zu speichern. Über das 3-Punkte-Menü 
 kann auch der Python-Code gespeichert werden.
