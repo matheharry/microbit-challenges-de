@@ -99,13 +99,12 @@ zu übertragen.
 Wenn das nicht funktioniert, stelle sicher, dass dein micro:bit als USB-Speichergerät in 
 deinem Dateisystem-Explorer aufscheint.
 
+Klicke auf den ``Save`` Button, um deine "hex"-Datei auf dem Computer zu speichern. Über das 3-Punkte-Menü 
+kann auch der Python-Code gespeichert werden.
+
 .. figure:: assets/microbiteditor-save.png
    :align: center 
    :scale: 50%
-
-
-Klicke auf den ``Save`` Button, um deine "hex"-Datei auf dem Computer zu speichern. Über das 3-Punkte-Menü 
-kann auch der Python-Code gespeichert werden.
 
 Mittels ``Open...`` Button kann eine hex- oder Python-Datei hochgeladen und geöffnet werden.
 
