@@ -119,8 +119,9 @@ dem micro:bit ausführen zukönnen.
    :align: center
    :scale: 50%
 
-Dazu wird die sogenannte REPL - Konsole (Read, Evaluate, Print Loop) gestartet, die es dir erlaubt, direkt mit
-MicroPython auf dem micro:bit selbst zu arbeiten. Dort kannst du Befehle der Reihe nach eingeben. 
+Dazu wird die sogenannte REPL - Konsole (Read, Evaluate, Print Loop) gestartet, die es dir erlaubt, direkt  auf dem micro:bit
+mit MicroPython zu arbeiten. Dort kannst du deine Befehle der Reihe nach eingeben und sie werden sofort ausgeführt. 
+
 Wie der Name sagt, handelt es sich dabei um eine dauerhaft ausgeführte Schleife, die folgendermaßen abläuft, um 
 den auf der Kommandoze eingegebenen Python-Code auszuführen: 
 
