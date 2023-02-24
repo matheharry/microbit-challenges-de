@@ -58,7 +58,7 @@ Die Anweisung ``print('Hello world!')``, gibt die Nachricht in der REPL-Konsole 
 Programm auf den micro:bit laden (Flashen)
 ------------------------------------------
 
-Klicke nun auf die Taste ``Send to micro:bit`` und schau was passiert.
+Gib den Code ein und klicke dann auf die Taste ``Send to micro:bit``. Schau genau, ob alles so abläuft wie geplant.
 
 .. image:: assets/first_program.gif
    :align: center 
