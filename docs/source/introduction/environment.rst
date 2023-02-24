@@ -159,7 +159,7 @@ herausstreicht und gerade in Python eine wichtige Rolle beim Auffinden von Fehle
 
 .. _`MicroPython-Umgebung`: https://docs.micropython.org/en/latest/library/index.html
 
-Mu Editor
+Mu-Editor
 =========
 
 Der Editor Mu richtet sich speziell an Programmieranfänger und war bis vor kurzem noch 
