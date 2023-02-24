@@ -39,6 +39,10 @@ Im Abschnitt "Referenz" findest du Beispiele für funktionierenden Code, den du 
 sofort verwenden kannst. Das fördert unabhängiges und kreatives Lernen, indem es das Entdecken und Anwenden von
 micro:bit-Funktionen und grundlegenden Computerkonzepten wie Schleifen, Variablen und Entscheidungsstrukturen erleichtert.
 
+.. figure:: assets/microbiteditor-reference.gif
+   :align: center
+   :scale: 100%
+
 Diese Auswahl an Codeschnipseln und eine Reihe von vorgefertigten Bildern, Sounds und Musik sorgen so von Anfang an 
 für Abwechslung und Spaß bei der Programmierung.
 
@@ -71,64 +75,43 @@ werden sollte, damit du deinen Code leichter korrigieren kannst.
 Menü
 +++++
 
-.. figure:: assets/header.png
+.. figure:: assets/microbiteditor-menu.png
    :align: center
-   :scale: 30% 
+   :scale: 100% 
 
-Das Hauptmenü des Editors enthält verschiedene Buttons, mit denen du mit dem Editor und dem micro:bit arbeiten kannst. 
-Wenn du zusätzliche Funktionen im Editor aktiviert hast, wie z.B. WebUSB, kannst du zusätzliche Buttons in diesem Menü 
-sehen.
+Das Hauptmenü des Editors enthält verschiedene Buttons, um deinen Code auf dem micro:bit ausführen zu lassen. 
 
-.. figure:: assets/webeditor_download.png
+Zuerst musst du den micro:bit mit dem Computer und dem Editor mittels USB-Kabel verbinden. Du findest die 
+Verbindungsschaltfläche, wenn du die 3 Punkte neben dem `Send to micro:bit` - Button anklickst und `Connect` auswählst.
+
+.. figure:: assets/microbit-connect.png
+   :align: center
+   :scale: 100%
+
+Du wirst dann Schritt für Schritt durch den Verbindungsprozess geführt - beachte die sich öffnenden Fenster mit der Anleitung!
+
+Wenn alles funktioniert hat siehst du folgendes Menü:
+
+.. figure:: assets/microbit-ready.png
+   :align: center
+   :scale: 100%
+
+---
+
+.. figure:: assets/microbiteditor-save.png
    :align: left
-   :scale: 50% 
+   :scale: 100% 
 
-Klicke auf den Download Button, um eine spezielle "hex"-Datei auf dem Computer zu speichern.
+Klicke auf den `Save` Button, um deine "hex"-Datei auf dem Computer zu speichern. Über das 3-Punkte-Menü 
+kann auch der Python-Code gespeichert werden.
 
-Schließe den BBC micro:bit an (er wird als USB-Speicher angezeigt) und ziehe die neu gespeicherte 
-Datei auf das Gerät. Der Code wird ausgeführt (oder du wirst eine Fehlermeldung auf dem Display des 
-Geräts sehen). Weiter unten erfährst du, wie du den Code aus einer Hex-Datei zurück in den Editor bekommst.
+Mittels `Open...` Button kann eine hex- oder Python-Datei hochgeladen und geöffnet werden.
 
-Der Download- wird zum Flash-Button, wenn der micro:bit über WebUSB verbunden ist. 
-
-.. figure:: assets/webeditor_flash.png
-   :align: left
-   :scale: 50% 
-
-Schreibe dein Skript im Editorfenster und klicke auf den "Flash" Button, um es direkt auf den micro:bit 
+Schreibe dein Skript im Editorfenster und klicke auf den `Send to micro:bit` Button, um es direkt auf den micro:bit 
 zu übertragen. 
 
 Wenn das nicht funktioniert, stelle sicher, dass dein micro:bit als USB-Speichergerät in 
 deinem Dateisystem-Explorer aufscheint.
-
-.. figure:: assets/webeditor_connect.png
-   :align: left
-   :scale: 50% 
-
-Der Connect-Button ermöglicht es dir, deinen micro:bit mit deinem Browser zu verbinden, indem du ein Tool 
-namens WebUSB benutzt. Wenn du eine Verbindung herstellst, öffnet sich ein Fenster in deinem Browser, in dem 
-du den micro:bit auswählen kannst. Wenn du die Meldung "no compatible devices found" siehst, musst du möglicherweise 
-die micro:bit Firmware aktualisieren.
-
-.. figure:: assets/webeditor_loadsave.png
-   :align: left
-   :scale: 50% 
-
-Du kannst nicht nur eine Hex-Datei oder ein Py-Skript per Drag&Drop in den Editor ziehen, um sie zu laden, sondern 
-auch den Load/Save Button drücken, um ein Dateifenster zu öffnen, in dem du die Dateien auf dem micro:bit überprüfen 
-kannst. Du kannst Dateien per Drag&Drop in die graue "Drop"-Fläche ziehen oder mit dem Dateipicker nach einer Datei 
-auf deinem Computer suchen. Du kannst auch deine .hex oder .py Dateien von hier aus herunterladen.
-
-.. figure:: assets/file-system.png
-   :align: center
-   :scale: 30% 
-
-Das Dateisystem fügt Funktionen hinzu, um Python-Module, Datenlogs und andere Dateitypen auf dem micro:bit abzuspeichern 
-oder zu entfernen.
-
-.. figure:: assets/webeditor_serial.png
-   :align: left
-   :scale: 50% 
 
 REPL-Befehlszeile
 +++++++++++++++++
