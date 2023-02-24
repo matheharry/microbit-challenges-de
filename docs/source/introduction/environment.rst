@@ -85,6 +85,7 @@ Verbindungsschaltfläche, wenn du die 3 Punkte neben dem `Send to micro:bit` - B
 .. figure:: assets/microbit-connect.png
    :align: center
 
+
 Du wirst dann Schritt für Schritt durch den Verbindungsprozess geführt - beachte die sich öffnenden Fenster mit der Anleitung!
 
 Wenn alles funktioniert hat siehst du folgendes Menü:
@@ -92,21 +93,24 @@ Wenn alles funktioniert hat siehst du folgendes Menü:
 .. figure:: assets/microbit-ready.png
    :align: center
 
+Schreibe dein Skript im Editorfenster und klicke auf den `Send to micro:bit` Button, um es direkt auf den micro:bit 
+zu übertragen. 
+
+Wenn das nicht funktioniert, stelle sicher, dass dein micro:bit als USB-Speichergerät in 
+deinem Dateisystem-Explorer aufscheint.
+
 ---
 
 .. figure:: assets/microbiteditor-save.png
-   :align: left 
+   :align: center 
+
 
 Klicke auf den `Save` Button, um deine "hex"-Datei auf dem Computer zu speichern. Über das 3-Punkte-Menü 
 kann auch der Python-Code gespeichert werden.
 
 Mittels `Open...` Button kann eine hex- oder Python-Datei hochgeladen und geöffnet werden.
 
-Schreibe dein Skript im Editorfenster und klicke auf den `Send to micro:bit` Button, um es direkt auf den micro:bit 
-zu übertragen. 
 
-Wenn das nicht funktioniert, stelle sicher, dass dein micro:bit als USB-Speichergerät in 
-deinem Dateisystem-Explorer aufscheint.
 
 REPL-Befehlszeile
 +++++++++++++++++
