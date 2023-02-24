@@ -41,7 +41,7 @@ Python nicht definiert sind. In unserem Fall sind es zum Beispiel die Funktionen
 	while True: 
 
 In diesem Fall soll etwas (was auch immer dieser Anweisung folgt und eingerückt ist) ausgeführt werden, während die Bedingung,
-die auf ``While`` folgt, wahr ist. In diesem Fall ist die Bedingung das Schlüsselwort ``True``, was bedeutet, dass diese Schleife
+die auf ``while`` folgt, wahr ist. In diesem Fall ist die Bedingung das Schlüsselwort ``True``, was bedeutet, dass diese Schleife
 ewig weiterläuft. Es ist dasselbe, als wenn du zB "Mach das solange wie 5 > 1 ist" schreiben würdest, was ja für immer und ewig
 der Fall sein wird. 
 
