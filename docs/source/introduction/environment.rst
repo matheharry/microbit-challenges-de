@@ -112,8 +112,9 @@ Mittels ``Open...`` Button kann eine hex- oder Python-Datei hochgeladen und geö
 REPL-Befehlszeile
 +++++++++++++++++
 
-Der Webeditor erlaubt die Verwendung einer REPL-Konsole über den ``Show Serial`` Button, um Befehle direkt auf
-dem micro:bit ausführen zukönnen.
+Der Webeditor erlaubt die Verwendung einer REPL-Konsole über den ``Show Serial`` Button unterhalb des Codes,
+um Befehle direkt auf dem micro:bit ausführen zukönnen. Es gibt auch in der rechten Leiste einen
+``Show Serial`` Button, aber dieser ist nur Teil der Vorschau-Simulation!
 
 .. figure:: assets/microbiteditor-serial.png
    :align: center
