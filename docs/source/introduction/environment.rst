@@ -123,12 +123,12 @@ Dazu wird die sogenannte REPL - Konsole (Read, Evaluate, Print Loop) gestartet, 
 mit MicroPython zu arbeiten. Dort kannst du deine Befehle der Reihe nach eingeben und sie werden sofort ausgeführt. 
 
 Wie der Name sagt, handelt es sich dabei um eine dauerhaft ausgeführte Schleife, die folgendermaßen abläuft, um 
-den auf der Kommandoze eingegebenen Python-Code auszuführen: :: 
+den auf der Kommandoze eingegebenen Python-Code auszuführen:
 
-	 1. lesen     ( R ead): Lies die Benutzereingabe
-    2. auswerten ( E valuate): Überprüfe den Code und führe ihn aus
-    3. ausgeben  ( P rint): Gib das Ergebnis aus
-    4. Schleife ausführen ( L oop): Gehe in der Schleife zurück zu Schritt 1
+* lesen     ( **R** ead): Lies die Benutzereingabe
+* auswerten ( **E** valuate): Überprüfe den Code und führe ihn aus
+* ausgeben  ( **P** rint): Gib das Ergebnis aus
+* Schleife ausführen ( **L** oop): Gehe in der Schleife zurück zum Anfang
 
 .. figure:: assets/microbiteditor-repl.png
    :align: center
