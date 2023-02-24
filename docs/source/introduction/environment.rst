@@ -117,7 +117,7 @@ dem micro:bit ausführen zukönnen.
 
 .. figure:: assets/microbiteditor-serial.png
    :align: center
-   :scale: 50%
+   :scale: 70%
 
 Dazu wird die sogenannte REPL - Konsole (Read, Evaluate, Print Loop) gestartet, die es dir erlaubt, direkt  auf dem micro:bit
 mit MicroPython zu arbeiten. Dort kannst du deine Befehle der Reihe nach eingeben und sie werden sofort ausgeführt. 
