@@ -85,7 +85,8 @@ irgendwie *nebenbei passieren* 👍.
 
 Du brauchst dich nicht unbedingt akribisch durch die ganze Theorie, die in :ref:`Grundlagen der Programmierung` 
 behandelt wird, durcharbeiten, besonders wenn du ein Anfänger bist. Fange an, einfache Programme mit dem 
-micro:bit zu schreiben und lerne nach und nach weitere Programmierkonzepte kennen indem du weiterliest. 
+micro:bit zu schreiben und lerne nach und nach weitere Programmierkonzepte kennen indem du weiterliest und
+mit dem Code herumexperimentierst. 
 
 Wenn du schon mit der grafischen Programmieroberfläche MakeCode_ vertraut bist, lass dir deine Programme auch einmal als
 Python-Code darstellen. Allerdings unterscheidet sich der Code dort etwas von den MicroPython-Befehlen, die wir hier verwenden.
