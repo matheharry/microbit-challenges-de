@@ -61,7 +61,6 @@ Programm auf den micro:bit laden (Flashen)
 Klicke nun auf die Taste ``Send to micro:bit`` und schau was passiert.
 
 .. image:: assets/first_program.gif
-   :scale: 70%
    :align: center 
 
 Das Ergebnis auf dem micro:bit sollte in etwa so aussehen wie in der simulierten Vorschau. 
