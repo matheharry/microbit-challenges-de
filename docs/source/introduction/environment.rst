@@ -80,7 +80,7 @@ Menü
 Das Hauptmenü des Editors enthält verschiedene Buttons, um deinen Code auf dem micro:bit ausführen zu lassen. 
 
 Zuerst musst du den micro:bit mit dem Computer und dem Editor mittels USB-Kabel verbinden. Du findest die 
-Verbindungsschaltfläche, wenn du die 3 Punkte neben dem `Send to micro:bit` - Button anklickst und `Connect` auswählst.
+Verbindungsschaltfläche, wenn du die 3 Punkte neben dem ``Send to micro:bit`` - Button anklickst und ``Connect`` auswählst.
 
 .. figure:: assets/microbit-connect.png
    :align: center
@@ -93,57 +93,66 @@ Wenn alles funktioniert hat siehst du folgendes Menü:
 .. figure:: assets/microbit-ready.png
    :align: center
 
-Schreibe dein Skript im Editorfenster und klicke auf den `Send to micro:bit` Button, um es direkt auf den micro:bit 
+Schreibe dein Skript im Editorfenster und klicke auf den ``Send to micro:bit`` Button, um es direkt auf den micro:bit 
 zu übertragen. 
 
 Wenn das nicht funktioniert, stelle sicher, dass dein micro:bit als USB-Speichergerät in 
 deinem Dateisystem-Explorer aufscheint.
-
----
 
 .. figure:: assets/microbiteditor-save.png
    :align: center 
    :scale: 50%
 
 
-Klicke auf den `Save` Button, um deine "hex"-Datei auf dem Computer zu speichern. Über das 3-Punkte-Menü 
+Klicke auf den ``Save`` Button, um deine "hex"-Datei auf dem Computer zu speichern. Über das 3-Punkte-Menü 
 kann auch der Python-Code gespeichert werden.
 
-Mittels `Open...` Button kann eine hex- oder Python-Datei hochgeladen und geöffnet werden.
+Mittels ``Open...`` Button kann eine hex- oder Python-Datei hochgeladen und geöffnet werden.
 
 
 
 REPL-Befehlszeile
 +++++++++++++++++
 
-Auch der Webeditor erlaubt die Verwendung einer REPL-Konsole über den Open/Close Serial Button, um Befehle direkt auf
-dem micro:bit ausführen zukönnen-
+Der Webeditor erlaubt die Verwendung einer REPL-Konsole über den ``Show Serial`` Button, um Befehle direkt auf
+dem micro:bit ausführen zukönnen.
 
-.. figure:: assets/webeditor_repl.png
+.. figure:: assets/microbiteditor-serial.png
    :align: center
-   :scale: 70% 
+   :scale: 50% 
+
+Dazu wird die sogenannte **REPL**-Konsole (Read, Evaluate, Print Loop) gestartet, die es dir erlaubt, direkt mit
+MicroPython auf dem micro:bit selbst zu arbeiten. Dort kannst du Befehle der Reihe nach eingeben. 
+Wie der Name sagt, handelt es sich dabei um eine dauerhaft ausgeführte Schleife, die folgendermaßen abläuft, um 
+den auf der Kommandozeile eingegebenen Python-Code auszuführen:
+
+1. lesen (**R**ead): Lies die Benutzereingabe
+2. auswerten (**E**valuate): Überprüfe den Code und führe ihn aus
+3. ausgeben (**P**rint): Gib das Ergebnis aus
+4. Schleife ausführen (**L**oop): Gehe in der Schleife zurück zu Schritt 1
+
+.. figure:: assets/microbiteditor-repl.png
+   :align: center
+
+
+So wird es dir ganz einfach gemacht, Befehle auszuprobieren und herumzuexperimentieren! Außerdem werden Fehlermeldungen
+auf der REPL-Konsole ausgegeben und erleichtern so das Debuggen (so nennt man die Fehlersuche).
 
 Text-Editor
 +++++++++++
 
-.. figure:: assets/webeditor_text.png
-   :align: center
-   :scale: 70% 
+.. figure:: assets/microbit-pytheneditor.png
+   :align: center 
 
-Im Texteditor schreiben und bearbeiten wir unsere Skripte. Der Texteditor versucht zu helfen, indem er 
-den Text einfärbt, um zu zeigen, was die verschiedenen Teile des Programms sind. Zum Beispiel sind die 
-Python-Schlüsselwörter (Wörter, die in die Python-Sprache eingebaut sind) grau. Die heller gefärbten Wörter 
-sind Teile des Programms, das du erstellt hast. Braune Wörter sind konstante Werte, die sich nie ändern und 
-lila Wörter stellen Zeichenketten dar, die angezeigt werden sollen. Alle Zeilen sind nummeriert, wobei die 
-aktuelle Zeile hervorgehoben ist.
+Der Texteditor versucht zu helfen, indem er den Text einfärbt, um zu zeigen, was die 
+verschiedenen Teile des Programms sind. Zum Beispiel sind die Python-Schlüsselwörter 
+(Wörter, die in die Python-Sprache eingebaut sind) lila. Konstante Werte werden grün 
+dargestellt und rote Schrift stellt Zeichenketten (Strings) dar. 
 
-**Autovervollständigung (Autocomplete)**
+Alle Zeilen sind nummeriert, wobei die aktuelle Zeile hervorgehoben ist.
 
-Die Autovervollständigung gibt dir während der Eingabe Vorschläge für deinen Python-Code, damit du besser 
-verstehst, welche Funktionen dir zur Verfügung stehen. Das ist eine große Hilfe um Tippfehler zu vermeiden und 
-funktionierende Programme zu erstellen.
-
-Drücke die TAB-Taste auf deiner Tastatur, um die aktuelle Eingabe automatisch zu vervollständigen.
+Zusammengehörige, eingerückte Blöcke werden außerdem markiert, was die Struktur des Codes 
+herausstreicht und gerade in Python eine wichtige Rolle beim Auffinden von Fehlern spielt.
 
 .. note:: Für diejenigen, die vorher mit Python gearbeitet haben: MicroPython unterstützt keine 
     regulären externen Python-Bibliotheken, da viele zu groß für ein Embedded Gerät sind. Allerdings 
@@ -154,8 +163,13 @@ Drücke die TAB-Taste auf deiner Tastatur, um die aktuelle Eingabe automatisch z
 Mu Editor
 =========
 
-Für dieses Tutorial werden wir mit dem Mu-Editor arbeiten, aber du kannst natürlich auch einen der anderen Editor verwenden.
+Der Editor Mu richtet sich speziell an Programmieranfänger und war bis vor kurzem noch 
+die komfortabelste Möglichkeit, Pythonprogramme für den micro:bit zu erstellen. Inzwischen 
+ist der Web-Editor schon so ausgereift, dass Mu eigentlich nicht mehr unbedingt benötigt wird. 
 
+Da Mu aber über die micro:bit-Programmierung weit hinausgeht und sogar die Entwicklung einfacher 
+Computerspiele mittels **PyGame** unterstützt, soll er hier als weiterführende Alternative wärmstens 
+empfohlen werden.
 
 Um Mu herunterzuladen, gehe auf die Mu Website_. Hier steht eine `Schritt-für-Schritt-Anleitung`_
 zur Verfügung.
