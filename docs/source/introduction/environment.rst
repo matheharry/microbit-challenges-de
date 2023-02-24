@@ -103,6 +103,7 @@ deinem Dateisystem-Explorer aufscheint.
 
 .. figure:: assets/microbiteditor-save.png
    :align: center 
+   :scale: 50%
 
 
 Klicke auf den `Save` Button, um deine "hex"-Datei auf dem Computer zu speichern. Über das 3-Punkte-Menü 
