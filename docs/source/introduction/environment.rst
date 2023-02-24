@@ -120,15 +120,15 @@ dem micro:bit ausführen zukönnen.
    :align: center
    :scale: 50% 
 
-Dazu wird die sogenannte **REPL**-Konsole (Read, Evaluate, Print Loop) gestartet, die es dir erlaubt, direkt mit
+Dazu wird die sogenannte **REPL**-Konsole (**R**ead, **E**valuate, **P**rint **L**oop) gestartet, die es dir erlaubt, direkt mit
 MicroPython auf dem micro:bit selbst zu arbeiten. Dort kannst du Befehle der Reihe nach eingeben. 
 Wie der Name sagt, handelt es sich dabei um eine dauerhaft ausgeführte Schleife, die folgendermaßen abläuft, um 
-den auf der Kommandozeile eingegebenen Python-Code auszuführen:
+den auf der Kommandozeile eingegebenen Python-Code auszuführen: 
 
-1. lesen (**R**ead): Lies die Benutzereingabe
-2. auswerten (**E**valuate): Überprüfe den Code und führe ihn aus
-3. ausgeben (**P**rint): Gib das Ergebnis aus
-4. Schleife ausführen (**L**oop): Gehe in der Schleife zurück zu Schritt 1
+    1. lesen (**R**ead): Lies die Benutzereingabe
+    2. auswerten (**E**valuate): Überprüfe den Code und führe ihn aus
+    3. ausgeben (**P**rint): Gib das Ergebnis aus
+    4. Schleife ausführen (**L**oop): Gehe in der Schleife zurück zu Schritt 1
 
 .. figure:: assets/microbiteditor-repl.png
    :align: center
