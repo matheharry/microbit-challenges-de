@@ -53,15 +53,7 @@ Der Rest des Programms ist ganz einfach ::
    sleep(2000)
       
 Es wird ``Hallo PH Graz`` und dann das lachende Gesicht auf dem LED Display angezeigt. 
-Die Anweisung ``print('Hello world!')``, gibt die Nachricht in der REPL-Konsole aus. Um das REPL-Fenster
-des micro:bit anzuzeigen musst du die untere ``Show Serial``-Schaltfläche anklicken:
-
-.. image:: assets/microbiteditor-serial.png
-   :scale: 50%
-   :align: center
-
-Das REPL-Fenster zeigt uns Nachrichten vom micro:bit an und erlaubt uns auch, Befehle direkt an den micro:bit zu senden. Für den
-Moment werden wir die REPL nur benutzen um Nachrichten und Fehlermeldungen zu sehen, die wir mit dem ``print``-Befehl ausgeben. 
+Die Anweisung ``print('Hello world!')``, gibt die Nachricht in der REPL-Konsole aus. 
 
 Programm auf den micro:bit laden (Flashen)
 ------------------------------------------
@@ -73,6 +65,15 @@ Klicke nun auf die Taste ``Send to micro:bit`` und schau was passiert.
    :align: center 
 
 Das Ergebnis auf dem micro:bit sollte in etwa so aussehen wie in der simulierten Vorschau. 
+
+Um das REPL-Fenster des micro:bit anzuzeigen, musst du die untere ``Show Serial``-Schaltfläche anklicken:
+
+.. image:: assets/microbiteditor-serial.png
+   :scale: 50%
+   :align: center
+
+Das REPL-Fenster zeigt uns Nachrichten vom micro:bit an und erlaubt uns auch, Befehle direkt an den micro:bit zu senden. Für den
+Moment werden wir die REPL nur benutzen um Nachrichten und Fehlermeldungen zu sehen, die wir mit dem ``print``-Befehl ausgeben. 
 
 Etwas ändern 
 -------------
