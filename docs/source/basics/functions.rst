@@ -51,27 +51,49 @@ Um die Funktion zu nutzen, muss sie *aufgerufen* werden: ::
 
 	zeigeBegruessung()
 
-Oder du könntest in einem Spiel an verschiedenen Stellen einen Countdown verwenden::
+Oder du könntest in einem Spiel an verschiedenen Stellen einen Countdown verwenden und willst nicht immer dieselbe
+for-Schleife im Code verwenden sondern einfach nur ``countdown()`` schreiben. Deine ::
 
 
+	#Countdown 3 - 2 - 1
 	def countdown():
-		for i in range(3,0,-1):
+		for i in range(3,0,-1):   # Werte von i zählen von 3 herunter
     		display.show(i)
     		sleep(500)
     		display.clear()
 
+	...
 	countdown()
+	...
+	countdown()
+	...
 
-Das ist keine sehr interessante Funktion, oder? Du kannst Funktionen mächtiger machen, indem du `Parameter` 
+Das sind keine sehr interessante Funktionen, oder? Du kannst Funktionen mächtiger machen, indem du `Parameter` 
 und `Rückgabewerte` benutzt. Wenn du dir eine Funktion wie eine Black Box vorstellst dann ist ein Parameter 
-ein Eingabewert und ein Rückgabewert ist das, was du am anderen Ende bekommst. Nehmen wir an, wir wollen 
-ein kleines Programm schreiben, das einige Freunde mit einer Nachricht begrüßt, die ihren Namen und ihr Alter 
-enthält: ::
+ein Eingabewert und ein Rückgabewert ist das, was du am anderen Ende wieder heraus bekommst. 
+
+Wir könnten zum Beispiel die Countdown-Funktion erweitern, so dass wir ihr mit einem Parameter, den wir
+beim Aufrufen übergeben, sagen, von welchem Startwert ``n`` aus sie beginnen soll herunterzuzählen. Dafür
+müssen wir in der Klammer der Funktion ``countdown()`` die Variable n als Parameter der Funktion eintragen.
+In dieser Variablen ``n`` wird der Übergabewert gespeichert und kann dann im Code der Funktion verwendet werden. ::
+
+
+	def countdown(n):
+		for i in range(n,0,-1):  # Werte von i zählen von n herunter
+    		display.show(i)
+    		sleep(500)
+    		display.clear()
+
+Der Parameter ``n`` macht unsere Funktion also gleich viel flexibler und in unterschiedlichen Situationen
+einsetzbar.
+
+Oder nehmen wir an, wir wollen ein kleines Programm schreiben, das einige Freunde mit einer Nachricht begrüßt, 
+die ihren Namen und ihr Alter enthält: ::
 
 	from microbit import *
 
 	def printBirthdayGreeting(name, age):
-	    return "Happy Birthday " + name + ", du bist " + str(age) + " Jahre alt"   
+	    return "Happy Birthday " + name + " 🎂, du bist unglaubliche " + str(age) + " Jahre alt!"   
 
 
  	display.scroll(printBirthdayGreeting("Toni", 8))
@@ -79,8 +101,9 @@ enthält: ::
  	display.scroll(printBirthdayGreeting("Maria", 11))
 		
 Die Funktion ``printBirthdayGreeting`` stellt die Geburtstagsnachricht für uns zusammen und gibt einen String 
-zurück. ``str()`` wird benutzt, um das ``Alter``, welches eine Zahl ist, in einen String zu verwandeln. Du musst 
-keine Funktionen oder Rückgabewerte in deinen Funktionen verwenden, es sei denn, du willst/brauchst sie.	
+zurück. ``str()`` wird benutzt, um das ``Alter``, welches eine Zahl ist, in einen String zu verwandeln. 
+
+Du musst keine Parameter oder Rückgabewerte in deinen Funktionen verwenden, es sei denn, du willst/brauchst sie.	
 
 Übungsaufgaben
 ===================
