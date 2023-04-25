@@ -52,7 +52,7 @@ Um die Funktion zu nutzen, muss sie *aufgerufen* werden: ::
 	zeigeBegruessung()
 
 Oder du könntest in einem Spiel an verschiedenen Stellen einen Countdown verwenden und willst nicht immer dieselbe
-for-Schleife im Code verwenden sondern einfach nur ``countdown()`` schreiben. Deine ::
+for-Schleife im Code verwenden sondern einfach nur ``countdown()`` schreiben. ::
 
 
 	#Countdown 3 - 2 - 1
