@@ -47,9 +47,20 @@ eine einfache Funktion, die eine Nachricht ausgibt::
 	def zeigeBegruessung():
 		print("Hallo alle miteinander!")
 
-		Um die Funktion zu nutzen, muss sie *aufgerufen* werden: ::
+Um die Funktion zu nutzen, muss sie *aufgerufen* werden: ::
 
 	zeigeBegruessung()
+
+Oder du könntest in einem Spiel an verschiedenen Stellen einen Countdown verwenden::
+
+
+	def countdown():
+		for i in range(3,0,-1):
+    		display.show(i)
+    		sleep(500)
+    		display.clear()
+
+	countdown()
 
 Das ist keine sehr interessante Funktion, oder? Du kannst Funktionen mächtiger machen, indem du `Parameter` 
 und `Rückgabewerte` benutzt. Wenn du dir eine Funktion wie eine Black Box vorstellst dann ist ein Parameter 

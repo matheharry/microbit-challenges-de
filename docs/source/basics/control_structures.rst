@@ -194,5 +194,5 @@ Was glaubst du, macht das folgende Programm? ::
 
 1. Zeige ein anderes Bild an, je nachdem in welche Seite der microbit gekippt ist.
 2. Programmiere ein LED 'Symbol', das sich in die Richtung bewegt, in die der micro:bit gekippt ist.
-3. Programmiere ein LED-Symbol, das sich im Kreis bewegt. Versuche es zu einer Schlange zu erweitern, indem du dem ursprünglichen Symbol einen Schwanz aus LEDs hinzufügst.
-4. Mache das Gleiche wie in der vorherigen Frage, aber lass diesmal das Symbol anhalten, wenn eine Taste gedrückt wird und starte neu, wenn sie erneut gedrückt wird.
+3. Programmiere ein Programm, das bis 5 zählt und jede Zahl 500ms anzeigt.
+4. Programmiere einen Countdown der von 3 herunterzählt und jede Zahl 1s anzeigt.
