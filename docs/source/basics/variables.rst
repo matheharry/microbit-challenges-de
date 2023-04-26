@@ -36,12 +36,19 @@ Sobald einer Variablen ein Wert zugewiesen wurde, kann sie verwendet und dieser 
 	while True:
     		if button_a.was_pressed(): 
 	    		meineAnzahl = meineAnzahl + 1
-	    		print("Die Taste wurde " + str(meineAnzahl) + " mal gedrückt.")
+	    		print("Die Taste wurde " + str(meineAnzahl) + " mal gedrückt.")  # Ausgabe auf der REPL
 				sleep(2000)
 
 Hier haben wir die Variable ``meineAnzahl`` benutzt, um mitzuzählen, wie oft die taste ``A`` gedrückt wird.  
 Kannst du sagen, was dieser Codeschnipsel sonst noch macht?
 
-Die ``sleep()``-Funktion werden wir oft verwenden. Um sie richtig einzusetzen, musst du dein Programm so planen, dass die 
-Verzögerungen, die durch den Aufruf dieser Funktion ausgelöst werden, zu der jeweils richtigen Zeit passieren. Das
-musst du genau planen!
+Die ``sleep()``-Funktion werden wir oft verwenden, da in einer :ref:`Endlosschleife` aufgrund der Verarbeitungsgeschwindigkeit
+des Prozessors oft unerwartete Ergebnisse zu bewundern sind. Um sie richtig einzusetzen, musst du dein Programm
+so planen, dass die Verzögerungen, die durch den Aufruf dieser Funktion ausgelöst werden, zu der jeweils richtigen
+Zeit passieren. Das musst du genau planen!
+
+Übungsaufgaben
+===================
+
+1. Was passiert, wenn wir die ``sleep()``-Funktion weglassen?
+2. Gib in der REPL nacheinander folgende Befehle ein: a=1  ;  b=2;  print(a+b);  a='1'  ; b='2'  ;  print(a+b)   . Erkläre die unterschiedlichen Ergebnisse.
