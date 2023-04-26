@@ -36,10 +36,10 @@ Sobald einer Variablen ein Wert zugewiesen wurde, kann sie verwendet und dieser 
 	while True:
     		if button_a.was_pressed(): 
 	    		meineAnzahl = meineAnzahl + 1
-	    		sleep(2000)
-	   			print("Anzahl an Tastendrücken: " + str(meineAnzahl))
+	    		print("Die Taste wurde " + str(meineAnzahl) + " mal gedrückt.")
+				sleep(2000)
 
-Hier haben wir die Variable ``meineAnzahl`` benutzt, um die Anzahl der Tastebetätigungen für Button ``A`` zu zählen.  
+Hier haben wir die Variable ``meineAnzahl`` benutzt, um mitzuzählen, wie oft die taste ``A`` gedrückt wird.  
 Kannst du sagen, was dieser Codeschnipsel sonst noch macht?
 
 Die ``sleep()``-Funktion werden wir oft verwenden. Um sie richtig einzusetzen, musst du dein Programm so planen, dass die 
