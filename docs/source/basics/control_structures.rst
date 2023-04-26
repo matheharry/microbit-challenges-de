@@ -121,17 +121,19 @@ wenn die Temperatur auf dem micro:bit unter einen bestimmten Wert fällt, also m
 
 Endlosschleife
 --------------
-Eines der häufigsten Dinge, die du mit einer ``while`` Schleife machen kannst, ist etwas für immer zu tun, d.h. bis der micro:bit
-ausgeschaltet oder zurückgesetzt wird. Vielleicht hast du ein Spiel für deinen micro:bit programmiert oder vielleicht sammelt er 
-Temperaturdaten. Hier ist ein Beispiel für einen Code, der sich ewig wiederholt::
+Eines der häufigsten Dinge, die du mit einer ``while`` Schleife machen kannst, ist, etwas für immer zu tun, d.h. bis der micro:bit
+ausgeschaltet oder zurückgesetzt wird. Das benötigst du, damit der micro:bit zB in einem Spiel auf deine Eingaben wartet und
+darauf reagieren kann. Oder du lässt ihn andauernd die Temperatur überwachen und mitschreiben.
+
+Hier ist ein Beispiel für einen Code, der sich ewig wiederholt::
 
 	from microbit import *
 	
 	while True:
 	    display.scroll("Hallo Welt")
 
-Dieser Code wird wiederholt die Meldung ``Hallo Welt`` anzeigen. Du wirst wahrscheinlich mindestens eine ``while True:`` Schleife 
-in deinem Programm haben um den micro:bit am Laufen zu halten.
+Dieser Code wird wiederholt die Meldung ``Hallo Welt`` anzeigen. Du wirst wahrscheinlich immer mindestens eine ``while True:`` 
+Schleife in deinem Programm einsetzen, um den micro:bit am Laufen zu halten.
 
 For Schleife
 +++++++++++++
@@ -196,3 +198,4 @@ Was glaubst du, macht das folgende Programm? ::
 2. Programmiere ein LED 'Symbol', das sich in die Richtung bewegt, in die der micro:bit gekippt ist.
 3. Programmiere ein Programm, das bis 5 zählt und jede Zahl 500ms anzeigt.
 4. Programmiere einen Countdown der von 3 herunterzählt und jede Zahl 1s anzeigt.
+5. Die Funktion ``display.scroll()`` kann einen Text auch ohne while-Schleife als andauernde Laufschrift darstellen. Finde heraus wie!
