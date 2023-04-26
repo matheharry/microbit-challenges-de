@@ -121,9 +121,9 @@ wenn die Temperatur auf dem micro:bit unter einen bestimmten Wert fällt, also m
 
 Endlosschleife
 --------------
-Eines der häufigsten Dinge, die du mit einer ``while`` Schleife machen kannst, ist, etwas für immer zu tun, d.h. bis der micro:bit
-ausgeschaltet oder zurückgesetzt wird. Das benötigst du, damit der micro:bit zB in einem Spiel auf deine Eingaben wartet und
-darauf reagieren kann. Oder du lässt ihn andauernd die Temperatur überwachen und mitschreiben.
+Eines der häufigsten Dinge, die du mit einer ``while`` Schleife machen kannst, ist, etwas für immer ablaufen zu lassen, d.h. 
+bis der micro:bit ausgeschaltet oder zurückgesetzt wird. Das benötigst du, damit der micro:bit zB in einem Spiel auf deine 
+Eingaben wartet und darauf reagieren kann. Oder du lässt ihn andauernd die Temperatur überwachen und mitschreiben.
 
 Hier ist ein Beispiel für einen Code, der sich ewig wiederholt::
 
