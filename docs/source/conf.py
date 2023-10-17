@@ -126,7 +126,7 @@ except ImportError:
 'sticky_navigation': True,
 'navigation_depth': 4,
 'includehidden': True,
-'titles_only': False,
+'titles_only': False
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
