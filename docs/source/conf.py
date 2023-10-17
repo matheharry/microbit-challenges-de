@@ -102,31 +102,23 @@ pygments_style = 'sphinx'
 # on_rtd is whether we are on readthedocs.org
 on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
-try:
-    import furo
+#try:
+#    import furo
 
-    html_theme = 'furo'
-    html_theme_options = {
-        'navigation_with_keys': True,
-        'collapse_navigation': False,
-        'sticky_navigation': True,
-        'navigation_depth': 4,
-        'includehidden': True,
-        'titles_only': False,
-    }
-except ImportError:
-    html_theme = 'default'
+#    html_theme = 'furo'
+#    html_theme_options = {
+#        'navigation_with_keys': True,
+#    }
+#except ImportError:
+#    html_theme = 'default'
 
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
+html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
-    'navigation_with_keys': True,
-    'collapse_navigation': False,
-    'sticky_navigation': True,
-    'navigation_depth': 4,
-    'includehidden': True,
-    'titles_only': False
+    'logo_only': True,
+    'navigation_depth': 5,
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
