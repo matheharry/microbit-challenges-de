@@ -122,14 +122,14 @@ except ImportError:
 # further.  For a list of options available for each theme, see the
 # documentation.
 #html_theme_options = {
-        "navigation_with_keys": True,
-        # Toc options
-        'collapse_navigation': False,
-        'sticky_navigation': True,
-        'navigation_depth': 4,
-        'includehidden': True,
-        'titles_only': False
-    }
+    "navigation_with_keys": True,
+    # Toc options
+    'collapse_navigation': False,
+    'sticky_navigation': True,
+    'navigation_depth': 4,
+    'includehidden': True,
+    'titles_only': False
+}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
