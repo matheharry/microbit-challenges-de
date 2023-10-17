@@ -21,8 +21,8 @@ import json
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 sys.path.insert(0, os.path.abspath('..'))
 
-from sphinx_rtd_theme import __version__ as theme_version
-from sphinx_rtd_theme import __version_full__ as theme_version_full
+#from sphinx_rtd_theme import __version__ as theme_version
+#from sphinx_rtd_theme import __version_full__ as theme_version_full
 #from sphinx.locale import _
 
 
@@ -120,7 +120,7 @@ on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'default'
 html_theme_options = {
     'logo_only': True,
     'navigation_depth': 5,
