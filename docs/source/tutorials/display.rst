@@ -186,9 +186,9 @@ den Überblick über jede der Zeilen behältst, kannst du den Code so umschreibe
 (Wenn es funktioniert, sollte das Gerät ein altmodisches "Blue Peter" Segelschiff anzeigen
 wobei die Masten dunkler sind als der Rumpf des Schiffes).
 
-Hast du herausgefunden, wie man ein Bild malt? Hast du bemerkt, dass jede Zeile des
+Weißt du jetzt, wie man ein Bild malt? Was du dir merken solltest ist, dass jede Zeile des
 Displays durch eine Zeile aus Zahlen dargestellt wird, die mit ``:`` endet und
-zwischen ``"`` Anführungszeichen eingeschlossen ist?
+zwischen ``"`` Anführungszeichen eingeschlossen ist!
 
 Jede Zahl gibt eine Helligkeit an. Es gibt fünf Zeilen mit fünf Zahlen, so dass es möglich ist,
 die individuelle Helligkeit für jedes der fünf Pixel auf jeder der fünf Zeilen auf dem
