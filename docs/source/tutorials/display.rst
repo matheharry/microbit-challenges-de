@@ -21,16 +21,16 @@ Grundfunktionen
 Einen String oder ein Bild anzeigen
 -----------------------------------
 
-Du kannst Zeichen - sogenannte :ref:`Strings` - oder Bilder auf dem LED Display mit der Methode ``display.show()`` anzeigen: ::
+Du kannst Zeichen - sogenannte ``Strings`` - oder Bilder auf dem LED Display mit der Methode ``display.show()`` anzeigen: ::
 
     from microbit import *
 
     display.show("Hallo")
 
-Die Zeichen, die du auf dem Display anzeigst, müssen als :ref:`Strings` innerhalb eines Paares von Anführungszeichen
+Die Zeichen, die du auf dem Display anzeigst, müssen als ``Strings`` innerhalb eines Paares von Anführungszeichen
 stehen, entweder " " oder ' '. 
  
-Bilder benötigen keine Anführungszeichen, da sie ja keine :ref:`Strings` sind. Das ``microbit`` Modul hat schon viele
+Bilder benötigen keine Anführungszeichen, da sie ja keine ``Strings`` sind. Das ``microbit`` Modul hat schon viele
 Bilder eingebaut, die auf dem Display angezeigt werden können.
 
 Um zum Beispiel eine lächelndes Gesicht anzuzeigen, kannst du das vorhandene ``Image``-Objekt verwenden. Die vorhandenen
