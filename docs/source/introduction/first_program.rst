@@ -5,7 +5,7 @@ Ein Programm schreiben
 Im Allgemeinen besteht der Prozess des Code-Entwurfs aus diesen 4 Schritten. Du kannst davon ausgehen, 
 dass du die Schleife ein paar Mal durchlaufen musst, bevor dein Code funktioniert.
 
-.. image:: assets/microbit_lifecycle.jpg
+.. image:: assets/code-entwicklung.png
    :scale: 70%   
    :align: center
 
