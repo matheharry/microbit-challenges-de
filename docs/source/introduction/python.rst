@@ -26,6 +26,12 @@ Eine grobe Einschätzung der Komplexität einer Sprache kann man anhand der Anza
 Wörter in der Sprache ablesen. Man versteht darunter Wörter, die vom Compiler oder Interpreter reserviert sind, weil sie
 eine bestimmte eingebaute Funktionalität der Sprache bezeichnen.
 
+.. image:: assets/warumpython.png
+   :scale: 70%   
+   :align: center
+
+
+
 **Python 3** hat 33 Schlüsselwörter und **Python 2** hat 31. Im Gegensatz dazu hat **C++** 62, **Java** hat 53 
 und **Visual Basic** hat mehr als 120.
 
